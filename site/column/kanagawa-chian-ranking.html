@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【2024年版】神奈川県の治安ランキング｜犯罪データで見る安全な街</title>
+<meta name="description" content="神奈川県警の2024年オープンデータ（7罪種）を町丁目レベルで独自集計。横浜・川崎の都市部で最も安全なエリアと、注意が必要なエリアをデータで比較します。">
+<meta property="og:title" content="【2024年版】神奈川県の治安ランキング｜犯罪データで見る安全な街">
+<meta property="og:description" content="神奈川県警の2024年オープンデータを独自集計。横浜・川崎で最も安全な街をデータで紹介。">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【2024年版】神奈川県の治安ランキング｜犯罪データで見る安全な街",
+  "author": {"@type": "Organization", "name": "神奈川住みやすさ研究所"},
+  "datePublished": "2025-05-10",
+  "description": "神奈川県警の2024年オープンデータを町丁目レベルで独自集計した治安ランキング"
+}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333;line-height:1.8}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}
+.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:800px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+article h2{font-size:1.6rem;margin-bottom:12px;color:#1a1a2e;line-height:1.4}
+article h3{font-size:1.15rem;margin:28px 0 12px;color:#1a1a2e;padding-left:12px;border-left:4px solid #3498db}
+.lead{font-size:.95rem;color:#555;margin-bottom:24px;padding:16px 20px;background:#e8f4fd;border-radius:8px}
+.card{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.rank-list{list-style:none;padding:0}
+.rank-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f0f0f0}
+.rank-item:last-child{border-bottom:none}
+.rank-badge{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:#fff;flex-shrink:0}
+.rank-badge.gold{background:#f39c12}.rank-badge.silver{background:#95a5a6}.rank-badge.bronze{background:#cd6133}
+.rank-badge.safe{background:#2ecc71}.rank-badge.warn{background:#e74c3c}
+.rank-info{flex:1}
+.rank-name{font-weight:600;font-size:.95rem}
+.rank-detail{font-size:.8rem;color:#888;margin-top:2px}
+.rank-value{font-weight:700;font-size:1.1rem;color:#1a1a2e;flex-shrink:0}
+.rank-value small{font-size:.7rem;color:#888;font-weight:400}
+.note{font-size:.8rem;color:#888;margin-top:8px;padding:8px 12px;background:#fafafa;border-radius:4px}
+.highlight-box{background:#fff3cd;border-left:4px solid #f39c12;padding:16px 20px;border-radius:0 8px 8px 0;margin:20px 0}
+.highlight-box p{font-size:.9rem;margin:0}
+.cta{background:#1a1a2e;color:#fff;border-radius:8px;padding:24px;margin:32px 0;text-align:center}
+.cta h3{color:#fff;border:none;padding:0;margin:0 0 8px;font-size:1.1rem}
+.cta p{font-size:.9rem;color:#ccc;margin-bottom:16px}
+.cta a{display:inline-block;background:#3498db;color:#fff;padding:12px 32px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem}
+.cta a:hover{background:#2980b9}
+.area-links{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.area-links a{display:inline-block;background:#e8f4fd;color:#1a73e8;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:.8rem}
+.area-links a:hover{background:#d0e8fa}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}
+.footer a{color:#8ab4f8;text-decoration:none}
+@media(max-width:600px){
+  .container{padding:16px 12px}
+  article h2{font-size:1.3rem}
+  .rank-item{gap:8px}
+}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb">
+<a href="../">トップ</a> &gt; <a href="./">特集記事</a> &gt; 治安ランキング
+</div>
+
+<article>
+<h2>【2024年版】神奈川県の治安ランキング<br>犯罪データで見る安全な街</h2>
+
+<p class="lead">神奈川県警が公開している2024年の犯罪統計オープンデータ（自転車盗・自動車盗・オートバイ盗・ひったくり・車上ねらい・部品ねらい・自動販売機ねらいの7罪種）を、当サイトで町丁目レベルに独自集計しました。県内59市区町村の「1エリアあたり平均犯罪件数」で比較した結果をご紹介します。</p>
+
+<section>
+<h3>都市部で最も安全な市区町村 TOP5</h3>
+<p style="font-size:.9rem;color:#555;margin-bottom:12px">人口が集中する都市部（5エリア以上）の中で、犯罪率が低い自治体です。</p>
+<div class="card">
+<ul class="rank-list">
+  <li class="rank-item">
+    <span class="rank-badge gold">1</span>
+    <div class="rank-info"><div class="rank-name">川崎市麻生区</div><div class="rank-detail">122エリア｜新百合ヶ丘周辺</div></div>
+    <div class="rank-value">0.86<small>件/エリア</small></div>
+  </li>
+  <li class="rank-item">
+    <span class="rank-badge silver">2</span>
+    <div class="rank-info"><div class="rank-name">横須賀市</div><div class="rank-detail">352エリア｜三浦半島の中核都市</div></div>
+    <div class="rank-value">0.93<small>件/エリア</small></div>
+  </li>
+  <li class="rank-item">
+    <span class="rank-badge bronze">3</span>
+    <div class="rank-info"><div class="rank-name">鎌倉市</div><div class="rank-detail">157エリア｜歴史ある住宅地</div></div>
+    <div class="rank-value">1.11<small>件/エリア</small></div>
+  </li>
+  <li class="rank-item">
+    <span class="rank-badge safe">4</span>
+    <div class="rank-info"><div class="rank-name">綾瀬市</div><div class="rank-detail">135エリア｜内陸の住宅都市</div></div>
+    <div class="rank-value">1.13<small>件/エリア</small></div>
+  </li>
+  <li class="rank-item">
+    <span class="rank-badge safe">5</span>
+    <div class="rank-info"><div class="rank-name">南足柄市</div><div class="rank-detail">45エリア｜県西部の静かな街</div></div>
+    <div class="rank-value">1.49<small>件/エリア</small></div>
+  </li>
+</ul>
+</div>
+<p class="note">※「エリア」は e-Stat 小地域（町丁目）単位。犯罪件数は7罪種の合計。</p>
+</section>
+
+<section>
+<h3>犯罪ゼロに近い自治体</h3>
+<p style="font-size:.9rem;color:#555;margin-bottom:12px">郊外・町村部には、対象期間中の犯罪発生がほぼゼロの自治体もあります。</p>
+<div class="card">
+<ul class="rank-list">
+  <li class="rank-item">
+    <span class="rank-badge safe">-</span>
+    <div class="rank-info"><div class="rank-name">中井町</div><div class="rank-detail">39エリア</div></div>
+    <div class="rank-value">0<small>件</small></div>
+  </li>
+  <li class="rank-item">
+    <span class="rank-badge safe">-</span>
+    <div class="rank-info"><div class="rank-name">三浦市</div><div class="rank-detail">35エリア</div></div>
+    <div class="rank-value">2<small>件</small></div>
+  </li>
+  <li class="rank-item">
+    <span class="rank-badge safe">-</span>
+    <div class="rank-info"><div class="rank-name">箱根町</div><div class="rank-detail">17エリア</div></div>
+    <div class="rank-value">3<small>件</small></div>
+  </li>
+</ul>
+</div>
+</section>
+
+<section>
+<h3>注意が必要なエリア</h3>
+<p style="font-size:.9rem;color:#555;margin-bottom:12px">交通の要衝や繁華街を含むエリアは、犯罪件数が多い傾向があります。</p>
+<div class="card">
+<ul class="rank-list">
+  <li class="rank-item">
+    <span class="rank-badge warn">1</span>
+    <div class="rank-info"><div class="rank-name">川崎市川崎区</div><div class="rank-detail">139エリア｜川崎駅周辺</div></div>
+    <div class="rank-value">10.22<small>件/エリア</small></div>
+  </li>
+  <li class="rank-item">
+    <span class="rank-badge warn">2</span>
+    <div class="rank-info"><div class="rank-name">川崎市中原区</div><div class="rank-detail">76エリア｜武蔵小杉周辺</div></div>
+    <div class="rank-value">8.09<small>件/エリア</small></div>
+  </li>
+  <li class="rank-item">
+    <span class="rank-badge warn">3</span>
+    <div class="rank-info"><div class="rank-name">川崎市高津区</div><div class="rank-detail">75エリア｜溝の口周辺</div></div>
+    <div class="rank-value">8.01<small>件/エリア</small></div>
+  </li>
+</ul>
+</div>
+
+<div class="highlight-box">
+<p>これらのエリアでも、駅から離れた住宅街では犯罪件数が大幅に少ない町丁目があります。当サイトのマップで町丁目レベルの詳細を確認することをおすすめします。</p>
+</div>
+</section>
+
+<section>
+<h3>関連エリアの詳細ページ</h3>
+<div class="area-links">
+<a href="../area/kawasaki-麻生区/">川崎市麻生区</a>
+<a href="../area/yokosuka/">横須賀市</a>
+<a href="../area/kamakura/">鎌倉市</a>
+<a href="../area/kawasaki-川崎区/">川崎市川崎区</a>
+<a href="../area/kawasaki-中原区/">川崎市中原区</a>
+</div>
+</section>
+
+<div class="cta">
+<h3>地図で治安データを確認する</h3>
+<p>犯罪発生件数レイヤーをONにすると、町丁目ごとの犯罪件数を色分けで確認できます。</p>
+<a href="../">マップを開く</a>
+</div>
+
+</article>
+</div>
+
+<div class="footer">
+<p>データ出典: <a href="https://www.police.pref.kanagawa.jp/mes/mesd0010.htm">神奈川県警犯罪統計(2024)</a> / <a href="https://www.e-stat.go.jp/">e-Stat国勢調査(2020)</a></p>
+<p style="margin-top:4px">本サイトはオープンデータに基づく参考情報です。最新情報は各公式サイトをご確認ください。</p>
+</div>
+</body>
+</html>

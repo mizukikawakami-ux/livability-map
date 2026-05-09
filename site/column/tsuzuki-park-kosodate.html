@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>【子育て世代必見】横浜市都筑区の公園面積をデータ化｜緑豊かな街ランキング</title>
+<meta name="description" content="横浜市都筑区95町丁目の公園面積をデータ化。茅ケ崎中央の約20haを筆頭に、公園・緑地が充実したエリアをランキング形式でご紹介。子育て世代の街選びに。">
+<meta property="og:title" content="【子育て世代必見】横浜市都筑区の公園面積をデータ化｜緑豊かな街ランキング">
+<meta property="og:description" content="都筑区95町丁目の公園面積データ。港北ニュータウンの緑豊かなエリアをランキングで紹介。">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "【子育て世代必見】横浜市都筑区の公園面積をデータ化｜緑豊かな街ランキング",
+  "author": {"@type": "Organization", "name": "神奈川住みやすさ研究所"},
+  "datePublished": "2025-05-10",
+  "description": "横浜市都筑区95町丁目の公園面積を国土数値情報から集計・ランキング化"
+}</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333;line-height:1.8}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}
+.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:800px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+article h2{font-size:1.6rem;margin-bottom:12px;color:#1a1a2e;line-height:1.4}
+article h3{font-size:1.15rem;margin:28px 0 12px;color:#1a1a2e;padding-left:12px;border-left:4px solid #27ae60}
+.lead{font-size:.95rem;color:#555;margin-bottom:24px;padding:16px 20px;background:#e8f5e9;border-radius:8px}
+.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:16px 0}
+.stat-box{background:#fff;border-radius:8px;padding:16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.stat-box .val{font-size:1.5rem;font-weight:700;color:#1a1a2e}.stat-box .lbl{font-size:.75rem;color:#888;margin-top:4px}
+.stat-box.green .val{color:#27ae60}
+.card{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.rank-list{list-style:none;padding:0}
+.rank-item{padding:14px 0;border-bottom:1px solid #f0f0f0}
+.rank-item:last-child{border-bottom:none}
+.rank-top{display:flex;align-items:center;gap:12px}
+.rank-badge{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:#fff;flex-shrink:0}
+.rank-badge.g1{background:#f39c12}.rank-badge.g2{background:#95a5a6}.rank-badge.g3{background:#cd6133}.rank-badge.g4{background:#27ae60}.rank-badge.g5{background:#27ae60}
+.rank-info{flex:1}
+.rank-name{font-weight:600;font-size:.95rem}
+.rank-name a{color:#1a73e8;text-decoration:none}
+.rank-name a:hover{text-decoration:underline}
+.rank-detail{font-size:.8rem;color:#888;margin-top:2px}
+.rank-area{flex-shrink:0;text-align:right}
+.rank-area .big{font-size:1.1rem;font-weight:700;color:#27ae60}
+.rank-area .sub{font-size:.7rem;color:#888;display:block}
+.park-bar{margin-top:6px;display:flex;align-items:center;gap:8px}
+.park-bar .bar-bg{flex:1;height:16px;background:#e8f5e9;border-radius:8px;overflow:hidden}
+.park-bar .bar-fill{height:100%;background:linear-gradient(90deg,#66bb6a,#27ae60);border-radius:8px}
+.park-bar .val{width:60px;font-size:.75rem;color:#555;font-weight:600;text-align:right}
+.highlight{background:#e8f5e9;border-left:4px solid #27ae60;padding:16px 20px;border-radius:0 8px 8px 0;margin:20px 0}
+.highlight p{font-size:.9rem;margin:0}
+.score-card{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f0f0f0}
+.score-card:last-child{border-bottom:none}
+.score-card .name{font-weight:600;font-size:.95rem;flex:1}
+.score-card .name a{color:#1a73e8;text-decoration:none}
+.score-card .score{font-size:1.2rem;font-weight:700;color:#1a1a2e}
+.score-card .score small{font-size:.7rem;color:#888;font-weight:400}
+.score-card .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:.7rem;font-weight:600}
+.tag.park{background:#e8f5e9;color:#2e7d32}
+.tag.safe{background:#e3f2fd;color:#1565c0}
+.tag.med{background:#fce4ec;color:#c62828}
+.note{font-size:.8rem;color:#888;margin-top:8px;padding:8px 12px;background:#fafafa;border-radius:4px}
+.cta{background:#1a1a2e;color:#fff;border-radius:8px;padding:24px;margin:32px 0;text-align:center}
+.cta h3{color:#fff;border:none;padding:0;margin:0 0 8px;font-size:1.1rem}
+.cta p{font-size:.9rem;color:#ccc;margin-bottom:16px}
+.cta-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.cta a{display:inline-block;background:#27ae60;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.9rem}
+.cta a:hover{background:#219a52}
+.cta a.secondary{background:transparent;border:1px solid #8ab4f8;color:#8ab4f8}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}
+.footer a{color:#8ab4f8;text-decoration:none}
+@media(max-width:600px){
+  .container{padding:16px 12px}
+  article h2{font-size:1.3rem}
+  .stats-row{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb">
+<a href="../">トップ</a> &gt; <a href="./">特集記事</a> &gt; 都筑区 公園・子育て
+</div>
+
+<article>
+<h2>【子育て世代必見】横浜市都筑区の公園面積をデータ化<br>緑豊かな街ランキング</h2>
+
+<p class="lead">横浜市都筑区は「港北ニュータウン」として計画的に整備された街です。センター北・センター南駅を中心に、グリーンマトリックスと呼ばれる緑道ネットワークが特徴的。95の町丁目に、どれだけの公園面積があるのかをデータ化しました。</p>
+
+<div class="stats-row">
+<div class="stat-box"><div class="val">95</div><div class="lbl">町丁目</div></div>
+<div class="stat-box green"><div class="val">53.1</div><div class="lbl">平均スコア/98</div></div>
+</div>
+
+<section>
+<h3>公園面積が広いエリア TOP5</h3>
+<p style="font-size:.9rem;color:#555;margin-bottom:12px">国土数値情報（都市公園データ）を町丁目に空間結合して集計しました。</p>
+<div class="card">
+<ul class="rank-list">
+  <li class="rank-item">
+    <div class="rank-top">
+      <span class="rank-badge g1">1</span>
+      <div class="rank-info">
+        <div class="rank-name"><a href="../area/yokohama-都筑区/茅ケ崎中央/">茅ケ崎中央</a></div>
+        <div class="rank-detail">人口6,202人｜医療施設60件｜センター南駅周辺</div>
+      </div>
+      <div class="rank-area"><span class="big">200,834</span><span class="sub">m²（約20ha）</span></div>
+    </div>
+    <div class="park-bar"><div class="bar-bg"><div class="bar-fill" style="width:100%"></div></div><span class="val">20.1ha</span></div>
+  </li>
+  <li class="rank-item">
+    <div class="rank-top">
+      <span class="rank-badge g2">2</span>
+      <div class="rank-info">
+        <div class="rank-name"><a href="../area/yokohama-都筑区/茅ケ崎南1/">茅ケ崎南1丁目</a></div>
+        <div class="rank-detail">人口2,648人｜犯罪2件</div>
+      </div>
+      <div class="rank-area"><span class="big">94,828</span><span class="sub">m²（約9.5ha）</span></div>
+    </div>
+    <div class="park-bar"><div class="bar-bg"><div class="bar-fill" style="width:47.2%"></div></div><span class="val">9.5ha</span></div>
+  </li>
+  <li class="rank-item">
+    <div class="rank-top">
+      <span class="rank-badge g3">3</span>
+      <div class="rank-info">
+        <div class="rank-name"><a href="../area/yokohama-都筑区/新栄町/">新栄町</a></div>
+        <div class="rank-detail">人口1,907人｜犯罪2件</div>
+      </div>
+      <div class="rank-area"><span class="big">91,380</span><span class="sub">m²（約9.1ha）</span></div>
+    </div>
+    <div class="park-bar"><div class="bar-bg"><div class="bar-fill" style="width:45.5%"></div></div><span class="val">9.1ha</span></div>
+  </li>
+  <li class="rank-item">
+    <div class="rank-top">
+      <span class="rank-badge g4">4</span>
+      <div class="rank-info">
+        <div class="rank-name"><a href="../area/yokohama-都筑区/荏田南1/">荏田南1丁目</a></div>
+        <div class="rank-detail">人口2,186人｜犯罪1件</div>
+      </div>
+      <div class="rank-area"><span class="big">88,819</span><span class="sub">m²（約8.9ha）</span></div>
+    </div>
+    <div class="park-bar"><div class="bar-bg"><div class="bar-fill" style="width:44.2%"></div></div><span class="val">8.9ha</span></div>
+  </li>
+  <li class="rank-item">
+    <div class="rank-top">
+      <span class="rank-badge g5">5</span>
+      <div class="rank-info">
+        <div class="rank-name"><a href="../area/yokohama-都筑区/中川4/">中川4丁目</a></div>
+        <div class="rank-detail">人口878人｜犯罪2件</div>
+      </div>
+      <div class="rank-area"><span class="big">68,631</span><span class="sub">m²（約6.9ha）</span></div>
+    </div>
+    <div class="park-bar"><div class="bar-bg"><div class="bar-fill" style="width:34.2%"></div></div><span class="val">6.9ha</span></div>
+  </li>
+</ul>
+</div>
+<p class="note">※ 公園面積は国土数値情報 都市公園データ(P13)を町丁目ポリゴンに空間結合して集計</p>
+</section>
+
+<div class="highlight">
+<p>1位の茅ケ崎中央（センター南駅周辺）は約20haの公園面積を誇り、2位以下の2倍以上。さらに医療施設60件と、公園と医療の両面で突出しています。</p>
+</div>
+
+<section>
+<h3>総合スコア TOP5</h3>
+<p style="font-size:.9rem;color:#555;margin-bottom:12px">7軸スコアの総合点が高いエリアです。</p>
+<div class="card">
+  <div class="score-card">
+    <div>
+      <div class="name"><a href="../area/yokohama-都筑区/茅ケ崎東2/">茅ケ崎東2丁目</a></div>
+      <div class="tags"><span class="tag park">公園 13.4/14</span><span class="tag safe">交通安全 13.1/14</span></div>
+    </div>
+    <div class="score">71.1<small>/98</small></div>
+  </div>
+  <div class="score-card">
+    <div>
+      <div class="name"><a href="../area/yokohama-都筑区/中川2/">中川2丁目</a></div>
+      <div class="tags"><span class="tag park">公園 29,085m²</span><span class="tag safe">犯罪1件</span></div>
+    </div>
+    <div class="score">69.3<small>/98</small></div>
+  </div>
+  <div class="score-card">
+    <div>
+      <div class="name"><a href="../area/yokohama-都筑区/荏田東4/">荏田東4丁目</a></div>
+      <div class="tags"><span class="tag safe">犯罪0件</span></div>
+    </div>
+    <div class="score">68.2<small>/98</small></div>
+  </div>
+  <div class="score-card">
+    <div>
+      <div class="name"><a href="../area/yokohama-都筑区/茅ケ崎南5/">茅ケ崎南5丁目</a></div>
+      <div class="tags"><span class="tag park">公園 65,677m²</span><span class="tag med">医療7件</span></div>
+    </div>
+    <div class="score">67.8<small>/98</small></div>
+  </div>
+</div>
+</section>
+
+<section>
+<h3>医療施設が充実しているエリア</h3>
+<div class="card">
+  <div class="score-card">
+    <div><div class="name"><a href="../area/yokohama-都筑区/茅ケ崎中央/">茅ケ崎中央</a></div><div class="rank-detail" style="font-size:.8rem;color:#888">センター南駅周辺</div></div>
+    <div class="score" style="color:#e74c3c">60<small>施設</small></div>
+  </div>
+  <div class="score-card">
+    <div><div class="name"><a href="../area/yokohama-都筑区/中川1/">中川1丁目</a></div><div class="rank-detail" style="font-size:.8rem;color:#888">センター北駅周辺</div></div>
+    <div class="score" style="color:#e74c3c">19<small>施設</small></div>
+  </div>
+</div>
+</section>
+
+<div class="cta">
+<h3>都筑区の全95エリアを詳しく見る</h3>
+<p>マップの「都市公園」レイヤーをONにすると、公園の位置と面積を確認できます。</p>
+<div class="cta-links">
+<a href="../area/yokohama-都筑区/">都筑区エリア一覧</a>
+<a href="../" class="secondary">マップで確認</a>
+</div>
+</div>
+
+</article>
+</div>
+
+<div class="footer">
+<p>データ出典: <a href="https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P13.html">国土数値情報 都市公園(P13)</a> / <a href="https://www.e-stat.go.jp/">e-Stat国勢調査(2020)</a> / <a href="https://www.police.pref.kanagawa.jp/mes/mesd0010.htm">神奈川県警犯罪統計(2024)</a></p>
+<p style="margin-top:4px">本サイトはオープンデータに基づく参考情報です。最新情報は各公式サイトをご確認ください。</p>
+</div>
+</body>
+</html>
