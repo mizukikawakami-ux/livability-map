@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>相模原市中央区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="相模原市中央区の全154エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 相模原市中央区</div>
+<h2>相模原市中央区 全154エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">273,875</div><div class="label">人口</div></div>
+<div><div class="value">44.7</div><div class="label">平均スコア</div></div>
+<div><div class="value">559</div><div class="label">犯罪件数</div></div>
+<div><div class="value">287</div><div class="label">医療施設</div></div>
+<div><div class="value">76</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="横山（一）5/" class="town-card">
+<div class="town-name">横山（一）五丁目</div>
+<div class="town-score" style="color:#2ecc71">63.4点</div>
+<div class="town-meta">人口 134 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="横山（一）4/" class="town-card">
+<div class="town-name">横山（一）四丁目</div>
+<div class="town-score" style="color:#2ecc71">61.6点</div>
+<div class="town-meta">人口 1,508 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="高根/" class="town-card">
+<div class="town-name">高根</div>
+<div class="town-score" style="color:#2ecc71">61.5点</div>
+<div class="town-meta">人口 597 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="相模原1/" class="town-card">
+<div class="town-name">相模原一丁目</div>
+<div class="town-score" style="color:#2ecc71">61.4点</div>
+<div class="town-meta">人口 1,577 / 犯罪 16件 / 医療 12件</div>
+</a>
+<a href="上溝（番一）/" class="town-card">
+<div class="town-name">上溝（番一）</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 10,565 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="上溝（番一）/" class="town-card">
+<div class="town-name">上溝（番一）</div>
+<div class="town-score" style="color:#f39c12">58.4点</div>
+<div class="town-meta">人口 12,012 / 犯罪 0件 / 医療 9件</div>
+</a>
+<a href="淵野辺1/" class="town-card">
+<div class="town-name">淵野辺一丁目</div>
+<div class="town-score" style="color:#f39c12">58.0点</div>
+<div class="town-meta">人口 2,711 / 犯罪 7件 / 医療 4件</div>
+</a>
+<a href="矢部2/" class="town-card">
+<div class="town-name">矢部二丁目</div>
+<div class="town-score" style="color:#f39c12">57.1点</div>
+<div class="town-meta">人口 2,505 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="相模原3/" class="town-card">
+<div class="town-name">相模原三丁目</div>
+<div class="town-score" style="color:#f39c12">56.4点</div>
+<div class="town-meta">人口 3,153 / 犯罪 10件 / 医療 12件</div>
+</a>
+<a href="小山（番）/" class="town-card">
+<div class="town-name">小山（番）</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 6 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="富士見4/" class="town-card">
+<div class="town-name">富士見四丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 708 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="横山（一）3/" class="town-card">
+<div class="town-name">横山（一）三丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 2,375 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="鹿沼台1/" class="town-card">
+<div class="town-name">鹿沼台一丁目</div>
+<div class="town-score" style="color:#f39c12">54.9点</div>
+<div class="town-meta">人口 2,008 / 犯罪 16件 / 医療 6件</div>
+</a>
+<a href="田名塩田2/" class="town-card">
+<div class="town-name">田名塩田二丁目</div>
+<div class="town-score" style="color:#f39c12">54.7点</div>
+<div class="town-meta">人口 1,031 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="上溝（番二）/" class="town-card">
+<div class="town-name">上溝（番二）</div>
+<div class="town-score" style="color:#f39c12">53.9点</div>
+<div class="town-meta">人口 42 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="横山（一）6/" class="town-card">
+<div class="town-name">横山（一）六丁目</div>
+<div class="town-score" style="color:#f39c12">53.7点</div>
+<div class="town-meta">人口 1,136 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="淵野辺本町2/" class="town-card">
+<div class="town-name">淵野辺本町二丁目</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 2,452 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="向陽町/" class="town-card">
+<div class="town-name">向陽町</div>
+<div class="town-score" style="color:#f39c12">52.9点</div>
+<div class="town-meta">人口 501 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="相模原4/" class="town-card">
+<div class="town-name">相模原四丁目</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 4,021 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="小山4/" class="town-card">
+<div class="town-name">小山四丁目</div>
+<div class="town-score" style="color:#f39c12">52.6点</div>
+<div class="town-meta">人口 53 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="下九沢（番二）/" class="town-card">
+<div class="town-name">下九沢（番二）</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 4,019 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="清新4/" class="town-card">
+<div class="town-name">清新四丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 737 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東淵野辺3/" class="town-card">
+<div class="town-name">東淵野辺三丁目</div>
+<div class="town-score" style="color:#f39c12">52.3点</div>
+<div class="town-meta">人口 2,055 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="矢部3/" class="town-card">
+<div class="town-name">矢部三丁目</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 3,477 / 犯罪 11件 / 医療 8件</div>
+</a>
+<a href="緑が丘2/" class="town-card">
+<div class="town-name">緑が丘二丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 1,687 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="共和1/" class="town-card">
+<div class="town-name">共和一丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 1,976 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="田名塩田3/" class="town-card">
+<div class="town-name">田名塩田三丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 1,732 / 犯罪 7件 / 医療 3件</div>
+</a>
+<a href="南橋本2/" class="town-card">
+<div class="town-name">南橋本二丁目</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 2,383 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="富士見1/" class="town-card">
+<div class="town-name">富士見一丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 154 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="陽光台3/" class="town-card">
+<div class="town-name">陽光台三丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 1,719 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="陽光台5/" class="town-card">
+<div class="town-name">陽光台五丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 1,311 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="富士見2/" class="town-card">
+<div class="town-name">富士見二丁目</div>
+<div class="town-score" style="color:#f39c12">50.6点</div>
+<div class="town-meta">人口 1,007 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="千代田3/" class="town-card">
+<div class="town-name">千代田三丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 1,304 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="鹿沼台2/" class="town-card">
+<div class="town-name">鹿沼台二丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 3,069 / 犯罪 22件 / 医療 16件</div>
+</a>
+<a href="横山台2/" class="town-card">
+<div class="town-name">横山台二丁目</div>
+<div class="town-score" style="color:#f39c12">50.4点</div>
+<div class="town-meta">人口 3,193 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="中央1/" class="town-card">
+<div class="town-name">中央一丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 1,022 / 犯罪 9件 / 医療 3件</div>
+</a>
+<a href="上溝（番一）/" class="town-card">
+<div class="town-name">上溝（番一）</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 747 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="氷川町/" class="town-card">
+<div class="town-name">氷川町</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 1,593 / 犯罪 8件 / 医療 4件</div>
+</a>
+<a href="相模原7/" class="town-card">
+<div class="town-name">相模原七丁目</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 971 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="由野台2/" class="town-card">
+<div class="town-name">由野台二丁目</div>
+<div class="town-score" style="color:#f39c12">50.0点</div>
+<div class="town-meta">人口 1,065 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上溝2/" class="town-card">
+<div class="town-name">上溝二丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 616 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="矢部1/" class="town-card">
+<div class="town-name">矢部一丁目</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 3,789 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="淵野辺2/" class="town-card">
+<div class="town-name">淵野辺二丁目</div>
+<div class="town-score" style="color:#f39c12">49.6点</div>
+<div class="town-meta">人口 5,779 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="宮下1/" class="town-card">
+<div class="town-name">宮下一丁目</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 1 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="上矢部1/" class="town-card">
+<div class="town-name">上矢部一丁目</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 1,435 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上溝6/" class="town-card">
+<div class="town-name">上溝六丁目</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 1,511 / 犯罪 7件 / 医療 3件</div>
+</a>
+<a href="すすきの町/" class="town-card">
+<div class="town-name">すすきの町</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 2,705 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="淵野辺本町4/" class="town-card">
+<div class="town-name">淵野辺本町四丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 2,717 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="宮下本町2/" class="town-card">
+<div class="town-name">宮下本町二丁目</div>
+<div class="town-score" style="color:#f39c12">48.7点</div>
+<div class="town-meta">人口 2,735 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="上矢部4/" class="town-card">
+<div class="town-name">上矢部四丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 1,233 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="光が丘3/" class="town-card">
+<div class="town-name">光が丘三丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 2,251 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="松が丘1/" class="town-card">
+<div class="town-name">松が丘一丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 45 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大野台/" class="town-card">
+<div class="town-name">大野台</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 407 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="陽光台1/" class="town-card">
+<div class="town-name">陽光台一丁目</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 1,152 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="上溝1/" class="town-card">
+<div class="town-name">上溝一丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 1,037 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="横山（一）2/" class="town-card">
+<div class="town-name">横山（一）二丁目</div>
+<div class="town-score" style="color:#f39c12">47.4点</div>
+<div class="town-meta">人口 1,026 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東淵野辺2/" class="town-card">
+<div class="town-name">東淵野辺二丁目</div>
+<div class="town-score" style="color:#f39c12">47.2点</div>
+<div class="town-meta">人口 1,141 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="南橋本1/" class="town-card">
+<div class="town-name">南橋本一丁目</div>
+<div class="town-score" style="color:#f39c12">47.1点</div>
+<div class="town-meta">人口 2,680 / 犯罪 11件 / 医療 11件</div>
+</a>
+<a href="上溝7/" class="town-card">
+<div class="town-name">上溝七丁目</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 2,135 / 犯罪 6件 / 医療 3件</div>
+</a>
+<a href="田名（番三）/" class="town-card">
+<div class="town-name">田名（番三）</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 415 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="千代田4/" class="town-card">
+<div class="town-name">千代田四丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 1,046 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="上矢部3/" class="town-card">
+<div class="town-name">上矢部三丁目</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 713 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="淵野辺本町5/" class="town-card">
+<div class="town-name">淵野辺本町五丁目</div>
+<div class="town-score" style="color:#f39c12">46.6点</div>
+<div class="town-meta">人口 1,945 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="相模原5/" class="town-card">
+<div class="town-name">相模原五丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 2,710 / 犯罪 3件 / 医療 6件</div>
+</a>
+<a href="矢部新町/" class="town-card">
+<div class="town-name">矢部新町</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 1,840 / 犯罪 10件 / 医療 0件</div>
+</a>
+<a href="並木1/" class="town-card">
+<div class="town-name">並木一丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 600 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="水郷田名3/" class="town-card">
+<div class="town-name">水郷田名三丁目</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 950 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="富士見3/" class="town-card">
+<div class="town-name">富士見三丁目</div>
+<div class="town-score" style="color:#f39c12">45.8点</div>
+<div class="town-meta">人口 1,573 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="淵野辺3/" class="town-card">
+<div class="town-name">淵野辺三丁目</div>
+<div class="town-score" style="color:#f39c12">45.8点</div>
+<div class="town-meta">人口 3,649 / 犯罪 15件 / 医療 8件</div>
+</a>
+<a href="千代田2/" class="town-card">
+<div class="town-name">千代田二丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 1,084 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="宮下本町3/" class="town-card">
+<div class="town-name">宮下本町三丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 3,335 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="田名（番一）/" class="town-card">
+<div class="town-name">田名（番一）</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 9,901 / 犯罪 0件 / 医療 11件</div>
+</a>
+<a href="田名塩田1/" class="town-card">
+<div class="town-name">田名塩田一丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 59 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="星が丘1/" class="town-card">
+<div class="town-name">星が丘一丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 1,402 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="相模原6/" class="town-card">
+<div class="town-name">相模原六丁目</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 2,660 / 犯罪 7件 / 医療 3件</div>
+</a>
+<a href="光が丘1/" class="town-card">
+<div class="town-name">光が丘一丁目</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 917 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="由野台1/" class="town-card">
+<div class="town-name">由野台一丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 1,152 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="田名塩田4/" class="town-card">
+<div class="town-name">田名塩田四丁目</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 625 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="田名（番一）/" class="town-card">
+<div class="town-name">田名（番一）</div>
+<div class="town-score" style="color:#f39c12">44.3点</div>
+<div class="town-meta">人口 3,246 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="青葉3/" class="town-card">
+<div class="town-name">青葉三丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 849 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="千代田7/" class="town-card">
+<div class="town-name">千代田七丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 1,196 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="清新3/" class="town-card">
+<div class="town-name">清新三丁目</div>
+<div class="town-score" style="color:#f39c12">43.9点</div>
+<div class="town-meta">人口 1,076 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上溝4/" class="town-card">
+<div class="town-name">上溝四丁目</div>
+<div class="town-score" style="color:#f39c12">43.8点</div>
+<div class="town-meta">人口 1,537 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="緑が丘1/" class="town-card">
+<div class="town-name">緑が丘一丁目</div>
+<div class="town-score" style="color:#f39c12">43.7点</div>
+<div class="town-meta">人口 2,245 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="陽光台2/" class="town-card">
+<div class="town-name">陽光台二丁目</div>
+<div class="town-score" style="color:#f39c12">43.7点</div>
+<div class="town-meta">人口 1,976 / 犯罪 10件 / 医療 4件</div>
+</a>
+<a href="星が丘2/" class="town-card">
+<div class="town-name">星が丘二丁目</div>
+<div class="town-score" style="color:#f39c12">43.6点</div>
+<div class="town-meta">人口 1,195 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="上溝5/" class="town-card">
+<div class="town-name">上溝五丁目</div>
+<div class="town-score" style="color:#f39c12">43.6点</div>
+<div class="town-meta">人口 1,024 / 犯罪 20件 / 医療 2件</div>
+</a>
+<a href="相生3/" class="town-card">
+<div class="town-name">相生三丁目</div>
+<div class="town-score" style="color:#f39c12">43.5点</div>
+<div class="town-meta">人口 1,724 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="小山2/" class="town-card">
+<div class="town-name">小山二丁目</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 2,104 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="千代田5/" class="town-card">
+<div class="town-name">千代田五丁目</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 1,102 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="南橋本3/" class="town-card">
+<div class="town-name">南橋本三丁目</div>
+<div class="town-score" style="color:#f39c12">42.7点</div>
+<div class="town-meta">人口 1,166 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="淵野辺本町1/" class="town-card">
+<div class="town-name">淵野辺本町一丁目</div>
+<div class="town-score" style="color:#f39c12">42.7点</div>
+<div class="town-meta">人口 2,118 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="弥栄2/" class="town-card">
+<div class="town-name">弥栄二丁目</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 1,534 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="上矢部2/" class="town-card">
+<div class="town-name">上矢部二丁目</div>
+<div class="town-score" style="color:#f39c12">42.5点</div>
+<div class="town-meta">人口 1,219 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="清新2/" class="town-card">
+<div class="town-name">清新二丁目</div>
+<div class="town-score" style="color:#f39c12">42.4点</div>
+<div class="town-meta">人口 1,623 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="富士見6/" class="town-card">
+<div class="town-name">富士見六丁目</div>
+<div class="town-score" style="color:#f39c12">42.4点</div>
+<div class="town-meta">人口 941 / 犯罪 2件 / 医療 6件</div>
+</a>
+<a href="宮下本町1/" class="town-card">
+<div class="town-name">宮下本町一丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 2,964 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="相生2/" class="town-card">
+<div class="town-name">相生二丁目</div>
+<div class="town-score" style="color:#f39c12">42.1点</div>
+<div class="town-meta">人口 1,376 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="相生4/" class="town-card">
+<div class="town-name">相生四丁目</div>
+<div class="town-score" style="color:#f39c12">42.0点</div>
+<div class="town-meta">人口 1,487 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="中央6/" class="town-card">
+<div class="town-name">中央六丁目</div>
+<div class="town-score" style="color:#f39c12">41.8点</div>
+<div class="town-meta">人口 1,077 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="田名（番一）/" class="town-card">
+<div class="town-name">田名（番一）</div>
+<div class="town-score" style="color:#f39c12">41.8点</div>
+<div class="town-meta">人口 10,304 / 犯罪 0件 / 医療 7件</div>
+</a>
+<a href="星が丘4/" class="town-card">
+<div class="town-name">星が丘四丁目</div>
+<div class="town-score" style="color:#f39c12">41.7点</div>
+<div class="town-meta">人口 2,202 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="相生1/" class="town-card">
+<div class="town-name">相生一丁目</div>
+<div class="town-score" style="color:#f39c12">41.6点</div>
+<div class="town-meta">人口 1,441 / 犯罪 9件 / 医療 2件</div>
+</a>
+<a href="千代田1/" class="town-card">
+<div class="town-name">千代田一丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 1,072 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="横山台1/" class="town-card">
+<div class="town-name">横山台一丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 3,195 / 犯罪 7件 / 医療 3件</div>
+</a>
+<a href="上矢部5/" class="town-card">
+<div class="town-name">上矢部五丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 1,549 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="矢部4/" class="town-card">
+<div class="town-name">矢部四丁目</div>
+<div class="town-score" style="color:#f39c12">41.3点</div>
+<div class="town-meta">人口 1,819 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="淵野辺5/" class="town-card">
+<div class="town-name">淵野辺五丁目</div>
+<div class="town-score" style="color:#f39c12">41.3点</div>
+<div class="town-meta">人口 1,040 / 犯罪 9件 / 医療 1件</div>
+</a>
+<a href="相模原2/" class="town-card">
+<div class="town-name">相模原二丁目</div>
+<div class="town-score" style="color:#f39c12">40.9点</div>
+<div class="town-meta">人口 2,756 / 犯罪 9件 / 医療 6件</div>
+</a>
+<a href="相模原8/" class="town-card">
+<div class="town-name">相模原八丁目</div>
+<div class="town-score" style="color:#f39c12">40.9点</div>
+<div class="town-meta">人口 1,092 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="横山（一）1/" class="town-card">
+<div class="town-name">横山（一）一丁目</div>
+<div class="town-score" style="color:#f39c12">40.7点</div>
+<div class="town-meta">人口 1,022 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="宮下3/" class="town-card">
+<div class="town-name">宮下三丁目</div>
+<div class="town-score" style="color:#f39c12">40.5点</div>
+<div class="town-meta">人口 486 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中央4/" class="town-card">
+<div class="town-name">中央四丁目</div>
+<div class="town-score" style="color:#f39c12">40.4点</div>
+<div class="town-meta">人口 940 / 犯罪 8件 / 医療 3件</div>
+</a>
+<a href="小町通2/" class="town-card">
+<div class="town-name">小町通二丁目</div>
+<div class="town-score" style="color:#f39c12">40.0点</div>
+<div class="town-meta">人口 392 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="松が丘2/" class="town-card">
+<div class="town-name">松が丘二丁目</div>
+<div class="town-score" style="color:#f39c12">40.0点</div>
+<div class="town-meta">人口 366 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="清新5/" class="town-card">
+<div class="town-name">清新五丁目</div>
+<div class="town-score" style="color:#e74c3c">39.8点</div>
+<div class="town-meta">人口 2,398 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="清新6/" class="town-card">
+<div class="town-name">清新六丁目</div>
+<div class="town-score" style="color:#e74c3c">39.8点</div>
+<div class="town-meta">人口 1,098 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="青葉1/" class="town-card">
+<div class="town-name">青葉一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.5点</div>
+<div class="town-meta">人口 1,461 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="並木4/" class="town-card">
+<div class="town-name">並木四丁目</div>
+<div class="town-score" style="color:#e74c3c">39.3点</div>
+<div class="town-meta">人口 1,509 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="清新8/" class="town-card">
+<div class="town-name">清新八丁目</div>
+<div class="town-score" style="color:#e74c3c">39.2点</div>
+<div class="town-meta">人口 1,074 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="光が丘2/" class="town-card">
+<div class="town-name">光が丘二丁目</div>
+<div class="town-score" style="color:#e74c3c">39.2点</div>
+<div class="town-meta">人口 1,436 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="淵野辺4/" class="town-card">
+<div class="town-name">淵野辺四丁目</div>
+<div class="town-score" style="color:#e74c3c">39.2点</div>
+<div class="town-meta">人口 3,365 / 犯罪 33件 / 医療 5件</div>
+</a>
+<a href="陽光台6/" class="town-card">
+<div class="town-name">陽光台六丁目</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 1,138 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="千代田6/" class="town-card">
+<div class="town-name">千代田六丁目</div>
+<div class="town-score" style="color:#e74c3c">38.5点</div>
+<div class="town-meta">人口 1,217 / 犯罪 11件 / 医療 3件</div>
+</a>
+<a href="富士見5/" class="town-card">
+<div class="town-name">富士見五丁目</div>
+<div class="town-score" style="color:#e74c3c">38.5点</div>
+<div class="town-meta">人口 1,613 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="陽光台7/" class="town-card">
+<div class="town-name">陽光台七丁目</div>
+<div class="town-score" style="color:#e74c3c">38.3点</div>
+<div class="town-meta">人口 146 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="水郷田名2/" class="town-card">
+<div class="town-name">水郷田名二丁目</div>
+<div class="town-score" style="color:#e74c3c">38.3点</div>
+<div class="town-meta">人口 1,316 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="上溝3/" class="town-card">
+<div class="town-name">上溝三丁目</div>
+<div class="town-score" style="color:#e74c3c">38.0点</div>
+<div class="town-meta">人口 1,442 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="清新7/" class="town-card">
+<div class="town-name">清新七丁目</div>
+<div class="town-score" style="color:#e74c3c">37.9点</div>
+<div class="town-meta">人口 1,715 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="陽光台4/" class="town-card">
+<div class="town-name">陽光台四丁目</div>
+<div class="town-score" style="color:#e74c3c">37.8点</div>
+<div class="town-meta">人口 2,360 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="小山3/" class="town-card">
+<div class="town-name">小山三丁目</div>
+<div class="town-score" style="color:#e74c3c">37.3点</div>
+<div class="town-meta">人口 1,211 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="共和2/" class="town-card">
+<div class="town-name">共和二丁目</div>
+<div class="town-score" style="color:#e74c3c">36.9点</div>
+<div class="town-meta">人口 1,649 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="小町通1/" class="town-card">
+<div class="town-name">小町通一丁目</div>
+<div class="town-score" style="color:#e74c3c">36.5点</div>
+<div class="town-meta">人口 1,535 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="中央5/" class="town-card">
+<div class="town-name">中央五丁目</div>
+<div class="town-score" style="color:#e74c3c">35.7点</div>
+<div class="town-meta">人口 1,489 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="並木2/" class="town-card">
+<div class="town-name">並木二丁目</div>
+<div class="town-score" style="color:#e74c3c">35.3点</div>
+<div class="town-meta">人口 1,224 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="中央3/" class="town-card">
+<div class="town-name">中央三丁目</div>
+<div class="town-score" style="color:#e74c3c">35.2点</div>
+<div class="town-meta">人口 823 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="共和3/" class="town-card">
+<div class="town-name">共和三丁目</div>
+<div class="town-score" style="color:#e74c3c">35.1点</div>
+<div class="town-meta">人口 1,845 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="東淵野辺1/" class="town-card">
+<div class="town-name">東淵野辺一丁目</div>
+<div class="town-score" style="color:#e74c3c">35.1点</div>
+<div class="town-meta">人口 1,808 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="共和4/" class="town-card">
+<div class="town-name">共和四丁目</div>
+<div class="town-score" style="color:#e74c3c">33.9点</div>
+<div class="town-meta">人口 1,605 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="弥栄1/" class="town-card">
+<div class="town-name">弥栄一丁目</div>
+<div class="town-score" style="color:#e74c3c">33.4点</div>
+<div class="town-meta">人口 952 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="東淵野辺4/" class="town-card">
+<div class="town-name">東淵野辺四丁目</div>
+<div class="town-score" style="color:#e74c3c">33.3点</div>
+<div class="town-meta">人口 3,462 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="高根2/" class="town-card">
+<div class="town-name">高根二丁目</div>
+<div class="town-score" style="color:#e74c3c">32.5点</div>
+<div class="town-meta">人口 1,170 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="淵野辺本町3/" class="town-card">
+<div class="town-name">淵野辺本町三丁目</div>
+<div class="town-score" style="color:#e74c3c">32.4点</div>
+<div class="town-meta">人口 3,056 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="東淵野辺5/" class="town-card">
+<div class="town-name">東淵野辺五丁目</div>
+<div class="town-score" style="color:#e74c3c">32.3点</div>
+<div class="town-meta">人口 2,444 / 犯罪 8件 / 医療 3件</div>
+</a>
+<a href="並木3/" class="town-card">
+<div class="town-name">並木三丁目</div>
+<div class="town-score" style="color:#e74c3c">32.0点</div>
+<div class="town-meta">人口 1,856 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="星が丘3/" class="town-card">
+<div class="town-name">星が丘三丁目</div>
+<div class="town-score" style="color:#e74c3c">31.4点</div>
+<div class="town-meta">人口 1,240 / 犯罪 6件 / 医療 0件</div>
+</a>
+<a href="清新1/" class="town-card">
+<div class="town-name">清新一丁目</div>
+<div class="town-score" style="color:#e74c3c">31.3点</div>
+<div class="town-meta">人口 610 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="小山1/" class="town-card">
+<div class="town-name">小山一丁目</div>
+<div class="town-score" style="color:#e74c3c">31.2点</div>
+<div class="town-meta">人口 522 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="水郷田名4/" class="town-card">
+<div class="town-name">水郷田名四丁目</div>
+<div class="town-score" style="color:#e74c3c">31.1点</div>
+<div class="town-meta">人口 209 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="中央2/" class="town-card">
+<div class="town-name">中央二丁目</div>
+<div class="town-score" style="color:#e74c3c">30.8点</div>
+<div class="town-meta">人口 490 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="宮下2/" class="town-card">
+<div class="town-name">宮下二丁目</div>
+<div class="town-score" style="color:#e74c3c">30.5点</div>
+<div class="town-meta">人口 496 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="水郷田名1/" class="town-card">
+<div class="town-name">水郷田名一丁目</div>
+<div class="town-score" style="color:#e74c3c">29.0点</div>
+<div class="town-meta">人口 685 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="青葉2/" class="town-card">
+<div class="town-name">青葉二丁目</div>
+<div class="town-score" style="color:#e74c3c">28.1点</div>
+<div class="town-meta">人口 462 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="南橋本4/" class="town-card">
+<div class="town-name">南橋本四丁目</div>
+<div class="town-score" style="color:#e74c3c">23.9点</div>
+<div class="town-meta">人口 2 / 犯罪 1件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

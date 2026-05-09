@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市戸塚区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市戸塚区の全52エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市戸塚区</div>
+<h2>横浜市戸塚区 全52エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">283,709</div><div class="label">人口</div></div>
+<div><div class="value">44.3</div><div class="label">平均スコア</div></div>
+<div><div class="value">333</div><div class="label">犯罪件数</div></div>
+<div><div class="value">328</div><div class="label">医療施設</div></div>
+<div><div class="value">192</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="汲沢8/" class="town-card">
+<div class="town-name">汲沢八丁目</div>
+<div class="town-score" style="color:#2ecc71">72.6点</div>
+<div class="town-meta">人口 1,755 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="南舞岡1/" class="town-card">
+<div class="town-name">南舞岡一丁目</div>
+<div class="town-score" style="color:#2ecc71">68.4点</div>
+<div class="town-meta">人口 1,585 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="舞岡町/" class="town-card">
+<div class="town-name">舞岡町</div>
+<div class="town-score" style="color:#f39c12">59.8点</div>
+<div class="town-meta">人口 8,215 / 犯罪 7件 / 医療 10件</div>
+</a>
+<a href="上品濃/" class="town-card">
+<div class="town-name">上品濃</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 3,673 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="平戸1/" class="town-card">
+<div class="town-name">平戸一丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 3,369 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="汲沢7/" class="town-card">
+<div class="town-name">汲沢七丁目</div>
+<div class="town-score" style="color:#f39c12">55.0点</div>
+<div class="town-meta">人口 2,134 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="汲沢2/" class="town-card">
+<div class="town-name">汲沢二丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 2,351 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="深谷町/" class="town-card">
+<div class="town-name">深谷町</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 7,521 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="平戸5/" class="town-card">
+<div class="town-name">平戸五丁目</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 2,249 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="平戸3/" class="town-card">
+<div class="town-name">平戸三丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 3,983 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="名瀬町/" class="town-card">
+<div class="town-name">名瀬町</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 7,096 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="戸塚町/" class="town-card">
+<div class="town-name">戸塚町</div>
+<div class="town-score" style="color:#f39c12">48.8点</div>
+<div class="town-meta">人口 7,071 / 犯罪 0件 / 医療 24件</div>
+</a>
+<a href="下倉田町/" class="town-card">
+<div class="town-name">下倉田町</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 5,482 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="南舞岡2/" class="town-card">
+<div class="town-name">南舞岡二丁目</div>
+<div class="town-score" style="color:#f39c12">48.1点</div>
+<div class="town-meta">人口 902 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="品濃町/" class="town-card">
+<div class="town-name">品濃町</div>
+<div class="town-score" style="color:#f39c12">48.0点</div>
+<div class="town-meta">人口 18,349 / 犯罪 15件 / 医療 59件</div>
+</a>
+<a href="戸塚町/" class="town-card">
+<div class="town-name">戸塚町</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 8,394 / 犯罪 0件 / 医療 7件</div>
+</a>
+<a href="平戸4/" class="town-card">
+<div class="town-name">平戸四丁目</div>
+<div class="town-score" style="color:#f39c12">47.4点</div>
+<div class="town-meta">人口 2,022 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="汲沢3/" class="town-card">
+<div class="town-name">汲沢三丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 2,186 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="汲沢5/" class="town-card">
+<div class="town-name">汲沢五丁目</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 1,548 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東俣野町/" class="town-card">
+<div class="town-name">東俣野町</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 4,244 / 犯罪 6件 / 医療 3件</div>
+</a>
+<a href="吉田町/" class="town-card">
+<div class="town-name">吉田町</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 9,372 / 犯罪 8件 / 医療 19件</div>
+</a>
+<a href="平戸2/" class="town-card">
+<div class="town-name">平戸二丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 2,766 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="矢部町/" class="town-card">
+<div class="town-name">矢部町</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 16,411 / 犯罪 10件 / 医療 14件</div>
+</a>
+<a href="汲沢6/" class="town-card">
+<div class="town-name">汲沢六丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 1,939 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="戸塚町/" class="town-card">
+<div class="town-name">戸塚町</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 13,644 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="前田町/" class="town-card">
+<div class="town-name">前田町</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 9,704 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="下倉田町/" class="town-card">
+<div class="town-name">下倉田町</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 4,699 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="秋葉町/" class="town-card">
+<div class="town-name">秋葉町</div>
+<div class="town-score" style="color:#f39c12">44.0点</div>
+<div class="town-meta">人口 6,853 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="汲沢4/" class="town-card">
+<div class="town-name">汲沢四丁目</div>
+<div class="town-score" style="color:#f39c12">43.4点</div>
+<div class="town-meta">人口 1,303 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="鳥が丘/" class="town-card">
+<div class="town-name">鳥が丘</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 3,247 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="上柏尾町/" class="town-card">
+<div class="town-name">上柏尾町</div>
+<div class="town-score" style="color:#f39c12">42.0点</div>
+<div class="town-meta">人口 3,349 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="上倉田町/" class="town-card">
+<div class="town-name">上倉田町</div>
+<div class="town-score" style="color:#f39c12">41.8点</div>
+<div class="town-meta">人口 15,102 / 犯罪 22件 / 医療 22件</div>
+</a>
+<a href="汲沢1/" class="town-card">
+<div class="town-name">汲沢一丁目</div>
+<div class="town-score" style="color:#f39c12">41.7点</div>
+<div class="town-meta">人口 3,608 / 犯罪 2件 / 医療 6件</div>
+</a>
+<a href="名瀬町/" class="town-card">
+<div class="town-name">名瀬町</div>
+<div class="town-score" style="color:#f39c12">41.1点</div>
+<div class="town-meta">人口 7,293 / 犯罪 7件 / 医療 7件</div>
+</a>
+<a href="南舞岡4/" class="town-card">
+<div class="town-name">南舞岡四丁目</div>
+<div class="town-score" style="color:#e74c3c">39.8点</div>
+<div class="town-meta">人口 1,620 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="俣野町/" class="town-card">
+<div class="town-name">俣野町</div>
+<div class="town-score" style="color:#e74c3c">39.5点</div>
+<div class="town-meta">人口 4,747 / 犯罪 7件 / 医療 2件</div>
+</a>
+<a href="平戸町/" class="town-card">
+<div class="town-name">平戸町</div>
+<div class="town-score" style="color:#e74c3c">38.4点</div>
+<div class="town-meta">人口 9,571 / 犯罪 11件 / 医療 4件</div>
+</a>
+<a href="川上町/" class="town-card">
+<div class="town-name">川上町</div>
+<div class="town-score" style="color:#e74c3c">37.7点</div>
+<div class="town-meta">人口 7,943 / 犯罪 23件 / 医療 21件</div>
+</a>
+<a href="原宿3/" class="town-card">
+<div class="town-name">原宿三丁目</div>
+<div class="town-score" style="color:#e74c3c">37.7点</div>
+<div class="town-meta">人口 3,257 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="汲沢町/" class="town-card">
+<div class="town-name">汲沢町</div>
+<div class="town-score" style="color:#e74c3c">37.5点</div>
+<div class="town-meta">人口 6,866 / 犯罪 5件 / 医療 11件</div>
+</a>
+<a href="戸塚町/" class="town-card">
+<div class="town-name">戸塚町</div>
+<div class="town-score" style="color:#e74c3c">37.3点</div>
+<div class="town-meta">人口 6,412 / 犯罪 100件 / 医療 44件</div>
+</a>
+<a href="柏尾町/" class="town-card">
+<div class="town-name">柏尾町</div>
+<div class="town-score" style="color:#e74c3c">37.3点</div>
+<div class="town-meta">人口 6,926 / 犯罪 8件 / 医療 5件</div>
+</a>
+<a href="小雀町/" class="town-card">
+<div class="town-name">小雀町</div>
+<div class="town-score" style="color:#e74c3c">37.0点</div>
+<div class="town-meta">人口 4,602 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="上矢部町/" class="town-card">
+<div class="town-name">上矢部町</div>
+<div class="town-score" style="color:#e74c3c">36.6点</div>
+<div class="town-meta">人口 18,284 / 犯罪 20件 / 医療 2件</div>
+</a>
+<a href="影取町/" class="town-card">
+<div class="town-name">影取町</div>
+<div class="town-score" style="color:#e74c3c">36.0点</div>
+<div class="town-meta">人口 2,189 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="原宿4/" class="town-card">
+<div class="town-name">原宿四丁目</div>
+<div class="town-score" style="color:#e74c3c">34.7点</div>
+<div class="town-meta">人口 3,212 / 犯罪 8件 / 医療 8件</div>
+</a>
+<a href="原宿5/" class="town-card">
+<div class="town-name">原宿五丁目</div>
+<div class="town-score" style="color:#e74c3c">33.8点</div>
+<div class="town-meta">人口 2,372 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="原宿1/" class="town-card">
+<div class="town-name">原宿一丁目</div>
+<div class="town-score" style="color:#e74c3c">31.3点</div>
+<div class="town-meta">人口 2,014 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="原宿2/" class="town-card">
+<div class="town-name">原宿二丁目</div>
+<div class="town-score" style="color:#e74c3c">31.0点</div>
+<div class="town-meta">人口 1,316 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="南舞岡3/" class="town-card">
+<div class="town-name">南舞岡三丁目</div>
+<div class="town-score" style="color:#e74c3c">29.4点</div>
+<div class="town-meta">人口 1,232 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="下倉田町/" class="town-card">
+<div class="town-name">下倉田町</div>
+<div class="town-score" style="color:#e74c3c">29.0点</div>
+<div class="town-meta">人口 2,747 / 犯罪 11件 / 医療 3件</div>
+</a>
+<a href="深谷町/" class="town-card">
+<div class="town-name">深谷町</div>
+<div class="town-score" style="color:#e74c3c">28.5点</div>
+<div class="town-meta">人口 4,980 / 犯罪 13件 / 医療 2件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

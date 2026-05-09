@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市保土ケ谷区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市保土ケ谷区の全66エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市保土ケ谷区</div>
+<h2>横浜市保土ケ谷区 全66エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">207,811</div><div class="label">人口</div></div>
+<div><div class="value">47.6</div><div class="label">平均スコア</div></div>
+<div><div class="value">264</div><div class="label">犯罪件数</div></div>
+<div><div class="value">247</div><div class="label">医療施設</div></div>
+<div><div class="value">135</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="天王町2/" class="town-card">
+<div class="town-name">天王町二丁目</div>
+<div class="town-score" style="color:#2ecc71">66.7点</div>
+<div class="town-meta">人口 2,543 / 犯罪 7件 / 医療 10件</div>
+</a>
+<a href="岩間町1/" class="town-card">
+<div class="town-name">岩間町一丁目</div>
+<div class="town-score" style="color:#2ecc71">65.1点</div>
+<div class="town-meta">人口 1,061 / 犯罪 2件 / 医療 9件</div>
+</a>
+<a href="宮田町2/" class="town-card">
+<div class="town-name">宮田町二丁目</div>
+<div class="town-score" style="color:#2ecc71">64.8点</div>
+<div class="town-meta">人口 919 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="境木町/" class="town-card">
+<div class="town-name">境木町</div>
+<div class="town-score" style="color:#2ecc71">62.2点</div>
+<div class="town-meta">人口 750 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="明神台/" class="town-card">
+<div class="town-name">明神台</div>
+<div class="town-score" style="color:#2ecc71">61.9点</div>
+<div class="town-meta">人口 2,401 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="新井町/" class="town-card">
+<div class="town-name">新井町</div>
+<div class="town-score" style="color:#2ecc71">61.6点</div>
+<div class="town-meta">人口 2,920 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="川島町/" class="town-card">
+<div class="town-name">川島町</div>
+<div class="town-score" style="color:#2ecc71">60.4点</div>
+<div class="town-meta">人口 4,181 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="星川1/" class="town-card">
+<div class="town-name">星川一丁目</div>
+<div class="town-score" style="color:#f39c12">58.9点</div>
+<div class="town-meta">人口 2,669 / 犯罪 5件 / 医療 10件</div>
+</a>
+<a href="保土ケ谷町3/" class="town-card">
+<div class="town-name">保土ケ谷町三丁目</div>
+<div class="town-score" style="color:#f39c12">57.4点</div>
+<div class="town-meta">人口 359 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="宮田町1/" class="town-card">
+<div class="town-name">宮田町一丁目</div>
+<div class="town-score" style="color:#f39c12">56.7点</div>
+<div class="town-meta">人口 1,241 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="神戸町/" class="town-card">
+<div class="town-name">神戸町</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 1,746 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="境木本町/" class="town-card">
+<div class="town-name">境木本町</div>
+<div class="town-score" style="color:#f39c12">54.9点</div>
+<div class="town-meta">人口 3,835 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="新桜ヶ丘2/" class="town-card">
+<div class="town-name">新桜ヶ丘二丁目</div>
+<div class="town-score" style="color:#f39c12">54.6点</div>
+<div class="town-meta">人口 2,802 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="川辺町/" class="town-card">
+<div class="town-name">川辺町</div>
+<div class="town-score" style="color:#f39c12">54.4点</div>
+<div class="town-meta">人口 5,491 / 犯罪 12件 / 医療 5件</div>
+</a>
+<a href="仏向西/" class="town-card">
+<div class="town-name">仏向西</div>
+<div class="town-score" style="color:#f39c12">53.8点</div>
+<div class="town-meta">人口 3,899 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="西久保町/" class="town-card">
+<div class="town-name">西久保町</div>
+<div class="town-score" style="color:#f39c12">53.7点</div>
+<div class="town-meta">人口 4,967 / 犯罪 8件 / 医療 3件</div>
+</a>
+<a href="峰岡町3/" class="town-card">
+<div class="town-name">峰岡町三丁目</div>
+<div class="town-score" style="color:#f39c12">53.7点</div>
+<div class="town-meta">人口 1,595 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="瀬戸ケ谷町/" class="town-card">
+<div class="town-name">瀬戸ケ谷町</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 5,936 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="上星川3/" class="town-card">
+<div class="town-name">上星川三丁目</div>
+<div class="town-score" style="color:#f39c12">52.9点</div>
+<div class="town-meta">人口 1,944 / 犯罪 6件 / 医療 7件</div>
+</a>
+<a href="桜ケ丘2/" class="town-card">
+<div class="town-name">桜ケ丘二丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 3,636 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="帷子町1/" class="town-card">
+<div class="town-name">帷子町一丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 670 / 犯罪 2件 / 医療 14件</div>
+</a>
+<a href="岩崎町/" class="town-card">
+<div class="town-name">岩崎町</div>
+<div class="town-score" style="color:#f39c12">51.5点</div>
+<div class="town-meta">人口 2,580 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="和田2/" class="town-card">
+<div class="town-name">和田二丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 2,146 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="坂本町/" class="town-card">
+<div class="town-name">坂本町</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 2,879 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="桜ケ丘1/" class="town-card">
+<div class="town-name">桜ケ丘一丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 2,514 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="星川3/" class="town-card">
+<div class="town-name">星川三丁目</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 2,278 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="峰沢町/" class="town-card">
+<div class="town-name">峰沢町</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 3,912 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="仏向町/" class="town-card">
+<div class="town-name">仏向町</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 10,176 / 犯罪 2件 / 医療 7件</div>
+</a>
+<a href="岩間町2/" class="town-card">
+<div class="town-name">岩間町二丁目</div>
+<div class="town-score" style="color:#f39c12">47.9点</div>
+<div class="town-meta">人口 667 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="帷子町2/" class="town-card">
+<div class="town-name">帷子町二丁目</div>
+<div class="town-score" style="color:#f39c12">47.4点</div>
+<div class="town-meta">人口 775 / 犯罪 3件 / 医療 6件</div>
+</a>
+<a href="西谷町/" class="town-card">
+<div class="town-name">西谷町</div>
+<div class="town-score" style="color:#f39c12">47.3点</div>
+<div class="town-meta">人口 7,107 / 犯罪 3件 / 医療 20件</div>
+</a>
+<a href="月見台/" class="town-card">
+<div class="town-name">月見台</div>
+<div class="town-score" style="color:#f39c12">47.2点</div>
+<div class="town-meta">人口 2,826 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="新桜ヶ丘1/" class="town-card">
+<div class="town-name">新桜ヶ丘一丁目</div>
+<div class="town-score" style="color:#f39c12">47.2点</div>
+<div class="town-meta">人口 3,384 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="上菅田町/" class="town-card">
+<div class="town-name">上菅田町</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 5,728 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="天王町1/" class="town-card">
+<div class="town-name">天王町一丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 2,687 / 犯罪 8件 / 医療 12件</div>
+</a>
+<a href="峰岡町2/" class="town-card">
+<div class="town-name">峰岡町二丁目</div>
+<div class="town-score" style="color:#f39c12">46.6点</div>
+<div class="town-meta">人口 3,025 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="法泉3/" class="town-card">
+<div class="town-name">法泉三丁目</div>
+<div class="town-score" style="color:#f39c12">45.8点</div>
+<div class="town-meta">人口 2,067 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="今井町/" class="town-card">
+<div class="town-name">今井町</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 5,982 / 犯罪 2件 / 医療 8件</div>
+</a>
+<a href="上星川1/" class="town-card">
+<div class="town-name">上星川一丁目</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 991 / 犯罪 5件 / 医療 5件</div>
+</a>
+<a href="仏向町/" class="town-card">
+<div class="town-name">仏向町</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 2,517 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="上星川2/" class="town-card">
+<div class="town-name">上星川二丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 3,562 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="権太坂3/" class="town-card">
+<div class="town-name">権太坂三丁目</div>
+<div class="town-score" style="color:#f39c12">44.0点</div>
+<div class="town-meta">人口 3,260 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="和田1/" class="town-card">
+<div class="town-name">和田一丁目</div>
+<div class="town-score" style="color:#f39c12">43.9点</div>
+<div class="town-meta">人口 2,250 / 犯罪 7件 / 医療 8件</div>
+</a>
+<a href="上菅田町/" class="town-card">
+<div class="town-name">上菅田町</div>
+<div class="town-score" style="color:#f39c12">43.9点</div>
+<div class="town-meta">人口 8,267 / 犯罪 15件 / 医療 6件</div>
+</a>
+<a href="法泉1/" class="town-card">
+<div class="town-name">法泉一丁目</div>
+<div class="town-score" style="color:#f39c12">43.6点</div>
+<div class="town-meta">人口 2,005 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="釜台町/" class="town-card">
+<div class="town-name">釜台町</div>
+<div class="town-score" style="color:#f39c12">43.6点</div>
+<div class="town-meta">人口 3,798 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="岩井町/" class="town-card">
+<div class="town-name">岩井町</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 7,587 / 犯罪 39件 / 医療 12件</div>
+</a>
+<a href="星川2/" class="town-card">
+<div class="town-name">星川二丁目</div>
+<div class="town-score" style="color:#f39c12">42.0点</div>
+<div class="town-meta">人口 1,830 / 犯罪 2件 / 医療 10件</div>
+</a>
+<a href="新井町/" class="town-card">
+<div class="town-name">新井町</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 3,785 / 犯罪 5件 / 医療 5件</div>
+</a>
+<a href="法泉2/" class="town-card">
+<div class="town-name">法泉二丁目</div>
+<div class="town-score" style="color:#f39c12">41.7点</div>
+<div class="town-meta">人口 1,806 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="峰岡町1/" class="town-card">
+<div class="town-name">峰岡町一丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 2,159 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="常盤台/" class="town-card">
+<div class="town-name">常盤台</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 7,435 / 犯罪 18件 / 医療 7件</div>
+</a>
+<a href="鎌谷町/" class="town-card">
+<div class="town-name">鎌谷町</div>
+<div class="town-score" style="color:#f39c12">40.0点</div>
+<div class="town-meta">人口 4,340 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="藤塚町/" class="town-card">
+<div class="town-name">藤塚町</div>
+<div class="town-score" style="color:#e74c3c">39.6点</div>
+<div class="town-meta">人口 1,612 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="保土ケ谷町1/" class="town-card">
+<div class="town-name">保土ケ谷町一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.5点</div>
+<div class="town-meta">人口 1,596 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="霞台/" class="town-card">
+<div class="town-name">霞台</div>
+<div class="town-score" style="color:#e74c3c">39.3点</div>
+<div class="town-meta">人口 2,709 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="狩場町/" class="town-card">
+<div class="town-name">狩場町</div>
+<div class="town-score" style="color:#e74c3c">38.8点</div>
+<div class="town-meta">人口 7,315 / 犯罪 8件 / 医療 8件</div>
+</a>
+<a href="権太坂1/" class="town-card">
+<div class="town-name">権太坂一丁目</div>
+<div class="town-score" style="color:#e74c3c">38.5点</div>
+<div class="town-meta">人口 3,164 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="花見台/" class="town-card">
+<div class="town-name">花見台</div>
+<div class="town-score" style="color:#e74c3c">37.9点</div>
+<div class="town-meta">人口 435 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="宮田町3/" class="town-card">
+<div class="town-name">宮田町三丁目</div>
+<div class="town-score" style="color:#e74c3c">35.8点</div>
+<div class="town-meta">人口 460 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="川島町/" class="town-card">
+<div class="town-name">川島町</div>
+<div class="town-score" style="color:#e74c3c">35.6点</div>
+<div class="town-meta">人口 4,988 / 犯罪 14件 / 医療 0件</div>
+</a>
+<a href="初音ケ丘/" class="town-card">
+<div class="town-name">初音ケ丘</div>
+<div class="town-score" style="color:#e74c3c">35.0点</div>
+<div class="town-meta">人口 3,213 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="保土ケ谷町2/" class="town-card">
+<div class="town-name">保土ケ谷町二丁目</div>
+<div class="town-score" style="color:#e74c3c">34.8点</div>
+<div class="town-meta">人口 270 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="権太坂2/" class="town-card">
+<div class="town-name">権太坂二丁目</div>
+<div class="town-score" style="color:#e74c3c">33.2点</div>
+<div class="town-meta">人口 1,852 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="岡沢町/" class="town-card">
+<div class="town-name">岡沢町</div>
+<div class="town-score" style="color:#e74c3c">30.6点</div>
+<div class="town-meta">人口 3,891 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="東川島町/" class="town-card">
+<div class="town-name">東川島町</div>
+<div class="town-score" style="color:#e74c3c">26.7点</div>
+<div class="town-meta">人口 4,416 / 犯罪 16件 / 医療 2件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>寒川町 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="寒川町の全36エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 寒川町</div>
+<h2>寒川町 全36エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">48,348</div><div class="label">人口</div></div>
+<div><div class="value">50.9</div><div class="label">平均スコア</div></div>
+<div><div class="value">91</div><div class="label">犯罪件数</div></div>
+<div><div class="value">42</div><div class="label">医療施設</div></div>
+<div><div class="value">13</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="岡田6/" class="town-card">
+<div class="town-name">岡田六丁目</div>
+<div class="town-score" style="color:#2ecc71">62.9点</div>
+<div class="town-meta">人口 430 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="岡田7/" class="town-card">
+<div class="town-name">岡田七丁目</div>
+<div class="town-score" style="color:#2ecc71">61.2点</div>
+<div class="town-meta">人口 1,456 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="一之宮3/" class="town-card">
+<div class="town-name">一之宮三丁目</div>
+<div class="town-score" style="color:#2ecc71">60.3点</div>
+<div class="town-meta">人口 1,871 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="岡田8/" class="town-card">
+<div class="town-name">岡田八丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 1,013 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大曲4/" class="town-card">
+<div class="town-name">大曲四丁目</div>
+<div class="town-score" style="color:#f39c12">57.2点</div>
+<div class="town-meta">人口 183 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="一之宮1/" class="town-card">
+<div class="town-name">一之宮一丁目</div>
+<div class="town-score" style="color:#f39c12">56.2点</div>
+<div class="town-meta">人口 1,347 / 犯罪 8件 / 医療 6件</div>
+</a>
+<a href="岡田5/" class="town-card">
+<div class="town-name">岡田五丁目</div>
+<div class="town-score" style="color:#f39c12">56.2点</div>
+<div class="town-meta">人口 814 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="一之宮9/" class="town-card">
+<div class="town-name">一之宮九丁目</div>
+<div class="town-score" style="color:#f39c12">55.8点</div>
+<div class="town-meta">人口 1,397 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="小谷/" class="town-card">
+<div class="town-name">小谷</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 34 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中瀬/" class="town-card">
+<div class="town-name">中瀬</div>
+<div class="town-score" style="color:#f39c12">53.9点</div>
+<div class="town-meta">人口 2,345 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="一之宮6/" class="town-card">
+<div class="town-name">一之宮六丁目</div>
+<div class="town-score" style="color:#f39c12">53.5点</div>
+<div class="town-meta">人口 354 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="小谷1/" class="town-card">
+<div class="town-name">小谷一丁目</div>
+<div class="town-score" style="color:#f39c12">52.4点</div>
+<div class="town-meta">人口 1,126 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="倉見/" class="town-card">
+<div class="town-name">倉見</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 2,191 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="一之宮/" class="town-card">
+<div class="town-name">一之宮</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 17 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="倉見/" class="town-card">
+<div class="town-name">倉見</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 2,325 / 犯罪 11件 / 医療 3件</div>
+</a>
+<a href="岡田3/" class="town-card">
+<div class="town-name">岡田三丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 1,398 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="小谷3/" class="town-card">
+<div class="town-name">小谷三丁目</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 1,129 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="小谷2/" class="town-card">
+<div class="town-name">小谷二丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 1,204 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大曲3/" class="town-card">
+<div class="town-name">大曲三丁目</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 1,070 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="小動/" class="town-card">
+<div class="town-name">小動</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 1,349 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="岡田4/" class="town-card">
+<div class="town-name">岡田四丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 1,344 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="倉見/" class="town-card">
+<div class="town-name">倉見</div>
+<div class="town-score" style="color:#f39c12">50.4点</div>
+<div class="town-meta">人口 4,787 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="岡田1/" class="town-card">
+<div class="town-name">岡田一丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 605 / 犯罪 5件 / 医療 5件</div>
+</a>
+<a href="一之宮4/" class="town-card">
+<div class="town-name">一之宮四丁目</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 1,691 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="宮山/" class="town-card">
+<div class="town-name">宮山</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 7,550 / 犯罪 31件 / 医療 3件</div>
+</a>
+<a href="大蔵/" class="town-card">
+<div class="town-name">大蔵</div>
+<div class="town-score" style="color:#f39c12">48.9点</div>
+<div class="town-meta">人口 574 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="岡田2/" class="town-card">
+<div class="town-name">岡田二丁目</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 831 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="一之宮2/" class="town-card">
+<div class="town-name">一之宮二丁目</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 1,412 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="一之宮7/" class="town-card">
+<div class="town-name">一之宮七丁目</div>
+<div class="town-score" style="color:#f39c12">48.1点</div>
+<div class="town-meta">人口 1,274 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大曲2/" class="town-card">
+<div class="town-name">大曲二丁目</div>
+<div class="town-score" style="color:#f39c12">46.2点</div>
+<div class="town-meta">人口 459 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="一之宮8/" class="town-card">
+<div class="town-name">一之宮八丁目</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 786 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大曲1/" class="town-card">
+<div class="town-name">大曲一丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 1,477 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="小谷4/" class="town-card">
+<div class="town-name">小谷四丁目</div>
+<div class="town-score" style="color:#f39c12">43.0点</div>
+<div class="town-meta">人口 207 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="田端/" class="town-card">
+<div class="town-name">田端</div>
+<div class="town-score" style="color:#f39c12">40.5点</div>
+<div class="town-meta">人口 1,239 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="岡田/" class="town-card">
+<div class="town-name">岡田</div>
+<div class="town-score" style="color:#e74c3c">38.7点</div>
+<div class="town-meta">人口 354 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="一之宮5/" class="town-card">
+<div class="town-name">一之宮五丁目</div>
+<div class="town-score" style="color:#e74c3c">36.3点</div>
+<div class="town-meta">人口 705 / 犯罪 4件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

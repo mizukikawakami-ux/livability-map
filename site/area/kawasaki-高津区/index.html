@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>川崎市高津区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="川崎市高津区の全72エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 川崎市高津区</div>
+<h2>川崎市高津区 全72エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">234,328</div><div class="label">人口</div></div>
+<div><div class="value">45.9</div><div class="label">平均スコア</div></div>
+<div><div class="value">472</div><div class="label">犯罪件数</div></div>
+<div><div class="value">249</div><div class="label">医療施設</div></div>
+<div><div class="value">100</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="下野毛2/" class="town-card">
+<div class="town-name">下野毛二丁目</div>
+<div class="town-score" style="color:#2ecc71">64.3点</div>
+<div class="town-meta">人口 1,161 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="久本1/" class="town-card">
+<div class="town-name">久本一丁目</div>
+<div class="town-score" style="color:#2ecc71">63.0点</div>
+<div class="town-meta">人口 2,178 / 犯罪 1件 / 医療 7件</div>
+</a>
+<a href="梶ケ谷2/" class="town-card">
+<div class="town-name">梶ケ谷二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.5点</div>
+<div class="town-meta">人口 3,087 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="新作5/" class="town-card">
+<div class="town-name">新作五丁目</div>
+<div class="town-score" style="color:#f39c12">59.9点</div>
+<div class="town-meta">人口 3,897 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="溝口3/" class="town-card">
+<div class="town-name">溝口三丁目</div>
+<div class="town-score" style="color:#f39c12">58.8点</div>
+<div class="town-meta">人口 3,863 / 犯罪 11件 / 医療 10件</div>
+</a>
+<a href="末長2/" class="town-card">
+<div class="town-name">末長二丁目</div>
+<div class="town-score" style="color:#f39c12">58.7点</div>
+<div class="town-meta">人口 4,083 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="新作6/" class="town-card">
+<div class="town-name">新作六丁目</div>
+<div class="town-score" style="color:#f39c12">57.9点</div>
+<div class="town-meta">人口 4,208 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="溝口4/" class="town-card">
+<div class="town-name">溝口四丁目</div>
+<div class="town-score" style="color:#f39c12">57.1点</div>
+<div class="town-meta">人口 1,767 / 犯罪 5件 / 医療 7件</div>
+</a>
+<a href="二子6/" class="town-card">
+<div class="town-name">二子六丁目</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 1,563 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="下作延5/" class="town-card">
+<div class="town-name">下作延五丁目</div>
+<div class="town-score" style="color:#f39c12">55.9点</div>
+<div class="town-meta">人口 2,952 / 犯罪 9件 / 医療 3件</div>
+</a>
+<a href="千年新町/" class="town-card">
+<div class="town-name">千年新町</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 2,895 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="二子1/" class="town-card">
+<div class="town-name">二子一丁目</div>
+<div class="town-score" style="color:#f39c12">55.0点</div>
+<div class="town-meta">人口 4,785 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="久地4/" class="town-card">
+<div class="town-name">久地四丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 3,380 / 犯罪 6件 / 医療 9件</div>
+</a>
+<a href="末長1/" class="town-card">
+<div class="town-name">末長一丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 8,514 / 犯罪 6件 / 医療 19件</div>
+</a>
+<a href="千年/" class="town-card">
+<div class="town-name">千年</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 5,145 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="久末/" class="town-card">
+<div class="town-name">久末</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 4,160 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="溝口5/" class="town-card">
+<div class="town-name">溝口五丁目</div>
+<div class="town-score" style="color:#f39c12">54.1点</div>
+<div class="town-meta">人口 3,313 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="二子5/" class="town-card">
+<div class="town-name">二子五丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 1,676 / 犯罪 2件 / 医療 6件</div>
+</a>
+<a href="下作延7/" class="town-card">
+<div class="town-name">下作延七丁目</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 2,166 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="梶ケ谷4/" class="town-card">
+<div class="town-name">梶ケ谷四丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 1,433 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="二子2/" class="town-card">
+<div class="town-name">二子二丁目</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 2,456 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="諏訪3/" class="town-card">
+<div class="town-name">諏訪三丁目</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 2,834 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="坂戸1/" class="town-card">
+<div class="town-name">坂戸一丁目</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 2,608 / 犯罪 9件 / 医療 4件</div>
+</a>
+<a href="梶ケ谷5/" class="town-card">
+<div class="town-name">梶ケ谷五丁目</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 1,464 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="下作延6/" class="town-card">
+<div class="town-name">下作延六丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 2,957 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="梶ケ谷1/" class="town-card">
+<div class="town-name">梶ケ谷一丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 666 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="梶ケ谷3/" class="town-card">
+<div class="town-name">梶ケ谷三丁目</div>
+<div class="town-score" style="color:#f39c12">50.0点</div>
+<div class="town-meta">人口 2,495 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="下作延2/" class="town-card">
+<div class="town-name">下作延二丁目</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 5,907 / 犯罪 2件 / 医療 17件</div>
+</a>
+<a href="諏訪1/" class="town-card">
+<div class="town-name">諏訪一丁目</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 1,994 / 犯罪 3件 / 医療 6件</div>
+</a>
+<a href="上作延/" class="town-card">
+<div class="town-name">上作延</div>
+<div class="town-score" style="color:#f39c12">48.0点</div>
+<div class="town-meta">人口 11,115 / 犯罪 11件 / 医療 5件</div>
+</a>
+<a href="新作4/" class="town-card">
+<div class="town-name">新作四丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 2,718 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="下作延3/" class="town-card">
+<div class="town-name">下作延三丁目</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 4,282 / 犯罪 3件 / 医療 5件</div>
+</a>
+<a href="末長3/" class="town-card">
+<div class="town-name">末長三丁目</div>
+<div class="town-score" style="color:#f39c12">47.4点</div>
+<div class="town-meta">人口 4,889 / 犯罪 6件 / 医療 5件</div>
+</a>
+<a href="子母口/" class="town-card">
+<div class="town-name">子母口</div>
+<div class="town-score" style="color:#f39c12">47.1点</div>
+<div class="town-meta">人口 644 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="久本2/" class="town-card">
+<div class="town-name">久本二丁目</div>
+<div class="town-score" style="color:#f39c12">47.0点</div>
+<div class="town-meta">人口 3,126 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="二子3/" class="town-card">
+<div class="town-name">二子三丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 2,931 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="久地3/" class="town-card">
+<div class="town-name">久地三丁目</div>
+<div class="town-score" style="color:#f39c12">46.4点</div>
+<div class="town-meta">人口 4,055 / 犯罪 21件 / 医療 0件</div>
+</a>
+<a href="久末/" class="town-card">
+<div class="town-name">久末</div>
+<div class="town-score" style="color:#f39c12">45.8点</div>
+<div class="town-meta">人口 7,961 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="二子4/" class="town-card">
+<div class="town-name">二子四丁目</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 1,856 / 犯罪 6件 / 医療 0件</div>
+</a>
+<a href="久地2/" class="town-card">
+<div class="town-name">久地二丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 2,497 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="坂戸3/" class="town-card">
+<div class="town-name">坂戸三丁目</div>
+<div class="town-score" style="color:#f39c12">44.2点</div>
+<div class="town-meta">人口 4,017 / 犯罪 24件 / 医療 3件</div>
+</a>
+<a href="新作2/" class="town-card">
+<div class="town-name">新作二丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 1,739 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="東野川2/" class="town-card">
+<div class="town-name">東野川二丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 1,968 / 犯罪 5件 / 医療 4件</div>
+</a>
+<a href="北見方1/" class="town-card">
+<div class="town-name">北見方一丁目</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 2,720 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="瀬田/" class="town-card">
+<div class="town-name">瀬田</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 893 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="東野川1/" class="town-card">
+<div class="town-name">東野川一丁目</div>
+<div class="town-score" style="color:#f39c12">42.1点</div>
+<div class="town-meta">人口 2,179 / 犯罪 15件 / 医療 5件</div>
+</a>
+<a href="下野毛3/" class="town-card">
+<div class="town-name">下野毛三丁目</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 1,495 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="向ケ丘/" class="town-card">
+<div class="town-name">向ケ丘</div>
+<div class="town-score" style="color:#f39c12">41.3点</div>
+<div class="town-meta">人口 2,434 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="久本3/" class="town-card">
+<div class="town-name">久本三丁目</div>
+<div class="town-score" style="color:#f39c12">41.0点</div>
+<div class="town-meta">人口 7,530 / 犯罪 32件 / 医療 14件</div>
+</a>
+<a href="北野川/" class="town-card">
+<div class="town-name">北野川</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 380 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="溝口1/" class="town-card">
+<div class="town-name">溝口一丁目</div>
+<div class="town-score" style="color:#f39c12">40.3点</div>
+<div class="town-meta">人口 1,460 / 犯罪 51件 / 医療 27件</div>
+</a>
+<a href="北見方2/" class="town-card">
+<div class="town-name">北見方二丁目</div>
+<div class="town-score" style="color:#f39c12">40.2点</div>
+<div class="town-meta">人口 5,552 / 犯罪 7件 / 医療 2件</div>
+</a>
+<a href="新作1/" class="town-card">
+<div class="town-name">新作一丁目</div>
+<div class="town-score" style="color:#f39c12">40.0点</div>
+<div class="town-meta">人口 1,200 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="蟹ケ谷/" class="town-card">
+<div class="town-name">蟹ケ谷</div>
+<div class="town-score" style="color:#e74c3c">39.9点</div>
+<div class="town-meta">人口 8,298 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="下作延4/" class="town-card">
+<div class="town-name">下作延四丁目</div>
+<div class="town-score" style="color:#e74c3c">39.7点</div>
+<div class="town-meta">人口 3,487 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="溝口2/" class="town-card">
+<div class="town-name">溝口二丁目</div>
+<div class="town-score" style="color:#e74c3c">38.0点</div>
+<div class="town-meta">人口 3,368 / 犯罪 29件 / 医療 13件</div>
+</a>
+<a href="末長4/" class="town-card">
+<div class="town-name">末長四丁目</div>
+<div class="town-score" style="color:#e74c3c">37.9点</div>
+<div class="town-meta">人口 5,005 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="北見方3/" class="town-card">
+<div class="town-name">北見方三丁目</div>
+<div class="town-score" style="color:#e74c3c">36.8点</div>
+<div class="town-meta">人口 1,370 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="千年/" class="town-card">
+<div class="town-name">千年</div>
+<div class="town-score" style="color:#e74c3c">36.8点</div>
+<div class="town-meta">人口 8,325 / 犯罪 15件 / 医療 3件</div>
+</a>
+<a href="新作3/" class="town-card">
+<div class="town-name">新作三丁目</div>
+<div class="town-score" style="color:#e74c3c">35.6点</div>
+<div class="town-meta">人口 2,683 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="子母口/" class="town-card">
+<div class="town-name">子母口</div>
+<div class="town-score" style="color:#e74c3c">34.5点</div>
+<div class="town-meta">人口 9,216 / 犯罪 28件 / 医療 8件</div>
+</a>
+<a href="梶ケ谷6/" class="town-card">
+<div class="town-name">梶ケ谷六丁目</div>
+<div class="town-score" style="color:#e74c3c">33.9点</div>
+<div class="town-meta">人口 1,537 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="坂戸2/" class="town-card">
+<div class="town-name">坂戸二丁目</div>
+<div class="town-score" style="color:#e74c3c">33.8点</div>
+<div class="town-meta">人口 2,710 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="諏訪2/" class="town-card">
+<div class="town-name">諏訪二丁目</div>
+<div class="town-score" style="color:#e74c3c">33.7点</div>
+<div class="town-meta">人口 1,973 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="明津/" class="town-card">
+<div class="town-name">明津</div>
+<div class="town-score" style="color:#e74c3c">33.3点</div>
+<div class="town-meta">人口 3,376 / 犯罪 15件 / 医療 1件</div>
+</a>
+<a href="溝口6/" class="town-card">
+<div class="town-name">溝口六丁目</div>
+<div class="town-score" style="color:#e74c3c">33.0点</div>
+<div class="town-meta">人口 3,133 / 犯罪 11件 / 医療 0件</div>
+</a>
+<a href="下野毛1/" class="town-card">
+<div class="town-name">下野毛一丁目</div>
+<div class="town-score" style="color:#e74c3c">32.7点</div>
+<div class="town-meta">人口 1,282 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="宇奈根/" class="town-card">
+<div class="town-name">宇奈根</div>
+<div class="town-score" style="color:#e74c3c">32.2点</div>
+<div class="town-meta">人口 1,642 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="下作延1/" class="town-card">
+<div class="town-name">下作延一丁目</div>
+<div class="town-score" style="color:#e74c3c">32.0点</div>
+<div class="town-meta">人口 1,099 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="久地/" class="town-card">
+<div class="town-name">久地</div>
+<div class="town-score" style="color:#e74c3c">30.6点</div>
+<div class="town-meta">人口 619 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="久地1/" class="town-card">
+<div class="town-name">久地一丁目</div>
+<div class="town-score" style="color:#e74c3c">28.5点</div>
+<div class="town-meta">人口 3,079 / 犯罪 7件 / 医療 0件</div>
+</a>
+<a href="久末/" class="town-card">
+<div class="town-name">久末</div>
+<div class="town-score" style="color:#e74c3c">27.9点</div>
+<div class="town-meta">人口 2,878 / 犯罪 28件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

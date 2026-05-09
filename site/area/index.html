@@ -1,431 +1,344 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>青葉区 エリア別住みやすさ一覧 - 青葉区住みやすさマップ</title>
-    <meta name="description" content="横浜市青葉区の全77エリアの住みやすさスコアを一覧で比較。犯罪・交通事故・医療・保育・地価のデータから算出。">
-    <style>
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif; background:#f8f9fa; color:#333; }
-        .header { background:#1a1a2e; color:#fff; padding:16px 24px; }
-        .header h1 { font-size:1.1rem; }
-        .header a { color:#8ab4f8; text-decoration:none; }
-        .container { max-width:1000px; margin:0 auto; padding:24px 16px; }
-        .breadcrumb { font-size:0.8rem; color:#666; margin-bottom:16px; }
-        .breadcrumb a { color:#1a73e8; text-decoration:none; }
-        h2 { font-size:1.4rem; margin-bottom:16px; color:#1a1a2e; }
-        .town-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:12px; }
-        .town-card { display:block; background:#fff; border-radius:8px; padding:16px; text-decoration:none; color:#333; box-shadow:0 1px 3px rgba(0,0,0,0.08); transition:box-shadow 0.2s; }
-        .town-card:hover { box-shadow:0 4px 12px rgba(0,0,0,0.15); }
-        .town-name { font-weight:700; font-size:1rem; margin-bottom:4px; }
-        .town-score { font-size:1.3rem; font-weight:700; margin-bottom:4px; }
-        .town-meta { font-size:0.72rem; color:#888; }
-        .footer { background:#1a1a2e; color:#aaa; padding:16px 24px; font-size:0.72rem; margin-top:40px; text-align:center; }
-        .footer a { color:#8ab4f8; text-decoration:none; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神奈川県 市区町村別住みやすさ一覧</title>
+<meta name="description" content="神奈川県の全58市区町村の住みやすさスコアを比較。治安・交通・医療・子育て・コスト・交通利便性・公園の7軸で評価。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.muni-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.muni-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.muni-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.muni-name{font-weight:700;font-size:1.1rem;margin-bottom:4px}.muni-score{font-size:1.4rem;font-weight:700;margin-bottom:4px}.muni-meta{font-size:.75rem;color:#888}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
 </head>
 <body>
-    <div class="header">
-        <h1><a href="../">青葉区 住みやすさマップ</a></h1>
-    </div>
-    <div class="container">
-        <div class="breadcrumb">
-            <a href="../">トップ</a> &gt; エリア一覧
-        </div>
-        <h2>青葉区 全77エリアの住みやすさ</h2>
-        <div class="town-grid">
-            
-            <a href="あかね台1/" class="town-card">
-                <div class="town-name">あかね台一丁目</div>
-                <div class="town-score" style="color:#f39c12">54点</div>
-                <div class="town-meta">人口 2,728 / 犯罪 8件 / 医療 1件</div>
-            </a>
-            <a href="あかね台2/" class="town-card">
-                <div class="town-name">あかね台二丁目</div>
-                <div class="town-score" style="color:#f39c12">52点</div>
-                <div class="town-meta">人口 2,262 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="あざみ野1/" class="town-card">
-                <div class="town-name">あざみ野一丁目</div>
-                <div class="town-score" style="color:#2ecc71">61点</div>
-                <div class="town-meta">人口 4,392 / 犯罪 7件 / 医療 6件</div>
-            </a>
-            <a href="あざみ野3/" class="town-card">
-                <div class="town-name">あざみ野三丁目</div>
-                <div class="town-score" style="color:#f39c12">54点</div>
-                <div class="town-meta">人口 4,782 / 犯罪 3件 / 医療 1件</div>
-            </a>
-            <a href="あざみ野2/" class="town-card">
-                <div class="town-name">あざみ野二丁目</div>
-                <div class="town-score" style="color:#2ecc71">62点</div>
-                <div class="town-meta">人口 3,272 / 犯罪 15件 / 医療 8件</div>
-            </a>
-            <a href="あざみ野南1/" class="town-card">
-                <div class="town-name">あざみ野南一丁目</div>
-                <div class="town-score" style="color:#f39c12">48点</div>
-                <div class="town-meta">人口 1,966 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="あざみ野南3/" class="town-card">
-                <div class="town-name">あざみ野南三丁目</div>
-                <div class="town-score" style="color:#f39c12">49点</div>
-                <div class="town-meta">人口 992 / 犯罪 0件 / 医療 0件</div>
-            </a>
-            <a href="あざみ野南2/" class="town-card">
-                <div class="town-name">あざみ野南二丁目</div>
-                <div class="town-score" style="color:#f39c12">51点</div>
-                <div class="town-meta">人口 1,663 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="あざみ野南4/" class="town-card">
-                <div class="town-name">あざみ野南四丁目</div>
-                <div class="town-score" style="color:#f39c12">58点</div>
-                <div class="town-meta">人口 1,333 / 犯罪 0件 / 医療 3件</div>
-            </a>
-            <a href="あざみ野4/" class="town-card">
-                <div class="town-name">あざみ野四丁目</div>
-                <div class="town-score" style="color:#f39c12">48点</div>
-                <div class="town-meta">人口 4,588 / 犯罪 3件 / 医療 1件</div>
-            </a>
-            <a href="さつきが丘/" class="town-card">
-                <div class="town-name">さつきが丘</div>
-                <div class="town-score" style="color:#f39c12">54点</div>
-                <div class="town-meta">人口 3,653 / 犯罪 1件 / 医療 3件</div>
-            </a>
-            <a href="しらとり台/" class="town-card">
-                <div class="town-name">しらとり台</div>
-                <div class="town-score" style="color:#2ecc71">72点</div>
-                <div class="town-meta">人口 7,723 / 犯罪 7件 / 医療 11件</div>
-            </a>
-            <a href="すすき野1/" class="town-card">
-                <div class="town-name">すすき野一丁目</div>
-                <div class="town-score" style="color:#f39c12">50点</div>
-                <div class="town-meta">人口 2,294 / 犯罪 1件 / 医療 1件</div>
-            </a>
-            <a href="すすき野3/" class="town-card">
-                <div class="town-name">すすき野三丁目</div>
-                <div class="town-score" style="color:#2ecc71">63点</div>
-                <div class="town-meta">人口 3,289 / 犯罪 2件 / 医療 5件</div>
-            </a>
-            <a href="すすき野2/" class="town-card">
-                <div class="town-name">すすき野二丁目</div>
-                <div class="town-score" style="color:#f39c12">58点</div>
-                <div class="town-meta">人口 2,797 / 犯罪 2件 / 医療 3件</div>
-            </a>
-            <a href="すみよし台/" class="town-card">
-                <div class="town-name">すみよし台</div>
-                <div class="town-score" style="color:#f39c12">50点</div>
-                <div class="town-meta">人口 4,755 / 犯罪 12件 / 医療 0件</div>
-            </a>
-            <a href="たちばな台1/" class="town-card">
-                <div class="town-name">たちばな台一丁目</div>
-                <div class="town-score" style="color:#f39c12">44点</div>
-                <div class="town-meta">人口 2,988 / 犯罪 2件 / 医療 0件</div>
-            </a>
-            <a href="たちばな台2/" class="town-card">
-                <div class="town-name">たちばな台二丁目</div>
-                <div class="town-score" style="color:#2ecc71">61点</div>
-                <div class="town-meta">人口 3,062 / 犯罪 4件 / 医療 4件</div>
-            </a>
-            <a href="つつじが丘/" class="town-card">
-                <div class="town-name">つつじが丘</div>
-                <div class="town-score" style="color:#2ecc71">65点</div>
-                <div class="town-meta">人口 5,648 / 犯罪 1件 / 医療 8件</div>
-            </a>
-            <a href="みすずが丘/" class="town-card">
-                <div class="town-name">みすずが丘</div>
-                <div class="town-score" style="color:#f39c12">56点</div>
-                <div class="town-meta">人口 1,194 / 犯罪 0件 / 医療 2件</div>
-            </a>
-            <a href="みたけ台/" class="town-card">
-                <div class="town-name">みたけ台</div>
-                <div class="town-score" style="color:#2ecc71">64点</div>
-                <div class="town-meta">人口 4,916 / 犯罪 3件 / 医療 4件</div>
-            </a>
-            <a href="もえぎ野/" class="town-card">
-                <div class="town-name">もえぎ野</div>
-                <div class="town-score" style="color:#2ecc71">60点</div>
-                <div class="town-meta">人口 3,682 / 犯罪 1件 / 医療 5件</div>
-            </a>
-            <a href="もみの木台/" class="town-card">
-                <div class="town-name">もみの木台</div>
-                <div class="town-score" style="color:#f39c12">46点</div>
-                <div class="town-meta">人口 1,906 / 犯罪 2件 / 医療 0件</div>
-            </a>
-            <a href="上谷本町/" class="town-card">
-                <div class="town-name">上谷本町</div>
-                <div class="town-score" style="color:#e74c3c">38点</div>
-                <div class="town-meta">人口 95 / 犯罪 1件 / 医療 5件</div>
-            </a>
-            <a href="下谷本町/" class="town-card">
-                <div class="town-name">下谷本町</div>
-                <div class="town-score" style="color:#e74c3c">23点</div>
-                <div class="town-meta">人口 79 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="元石川町/" class="town-card">
-                <div class="town-name">元石川町</div>
-                <div class="town-score" style="color:#f39c12">52点</div>
-                <div class="town-meta">人口 3,065 / 犯罪 7件 / 医療 5件</div>
-            </a>
-            <a href="千草台/" class="town-card">
-                <div class="town-name">千草台</div>
-                <div class="town-score" style="color:#f39c12">58点</div>
-                <div class="town-meta">人口 6,679 / 犯罪 5件 / 医療 1件</div>
-            </a>
-            <a href="大場町/" class="town-card">
-                <div class="town-name">大場町</div>
-                <div class="town-score" style="color:#f39c12">51点</div>
-                <div class="town-meta">人口 9,214 / 犯罪 11件 / 医療 1件</div>
-            </a>
-            <a href="奈良1/" class="town-card">
-                <div class="town-name">奈良一丁目</div>
-                <div class="town-score" style="color:#2ecc71">65点</div>
-                <div class="town-meta">人口 746 / 犯罪 1件 / 医療 12件</div>
-            </a>
-            <a href="奈良3/" class="town-card">
-                <div class="town-name">奈良三丁目</div>
-                <div class="town-score" style="color:#2ecc71">62点</div>
-                <div class="town-meta">人口 2,798 / 犯罪 1件 / 医療 2件</div>
-            </a>
-            <a href="奈良2/" class="town-card">
-                <div class="town-name">奈良二丁目</div>
-                <div class="town-score" style="color:#f39c12">47点</div>
-                <div class="town-meta">人口 1,850 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="奈良5/" class="town-card">
-                <div class="town-name">奈良五丁目</div>
-                <div class="town-score" style="color:#2ecc71">61点</div>
-                <div class="town-meta">人口 2,344 / 犯罪 1件 / 医療 6件</div>
-            </a>
-            <a href="奈良4/" class="town-card">
-                <div class="town-name">奈良四丁目</div>
-                <div class="town-score" style="color:#f39c12">52点</div>
-                <div class="town-meta">人口 2,905 / 犯罪 1件 / 医療 2件</div>
-            </a>
-            <a href="奈良町/" class="town-card">
-                <div class="town-name">奈良町</div>
-                <div class="town-score" style="color:#e74c3c">33点</div>
-                <div class="town-meta">人口 846 / 犯罪 8件 / 医療 1件</div>
-            </a>
-            <a href="市ケ尾町/" class="town-card">
-                <div class="town-name">市ケ尾町</div>
-                <div class="town-score" style="color:#2ecc71">63点</div>
-                <div class="town-meta">人口 5,418 / 犯罪 12件 / 医療 4件</div>
-            </a>
-            <a href="恩田町/" class="town-card">
-                <div class="town-name">恩田町</div>
-                <div class="town-score" style="color:#f39c12">51点</div>
-                <div class="town-meta">人口 3,107 / 犯罪 3件 / 医療 5件</div>
-            </a>
-            <a href="成合町/" class="town-card">
-                <div class="town-name">成合町</div>
-                <div class="town-score" style="color:#f39c12">50点</div>
-                <div class="town-meta">人口 45 / 犯罪 0件 / 医療 0件</div>
-            </a>
-            <a href="新石川1/" class="town-card">
-                <div class="town-name">新石川一丁目</div>
-                <div class="town-score" style="color:#f39c12">51点</div>
-                <div class="town-meta">人口 4,351 / 犯罪 14件 / 医療 0件</div>
-            </a>
-            <a href="新石川3/" class="town-card">
-                <div class="town-name">新石川三丁目</div>
-                <div class="town-score" style="color:#f39c12">58点</div>
-                <div class="town-meta">人口 3,480 / 犯罪 6件 / 医療 0件</div>
-            </a>
-            <a href="新石川2/" class="town-card">
-                <div class="town-name">新石川二丁目</div>
-                <div class="town-score" style="color:#2ecc71">65点</div>
-                <div class="town-meta">人口 3,905 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="新石川4/" class="town-card">
-                <div class="town-name">新石川四丁目</div>
-                <div class="town-score" style="color:#f39c12">48点</div>
-                <div class="town-meta">人口 4,247 / 犯罪 4件 / 医療 0件</div>
-            </a>
-            <a href="松風台/" class="town-card">
-                <div class="town-name">松風台</div>
-                <div class="town-score" style="color:#2ecc71">71点</div>
-                <div class="town-meta">人口 6,323 / 犯罪 6件 / 医療 7件</div>
-            </a>
-            <a href="柿の木台/" class="town-card">
-                <div class="town-name">柿の木台</div>
-                <div class="town-score" style="color:#2ecc71">68点</div>
-                <div class="town-meta">人口 5,113 / 犯罪 2件 / 医療 6件</div>
-            </a>
-            <a href="桂台1/" class="town-card">
-                <div class="town-name">桂台一丁目</div>
-                <div class="town-score" style="color:#f39c12">57点</div>
-                <div class="town-meta">人口 2,309 / 犯罪 3件 / 医療 2件</div>
-            </a>
-            <a href="桂台2/" class="town-card">
-                <div class="town-name">桂台二丁目</div>
-                <div class="town-score" style="color:#f39c12">50点</div>
-                <div class="town-meta">人口 4,206 / 犯罪 3件 / 医療 3件</div>
-            </a>
-            <a href="桜台/" class="town-card">
-                <div class="town-name">桜台</div>
-                <div class="town-score" style="color:#2ecc71">64点</div>
-                <div class="town-meta">人口 7,005 / 犯罪 5件 / 医療 5件</div>
-            </a>
-            <a href="梅が丘/" class="town-card">
-                <div class="town-name">梅が丘</div>
-                <div class="town-score" style="color:#2ecc71">60点</div>
-                <div class="town-meta">人口 5,216 / 犯罪 0件 / 医療 2件</div>
-            </a>
-            <a href="榎が丘/" class="town-card">
-                <div class="town-name">榎が丘</div>
-                <div class="town-score" style="color:#2ecc71">82点</div>
-                <div class="town-meta">人口 5,939 / 犯罪 7件 / 医療 10件</div>
-            </a>
-            <a href="田奈町/" class="town-card">
-                <div class="town-name">田奈町</div>
-                <div class="town-score" style="color:#2ecc71">67点</div>
-                <div class="town-meta">人口 4,820 / 犯罪 4件 / 医療 12件</div>
-            </a>
-            <a href="美しが丘1/" class="town-card">
-                <div class="town-name">美しが丘一丁目</div>
-                <div class="town-score" style="color:#f39c12">59点</div>
-                <div class="town-meta">人口 5,482 / 犯罪 7件 / 医療 0件</div>
-            </a>
-            <a href="美しが丘3/" class="town-card">
-                <div class="town-name">美しが丘三丁目</div>
-                <div class="town-score" style="color:#f39c12">54点</div>
-                <div class="town-meta">人口 2,730 / 犯罪 1件 / 医療 1件</div>
-            </a>
-            <a href="美しが丘2/" class="town-card">
-                <div class="town-name">美しが丘二丁目</div>
-                <div class="town-score" style="color:#2ecc71">64点</div>
-                <div class="town-meta">人口 7,482 / 犯罪 5件 / 医療 0件</div>
-            </a>
-            <a href="美しが丘5/" class="town-card">
-                <div class="town-name">美しが丘五丁目</div>
-                <div class="town-score" style="color:#f39c12">58点</div>
-                <div class="town-meta">人口 5,156 / 犯罪 2件 / 医療 1件</div>
-            </a>
-            <a href="美しが丘4/" class="town-card">
-                <div class="town-name">美しが丘四丁目</div>
-                <div class="town-score" style="color:#f39c12">53点</div>
-                <div class="town-meta">人口 5,886 / 犯罪 1件 / 医療 1件</div>
-            </a>
-            <a href="美しが丘西1/" class="town-card">
-                <div class="town-name">美しが丘西一丁目</div>
-                <div class="town-score" style="color:#f39c12">49点</div>
-                <div class="town-meta">人口 2,126 / 犯罪 0件 / 医療 0件</div>
-            </a>
-            <a href="美しが丘西3/" class="town-card">
-                <div class="town-name">美しが丘西三丁目</div>
-                <div class="town-score" style="color:#2ecc71">68点</div>
-                <div class="town-meta">人口 4,719 / 犯罪 3件 / 医療 8件</div>
-            </a>
-            <a href="美しが丘西2/" class="town-card">
-                <div class="town-name">美しが丘西二丁目</div>
-                <div class="town-score" style="color:#f39c12">55点</div>
-                <div class="town-meta">人口 4,294 / 犯罪 4件 / 医療 4件</div>
-            </a>
-            <a href="若草台/" class="town-card">
-                <div class="town-name">若草台</div>
-                <div class="town-score" style="color:#f39c12">59点</div>
-                <div class="town-meta">人口 3,082 / 犯罪 0件 / 医療 5件</div>
-            </a>
-            <a href="荏子田1/" class="town-card">
-                <div class="town-name">荏子田一丁目</div>
-                <div class="town-score" style="color:#f39c12">59点</div>
-                <div class="town-meta">人口 1,164 / 犯罪 0件 / 医療 1件</div>
-            </a>
-            <a href="荏子田3/" class="town-card">
-                <div class="town-name">荏子田三丁目</div>
-                <div class="town-score" style="color:#f39c12">50点</div>
-                <div class="town-meta">人口 1,959 / 犯罪 2件 / 医療 1件</div>
-            </a>
-            <a href="荏子田2/" class="town-card">
-                <div class="town-name">荏子田二丁目</div>
-                <div class="town-score" style="color:#2ecc71">70点</div>
-                <div class="town-meta">人口 3,543 / 犯罪 0件 / 医療 7件</div>
-            </a>
-            <a href="荏田北1/" class="town-card">
-                <div class="town-name">荏田北一丁目</div>
-                <div class="town-score" style="color:#f39c12">54点</div>
-                <div class="town-meta">人口 2,081 / 犯罪 1件 / 医療 1件</div>
-            </a>
-            <a href="荏田北3/" class="town-card">
-                <div class="town-name">荏田北三丁目</div>
-                <div class="town-score" style="color:#2ecc71">60点</div>
-                <div class="town-meta">人口 1,682 / 犯罪 2件 / 医療 5件</div>
-            </a>
-            <a href="荏田北2/" class="town-card">
-                <div class="town-name">荏田北二丁目</div>
-                <div class="town-score" style="color:#f39c12">56点</div>
-                <div class="town-meta">人口 1,593 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="荏田町/" class="town-card">
-                <div class="town-name">荏田町</div>
-                <div class="town-score" style="color:#f39c12">40点</div>
-                <div class="town-meta">人口 0 / 犯罪 10件 / 医療 0件</div>
-            </a>
-            <a href="荏田西1/" class="town-card">
-                <div class="town-name">荏田西一丁目</div>
-                <div class="town-score" style="color:#e74c3c">38点</div>
-                <div class="town-meta">人口 2,659 / 犯罪 2件 / 医療 0件</div>
-            </a>
-            <a href="荏田西3/" class="town-card">
-                <div class="town-name">荏田西三丁目</div>
-                <div class="town-score" style="color:#f39c12">55点</div>
-                <div class="town-meta">人口 2,740 / 犯罪 0件 / 医療 1件</div>
-            </a>
-            <a href="荏田西2/" class="town-card">
-                <div class="town-name">荏田西二丁目</div>
-                <div class="town-score" style="color:#f39c12">47点</div>
-                <div class="town-meta">人口 3,737 / 犯罪 4件 / 医療 0件</div>
-            </a>
-            <a href="荏田西5/" class="town-card">
-                <div class="town-name">荏田西五丁目</div>
-                <div class="town-score" style="color:#f39c12">51点</div>
-                <div class="town-meta">人口 1,466 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="荏田西4/" class="town-card">
-                <div class="town-name">荏田西四丁目</div>
-                <div class="town-score" style="color:#f39c12">52点</div>
-                <div class="town-meta">人口 1,708 / 犯罪 1件 / 医療 0件</div>
-            </a>
-            <a href="藤が丘1/" class="town-card">
-                <div class="town-name">藤が丘一丁目</div>
-                <div class="town-score" style="color:#2ecc71">79点</div>
-                <div class="town-meta">人口 7,893 / 犯罪 1件 / 医療 20件</div>
-            </a>
-            <a href="藤が丘2/" class="town-card">
-                <div class="town-name">藤が丘二丁目</div>
-                <div class="town-score" style="color:#2ecc71">74点</div>
-                <div class="town-meta">人口 8,232 / 犯罪 3件 / 医療 16件</div>
-            </a>
-            <a href="鉄町/" class="town-card">
-                <div class="town-name">鉄町</div>
-                <div class="town-score" style="color:#f39c12">44点</div>
-                <div class="town-meta">人口 2,925 / 犯罪 6件 / 医療 4件</div>
-            </a>
-            <a href="青葉台1/" class="town-card">
-                <div class="town-name">青葉台一丁目</div>
-                <div class="town-score" style="color:#2ecc71">79点</div>
-                <div class="town-meta">人口 4,203 / 犯罪 12件 / 医療 23件</div>
-            </a>
-            <a href="青葉台2/" class="town-card">
-                <div class="town-name">青葉台二丁目</div>
-                <div class="town-score" style="color:#f39c12">52点</div>
-                <div class="town-meta">人口 5,249 / 犯罪 52件 / 医療 24件</div>
-            </a>
-            <a href="鴨志田町/" class="town-card">
-                <div class="town-name">鴨志田町</div>
-                <div class="town-score" style="color:#f39c12">40点</div>
-                <div class="town-meta">人口 0 / 犯罪 18件 / 医療 0件</div>
-            </a>
-            <a href="黒須田/" class="town-card">
-                <div class="town-name">黒須田</div>
-                <div class="town-score" style="color:#2ecc71">60点</div>
-                <div class="town-meta">人口 3,061 / 犯罪 11件 / 医療 5件</div>
-            </a>
-        </div>
-    </div>
-    <div class="footer">
-        データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat・横浜市オープンデータ<br>
-        <a href="../">青葉区 住みやすさマップ</a>
-    </div>
-</body>
-</html>
+<div class="header"><h1><a href="../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../">トップ</a> &gt; エリア一覧</div>
+<h2>神奈川県 全58市区町村の住みやすさ</h2>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+</div>
+<div class="muni-grid" id="muniGrid">
+<a href="湯河原町/" class="muni-card">
+<div class="muni-name">湯河原町</div>
+<div class="muni-score" style="color:#f39c12">57.1点</div>
+<div class="muni-meta">人口 23,426 / 22エリア / 犯罪 12件</div>
+</a>
+<a href="二宮町/" class="muni-card">
+<div class="muni-name">二宮町</div>
+<div class="muni-score" style="color:#f39c12">56.5点</div>
+<div class="muni-meta">人口 27,564 / 39エリア / 犯罪 49件</div>
+</a>
+<a href="開成町/" class="muni-card">
+<div class="muni-name">開成町</div>
+<div class="muni-score" style="color:#f39c12">54.9点</div>
+<div class="muni-meta">人口 18,329 / 19エリア / 犯罪 5件</div>
+</a>
+<a href="kawasaki-麻生区/" class="muni-card">
+<div class="muni-name">川崎市麻生区</div>
+<div class="muni-score" style="color:#f39c12">54.0点</div>
+<div class="muni-meta">人口 180,705 / 118エリア / 犯罪 101件</div>
+</a>
+<a href="yokohama-青葉区/" class="muni-card">
+<div class="muni-name">横浜市青葉区</div>
+<div class="muni-score" style="color:#f39c12">53.9点</div>
+<div class="muni-meta">人口 310,756 / 84エリア / 犯罪 344件</div>
+</a>
+<a href="松田町/" class="muni-card">
+<div class="muni-name">松田町</div>
+<div class="muni-score" style="color:#f39c12">53.4点</div>
+<div class="muni-meta">人口 10,836 / 6エリア / 犯罪 12件</div>
+</a>
+<a href="鎌倉市/" class="muni-card">
+<div class="muni-name">鎌倉市</div>
+<div class="muni-score" style="color:#f39c12">53.3点</div>
+<div class="muni-meta">人口 172,710 / 151エリア / 犯罪 165件</div>
+</a>
+<a href="南足柄市/" class="muni-card">
+<div class="muni-name">南足柄市</div>
+<div class="muni-score" style="color:#f39c12">53.2点</div>
+<div class="muni-meta">人口 40,841 / 42エリア / 犯罪 28件</div>
+</a>
+<a href="大和市/" class="muni-card">
+<div class="muni-name">大和市</div>
+<div class="muni-score" style="color:#f39c12">53.0点</div>
+<div class="muni-meta">人口 239,169 / 134エリア / 犯罪 484件</div>
+</a>
+<a href="秦野市/" class="muni-card">
+<div class="muni-name">秦野市</div>
+<div class="muni-score" style="color:#f39c12">52.9点</div>
+<div class="muni-meta">人口 162,439 / 110エリア / 犯罪 177件</div>
+</a>
+<a href="逗子市/" class="muni-card">
+<div class="muni-name">逗子市</div>
+<div class="muni-score" style="color:#f39c12">52.8点</div>
+<div class="muni-meta">人口 57,060 / 50エリア / 犯罪 86件</div>
+</a>
+<a href="yokohama-栄区/" class="muni-card">
+<div class="muni-name">横浜市栄区</div>
+<div class="muni-score" style="color:#f39c12">52.5点</div>
+<div class="muni-meta">人口 120,194 / 57エリア / 犯罪 122件</div>
+</a>
+<a href="座間市/" class="muni-card">
+<div class="muni-name">座間市</div>
+<div class="muni-score" style="color:#f39c12">52.3点</div>
+<div class="muni-meta">人口 132,325 / 65エリア / 犯罪 199件</div>
+</a>
+<a href="真鶴町/" class="muni-card">
+<div class="muni-name">真鶴町</div>
+<div class="muni-score" style="color:#f39c12">52.3点</div>
+<div class="muni-meta">人口 6,722 / 2エリア / 犯罪 1件</div>
+</a>
+<a href="横須賀市/" class="muni-card">
+<div class="muni-name">横須賀市</div>
+<div class="muni-score" style="color:#f39c12">52.2点</div>
+<div class="muni-meta">人口 388,078 / 338エリア / 犯罪 325件</div>
+</a>
+<a href="大磯町/" class="muni-card">
+<div class="muni-name">大磯町</div>
+<div class="muni-score" style="color:#f39c12">52.0点</div>
+<div class="muni-meta">人口 31,634 / 21エリア / 犯罪 22件</div>
+</a>
+<a href="箱根町/" class="muni-card">
+<div class="muni-name">箱根町</div>
+<div class="muni-score" style="color:#f39c12">51.9点</div>
+<div class="muni-meta">人口 11,293 / 17エリア / 犯罪 3件</div>
+</a>
+<a href="yokohama-都筑区/" class="muni-card">
+<div class="muni-name">横浜市都筑区</div>
+<div class="muni-score" style="color:#f39c12">51.2点</div>
+<div class="muni-meta">人口 213,132 / 97エリア / 犯罪 319件</div>
+</a>
+<a href="藤沢市/" class="muni-card">
+<div class="muni-name">藤沢市</div>
+<div class="muni-score" style="color:#f39c12">51.2点</div>
+<div class="muni-meta">人口 436,905 / 217エリア / 犯罪 974件</div>
+</a>
+<a href="yokohama-泉区/" class="muni-card">
+<div class="muni-name">横浜市泉区</div>
+<div class="muni-score" style="color:#f39c12">51.0点</div>
+<div class="muni-meta">人口 152,378 / 69エリア / 犯罪 164件</div>
+</a>
+<a href="寒川町/" class="muni-card">
+<div class="muni-name">寒川町</div>
+<div class="muni-score" style="color:#f39c12">50.9点</div>
+<div class="muni-meta">人口 48,348 / 36エリア / 犯罪 91件</div>
+</a>
+<a href="伊勢原市/" class="muni-card">
+<div class="muni-name">伊勢原市</div>
+<div class="muni-score" style="color:#f39c12">50.6点</div>
+<div class="muni-meta">人口 101,780 / 65エリア / 犯罪 112件</div>
+</a>
+<a href="愛川町/" class="muni-card">
+<div class="muni-name">愛川町</div>
+<div class="muni-score" style="color:#f39c12">50.2点</div>
+<div class="muni-meta">人口 39,869 / 13エリア / 犯罪 50件</div>
+</a>
+<a href="小田原市/" class="muni-card">
+<div class="muni-name">小田原市</div>
+<div class="muni-score" style="color:#f39c12">50.1点</div>
+<div class="muni-meta">人口 188,856 / 136エリア / 犯罪 400件</div>
+</a>
+<a href="海老名市/" class="muni-card">
+<div class="muni-name">海老名市</div>
+<div class="muni-score" style="color:#f39c12">50.0点</div>
+<div class="muni-meta">人口 136,516 / 98エリア / 犯罪 206件</div>
+</a>
+<a href="三浦市/" class="muni-card">
+<div class="muni-name">三浦市</div>
+<div class="muni-score" style="color:#f39c12">49.9点</div>
+<div class="muni-meta">人口 42,069 / 32エリア / 犯罪 2件</div>
+</a>
+<a href="清川村/" class="muni-card">
+<div class="muni-name">清川村</div>
+<div class="muni-score" style="color:#f39c12">49.9点</div>
+<div class="muni-meta">人口 3,038 / 2エリア / 犯罪 0件</div>
+</a>
+<a href="yokohama-金沢区/" class="muni-card">
+<div class="muni-name">横浜市金沢区</div>
+<div class="muni-score" style="color:#f39c12">49.7点</div>
+<div class="muni-meta">人口 198,939 / 94エリア / 犯罪 319件</div>
+</a>
+<a href="yokohama-神奈川区/" class="muni-card">
+<div class="muni-name">横浜市神奈川区</div>
+<div class="muni-score" style="color:#f39c12">49.3点</div>
+<div class="muni-meta">人口 247,267 / 116エリア / 犯罪 352件</div>
+</a>
+<a href="kawasaki-宮前区/" class="muni-card">
+<div class="muni-name">川崎市宮前区</div>
+<div class="muni-score" style="color:#f39c12">48.9点</div>
+<div class="muni-meta">人口 233,728 / 88エリア / 犯罪 172件</div>
+</a>
+<a href="kawasaki-多摩区/" class="muni-card">
+<div class="muni-name">川崎市多摩区</div>
+<div class="muni-score" style="color:#f39c12">48.6点</div>
+<div class="muni-meta">人口 221,734 / 104エリア / 犯罪 373件</div>
+</a>
+<a href="綾瀬市/" class="muni-card">
+<div class="muni-name">綾瀬市</div>
+<div class="muni-score" style="color:#f39c12">48.6点</div>
+<div class="muni-meta">人口 83,913 / 132エリア / 犯罪 105件</div>
+</a>
+<a href="yokohama-磯子区/" class="muni-card">
+<div class="muni-name">横浜市磯子区</div>
+<div class="muni-score" style="color:#f39c12">48.3点</div>
+<div class="muni-meta">人口 166,731 / 73エリア / 犯罪 234件</div>
+</a>
+<a href="yokohama-南区/" class="muni-card">
+<div class="muni-name">横浜市南区</div>
+<div class="muni-score" style="color:#f39c12">48.2点</div>
+<div class="muni-meta">人口 198,157 / 153エリア / 犯罪 342件</div>
+</a>
+<a href="yokohama-港南区/" class="muni-card">
+<div class="muni-name">横浜市港南区</div>
+<div class="muni-score" style="color:#f39c12">48.2点</div>
+<div class="muni-meta">人口 215,248 / 85エリア / 犯罪 352件</div>
+</a>
+<a href="yokohama-港北区/" class="muni-card">
+<div class="muni-name">横浜市港北区</div>
+<div class="muni-score" style="color:#f39c12">48.1点</div>
+<div class="muni-meta">人口 358,530 / 108エリア / 犯罪 531件</div>
+</a>
+<a href="葉山町/" class="muni-card">
+<div class="muni-name">葉山町</div>
+<div class="muni-score" style="color:#f39c12">48.0点</div>
+<div class="muni-meta">人口 31,665 / 6エリア / 犯罪 17件</div>
+</a>
+<a href="大井町/" class="muni-card">
+<div class="muni-name">大井町</div>
+<div class="muni-score" style="color:#f39c12">47.8点</div>
+<div class="muni-meta">人口 17,129 / 9エリア / 犯罪 22件</div>
+</a>
+<a href="山北町/" class="muni-card">
+<div class="muni-name">山北町</div>
+<div class="muni-score" style="color:#f39c12">47.8点</div>
+<div class="muni-meta">人口 9,761 / 17エリア / 犯罪 8件</div>
+</a>
+<a href="yokohama-保土ケ谷区/" class="muni-card">
+<div class="muni-name">横浜市保土ケ谷区</div>
+<div class="muni-score" style="color:#f39c12">47.6点</div>
+<div class="muni-meta">人口 207,811 / 66エリア / 犯罪 264件</div>
+</a>
+<a href="茅ヶ崎市/" class="muni-card">
+<div class="muni-name">茅ヶ崎市</div>
+<div class="muni-score" style="color:#f39c12">47.6点</div>
+<div class="muni-meta">人口 242,389 / 119エリア / 犯罪 602件</div>
+</a>
+<a href="sagamihara-南区/" class="muni-card">
+<div class="muni-name">相模原市南区</div>
+<div class="muni-score" style="color:#f39c12">47.4点</div>
+<div class="muni-meta">人口 281,411 / 138エリア / 犯罪 631件</div>
+</a>
+<a href="厚木市/" class="muni-card">
+<div class="muni-name">厚木市</div>
+<div class="muni-score" style="color:#f39c12">47.4点</div>
+<div class="muni-meta">人口 223,705 / 143エリア / 犯罪 510件</div>
+</a>
+<a href="yokohama-中区/" class="muni-card">
+<div class="muni-name">横浜市中区</div>
+<div class="muni-score" style="color:#f39c12">47.2点</div>
+<div class="muni-meta">人口 151,388 / 227エリア / 犯罪 474件</div>
+</a>
+<a href="yokohama-旭区/" class="muni-card">
+<div class="muni-name">横浜市旭区</div>
+<div class="muni-score" style="color:#f39c12">47.2点</div>
+<div class="muni-meta">人口 245,174 / 77エリア / 犯罪 268件</div>
+</a>
+<a href="中井町/" class="muni-card">
+<div class="muni-name">中井町</div>
+<div class="muni-score" style="color:#f39c12">47.1点</div>
+<div class="muni-meta">人口 9,300 / 34エリア / 犯罪 0件</div>
+</a>
+<a href="kawasaki-幸区/" class="muni-card">
+<div class="muni-name">川崎市幸区</div>
+<div class="muni-score" style="color:#f39c12">46.9点</div>
+<div class="muni-meta">人口 171,119 / 64エリア / 犯罪 512件</div>
+</a>
+<a href="yokohama-緑区/" class="muni-card">
+<div class="muni-name">横浜市緑区</div>
+<div class="muni-score" style="color:#f39c12">46.6点</div>
+<div class="muni-meta">人口 183,082 / 63エリア / 犯罪 204件</div>
+</a>
+<a href="kawasaki-中原区/" class="muni-card">
+<div class="muni-name">川崎市中原区</div>
+<div class="muni-score" style="color:#f39c12">46.5点</div>
+<div class="muni-meta">人口 263,683 / 73エリア / 犯罪 598件</div>
+</a>
+<a href="yokohama-瀬谷区/" class="muni-card">
+<div class="muni-name">横浜市瀬谷区</div>
+<div class="muni-score" style="color:#f39c12">46.0点</div>
+<div class="muni-meta">人口 122,623 / 59エリア / 犯罪 162件</div>
+</a>
+<a href="kawasaki-高津区/" class="muni-card">
+<div class="muni-name">川崎市高津区</div>
+<div class="muni-score" style="color:#f39c12">45.9点</div>
+<div class="muni-meta">人口 234,328 / 72エリア / 犯罪 472件</div>
+</a>
+<a href="kawasaki-川崎区/" class="muni-card">
+<div class="muni-name">川崎市川崎区</div>
+<div class="muni-score" style="color:#f39c12">45.0点</div>
+<div class="muni-meta">人口 232,965 / 127エリア / 犯罪 1,420件</div>
+</a>
+<a href="平塚市/" class="muni-card">
+<div class="muni-name">平塚市</div>
+<div class="muni-score" style="color:#f39c12">44.8点</div>
+<div class="muni-meta">人口 258,422 / 150エリア / 犯罪 619件</div>
+</a>
+<a href="sagamihara-中央区/" class="muni-card">
+<div class="muni-name">相模原市中央区</div>
+<div class="muni-score" style="color:#f39c12">44.7点</div>
+<div class="muni-meta">人口 273,875 / 154エリア / 犯罪 559件</div>
+</a>
+<a href="yokohama-戸塚区/" class="muni-card">
+<div class="muni-name">横浜市戸塚区</div>
+<div class="muni-score" style="color:#f39c12">44.3点</div>
+<div class="muni-meta">人口 283,709 / 52エリア / 犯罪 333件</div>
+</a>
+<a href="yokohama-西区/" class="muni-card">
+<div class="muni-name">横浜市西区</div>
+<div class="muni-score" style="color:#f39c12">44.0点</div>
+<div class="muni-meta">人口 104,935 / 67エリア / 犯罪 237件</div>
+</a>
+<a href="yokohama-鶴見区/" class="muni-card">
+<div class="muni-name">横浜市鶴見区</div>
+<div class="muni-score" style="color:#f39c12">42.6点</div>
+<div class="muni-meta">人口 297,437 / 125エリア / 犯罪 646件</div>
+</a>
+<a href="sagamihara-緑区/" class="muni-card">
+<div class="muni-name">相模原市緑区</div>
+<div class="muni-score" style="color:#f39c12">42.2点</div>
+<div class="muni-meta">人口 170,207 / 109エリア / 犯罪 330件</div>
+</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('muniGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.muni-score').textContent)-parseFloat(a.querySelector('.muni-score').textContent);
+    if(key==='name')return a.querySelector('.muni-name').textContent.localeCompare(b.querySelector('.muni-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.muni-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

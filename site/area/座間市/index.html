@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>座間市 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="座間市の全65エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 座間市</div>
+<h2>座間市 全65エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">132,325</div><div class="label">人口</div></div>
+<div><div class="value">52.3</div><div class="label">平均スコア</div></div>
+<div><div class="value">199</div><div class="label">犯罪件数</div></div>
+<div><div class="value">128</div><div class="label">医療施設</div></div>
+<div><div class="value">40</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="さがみ野3/" class="town-card">
+<div class="town-name">さがみ野三丁目</div>
+<div class="town-score" style="color:#2ecc71">68.3点</div>
+<div class="town-meta">人口 399 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="座間/" class="town-card">
+<div class="town-name">座間</div>
+<div class="town-score" style="color:#2ecc71">66.9点</div>
+<div class="town-meta">人口 103 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="さがみ野2/" class="town-card">
+<div class="town-name">さがみ野二丁目</div>
+<div class="town-score" style="color:#2ecc71">65.9点</div>
+<div class="town-meta">人口 462 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="入谷東2/" class="town-card">
+<div class="town-name">入谷東二丁目</div>
+<div class="town-score" style="color:#2ecc71">64.7点</div>
+<div class="town-meta">人口 3,604 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="相武台3/" class="town-card">
+<div class="town-name">相武台三丁目</div>
+<div class="town-score" style="color:#2ecc71">62.0点</div>
+<div class="town-meta">人口 3,350 / 犯罪 2件 / 医療 8件</div>
+</a>
+<a href="立野台3/" class="town-card">
+<div class="town-name">立野台三丁目</div>
+<div class="town-score" style="color:#2ecc71">61.7点</div>
+<div class="town-meta">人口 2,332 / 犯罪 3件 / 医療 6件</div>
+</a>
+<a href="緑ケ丘2/" class="town-card">
+<div class="town-name">緑ケ丘二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.3点</div>
+<div class="town-meta">人口 1,432 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="入谷西3/" class="town-card">
+<div class="town-name">入谷西三丁目</div>
+<div class="town-score" style="color:#2ecc71">60.9点</div>
+<div class="town-meta">人口 1,876 / 犯罪 1件 / 医療 7件</div>
+</a>
+<a href="入谷東4/" class="town-card">
+<div class="town-name">入谷東四丁目</div>
+<div class="town-score" style="color:#f39c12">59.6点</div>
+<div class="town-meta">人口 3,586 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="座間1/" class="town-card">
+<div class="town-name">座間一丁目</div>
+<div class="town-score" style="color:#f39c12">59.4点</div>
+<div class="town-meta">人口 3,193 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="入谷東3/" class="town-card">
+<div class="town-name">入谷東三丁目</div>
+<div class="town-score" style="color:#f39c12">59.2点</div>
+<div class="town-meta">人口 3,058 / 犯罪 5件 / 医療 6件</div>
+</a>
+<a href="相武台2/" class="town-card">
+<div class="town-name">相武台二丁目</div>
+<div class="town-score" style="color:#f39c12">59.1点</div>
+<div class="town-meta">人口 3,670 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="緑ケ丘4/" class="town-card">
+<div class="town-name">緑ケ丘四丁目</div>
+<div class="town-score" style="color:#f39c12">57.9点</div>
+<div class="town-meta">人口 1,897 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="入谷東1/" class="town-card">
+<div class="town-name">入谷東一丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 262 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="栗原/" class="town-card">
+<div class="town-name">栗原</div>
+<div class="town-score" style="color:#f39c12">57.5点</div>
+<div class="town-meta">人口 1,375 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="緑ケ丘5/" class="town-card">
+<div class="town-name">緑ケ丘五丁目</div>
+<div class="town-score" style="color:#f39c12">57.5点</div>
+<div class="town-meta">人口 817 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="立野台2/" class="town-card">
+<div class="town-name">立野台二丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 1,509 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="入谷西5/" class="town-card">
+<div class="town-name">入谷西五丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 2,265 / 犯罪 16件 / 医療 2件</div>
+</a>
+<a href="相武台1/" class="town-card">
+<div class="town-name">相武台一丁目</div>
+<div class="town-score" style="color:#f39c12">56.8点</div>
+<div class="town-meta">人口 3,495 / 犯罪 9件 / 医療 11件</div>
+</a>
+<a href="入谷西4/" class="town-card">
+<div class="town-name">入谷西四丁目</div>
+<div class="town-score" style="color:#f39c12">56.7点</div>
+<div class="town-meta">人口 1,185 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="緑ケ丘1/" class="town-card">
+<div class="town-name">緑ケ丘一丁目</div>
+<div class="town-score" style="color:#f39c12">56.6点</div>
+<div class="town-meta">人口 908 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="東原5/" class="town-card">
+<div class="town-name">東原五丁目</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 1,763 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="栗原中央2/" class="town-card">
+<div class="town-name">栗原中央二丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 967 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="南栗原4/" class="town-card">
+<div class="town-name">南栗原四丁目</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 2,145 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="相模が丘6/" class="town-card">
+<div class="town-name">相模が丘六丁目</div>
+<div class="town-score" style="color:#f39c12">54.9点</div>
+<div class="town-meta">人口 4,053 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="南栗原5/" class="town-card">
+<div class="town-name">南栗原五丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 1,200 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="明王/" class="town-card">
+<div class="town-name">明王</div>
+<div class="town-score" style="color:#f39c12">53.5点</div>
+<div class="town-meta">人口 901 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="さがみ野1/" class="town-card">
+<div class="town-name">さがみ野一丁目</div>
+<div class="town-score" style="color:#f39c12">53.5点</div>
+<div class="town-meta">人口 1,340 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="緑ケ丘6/" class="town-card">
+<div class="town-name">緑ケ丘六丁目</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 1,287 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="ひばりが丘3/" class="town-card">
+<div class="town-name">ひばりが丘三丁目</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 3,752 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="ひばりが丘2/" class="town-card">
+<div class="town-name">ひばりが丘二丁目</div>
+<div class="town-score" style="color:#f39c12">52.6点</div>
+<div class="town-meta">人口 3,317 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="相武台4/" class="town-card">
+<div class="town-name">相武台四丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 1,131 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="東原4/" class="town-card">
+<div class="town-name">東原四丁目</div>
+<div class="town-score" style="color:#f39c12">52.4点</div>
+<div class="town-meta">人口 2,050 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="相模が丘3/" class="town-card">
+<div class="town-name">相模が丘三丁目</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 3,104 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="栗原中央6/" class="town-card">
+<div class="town-name">栗原中央六丁目</div>
+<div class="town-score" style="color:#f39c12">52.0点</div>
+<div class="town-meta">人口 254 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="座間2/" class="town-card">
+<div class="town-name">座間二丁目</div>
+<div class="town-score" style="color:#f39c12">52.0点</div>
+<div class="town-meta">人口 2,531 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="相模が丘5/" class="town-card">
+<div class="town-name">相模が丘五丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 4,933 / 犯罪 7件 / 医療 9件</div>
+</a>
+<a href="緑ケ丘3/" class="town-card">
+<div class="town-name">緑ケ丘三丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 2,212 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="ひばりが丘1/" class="town-card">
+<div class="town-name">ひばりが丘一丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 3,842 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="栗原中央3/" class="town-card">
+<div class="town-name">栗原中央三丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 1,438 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="入谷西2/" class="town-card">
+<div class="town-name">入谷西二丁目</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 1,892 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="南栗原2/" class="town-card">
+<div class="town-name">南栗原二丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 846 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="栗原中央4/" class="town-card">
+<div class="town-name">栗原中央四丁目</div>
+<div class="town-score" style="color:#f39c12">48.1点</div>
+<div class="town-meta">人口 1,172 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="相模が丘1/" class="town-card">
+<div class="town-name">相模が丘一丁目</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 4,789 / 犯罪 11件 / 医療 6件</div>
+</a>
+<a href="四ツ谷/" class="town-card">
+<div class="town-name">四ツ谷</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 2,429 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="相模が丘2/" class="town-card">
+<div class="town-name">相模が丘二丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 3,507 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="入谷西1/" class="town-card">
+<div class="town-name">入谷西一丁目</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 837 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="東原3/" class="town-card">
+<div class="town-name">東原三丁目</div>
+<div class="town-score" style="color:#f39c12">46.6点</div>
+<div class="town-meta">人口 1,722 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="ひばりが丘4/" class="town-card">
+<div class="town-name">ひばりが丘四丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 1,003 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="小松原2/" class="town-card">
+<div class="town-name">小松原二丁目</div>
+<div class="town-score" style="color:#f39c12">45.7点</div>
+<div class="town-meta">人口 3,216 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="ひばりが丘5/" class="town-card">
+<div class="town-name">ひばりが丘五丁目</div>
+<div class="town-score" style="color:#f39c12">45.7点</div>
+<div class="town-meta">人口 3,557 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="東原2/" class="town-card">
+<div class="town-name">東原二丁目</div>
+<div class="town-score" style="color:#f39c12">45.7点</div>
+<div class="town-meta">人口 1,593 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="南栗原3/" class="town-card">
+<div class="town-name">南栗原三丁目</div>
+<div class="town-score" style="color:#f39c12">45.7点</div>
+<div class="town-meta">人口 824 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="南栗原6/" class="town-card">
+<div class="town-name">南栗原六丁目</div>
+<div class="town-score" style="color:#f39c12">45.7点</div>
+<div class="town-meta">人口 1,661 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="栗原中央1/" class="town-card">
+<div class="town-name">栗原中央一丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 1,677 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="新田宿/" class="town-card">
+<div class="town-name">新田宿</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 3,031 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="広野台1/" class="town-card">
+<div class="town-name">広野台一丁目</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 3,037 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="西栗原2/" class="town-card">
+<div class="town-name">西栗原二丁目</div>
+<div class="town-score" style="color:#f39c12">44.5点</div>
+<div class="town-meta">人口 1,295 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="栗原中央5/" class="town-card">
+<div class="town-name">栗原中央五丁目</div>
+<div class="town-score" style="color:#f39c12">44.3点</div>
+<div class="town-meta">人口 1,290 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="立野台1/" class="town-card">
+<div class="town-name">立野台一丁目</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 1,338 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="相模が丘4/" class="town-card">
+<div class="town-name">相模が丘四丁目</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 3,494 / 犯罪 8件 / 医療 4件</div>
+</a>
+<a href="南栗原1/" class="town-card">
+<div class="town-name">南栗原一丁目</div>
+<div class="town-score" style="color:#f39c12">41.2点</div>
+<div class="town-meta">人口 1,181 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="小松原1/" class="town-card">
+<div class="town-name">小松原一丁目</div>
+<div class="town-score" style="color:#f39c12">40.7点</div>
+<div class="town-meta">人口 1,702 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="東原1/" class="town-card">
+<div class="town-name">東原一丁目</div>
+<div class="town-score" style="color:#e74c3c">37.9点</div>
+<div class="town-meta">人口 1,468 / 犯罪 12件 / 医療 2件</div>
+</a>
+<a href="西栗原1/" class="town-card">
+<div class="town-name">西栗原一丁目</div>
+<div class="town-score" style="color:#e74c3c">37.7点</div>
+<div class="town-meta">人口 766 / 犯罪 2件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a> / <a href="../寒川町/">寒川町</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>川崎市多摩区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="川崎市多摩区の全104エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 川崎市多摩区</div>
+<h2>川崎市多摩区 全104エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">221,734</div><div class="label">人口</div></div>
+<div><div class="value">48.6</div><div class="label">平均スコア</div></div>
+<div><div class="value">373</div><div class="label">犯罪件数</div></div>
+<div><div class="value">239</div><div class="label">医療施設</div></div>
+<div><div class="value">117</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="登戸/" class="town-card">
+<div class="town-name">登戸</div>
+<div class="town-score" style="color:#2ecc71">68.5点</div>
+<div class="town-meta">人口 419 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="寺尾台1/" class="town-card">
+<div class="town-name">寺尾台一丁目</div>
+<div class="town-score" style="color:#2ecc71">66.7点</div>
+<div class="town-meta">人口 1,720 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="菅仙谷4/" class="town-card">
+<div class="town-name">菅仙谷四丁目</div>
+<div class="town-score" style="color:#2ecc71">65.3点</div>
+<div class="town-meta">人口 266 / 犯罪 0件 / 医療 8件</div>
+</a>
+<a href="南生田6/" class="town-card">
+<div class="town-name">南生田六丁目</div>
+<div class="town-score" style="color:#2ecc71">62.5点</div>
+<div class="town-meta">人口 1,594 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="宿河原4/" class="town-card">
+<div class="town-name">宿河原四丁目</div>
+<div class="town-score" style="color:#2ecc71">62.0点</div>
+<div class="town-meta">人口 3,223 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="長尾6/" class="town-card">
+<div class="town-name">長尾六丁目</div>
+<div class="town-score" style="color:#2ecc71">61.8点</div>
+<div class="town-meta">人口 1,038 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="菅北浦4/" class="town-card">
+<div class="town-name">菅北浦四丁目</div>
+<div class="town-score" style="color:#2ecc71">61.5点</div>
+<div class="town-meta">人口 1,944 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="登戸/" class="town-card">
+<div class="town-name">登戸</div>
+<div class="town-score" style="color:#2ecc71">61.2点</div>
+<div class="town-meta">人口 4,643 / 犯罪 0件 / 医療 28件</div>
+</a>
+<a href="生田6/" class="town-card">
+<div class="town-name">生田六丁目</div>
+<div class="town-score" style="color:#2ecc71">60.7点</div>
+<div class="town-meta">人口 2,571 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="南生田1/" class="town-card">
+<div class="town-name">南生田一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.7点</div>
+<div class="town-meta">人口 2,062 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="中野島3/" class="town-card">
+<div class="town-name">中野島三丁目</div>
+<div class="town-score" style="color:#2ecc71">60.3点</div>
+<div class="town-meta">人口 3,943 / 犯罪 2件 / 医療 14件</div>
+</a>
+<a href="菅北浦3/" class="town-card">
+<div class="town-name">菅北浦三丁目</div>
+<div class="town-score" style="color:#f39c12">59.8点</div>
+<div class="town-meta">人口 1,755 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="三田4/" class="town-card">
+<div class="town-name">三田四丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 2,679 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="東生田1/" class="town-card">
+<div class="town-name">東生田一丁目</div>
+<div class="town-score" style="color:#f39c12">57.9点</div>
+<div class="town-meta">人口 2,717 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="寺尾台2/" class="town-card">
+<div class="town-name">寺尾台二丁目</div>
+<div class="town-score" style="color:#f39c12">57.9点</div>
+<div class="town-meta">人口 1,179 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="西生田4/" class="town-card">
+<div class="town-name">西生田四丁目</div>
+<div class="town-score" style="color:#f39c12">57.8点</div>
+<div class="town-meta">人口 2,608 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="菅6/" class="town-card">
+<div class="town-name">菅六丁目</div>
+<div class="town-score" style="color:#f39c12">57.5点</div>
+<div class="town-meta">人口 2,408 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="西生田1/" class="town-card">
+<div class="town-name">西生田一丁目</div>
+<div class="town-score" style="color:#f39c12">57.5点</div>
+<div class="town-meta">人口 1,092 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="栗谷2/" class="town-card">
+<div class="town-name">栗谷二丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 1,263 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="菅1/" class="town-card">
+<div class="town-name">菅一丁目</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 1,768 / 犯罪 9件 / 医療 10件</div>
+</a>
+<a href="宿河原3/" class="town-card">
+<div class="town-name">宿河原三丁目</div>
+<div class="town-score" style="color:#f39c12">56.3点</div>
+<div class="town-meta">人口 2,881 / 犯罪 4件 / 医療 7件</div>
+</a>
+<a href="菅馬場3/" class="town-card">
+<div class="town-name">菅馬場三丁目</div>
+<div class="town-score" style="color:#f39c12">55.7点</div>
+<div class="town-meta">人口 1,673 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="三田2/" class="town-card">
+<div class="town-name">三田二丁目</div>
+<div class="town-score" style="color:#f39c12">55.7点</div>
+<div class="town-meta">人口 1,502 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="南生田7/" class="town-card">
+<div class="town-name">南生田七丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 1,391 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="西生田5/" class="town-card">
+<div class="town-name">西生田五丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 2,104 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="中野島4/" class="town-card">
+<div class="town-name">中野島四丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 3,600 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="栗谷1/" class="town-card">
+<div class="town-name">栗谷一丁目</div>
+<div class="town-score" style="color:#f39c12">54.4点</div>
+<div class="town-meta">人口 1,088 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="登戸/" class="town-card">
+<div class="town-name">登戸</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 7,985 / 犯罪 0件 / 医療 35件</div>
+</a>
+<a href="堰1/" class="town-card">
+<div class="town-name">堰一丁目</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 3,568 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="三田3/" class="town-card">
+<div class="town-name">三田三丁目</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 1,144 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="菅仙谷1/" class="town-card">
+<div class="town-name">菅仙谷一丁目</div>
+<div class="town-score" style="color:#f39c12">54.1点</div>
+<div class="town-meta">人口 1,064 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="東生田4/" class="town-card">
+<div class="town-name">東生田四丁目</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 1,080 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="長尾5/" class="town-card">
+<div class="town-name">長尾五丁目</div>
+<div class="town-score" style="color:#f39c12">53.8点</div>
+<div class="town-meta">人口 1,792 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="菅馬場4/" class="town-card">
+<div class="town-name">菅馬場四丁目</div>
+<div class="town-score" style="color:#f39c12">53.7点</div>
+<div class="town-meta">人口 73 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="菅稲田堤2/" class="town-card">
+<div class="town-name">菅稲田堤二丁目</div>
+<div class="town-score" style="color:#f39c12">53.7点</div>
+<div class="town-meta">人口 1,531 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="生田5/" class="town-card">
+<div class="town-name">生田五丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 1,202 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東三田1/" class="town-card">
+<div class="town-name">東三田一丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 477 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="長尾3/" class="town-card">
+<div class="town-name">長尾三丁目</div>
+<div class="town-score" style="color:#f39c12">53.0点</div>
+<div class="town-meta">人口 408 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中野島5/" class="town-card">
+<div class="town-name">中野島五丁目</div>
+<div class="town-score" style="color:#f39c12">52.7点</div>
+<div class="town-meta">人口 4,636 / 犯罪 11件 / 医療 2件</div>
+</a>
+<a href="菅4/" class="town-card">
+<div class="town-name">菅四丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 2,127 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="菅稲田堤1/" class="town-card">
+<div class="town-name">菅稲田堤一丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 2,335 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="中野島1/" class="town-card">
+<div class="town-name">中野島一丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 2,072 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="栗谷3/" class="town-card">
+<div class="town-name">栗谷三丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 1,846 / 犯罪 2件 / 医療 6件</div>
+</a>
+<a href="登戸/" class="town-card">
+<div class="town-name">登戸</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 1,301 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="菅3/" class="town-card">
+<div class="town-name">菅三丁目</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 2,052 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="南生田4/" class="town-card">
+<div class="town-name">南生田四丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 1,785 / 犯罪 1件 / 医療 6件</div>
+</a>
+<a href="菅5/" class="town-card">
+<div class="town-name">菅五丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 2,785 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="宿河原6/" class="town-card">
+<div class="town-name">宿河原六丁目</div>
+<div class="town-score" style="color:#f39c12">50.0点</div>
+<div class="town-meta">人口 5,374 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="菅仙谷2/" class="town-card">
+<div class="town-name">菅仙谷二丁目</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 1,794 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中野島6/" class="town-card">
+<div class="town-name">中野島六丁目</div>
+<div class="town-score" style="color:#f39c12">49.6点</div>
+<div class="town-meta">人口 4,964 / 犯罪 13件 / 医療 7件</div>
+</a>
+<a href="生田4/" class="town-card">
+<div class="town-name">生田四丁目</div>
+<div class="town-score" style="color:#f39c12">49.2点</div>
+<div class="town-meta">人口 870 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="三田1/" class="town-card">
+<div class="town-name">三田一丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 3,414 / 犯罪 9件 / 医療 3件</div>
+</a>
+<a href="南生田3/" class="town-card">
+<div class="town-name">南生田三丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 521 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="栗谷4/" class="town-card">
+<div class="town-name">栗谷四丁目</div>
+<div class="town-score" style="color:#f39c12">48.7点</div>
+<div class="town-meta">人口 880 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="菅北浦5/" class="town-card">
+<div class="town-name">菅北浦五丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 817 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="南生田2/" class="town-card">
+<div class="town-name">南生田二丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 2,728 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="枡形1/" class="town-card">
+<div class="town-name">枡形一丁目</div>
+<div class="town-score" style="color:#f39c12">48.0点</div>
+<div class="town-meta">人口 1,510 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="菅仙谷3/" class="town-card">
+<div class="town-name">菅仙谷三丁目</div>
+<div class="town-score" style="color:#f39c12">47.9点</div>
+<div class="town-meta">人口 2,329 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="東三田3/" class="town-card">
+<div class="town-name">東三田三丁目</div>
+<div class="town-score" style="color:#f39c12">47.8点</div>
+<div class="town-meta">人口 2,953 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="菅北浦1/" class="town-card">
+<div class="town-name">菅北浦一丁目</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 1,212 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="布田/" class="town-card">
+<div class="town-name">布田</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 2,757 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="長尾7/" class="town-card">
+<div class="town-name">長尾七丁目</div>
+<div class="town-score" style="color:#f39c12">47.0点</div>
+<div class="town-meta">人口 1,990 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="登戸/" class="town-card">
+<div class="town-name">登戸</div>
+<div class="town-score" style="color:#f39c12">46.6点</div>
+<div class="town-meta">人口 9,819 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="登戸新町/" class="town-card">
+<div class="town-name">登戸新町</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 5,018 / 犯罪 5件 / 医療 11件</div>
+</a>
+<a href="宿河原1/" class="town-card">
+<div class="town-name">宿河原一丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 3,988 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="西生田2/" class="town-card">
+<div class="town-name">西生田二丁目</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 1,418 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="南生田5/" class="town-card">
+<div class="town-name">南生田五丁目</div>
+<div class="town-score" style="color:#f39c12">45.8点</div>
+<div class="town-meta">人口 1,072 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="堰2/" class="town-card">
+<div class="town-name">堰二丁目</div>
+<div class="town-score" style="color:#f39c12">45.7点</div>
+<div class="town-meta">人口 2,178 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="生田7/" class="town-card">
+<div class="town-name">生田七丁目</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 1,350 / 犯罪 14件 / 医療 8件</div>
+</a>
+<a href="堰3/" class="town-card">
+<div class="town-name">堰三丁目</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 1,960 / 犯罪 6件 / 医療 3件</div>
+</a>
+<a href="西生田3/" class="town-card">
+<div class="town-name">西生田三丁目</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 2,801 / 犯罪 1件 / 医療 6件</div>
+</a>
+<a href="中野島2/" class="town-card">
+<div class="town-name">中野島二丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 1,689 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="菅2/" class="town-card">
+<div class="town-name">菅二丁目</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 2,328 / 犯罪 3件 / 医療 9件</div>
+</a>
+<a href="菅馬場1/" class="town-card">
+<div class="town-name">菅馬場一丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 3,214 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="東生田3/" class="town-card">
+<div class="town-name">東生田三丁目</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 643 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="宿河原5/" class="town-card">
+<div class="town-name">宿河原五丁目</div>
+<div class="town-score" style="color:#f39c12">43.6点</div>
+<div class="town-meta">人口 2,293 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="三田5/" class="town-card">
+<div class="town-name">三田五丁目</div>
+<div class="town-score" style="color:#f39c12">42.7点</div>
+<div class="town-meta">人口 349 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="宿河原2/" class="town-card">
+<div class="town-name">宿河原二丁目</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 6,498 / 犯罪 7件 / 医療 2件</div>
+</a>
+<a href="枡形3/" class="town-card">
+<div class="town-name">枡形三丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 1,511 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="長沢3/" class="town-card">
+<div class="town-name">長沢三丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 1,010 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="宿河原7/" class="town-card">
+<div class="town-name">宿河原七丁目</div>
+<div class="town-score" style="color:#f39c12">41.3点</div>
+<div class="town-meta">人口 2,169 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="長沢2/" class="town-card">
+<div class="town-name">長沢二丁目</div>
+<div class="town-score" style="color:#f39c12">41.3点</div>
+<div class="town-meta">人口 1,117 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="枡形4/" class="town-card">
+<div class="town-name">枡形四丁目</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 701 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="生田2/" class="town-card">
+<div class="town-name">生田二丁目</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 1,592 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="長尾2/" class="town-card">
+<div class="town-name">長尾二丁目</div>
+<div class="town-score" style="color:#f39c12">40.4点</div>
+<div class="town-meta">人口 954 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="長沢4/" class="town-card">
+<div class="town-name">長沢四丁目</div>
+<div class="town-score" style="color:#f39c12">40.3点</div>
+<div class="town-meta">人口 2,051 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="菅稲田堤3/" class="town-card">
+<div class="town-name">菅稲田堤三丁目</div>
+<div class="town-score" style="color:#f39c12">40.0点</div>
+<div class="town-meta">人口 1,864 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="菅野戸呂/" class="town-card">
+<div class="town-name">菅野戸呂</div>
+<div class="town-score" style="color:#e74c3c">39.9点</div>
+<div class="town-meta">人口 1,798 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="長尾4/" class="town-card">
+<div class="town-name">長尾四丁目</div>
+<div class="town-score" style="color:#e74c3c">39.7点</div>
+<div class="town-meta">人口 1,477 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="菅北浦2/" class="town-card">
+<div class="town-name">菅北浦二丁目</div>
+<div class="town-score" style="color:#e74c3c">39.6点</div>
+<div class="town-meta">人口 2,641 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="菅城下/" class="town-card">
+<div class="town-name">菅城下</div>
+<div class="town-score" style="color:#e74c3c">39.3点</div>
+<div class="town-meta">人口 2,721 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="中野島/" class="town-card">
+<div class="town-name">中野島</div>
+<div class="town-score" style="color:#e74c3c">39.0点</div>
+<div class="town-meta">人口 100 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="生田8/" class="town-card">
+<div class="town-name">生田八丁目</div>
+<div class="town-score" style="color:#e74c3c">38.5点</div>
+<div class="town-meta">人口 2,390 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="東生田2/" class="town-card">
+<div class="town-name">東生田二丁目</div>
+<div class="town-score" style="color:#e74c3c">37.6点</div>
+<div class="town-meta">人口 1,057 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="枡形5/" class="town-card">
+<div class="town-name">枡形五丁目</div>
+<div class="town-score" style="color:#e74c3c">36.6点</div>
+<div class="town-meta">人口 2,217 / 犯罪 10件 / 医療 0件</div>
+</a>
+<a href="菅馬場2/" class="town-card">
+<div class="town-name">菅馬場二丁目</div>
+<div class="town-score" style="color:#e74c3c">35.2点</div>
+<div class="town-meta">人口 2,362 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="枡形6/" class="town-card">
+<div class="town-name">枡形六丁目</div>
+<div class="town-score" style="color:#e74c3c">35.0点</div>
+<div class="town-meta">人口 3,620 / 犯罪 9件 / 医療 0件</div>
+</a>
+<a href="枡形2/" class="town-card">
+<div class="town-name">枡形二丁目</div>
+<div class="town-score" style="color:#e74c3c">33.2点</div>
+<div class="town-meta">人口 2,054 / 犯罪 7件 / 医療 2件</div>
+</a>
+<a href="長沢1/" class="town-card">
+<div class="town-name">長沢一丁目</div>
+<div class="town-score" style="color:#e74c3c">32.6点</div>
+<div class="town-meta">人口 1,751 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="生田1/" class="town-card">
+<div class="town-name">生田一丁目</div>
+<div class="town-score" style="color:#e74c3c">30.9点</div>
+<div class="town-meta">人口 2,632 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="登戸/" class="town-card">
+<div class="town-name">登戸</div>
+<div class="town-score" style="color:#e74c3c">29.4点</div>
+<div class="town-meta">人口 35 / 犯罪 94件 / 医療 0件</div>
+</a>
+<a href="長尾1/" class="town-card">
+<div class="town-name">長尾一丁目</div>
+<div class="town-score" style="color:#e74c3c">25.9点</div>
+<div class="town-meta">人口 1,453 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="生田3/" class="town-card">
+<div class="town-name">生田三丁目</div>
+<div class="town-score" style="color:#e74c3c">24.0点</div>
+<div class="town-meta">人口 2,441 / 犯罪 7件 / 医療 0件</div>
+</a>
+<a href="東三田2/" class="town-card">
+<div class="town-name">東三田二丁目</div>
+<div class="town-score" style="color:#e74c3c">22.7点</div>
+<div class="town-meta">人口 891 / 犯罪 25件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

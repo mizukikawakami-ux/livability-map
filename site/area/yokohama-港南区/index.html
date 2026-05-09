@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市港南区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市港南区の全85エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市港南区</div>
+<h2>横浜市港南区 全85エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">215,248</div><div class="label">人口</div></div>
+<div><div class="value">48.2</div><div class="label">平均スコア</div></div>
+<div><div class="value">352</div><div class="label">犯罪件数</div></div>
+<div><div class="value">316</div><div class="label">医療施設</div></div>
+<div><div class="value">168</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="日限山2/" class="town-card">
+<div class="town-name">日限山二丁目</div>
+<div class="town-score" style="color:#2ecc71">73.6点</div>
+<div class="town-meta">人口 986 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="東永谷1/" class="town-card">
+<div class="town-name">東永谷一丁目</div>
+<div class="town-score" style="color:#2ecc71">69.2点</div>
+<div class="town-meta">人口 1,866 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="下永谷4/" class="town-card">
+<div class="town-name">下永谷四丁目</div>
+<div class="town-score" style="color:#2ecc71">67.7点</div>
+<div class="town-meta">人口 1,978 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="港南4/" class="town-card">
+<div class="town-name">港南四丁目</div>
+<div class="town-score" style="color:#2ecc71">64.1点</div>
+<div class="town-meta">人口 2,576 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="日野南7/" class="town-card">
+<div class="town-name">日野南七丁目</div>
+<div class="town-score" style="color:#2ecc71">61.6点</div>
+<div class="town-meta">人口 821 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="最戸2/" class="town-card">
+<div class="town-name">最戸二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.2点</div>
+<div class="town-meta">人口 2,503 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="日野南3/" class="town-card">
+<div class="town-name">日野南三丁目</div>
+<div class="town-score" style="color:#2ecc71">61.2点</div>
+<div class="town-meta">人口 1,395 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="丸山台3/" class="town-card">
+<div class="town-name">丸山台三丁目</div>
+<div class="town-score" style="color:#2ecc71">60.4点</div>
+<div class="town-meta">人口 1,357 / 犯罪 2件 / 医療 8件</div>
+</a>
+<a href="日野南4/" class="town-card">
+<div class="town-name">日野南四丁目</div>
+<div class="town-score" style="color:#f39c12">59.8点</div>
+<div class="town-meta">人口 1,812 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="港南1/" class="town-card">
+<div class="town-name">港南一丁目</div>
+<div class="town-score" style="color:#f39c12">59.6点</div>
+<div class="town-meta">人口 3,034 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="日野3/" class="town-card">
+<div class="town-name">日野三丁目</div>
+<div class="town-score" style="color:#f39c12">59.6点</div>
+<div class="town-meta">人口 3,007 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="港南台7/" class="town-card">
+<div class="town-name">港南台七丁目</div>
+<div class="town-score" style="color:#f39c12">58.7点</div>
+<div class="town-meta">人口 2,938 / 犯罪 1件 / 医療 7件</div>
+</a>
+<a href="港南6/" class="town-card">
+<div class="town-name">港南六丁目</div>
+<div class="town-score" style="color:#f39c12">57.0点</div>
+<div class="town-meta">人口 3,060 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="日野9/" class="town-card">
+<div class="town-name">日野九丁目</div>
+<div class="town-score" style="color:#f39c12">56.7点</div>
+<div class="town-meta">人口 2,121 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="東永谷2/" class="town-card">
+<div class="town-name">東永谷二丁目</div>
+<div class="town-score" style="color:#f39c12">56.7点</div>
+<div class="town-meta">人口 1,143 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="港南台3/" class="town-card">
+<div class="town-name">港南台三丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 1,886 / 犯罪 80件 / 医療 20件</div>
+</a>
+<a href="港南3/" class="town-card">
+<div class="town-name">港南三丁目</div>
+<div class="town-score" style="color:#f39c12">54.7点</div>
+<div class="town-meta">人口 2,240 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="上永谷1/" class="town-card">
+<div class="town-name">上永谷一丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 2,927 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="日野中央3/" class="town-card">
+<div class="town-name">日野中央三丁目</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 3,281 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="笹下4/" class="town-card">
+<div class="town-name">笹下四丁目</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 1,761 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="日限山1/" class="town-card">
+<div class="town-name">日限山一丁目</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 4,040 / 犯罪 3件 / 医療 7件</div>
+</a>
+<a href="日野南6/" class="town-card">
+<div class="town-name">日野南六丁目</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 1,569 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="港南中央通/" class="town-card">
+<div class="town-name">港南中央通</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 1,427 / 犯罪 6件 / 医療 7件</div>
+</a>
+<a href="港南台2/" class="town-card">
+<div class="town-name">港南台二丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 4,505 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="港南台1/" class="town-card">
+<div class="town-name">港南台一丁目</div>
+<div class="town-score" style="color:#f39c12">52.7点</div>
+<div class="town-meta">人口 3,027 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="野庭町/" class="town-card">
+<div class="town-name">野庭町</div>
+<div class="town-score" style="color:#f39c12">52.6点</div>
+<div class="town-meta">人口 10,955 / 犯罪 18件 / 医療 12件</div>
+</a>
+<a href="日野南5/" class="town-card">
+<div class="town-name">日野南五丁目</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 1,710 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="上永谷5/" class="town-card">
+<div class="town-name">上永谷五丁目</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 2,073 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="港南台6/" class="town-card">
+<div class="town-name">港南台六丁目</div>
+<div class="town-score" style="color:#f39c12">51.2点</div>
+<div class="town-meta">人口 4,557 / 犯罪 12件 / 医療 3件</div>
+</a>
+<a href="上大岡東3/" class="town-card">
+<div class="town-name">上大岡東三丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 509 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="港南台4/" class="town-card">
+<div class="town-name">港南台四丁目</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 3,183 / 犯罪 5件 / 医療 18件</div>
+</a>
+<a href="野庭町/" class="town-card">
+<div class="town-name">野庭町</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 10,043 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="上大岡東1/" class="town-card">
+<div class="town-name">上大岡東一丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 3,983 / 犯罪 3件 / 医療 7件</div>
+</a>
+<a href="丸山台4/" class="town-card">
+<div class="town-name">丸山台四丁目</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 1,128 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上大岡東2/" class="town-card">
+<div class="town-name">上大岡東二丁目</div>
+<div class="town-score" style="color:#f39c12">49.3点</div>
+<div class="town-meta">人口 3,478 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="東永谷3/" class="town-card">
+<div class="town-name">東永谷三丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 3,273 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="大久保1/" class="town-card">
+<div class="town-name">大久保一丁目</div>
+<div class="town-score" style="color:#f39c12">48.7点</div>
+<div class="town-meta">人口 2,421 / 犯罪 11件 / 医療 6件</div>
+</a>
+<a href="下永谷3/" class="town-card">
+<div class="town-name">下永谷三丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 3,213 / 犯罪 9件 / 医療 1件</div>
+</a>
+<a href="港南台5/" class="town-card">
+<div class="town-name">港南台五丁目</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 2,268 / 犯罪 2件 / 医療 18件</div>
+</a>
+<a href="日限山3/" class="town-card">
+<div class="town-name">日限山三丁目</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 1,812 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大久保2/" class="town-card">
+<div class="town-name">大久保二丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 4,669 / 犯罪 3件 / 医療 5件</div>
+</a>
+<a href="上永谷町/" class="town-card">
+<div class="town-name">上永谷町</div>
+<div class="town-score" style="color:#f39c12">47.1点</div>
+<div class="town-meta">人口 83 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="丸山台2/" class="town-card">
+<div class="town-name">丸山台二丁目</div>
+<div class="town-score" style="color:#f39c12">47.0点</div>
+<div class="town-meta">人口 2,521 / 犯罪 2件 / 医療 8件</div>
+</a>
+<a href="港南2/" class="town-card">
+<div class="town-name">港南二丁目</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 4,044 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="日野6/" class="town-card">
+<div class="town-name">日野六丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 1,619 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="芹が谷5/" class="town-card">
+<div class="town-name">芹が谷五丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 4,139 / 犯罪 6件 / 医療 3件</div>
+</a>
+<a href="笹下2/" class="town-card">
+<div class="town-name">笹下二丁目</div>
+<div class="town-score" style="color:#f39c12">46.6点</div>
+<div class="town-meta">人口 2,413 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="日野5/" class="town-card">
+<div class="town-name">日野五丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 2,058 / 犯罪 5件 / 医療 4件</div>
+</a>
+<a href="日野7/" class="town-card">
+<div class="town-name">日野七丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 1,358 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="上大岡西3/" class="town-card">
+<div class="town-name">上大岡西三丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 2,620 / 犯罪 4件 / 医療 5件</div>
+</a>
+<a href="上永谷4/" class="town-card">
+<div class="town-name">上永谷四丁目</div>
+<div class="town-score" style="color:#f39c12">46.2点</div>
+<div class="town-meta">人口 2,017 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="笹下7/" class="town-card">
+<div class="town-name">笹下七丁目</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 1,473 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上永谷2/" class="town-card">
+<div class="town-name">上永谷二丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 2,328 / 犯罪 1件 / 医療 6件</div>
+</a>
+<a href="芹が谷1/" class="town-card">
+<div class="town-name">芹が谷一丁目</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 3,364 / 犯罪 7件 / 医療 2件</div>
+</a>
+<a href="上永谷3/" class="town-card">
+<div class="town-name">上永谷三丁目</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 2,466 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="日限山4/" class="town-card">
+<div class="town-name">日限山四丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 1,925 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="日野南1/" class="town-card">
+<div class="town-name">日野南一丁目</div>
+<div class="town-score" style="color:#f39c12">45.0点</div>
+<div class="town-meta">人口 1,482 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="東芹が谷/" class="town-card">
+<div class="town-name">東芹が谷</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 2,557 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="芹が谷4/" class="town-card">
+<div class="town-name">芹が谷四丁目</div>
+<div class="town-score" style="color:#f39c12">44.2点</div>
+<div class="town-meta">人口 2,328 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="港南台9/" class="town-card">
+<div class="town-name">港南台九丁目</div>
+<div class="town-score" style="color:#f39c12">44.2点</div>
+<div class="town-meta">人口 3,457 / 犯罪 5件 / 医療 5件</div>
+</a>
+<a href="上永谷6/" class="town-card">
+<div class="town-name">上永谷六丁目</div>
+<div class="town-score" style="color:#f39c12">43.7点</div>
+<div class="town-meta">人口 1,545 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="芹が谷2/" class="town-card">
+<div class="town-name">芹が谷二丁目</div>
+<div class="town-score" style="color:#f39c12">43.3点</div>
+<div class="town-meta">人口 2,677 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="大久保3/" class="town-card">
+<div class="town-name">大久保三丁目</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 4,551 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="港南台8/" class="town-card">
+<div class="town-name">港南台八丁目</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 2,660 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="日野中央1/" class="town-card">
+<div class="town-name">日野中央一丁目</div>
+<div class="town-score" style="color:#f39c12">42.5点</div>
+<div class="town-meta">人口 1,114 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="港南5/" class="town-card">
+<div class="town-name">港南五丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 1,606 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="笹下3/" class="town-card">
+<div class="town-name">笹下三丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 3,338 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="笹下5/" class="town-card">
+<div class="town-name">笹下五丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 2,904 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="日野8/" class="town-card">
+<div class="town-name">日野八丁目</div>
+<div class="town-score" style="color:#f39c12">41.0点</div>
+<div class="town-meta">人口 2,222 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="笹下6/" class="town-card">
+<div class="town-name">笹下六丁目</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 2,315 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="下永谷2/" class="town-card">
+<div class="town-name">下永谷二丁目</div>
+<div class="town-score" style="color:#f39c12">40.5点</div>
+<div class="town-meta">人口 1,681 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="笹下1/" class="town-card">
+<div class="town-name">笹下一丁目</div>
+<div class="town-score" style="color:#e74c3c">38.8点</div>
+<div class="town-meta">人口 1,919 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="下永谷6/" class="town-card">
+<div class="town-name">下永谷六丁目</div>
+<div class="town-score" style="color:#e74c3c">38.8点</div>
+<div class="town-meta">人口 1,363 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="日野2/" class="town-card">
+<div class="town-name">日野二丁目</div>
+<div class="town-score" style="color:#e74c3c">38.3点</div>
+<div class="town-meta">人口 3,063 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="日野中央2/" class="town-card">
+<div class="town-name">日野中央二丁目</div>
+<div class="town-score" style="color:#e74c3c">38.0点</div>
+<div class="town-meta">人口 2,652 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="芹が谷3/" class="town-card">
+<div class="town-name">芹が谷三丁目</div>
+<div class="town-score" style="color:#e74c3c">38.0点</div>
+<div class="town-meta">人口 1,442 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="下永谷1/" class="town-card">
+<div class="town-name">下永谷一丁目</div>
+<div class="town-score" style="color:#e74c3c">36.9点</div>
+<div class="town-meta">人口 1,220 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="日野4/" class="town-card">
+<div class="town-name">日野四丁目</div>
+<div class="town-score" style="color:#e74c3c">36.8点</div>
+<div class="town-meta">人口 2,230 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="最戸1/" class="town-card">
+<div class="town-name">最戸一丁目</div>
+<div class="town-score" style="color:#e74c3c">36.2点</div>
+<div class="town-meta">人口 2,993 / 犯罪 4件 / 医療 7件</div>
+</a>
+<a href="丸山台1/" class="town-card">
+<div class="town-name">丸山台一丁目</div>
+<div class="town-score" style="color:#e74c3c">35.9点</div>
+<div class="town-meta">人口 1,911 / 犯罪 28件 / 医療 14件</div>
+</a>
+<a href="日野南2/" class="town-card">
+<div class="town-name">日野南二丁目</div>
+<div class="town-score" style="color:#e74c3c">35.0点</div>
+<div class="town-meta">人口 1,055 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="下永谷5/" class="town-card">
+<div class="town-name">下永谷五丁目</div>
+<div class="town-score" style="color:#e74c3c">34.4点</div>
+<div class="town-meta">人口 3,864 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="上大岡西1/" class="town-card">
+<div class="town-name">上大岡西一丁目</div>
+<div class="town-score" style="color:#e74c3c">33.6点</div>
+<div class="town-meta">人口 1,832 / 犯罪 31件 / 医療 40件</div>
+</a>
+<a href="日野1/" class="town-card">
+<div class="town-name">日野一丁目</div>
+<div class="town-score" style="color:#e74c3c">31.7点</div>
+<div class="town-meta">人口 870 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上大岡西2/" class="town-card">
+<div class="town-name">上大岡西二丁目</div>
+<div class="town-score" style="color:#e74c3c">31.1点</div>
+<div class="town-meta">人口 1,434 / 犯罪 7件 / 医療 12件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

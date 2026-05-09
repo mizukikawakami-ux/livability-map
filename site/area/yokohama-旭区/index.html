@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市旭区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市旭区の全77エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市旭区</div>
+<h2>横浜市旭区 全77エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">245,174</div><div class="label">人口</div></div>
+<div><div class="value">47.2</div><div class="label">平均スコア</div></div>
+<div><div class="value">268</div><div class="label">犯罪件数</div></div>
+<div><div class="value">299</div><div class="label">医療施設</div></div>
+<div><div class="value">171</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="中希望が丘/" class="town-card">
+<div class="town-name">中希望が丘</div>
+<div class="town-score" style="color:#2ecc71">68.4点</div>
+<div class="town-meta">人口 4,210 / 犯罪 0件 / 医療 9件</div>
+</a>
+<a href="柏町/" class="town-card">
+<div class="town-name">柏町</div>
+<div class="town-score" style="color:#2ecc71">64.3点</div>
+<div class="town-meta">人口 4,801 / 犯罪 0件 / 医療 12件</div>
+</a>
+<a href="金が谷2/" class="town-card">
+<div class="town-name">金が谷二丁目</div>
+<div class="town-score" style="color:#2ecc71">63.6点</div>
+<div class="town-meta">人口 1,434 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="白根1/" class="town-card">
+<div class="town-name">白根一丁目</div>
+<div class="town-score" style="color:#2ecc71">63.5点</div>
+<div class="town-meta">人口 1,081 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="笹野台2/" class="town-card">
+<div class="town-name">笹野台二丁目</div>
+<div class="town-score" style="color:#2ecc71">63.4点</div>
+<div class="town-meta">人口 1,525 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="若葉台4/" class="town-card">
+<div class="town-name">若葉台四丁目</div>
+<div class="town-score" style="color:#2ecc71">61.5点</div>
+<div class="town-meta">人口 4,878 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="中尾2/" class="town-card">
+<div class="town-name">中尾二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.3点</div>
+<div class="town-meta">人口 1,294 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="小高町/" class="town-card">
+<div class="town-name">小高町</div>
+<div class="town-score" style="color:#2ecc71">60.0点</div>
+<div class="town-meta">人口 785 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="若葉台1/" class="town-card">
+<div class="town-name">若葉台一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.0点</div>
+<div class="town-meta">人口 2,717 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="上白根町/" class="town-card">
+<div class="town-name">上白根町</div>
+<div class="town-score" style="color:#f39c12">58.9点</div>
+<div class="town-meta">人口 4,498 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="笹野台4/" class="town-card">
+<div class="town-name">笹野台四丁目</div>
+<div class="town-score" style="color:#f39c12">58.0点</div>
+<div class="town-meta">人口 2,557 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="金が谷/" class="town-card">
+<div class="town-name">金が谷</div>
+<div class="town-score" style="color:#f39c12">57.9点</div>
+<div class="town-meta">人口 749 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="中白根3/" class="town-card">
+<div class="town-name">中白根三丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 1,313 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="若葉台2/" class="town-card">
+<div class="town-name">若葉台二丁目</div>
+<div class="town-score" style="color:#f39c12">57.0点</div>
+<div class="town-meta">人口 3,902 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="中白根2/" class="town-card">
+<div class="town-name">中白根二丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 2,676 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="笹野台1/" class="town-card">
+<div class="town-name">笹野台一丁目</div>
+<div class="town-score" style="color:#f39c12">55.9点</div>
+<div class="town-meta">人口 2,697 / 犯罪 4件 / 医療 14件</div>
+</a>
+<a href="白根3/" class="town-card">
+<div class="town-name">白根三丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 1,988 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="白根7/" class="town-card">
+<div class="town-name">白根七丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 2,093 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="中白根4/" class="town-card">
+<div class="town-name">中白根四丁目</div>
+<div class="town-score" style="color:#f39c12">54.9点</div>
+<div class="town-meta">人口 3,011 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="中沢2/" class="town-card">
+<div class="town-name">中沢二丁目</div>
+<div class="town-score" style="color:#f39c12">54.7点</div>
+<div class="town-meta">人口 1,582 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="万騎が原/" class="town-card">
+<div class="town-name">万騎が原</div>
+<div class="town-score" style="color:#f39c12">54.6点</div>
+<div class="town-meta">人口 5,066 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="上白根1/" class="town-card">
+<div class="town-name">上白根一丁目</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 2,227 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="若葉台3/" class="town-card">
+<div class="town-name">若葉台三丁目</div>
+<div class="town-score" style="color:#f39c12">53.9点</div>
+<div class="town-meta">人口 1,959 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="白根4/" class="town-card">
+<div class="town-name">白根四丁目</div>
+<div class="town-score" style="color:#f39c12">53.0点</div>
+<div class="town-meta">人口 2,221 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中希望が丘/" class="town-card">
+<div class="town-name">中希望が丘</div>
+<div class="town-score" style="color:#f39c12">52.6点</div>
+<div class="town-meta">人口 5,940 / 犯罪 4件 / 医療 21件</div>
+</a>
+<a href="川島町/" class="town-card">
+<div class="town-name">川島町</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 5,625 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="今宿町/" class="town-card">
+<div class="town-name">今宿町</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 3,638 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="中沢3/" class="town-card">
+<div class="town-name">中沢三丁目</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 2,089 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="白根6/" class="town-card">
+<div class="town-name">白根六丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 2,914 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="今宿1/" class="town-card">
+<div class="town-name">今宿一丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 2,449 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="今川町/" class="town-card">
+<div class="town-name">今川町</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 1,376 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="鶴ケ峰本町1/" class="town-card">
+<div class="town-name">鶴ケ峰本町一丁目</div>
+<div class="town-score" style="color:#f39c12">49.3点</div>
+<div class="town-meta">人口 2,058 / 犯罪 6件 / 医療 6件</div>
+</a>
+<a href="二俣川2/" class="town-card">
+<div class="town-name">二俣川二丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 4,770 / 犯罪 7件 / 医療 28件</div>
+</a>
+<a href="中沢1/" class="town-card">
+<div class="town-name">中沢一丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 3,169 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="中尾1/" class="town-card">
+<div class="town-name">中尾一丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 2,315 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="東希望が丘/" class="town-card">
+<div class="town-name">東希望が丘</div>
+<div class="town-score" style="color:#f39c12">47.3点</div>
+<div class="town-meta">人口 5,610 / 犯罪 8件 / 医療 10件</div>
+</a>
+<a href="本村町/" class="town-card">
+<div class="town-name">本村町</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 5,237 / 犯罪 13件 / 医療 6件</div>
+</a>
+<a href="西川島町/" class="town-card">
+<div class="town-name">西川島町</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 3,320 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="左近山/" class="town-card">
+<div class="town-name">左近山</div>
+<div class="town-score" style="color:#f39c12">46.2点</div>
+<div class="town-meta">人口 5,090 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="白根町/" class="town-card">
+<div class="town-name">白根町</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 144 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="白根2/" class="town-card">
+<div class="town-name">白根二丁目</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 3,053 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="東希望が丘/" class="town-card">
+<div class="town-name">東希望が丘</div>
+<div class="town-score" style="color:#f39c12">45.8点</div>
+<div class="town-meta">人口 4,665 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="川井本町/" class="town-card">
+<div class="town-name">川井本町</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 4,029 / 犯罪 6件 / 医療 6件</div>
+</a>
+<a href="南希望が丘/" class="town-card">
+<div class="town-name">南希望が丘</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 5,414 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="上白根2/" class="town-card">
+<div class="town-name">上白根二丁目</div>
+<div class="town-score" style="color:#f39c12">45.0点</div>
+<div class="town-meta">人口 2,915 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="上白根町/" class="town-card">
+<div class="town-name">上白根町</div>
+<div class="town-score" style="color:#f39c12">44.4点</div>
+<div class="town-meta">人口 4,313 / 犯罪 13件 / 医療 7件</div>
+</a>
+<a href="二俣川1/" class="town-card">
+<div class="town-name">二俣川一丁目</div>
+<div class="town-score" style="color:#f39c12">44.3点</div>
+<div class="town-meta">人口 4,445 / 犯罪 12件 / 医療 26件</div>
+</a>
+<a href="白根8/" class="town-card">
+<div class="town-name">白根八丁目</div>
+<div class="town-score" style="color:#f39c12">43.9点</div>
+<div class="town-meta">人口 2,259 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="鶴ケ峰本町2/" class="town-card">
+<div class="town-name">鶴ケ峰本町二丁目</div>
+<div class="town-score" style="color:#f39c12">43.8点</div>
+<div class="town-meta">人口 2,746 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="笹野台3/" class="town-card">
+<div class="town-name">笹野台三丁目</div>
+<div class="town-score" style="color:#f39c12">43.4点</div>
+<div class="town-meta">人口 2,143 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="鶴ケ峰2/" class="town-card">
+<div class="town-name">鶴ケ峰二丁目</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 4,363 / 犯罪 36件 / 医療 19件</div>
+</a>
+<a href="今宿2/" class="town-card">
+<div class="town-name">今宿二丁目</div>
+<div class="town-score" style="color:#f39c12">42.4点</div>
+<div class="town-meta">人口 2,438 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="上白根3/" class="town-card">
+<div class="town-name">上白根三丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 1,868 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="市沢町/" class="town-card">
+<div class="town-name">市沢町</div>
+<div class="town-score" style="color:#f39c12">42.1点</div>
+<div class="town-meta">人口 5,026 / 犯罪 0件 / 医療 9件</div>
+</a>
+<a href="鶴ケ峰1/" class="town-card">
+<div class="town-name">鶴ケ峰一丁目</div>
+<div class="town-score" style="color:#f39c12">42.0点</div>
+<div class="town-meta">人口 5,685 / 犯罪 24件 / 医療 8件</div>
+</a>
+<a href="南本宿町/" class="town-card">
+<div class="town-name">南本宿町</div>
+<div class="town-score" style="color:#f39c12">41.7点</div>
+<div class="town-meta">人口 5,009 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="白根5/" class="town-card">
+<div class="town-name">白根五丁目</div>
+<div class="town-score" style="color:#f39c12">41.4点</div>
+<div class="town-meta">人口 2,010 / 犯罪 1件 / 医療 6件</div>
+</a>
+<a href="善部町/" class="town-card">
+<div class="town-name">善部町</div>
+<div class="town-score" style="color:#f39c12">41.3点</div>
+<div class="town-meta">人口 5,718 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="さちが丘/" class="town-card">
+<div class="town-name">さちが丘</div>
+<div class="town-score" style="color:#e74c3c">39.4点</div>
+<div class="town-meta">人口 10,099 / 犯罪 10件 / 医療 3件</div>
+</a>
+<a href="鶴ケ峰本町3/" class="town-card">
+<div class="town-name">鶴ケ峰本町三丁目</div>
+<div class="town-score" style="color:#e74c3c">39.0点</div>
+<div class="town-meta">人口 1,054 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="市沢町/" class="town-card">
+<div class="town-name">市沢町</div>
+<div class="town-score" style="color:#e74c3c">38.8点</div>
+<div class="town-meta">人口 4,407 / 犯罪 9件 / 医療 3件</div>
+</a>
+<a href="金が谷1/" class="town-card">
+<div class="town-name">金が谷一丁目</div>
+<div class="town-score" style="color:#e74c3c">38.2点</div>
+<div class="town-meta">人口 1,485 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="本宿町/" class="town-card">
+<div class="town-name">本宿町</div>
+<div class="town-score" style="color:#e74c3c">38.1点</div>
+<div class="town-meta">人口 7,168 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="川井宿町/" class="town-card">
+<div class="town-name">川井宿町</div>
+<div class="town-score" style="color:#e74c3c">36.3点</div>
+<div class="town-meta">人口 2,158 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="四季美台/" class="town-card">
+<div class="town-name">四季美台</div>
+<div class="town-score" style="color:#e74c3c">36.0点</div>
+<div class="town-meta">人口 4,333 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="下川井町/" class="town-card">
+<div class="town-name">下川井町</div>
+<div class="town-score" style="color:#e74c3c">35.9点</div>
+<div class="town-meta">人口 1,571 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="今宿東町/" class="town-card">
+<div class="town-name">今宿東町</div>
+<div class="town-score" style="color:#e74c3c">35.5点</div>
+<div class="town-meta">人口 7,408 / 犯罪 15件 / 医療 1件</div>
+</a>
+<a href="大池町/" class="town-card">
+<div class="town-name">大池町</div>
+<div class="town-score" style="color:#e74c3c">35.5点</div>
+<div class="town-meta">人口 6 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="矢指町/" class="town-card">
+<div class="town-name">矢指町</div>
+<div class="town-score" style="color:#e74c3c">34.8点</div>
+<div class="town-meta">人口 85 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="上川井町/" class="town-card">
+<div class="town-name">上川井町</div>
+<div class="town-score" style="color:#e74c3c">34.4点</div>
+<div class="town-meta">人口 4,249 / 犯罪 2件 / 医療 8件</div>
+</a>
+<a href="都岡町/" class="town-card">
+<div class="town-name">都岡町</div>
+<div class="town-score" style="color:#e74c3c">33.5点</div>
+<div class="town-meta">人口 2,760 / 犯罪 5件 / 医療 4件</div>
+</a>
+<a href="左近山/" class="town-card">
+<div class="town-name">左近山</div>
+<div class="town-score" style="color:#e74c3c">33.1点</div>
+<div class="town-meta">人口 2,868 / 犯罪 13件 / 医療 1件</div>
+</a>
+<a href="今宿西町/" class="town-card">
+<div class="town-name">今宿西町</div>
+<div class="town-score" style="color:#e74c3c">31.6点</div>
+<div class="town-meta">人口 3,466 / 犯罪 7件 / 医療 5件</div>
+</a>
+<a href="三反田町/" class="town-card">
+<div class="town-name">三反田町</div>
+<div class="town-score" style="color:#e74c3c">31.1点</div>
+<div class="town-meta">人口 1,029 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="中白根1/" class="town-card">
+<div class="town-name">中白根一丁目</div>
+<div class="town-score" style="color:#e74c3c">31.1点</div>
+<div class="town-meta">人口 1,675 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="今宿南町/" class="town-card">
+<div class="town-name">今宿南町</div>
+<div class="town-score" style="color:#e74c3c">29.8点</div>
+<div class="town-meta">人口 3,357 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="桐が作/" class="town-card">
+<div class="town-name">桐が作</div>
+<div class="town-score" style="color:#e74c3c">26.6点</div>
+<div class="town-meta">人口 889 / 犯罪 1件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

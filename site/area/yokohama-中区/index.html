@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市中区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市中区の全227エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市中区</div>
+<h2>横浜市中区 全227エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">151,388</div><div class="label">人口</div></div>
+<div><div class="value">47.2</div><div class="label">平均スコア</div></div>
+<div><div class="value">474</div><div class="label">犯罪件数</div></div>
+<div><div class="value">418</div><div class="label">医療施設</div></div>
+<div><div class="value">85</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="本町6/" class="town-card">
+<div class="town-name">本町六丁目</div>
+<div class="town-score" style="color:#2ecc71">70.2点</div>
+<div class="town-meta">人口 26 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="千代崎町1/" class="town-card">
+<div class="town-name">千代崎町一丁目</div>
+<div class="town-score" style="color:#2ecc71">70.2点</div>
+<div class="town-meta">人口 407 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="弁天通1/" class="town-card">
+<div class="town-name">弁天通一丁目</div>
+<div class="town-score" style="color:#2ecc71">69.5点</div>
+<div class="town-meta">人口 101 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="太田町5/" class="town-card">
+<div class="town-name">太田町五丁目</div>
+<div class="town-score" style="color:#2ecc71">69.3点</div>
+<div class="town-meta">人口 65 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="日本大通/" class="town-card">
+<div class="town-name">日本大通</div>
+<div class="town-score" style="color:#2ecc71">69.2点</div>
+<div class="town-meta">人口 258 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="相生町4/" class="town-card">
+<div class="town-name">相生町四丁目</div>
+<div class="town-score" style="color:#2ecc71">69.2点</div>
+<div class="town-meta">人口 39 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="万代町3/" class="town-card">
+<div class="town-name">万代町三丁目</div>
+<div class="town-score" style="color:#2ecc71">68.9点</div>
+<div class="town-meta">人口 244 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="横浜公園/" class="town-card">
+<div class="town-name">横浜公園</div>
+<div class="town-score" style="color:#2ecc71">68.8点</div>
+<div class="town-meta">人口 31 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="常盤町5/" class="town-card">
+<div class="town-name">常盤町五丁目</div>
+<div class="town-score" style="color:#2ecc71">68.8点</div>
+<div class="town-meta">人口 10 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="北仲通4/" class="town-card">
+<div class="town-name">北仲通四丁目</div>
+<div class="town-score" style="color:#2ecc71">68.7点</div>
+<div class="town-meta">人口 17 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="相生町3/" class="town-card">
+<div class="town-name">相生町三丁目</div>
+<div class="town-score" style="color:#2ecc71">68.7点</div>
+<div class="town-meta">人口 169 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="滝之上/" class="town-card">
+<div class="town-name">滝之上</div>
+<div class="town-score" style="color:#2ecc71">68.7点</div>
+<div class="town-meta">人口 1,539 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="元浜町4/" class="town-card">
+<div class="town-name">元浜町四丁目</div>
+<div class="town-score" style="color:#2ecc71">68.4点</div>
+<div class="town-meta">人口 58 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="弁天通6/" class="town-card">
+<div class="town-name">弁天通六丁目</div>
+<div class="town-score" style="color:#2ecc71">68.1点</div>
+<div class="town-meta">人口 338 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="南仲通1/" class="town-card">
+<div class="town-name">南仲通一丁目</div>
+<div class="town-score" style="color:#2ecc71">68.0点</div>
+<div class="town-meta">人口 350 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="海岸通2/" class="town-card">
+<div class="town-name">海岸通二丁目</div>
+<div class="town-score" style="color:#2ecc71">67.8点</div>
+<div class="town-meta">人口 215 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="野毛町4/" class="town-card">
+<div class="town-name">野毛町四丁目</div>
+<div class="town-score" style="color:#2ecc71">66.9点</div>
+<div class="town-meta">人口 278 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="竹之丸/" class="town-card">
+<div class="town-name">竹之丸</div>
+<div class="town-score" style="color:#2ecc71">66.6点</div>
+<div class="town-meta">人口 2,140 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="池袋/" class="town-card">
+<div class="town-name">池袋</div>
+<div class="town-score" style="color:#2ecc71">66.0点</div>
+<div class="town-meta">人口 1,681 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="石川町4/" class="town-card">
+<div class="town-name">石川町四丁目</div>
+<div class="town-score" style="color:#2ecc71">65.7点</div>
+<div class="town-meta">人口 327 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="北仲通5/" class="town-card">
+<div class="town-name">北仲通五丁目</div>
+<div class="town-score" style="color:#2ecc71">63.9点</div>
+<div class="town-meta">人口 2,031 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="麦田町2/" class="town-card">
+<div class="town-name">麦田町二丁目</div>
+<div class="town-score" style="color:#2ecc71">63.2点</div>
+<div class="town-meta">人口 245 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="柏葉/" class="town-card">
+<div class="town-name">柏葉</div>
+<div class="town-score" style="color:#2ecc71">62.6点</div>
+<div class="town-meta">人口 1,734 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="山元町3/" class="town-card">
+<div class="town-name">山元町三丁目</div>
+<div class="town-score" style="color:#2ecc71">62.0点</div>
+<div class="town-meta">人口 281 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="山元町2/" class="town-card">
+<div class="town-name">山元町二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.9点</div>
+<div class="town-meta">人口 699 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="山田町/" class="town-card">
+<div class="town-name">山田町</div>
+<div class="town-score" style="color:#2ecc71">61.5点</div>
+<div class="town-meta">人口 1,537 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="伊勢佐木町7/" class="town-card">
+<div class="town-name">伊勢佐木町七丁目</div>
+<div class="town-score" style="color:#2ecc71">61.3点</div>
+<div class="town-meta">人口 692 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="根岸加曽台/" class="town-card">
+<div class="town-name">根岸加曽台</div>
+<div class="town-score" style="color:#2ecc71">61.2点</div>
+<div class="town-meta">人口 245 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="仲尾台/" class="town-card">
+<div class="town-name">仲尾台</div>
+<div class="town-score" style="color:#2ecc71">60.5点</div>
+<div class="town-meta">人口 1,291 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="寺久保/" class="town-card">
+<div class="town-name">寺久保</div>
+<div class="town-score" style="color:#2ecc71">60.1点</div>
+<div class="town-meta">人口 693 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="大芝台/" class="town-card">
+<div class="town-name">大芝台</div>
+<div class="town-score" style="color:#f39c12">59.4点</div>
+<div class="town-meta">人口 314 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="弥生町4/" class="town-card">
+<div class="town-name">弥生町四丁目</div>
+<div class="town-score" style="color:#f39c12">58.3点</div>
+<div class="town-meta">人口 233 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="本町4/" class="town-card">
+<div class="town-name">本町四丁目</div>
+<div class="town-score" style="color:#f39c12">58.1点</div>
+<div class="town-meta">人口 271 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="英町/" class="town-card">
+<div class="town-name">英町</div>
+<div class="town-score" style="color:#f39c12">58.1点</div>
+<div class="town-meta">人口 348 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="蓬莱町1/" class="town-card">
+<div class="town-name">蓬莱町一丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 147 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="蓬莱町3/" class="town-card">
+<div class="town-name">蓬莱町三丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 372 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="本町1/" class="town-card">
+<div class="town-name">本町一丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 162 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="尾上町3/" class="town-card">
+<div class="town-name">尾上町三丁目</div>
+<div class="town-score" style="color:#f39c12">56.8点</div>
+<div class="town-meta">人口 25 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="寿町1/" class="town-card">
+<div class="town-name">寿町一丁目</div>
+<div class="town-score" style="color:#f39c12">56.8点</div>
+<div class="town-meta">人口 620 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="松影町2/" class="town-card">
+<div class="town-name">松影町二丁目</div>
+<div class="town-score" style="color:#f39c12">56.8点</div>
+<div class="town-meta">人口 791 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="常盤町3/" class="town-card">
+<div class="town-name">常盤町三丁目</div>
+<div class="town-score" style="color:#f39c12">56.7点</div>
+<div class="town-meta">人口 34 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="万代町1/" class="town-card">
+<div class="town-name">万代町一丁目</div>
+<div class="town-score" style="color:#f39c12">56.7点</div>
+<div class="town-meta">人口 9 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="常盤町2/" class="town-card">
+<div class="town-name">常盤町二丁目</div>
+<div class="town-score" style="color:#f39c12">56.6点</div>
+<div class="town-meta">人口 81 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="港町2/" class="town-card">
+<div class="town-name">港町二丁目</div>
+<div class="town-score" style="color:#f39c12">56.6点</div>
+<div class="town-meta">人口 17 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="太田町6/" class="town-card">
+<div class="town-name">太田町六丁目</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 136 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="曙町5/" class="town-card">
+<div class="town-name">曙町五丁目</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 466 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="住吉町2/" class="town-card">
+<div class="town-name">住吉町二丁目</div>
+<div class="town-score" style="color:#f39c12">56.4点</div>
+<div class="town-meta">人口 124 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="港町3/" class="town-card">
+<div class="town-name">港町三丁目</div>
+<div class="town-score" style="color:#f39c12">56.2点</div>
+<div class="town-meta">人口 2 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="本町5/" class="town-card">
+<div class="town-name">本町五丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 2 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大和町1/" class="town-card">
+<div class="town-name">大和町一丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 639 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="尾上町5/" class="town-card">
+<div class="town-name">尾上町五丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 284 / 犯罪 0件 / 医療 9件</div>
+</a>
+<a href="南仲通5/" class="town-card">
+<div class="town-name">南仲通五丁目</div>
+<div class="town-score" style="color:#f39c12">55.9点</div>
+<div class="town-meta">人口 61 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="住吉町6/" class="town-card">
+<div class="town-name">住吉町六丁目</div>
+<div class="town-score" style="color:#f39c12">55.9点</div>
+<div class="town-meta">人口 464 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="元浜町2/" class="town-card">
+<div class="town-name">元浜町二丁目</div>
+<div class="town-score" style="color:#f39c12">55.7点</div>
+<div class="town-meta">人口 154 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="弁天通2/" class="town-card">
+<div class="town-name">弁天通二丁目</div>
+<div class="town-score" style="color:#f39c12">55.7点</div>
+<div class="town-meta">人口 107 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="北仲通2/" class="town-card">
+<div class="town-name">北仲通二丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 28 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="港町6/" class="town-card">
+<div class="town-name">港町六丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 37 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="太田町3/" class="town-card">
+<div class="town-name">太田町三丁目</div>
+<div class="town-score" style="color:#f39c12">55.5点</div>
+<div class="town-meta">人口 356 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="尾上町6/" class="town-card">
+<div class="town-name">尾上町六丁目</div>
+<div class="town-score" style="color:#f39c12">55.5点</div>
+<div class="town-meta">人口 1 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="相生町1/" class="town-card">
+<div class="town-name">相生町一丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 63 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="末広町1/" class="town-card">
+<div class="town-name">末広町一丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 5 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="太田町2/" class="town-card">
+<div class="town-name">太田町二丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 11 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="相生町5/" class="town-card">
+<div class="town-name">相生町五丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 21 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="吉浜町/" class="town-card">
+<div class="town-name">吉浜町</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 997 / 犯罪 9件 / 医療 6件</div>
+</a>
+<a href="太田町4/" class="town-card">
+<div class="town-name">太田町四丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 5 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="赤門町/" class="town-card">
+<div class="town-name">赤門町</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 319 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="長者町7/" class="town-card">
+<div class="town-name">長者町七丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 1 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="南仲通4/" class="town-card">
+<div class="town-name">南仲通四丁目</div>
+<div class="town-score" style="color:#f39c12">55.0点</div>
+<div class="town-meta">人口 4 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="元町5/" class="town-card">
+<div class="town-name">元町五丁目</div>
+<div class="town-score" style="color:#f39c12">54.9点</div>
+<div class="town-meta">人口 373 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="本町3/" class="town-card">
+<div class="town-name">本町三丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 26 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="黄金町1/" class="town-card">
+<div class="town-name">黄金町一丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 193 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="若葉町2/" class="town-card">
+<div class="town-name">若葉町二丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 201 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="海岸通3/" class="town-card">
+<div class="town-name">海岸通三丁目</div>
+<div class="town-score" style="color:#f39c12">54.7点</div>
+<div class="town-meta">人口 129 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="元町2/" class="town-card">
+<div class="town-name">元町二丁目</div>
+<div class="town-score" style="color:#f39c12">54.7点</div>
+<div class="town-meta">人口 145 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="末広町2/" class="town-card">
+<div class="town-name">末広町二丁目</div>
+<div class="town-score" style="color:#f39c12">54.7点</div>
+<div class="town-meta">人口 21 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="野毛町3/" class="town-card">
+<div class="town-name">野毛町三丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 1,080 / 犯罪 2件 / 医療 7件</div>
+</a>
+<a href="扇町1/" class="town-card">
+<div class="town-name">扇町一丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 388 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="山元町5/" class="town-card">
+<div class="town-name">山元町五丁目</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 1,430 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="伊勢佐木町5/" class="town-card">
+<div class="town-name">伊勢佐木町五丁目</div>
+<div class="town-score" style="color:#f39c12">53.7点</div>
+<div class="town-meta">人口 592 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="千歳町/" class="town-card">
+<div class="town-name">千歳町</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 331 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="本牧和田/" class="town-card">
+<div class="town-name">本牧和田</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 1,617 / 犯罪 4件 / 医療 5件</div>
+</a>
+<a href="鷺山/" class="town-card">
+<div class="town-name">鷺山</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 1,179 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="長者町4/" class="town-card">
+<div class="town-name">長者町四丁目</div>
+<div class="town-score" style="color:#f39c12">53.0点</div>
+<div class="town-meta">人口 754 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="寿町4/" class="town-card">
+<div class="town-name">寿町四丁目</div>
+<div class="town-score" style="color:#f39c12">52.0点</div>
+<div class="town-meta">人口 379 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="松影町3/" class="town-card">
+<div class="town-name">松影町三丁目</div>
+<div class="town-score" style="color:#f39c12">52.0点</div>
+<div class="town-meta">人口 1,704 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="矢口台/" class="town-card">
+<div class="town-name">矢口台</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 1,406 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="花咲町2/" class="town-card">
+<div class="town-name">花咲町二丁目</div>
+<div class="town-score" style="color:#f39c12">51.5点</div>
+<div class="town-meta">人口 508 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="本郷町1/" class="town-card">
+<div class="town-name">本郷町一丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 267 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="日ノ出町2/" class="town-card">
+<div class="town-name">日ノ出町二丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 758 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="上野町4/" class="town-card">
+<div class="town-name">上野町四丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 156 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="新港1/" class="town-card">
+<div class="town-name">新港一丁目</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 1 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="根岸町2/" class="town-card">
+<div class="town-name">根岸町二丁目</div>
+<div class="town-score" style="color:#f39c12">50.0点</div>
+<div class="town-meta">人口 1,449 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="末吉町4/" class="town-card">
+<div class="town-name">末吉町四丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 566 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="妙香寺台/" class="town-card">
+<div class="town-name">妙香寺台</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 324 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="山手町/" class="town-card">
+<div class="town-name">山手町</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 4,470 / 犯罪 8件 / 医療 7件</div>
+</a>
+<a href="石川町3/" class="town-card">
+<div class="town-name">石川町三丁目</div>
+<div class="town-score" style="color:#f39c12">49.3点</div>
+<div class="town-meta">人口 714 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="上野町3/" class="town-card">
+<div class="town-name">上野町三丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 218 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="本牧緑ケ丘/" class="town-card">
+<div class="town-name">本牧緑ケ丘</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 1,513 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="千代崎町2/" class="town-card">
+<div class="town-name">千代崎町二丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 769 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寿町3/" class="town-card">
+<div class="town-name">寿町三丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 1,655 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="千代崎町3/" class="town-card">
+<div class="town-name">千代崎町三丁目</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 417 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="根岸町3/" class="town-card">
+<div class="town-name">根岸町三丁目</div>
+<div class="town-score" style="color:#f39c12">48.1点</div>
+<div class="town-meta">人口 1,551 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="塚越/" class="town-card">
+<div class="town-name">塚越</div>
+<div class="town-score" style="color:#f39c12">48.0点</div>
+<div class="town-meta">人口 96 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="石川町5/" class="town-card">
+<div class="town-name">石川町五丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 828 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="初音町3/" class="town-card">
+<div class="town-name">初音町三丁目</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 682 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="長者町3/" class="town-card">
+<div class="town-name">長者町三丁目</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 505 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="新山下2/" class="town-card">
+<div class="town-name">新山下二丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 1,219 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="蓬莱町2/" class="town-card">
+<div class="town-name">蓬莱町二丁目</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 327 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="長者町5/" class="town-card">
+<div class="town-name">長者町五丁目</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 626 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="弥生町5/" class="town-card">
+<div class="town-name">弥生町五丁目</div>
+<div class="town-score" style="color:#f39c12">46.6点</div>
+<div class="town-meta">人口 278 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="元町1/" class="town-card">
+<div class="town-name">元町一丁目</div>
+<div class="town-score" style="color:#f39c12">46.2点</div>
+<div class="town-meta">人口 450 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="山元町4/" class="town-card">
+<div class="town-name">山元町四丁目</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 655 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="本牧間門/" class="town-card">
+<div class="town-name">本牧間門</div>
+<div class="town-score" style="color:#f39c12">45.9点</div>
+<div class="town-meta">人口 2,537 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="宮川町2/" class="town-card">
+<div class="town-name">宮川町二丁目</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 359 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="小港町2/" class="town-card">
+<div class="town-name">小港町二丁目</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 174 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="石川町1/" class="town-card">
+<div class="town-name">石川町一丁目</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 743 / 犯罪 2件 / 医療 10件</div>
+</a>
+<a href="海岸通5/" class="town-card">
+<div class="town-name">海岸通五丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 311 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="寿町2/" class="town-card">
+<div class="town-name">寿町二丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 519 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="小港町3/" class="town-card">
+<div class="town-name">小港町三丁目</div>
+<div class="town-score" style="color:#f39c12">45.0点</div>
+<div class="town-meta">人口 348 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="本牧満坂/" class="town-card">
+<div class="town-name">本牧満坂</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 1,739 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="翁町1/" class="town-card">
+<div class="town-name">翁町一丁目</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 276 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="翁町2/" class="town-card">
+<div class="town-name">翁町二丁目</div>
+<div class="town-score" style="color:#f39c12">44.5点</div>
+<div class="town-meta">人口 538 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="山吹町/" class="town-card">
+<div class="town-name">山吹町</div>
+<div class="town-score" style="color:#f39c12">44.5点</div>
+<div class="town-meta">人口 343 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="山下町/" class="town-card">
+<div class="town-name">山下町</div>
+<div class="town-score" style="color:#f39c12">44.4点</div>
+<div class="town-meta">人口 10,878 / 犯罪 24件 / 医療 35件</div>
+</a>
+<a href="日ノ出町1/" class="town-card">
+<div class="town-name">日ノ出町一丁目</div>
+<div class="town-score" style="color:#f39c12">44.4点</div>
+<div class="town-meta">人口 1,364 / 犯罪 6件 / 医療 8件</div>
+</a>
+<a href="本牧三之谷/" class="town-card">
+<div class="town-name">本牧三之谷</div>
+<div class="town-score" style="color:#f39c12">44.3点</div>
+<div class="town-meta">人口 2,354 / 犯罪 2件 / 医療 9件</div>
+</a>
+<a href="花咲町1/" class="town-card">
+<div class="town-name">花咲町一丁目</div>
+<div class="town-score" style="color:#f39c12">44.2点</div>
+<div class="town-meta">人口 803 / 犯罪 6件 / 医療 5件</div>
+</a>
+<a href="松影町4/" class="town-card">
+<div class="town-name">松影町四丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 476 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大和町2/" class="town-card">
+<div class="town-name">大和町二丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 635 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="初音町2/" class="town-card">
+<div class="town-name">初音町二丁目</div>
+<div class="town-score" style="color:#f39c12">43.9点</div>
+<div class="town-meta">人口 492 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="万代町2/" class="town-card">
+<div class="town-name">万代町二丁目</div>
+<div class="town-score" style="color:#f39c12">43.9点</div>
+<div class="town-meta">人口 236 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="野毛町1/" class="town-card">
+<div class="town-name">野毛町一丁目</div>
+<div class="town-score" style="color:#f39c12">43.8点</div>
+<div class="town-meta">人口 392 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="本郷町3/" class="town-card">
+<div class="town-name">本郷町三丁目</div>
+<div class="town-score" style="color:#f39c12">43.7点</div>
+<div class="town-meta">人口 2,144 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="本牧宮原/" class="town-card">
+<div class="town-name">本牧宮原</div>
+<div class="town-score" style="color:#f39c12">43.6点</div>
+<div class="town-meta">人口 1,890 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="不老町1/" class="town-card">
+<div class="town-name">不老町一丁目</div>
+<div class="town-score" style="color:#f39c12">43.4点</div>
+<div class="town-meta">人口 147 / 犯罪 2件 / 医療 6件</div>
+</a>
+<a href="長者町2/" class="town-card">
+<div class="town-name">長者町二丁目</div>
+<div class="town-score" style="color:#f39c12">43.3点</div>
+<div class="town-meta">人口 1,035 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="松影町1/" class="town-card">
+<div class="town-name">松影町一丁目</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 322 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="桜木町3/" class="town-card">
+<div class="town-name">桜木町三丁目</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 24 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="弥生町2/" class="town-card">
+<div class="town-name">弥生町二丁目</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 267 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="相生町6/" class="town-card">
+<div class="town-name">相生町六丁目</div>
+<div class="town-score" style="color:#f39c12">42.9点</div>
+<div class="town-meta">人口 62 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="住吉町1/" class="town-card">
+<div class="town-name">住吉町一丁目</div>
+<div class="town-score" style="color:#f39c12">42.9点</div>
+<div class="town-meta">人口 139 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="住吉町3/" class="town-card">
+<div class="town-name">住吉町三丁目</div>
+<div class="town-score" style="color:#f39c12">42.9点</div>
+<div class="town-meta">人口 21 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="相生町2/" class="town-card">
+<div class="town-name">相生町二丁目</div>
+<div class="town-score" style="color:#f39c12">42.8点</div>
+<div class="town-meta">人口 90 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="桜木町1/" class="town-card">
+<div class="town-name">桜木町一丁目</div>
+<div class="town-score" style="color:#f39c12">42.8点</div>
+<div class="town-meta">人口 45 / 犯罪 13件 / 医療 13件</div>
+</a>
+<a href="伊勢佐木町4/" class="town-card">
+<div class="town-name">伊勢佐木町四丁目</div>
+<div class="town-score" style="color:#f39c12">42.8点</div>
+<div class="town-meta">人口 240 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="末吉町2/" class="town-card">
+<div class="town-name">末吉町二丁目</div>
+<div class="town-score" style="color:#f39c12">42.8点</div>
+<div class="town-meta">人口 513 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="簑沢/" class="town-card">
+<div class="town-name">簑沢</div>
+<div class="town-score" style="color:#f39c12">42.7点</div>
+<div class="town-meta">人口 1,319 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="吉田町/" class="town-card">
+<div class="town-name">吉田町</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 1,009 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="根岸町1/" class="town-card">
+<div class="town-name">根岸町一丁目</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 417 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="太田町1/" class="town-card">
+<div class="town-name">太田町一丁目</div>
+<div class="town-score" style="color:#f39c12">42.5点</div>
+<div class="town-meta">人口 36 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="常盤町4/" class="town-card">
+<div class="town-name">常盤町四丁目</div>
+<div class="town-score" style="color:#f39c12">42.4点</div>
+<div class="town-meta">人口 2 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="長者町8/" class="town-card">
+<div class="town-name">長者町八丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 348 / 犯罪 8件 / 医療 3件</div>
+</a>
+<a href="羽衣町3/" class="town-card">
+<div class="town-name">羽衣町三丁目</div>
+<div class="town-score" style="color:#f39c12">42.1点</div>
+<div class="town-meta">人口 4 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="元浜町3/" class="town-card">
+<div class="town-name">元浜町三丁目</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 169 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="弁天通3/" class="town-card">
+<div class="town-name">弁天通三丁目</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 146 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="常盤町6/" class="town-card">
+<div class="town-name">常盤町六丁目</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 28 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="羽衣町2/" class="town-card">
+<div class="town-name">羽衣町二丁目</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 205 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="長者町9/" class="town-card">
+<div class="town-name">長者町九丁目</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 300 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="曙町2/" class="town-card">
+<div class="town-name">曙町二丁目</div>
+<div class="town-score" style="color:#f39c12">41.8点</div>
+<div class="town-meta">人口 49 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="不老町2/" class="town-card">
+<div class="town-name">不老町二丁目</div>
+<div class="town-score" style="color:#f39c12">41.8点</div>
+<div class="town-meta">人口 28 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="住吉町5/" class="town-card">
+<div class="town-name">住吉町五丁目</div>
+<div class="town-score" style="color:#f39c12">41.6点</div>
+<div class="town-meta">人口 50 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="伊勢佐木町3/" class="town-card">
+<div class="town-name">伊勢佐木町三丁目</div>
+<div class="town-score" style="color:#f39c12">41.6点</div>
+<div class="town-meta">人口 17 / 犯罪 14件 / 医療 1件</div>
+</a>
+<a href="本牧町1/" class="town-card">
+<div class="town-name">本牧町一丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 3,103 / 犯罪 10件 / 医療 9件</div>
+</a>
+<a href="海岸通4/" class="town-card">
+<div class="town-name">海岸通四丁目</div>
+<div class="town-score" style="color:#f39c12">41.2点</div>
+<div class="town-meta">人口 183 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="元町4/" class="town-card">
+<div class="town-name">元町四丁目</div>
+<div class="town-score" style="color:#f39c12">41.1点</div>
+<div class="town-meta">人口 114 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="本牧町2/" class="town-card">
+<div class="town-name">本牧町二丁目</div>
+<div class="town-score" style="color:#f39c12">41.0点</div>
+<div class="town-meta">人口 2,800 / 犯罪 9件 / 医療 3件</div>
+</a>
+<a href="若葉町1/" class="town-card">
+<div class="town-name">若葉町一丁目</div>
+<div class="town-score" style="color:#f39c12">40.9点</div>
+<div class="town-meta">人口 65 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="末吉町3/" class="town-card">
+<div class="town-name">末吉町三丁目</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 981 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="麦田町4/" class="town-card">
+<div class="town-name">麦田町四丁目</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 325 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="根岸旭台/" class="town-card">
+<div class="town-name">根岸旭台</div>
+<div class="town-score" style="color:#f39c12">40.3点</div>
+<div class="town-meta">人口 1,984 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="福富町西通/" class="town-card">
+<div class="town-name">福富町西通</div>
+<div class="town-score" style="color:#f39c12">40.1点</div>
+<div class="town-meta">人口 445 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="本牧荒井/" class="town-card">
+<div class="town-name">本牧荒井</div>
+<div class="town-score" style="color:#f39c12">40.1点</div>
+<div class="town-meta">人口 664 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="本牧元町/" class="town-card">
+<div class="town-name">本牧元町</div>
+<div class="town-score" style="color:#e74c3c">39.7点</div>
+<div class="town-meta">人口 4,339 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="扇町2/" class="town-card">
+<div class="town-name">扇町二丁目</div>
+<div class="town-score" style="color:#e74c3c">39.3点</div>
+<div class="town-meta">人口 648 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="西竹之丸/" class="town-card">
+<div class="town-name">西竹之丸</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 1,984 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="豆口台/" class="town-card">
+<div class="town-name">豆口台</div>
+<div class="town-score" style="color:#e74c3c">38.8点</div>
+<div class="town-meta">人口 2,036 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="花咲町3/" class="town-card">
+<div class="town-name">花咲町三丁目</div>
+<div class="town-score" style="color:#e74c3c">38.3点</div>
+<div class="town-meta">人口 466 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="諏訪町/" class="town-card">
+<div class="town-name">諏訪町</div>
+<div class="town-score" style="color:#e74c3c">38.2点</div>
+<div class="town-meta">人口 186 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="山元町1/" class="town-card">
+<div class="town-name">山元町一丁目</div>
+<div class="town-score" style="color:#e74c3c">38.2点</div>
+<div class="town-meta">人口 554 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="富士見町/" class="town-card">
+<div class="town-name">富士見町</div>
+<div class="town-score" style="color:#e74c3c">37.8点</div>
+<div class="town-meta">人口 692 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="小港町1/" class="town-card">
+<div class="town-name">小港町一丁目</div>
+<div class="town-score" style="color:#e74c3c">37.6点</div>
+<div class="town-meta">人口 1,788 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="宮川町3/" class="town-card">
+<div class="town-name">宮川町三丁目</div>
+<div class="town-score" style="color:#e74c3c">37.4点</div>
+<div class="town-meta">人口 425 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="初音町1/" class="town-card">
+<div class="town-name">初音町一丁目</div>
+<div class="town-score" style="color:#e74c3c">37.0点</div>
+<div class="town-meta">人口 471 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="長者町1/" class="town-card">
+<div class="town-name">長者町一丁目</div>
+<div class="town-score" style="color:#e74c3c">37.0点</div>
+<div class="town-meta">人口 641 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="北方町1/" class="town-card">
+<div class="town-name">北方町一丁目</div>
+<div class="town-score" style="color:#e74c3c">36.9点</div>
+<div class="town-meta">人口 916 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="千代崎町4/" class="town-card">
+<div class="town-name">千代崎町四丁目</div>
+<div class="town-score" style="color:#e74c3c">36.8点</div>
+<div class="town-meta">人口 729 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="本郷町2/" class="town-card">
+<div class="town-name">本郷町二丁目</div>
+<div class="town-score" style="color:#e74c3c">36.8点</div>
+<div class="town-meta">人口 565 / 犯罪 3件 / 医療 10件</div>
+</a>
+<a href="立野/" class="town-card">
+<div class="town-name">立野</div>
+<div class="town-score" style="color:#e74c3c">36.6点</div>
+<div class="town-meta">人口 880 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="北方町2/" class="town-card">
+<div class="town-name">北方町二丁目</div>
+<div class="town-score" style="color:#e74c3c">36.4点</div>
+<div class="town-meta">人口 487 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="西之谷町/" class="town-card">
+<div class="town-name">西之谷町</div>
+<div class="town-score" style="color:#e74c3c">36.0点</div>
+<div class="town-meta">人口 1,759 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="不老町3/" class="town-card">
+<div class="town-name">不老町三丁目</div>
+<div class="town-score" style="color:#e74c3c">35.8点</div>
+<div class="town-meta">人口 1,036 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="上野町2/" class="town-card">
+<div class="town-name">上野町二丁目</div>
+<div class="town-score" style="color:#e74c3c">35.5点</div>
+<div class="town-meta">人口 471 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="三吉町/" class="town-card">
+<div class="town-name">三吉町</div>
+<div class="town-score" style="color:#e74c3c">35.3点</div>
+<div class="town-meta">人口 661 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="本牧原/" class="town-card">
+<div class="town-name">本牧原</div>
+<div class="town-score" style="color:#e74c3c">35.2点</div>
+<div class="town-meta">人口 5,719 / 犯罪 24件 / 医療 14件</div>
+</a>
+<a href="打越/" class="town-card">
+<div class="town-name">打越</div>
+<div class="town-score" style="color:#e74c3c">35.2点</div>
+<div class="town-meta">人口 1,381 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="弥生町1/" class="town-card">
+<div class="town-name">弥生町一丁目</div>
+<div class="town-score" style="color:#e74c3c">34.6点</div>
+<div class="town-meta">人口 401 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="本牧大里町/" class="town-card">
+<div class="town-name">本牧大里町</div>
+<div class="town-score" style="color:#e74c3c">34.5点</div>
+<div class="town-meta">人口 2,248 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="扇町4/" class="town-card">
+<div class="town-name">扇町四丁目</div>
+<div class="town-score" style="color:#e74c3c">34.2点</div>
+<div class="town-meta">人口 733 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="本牧十二天/" class="town-card">
+<div class="town-name">本牧十二天</div>
+<div class="town-score" style="color:#e74c3c">33.6点</div>
+<div class="town-meta">人口 12 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="若葉町3/" class="town-card">
+<div class="town-name">若葉町三丁目</div>
+<div class="town-score" style="color:#e74c3c">33.4点</div>
+<div class="town-meta">人口 726 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="末吉町1/" class="town-card">
+<div class="town-name">末吉町一丁目</div>
+<div class="town-score" style="color:#e74c3c">32.1点</div>
+<div class="town-meta">人口 505 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="新山下3/" class="town-card">
+<div class="town-name">新山下三丁目</div>
+<div class="town-score" style="color:#e74c3c">31.4点</div>
+<div class="town-meta">人口 2,427 / 犯罪 7件 / 医療 2件</div>
+</a>
+<a href="長者町6/" class="town-card">
+<div class="town-name">長者町六丁目</div>
+<div class="town-score" style="color:#e74c3c">31.3点</div>
+<div class="town-meta">人口 287 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="曙町1/" class="town-card">
+<div class="town-name">曙町一丁目</div>
+<div class="town-score" style="color:#e74c3c">31.1点</div>
+<div class="town-meta">人口 547 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="弥生町3/" class="town-card">
+<div class="town-name">弥生町三丁目</div>
+<div class="town-score" style="color:#e74c3c">30.6点</div>
+<div class="town-meta">人口 469 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="石川町2/" class="town-card">
+<div class="town-name">石川町二丁目</div>
+<div class="town-score" style="color:#e74c3c">30.3点</div>
+<div class="town-meta">人口 448 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="曙町4/" class="town-card">
+<div class="town-name">曙町四丁目</div>
+<div class="town-score" style="color:#e74c3c">30.2点</div>
+<div class="town-meta">人口 335 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="麦田町1/" class="town-card">
+<div class="town-name">麦田町一丁目</div>
+<div class="town-score" style="color:#e74c3c">29.9点</div>
+<div class="town-meta">人口 386 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="伊勢佐木町6/" class="town-card">
+<div class="town-name">伊勢佐木町六丁目</div>
+<div class="town-score" style="color:#e74c3c">29.7点</div>
+<div class="town-meta">人口 377 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="錦町/" class="town-card">
+<div class="town-name">錦町</div>
+<div class="town-score" style="color:#e74c3c">29.6点</div>
+<div class="town-meta">人口 1,880 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="大平町/" class="town-card">
+<div class="town-name">大平町</div>
+<div class="town-score" style="color:#e74c3c">29.5点</div>
+<div class="town-meta">人口 764 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="元町3/" class="town-card">
+<div class="town-name">元町三丁目</div>
+<div class="town-score" style="color:#e74c3c">29.4点</div>
+<div class="town-meta">人口 190 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="黄金町2/" class="town-card">
+<div class="town-name">黄金町二丁目</div>
+<div class="town-score" style="color:#e74c3c">29.3点</div>
+<div class="town-meta">人口 24 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="羽衣町1/" class="town-card">
+<div class="town-name">羽衣町一丁目</div>
+<div class="town-score" style="color:#e74c3c">29.2点</div>
+<div class="town-meta">人口 102 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="宮川町1/" class="town-card">
+<div class="town-name">宮川町一丁目</div>
+<div class="town-score" style="color:#e74c3c">28.9点</div>
+<div class="town-meta">人口 95 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="野毛町2/" class="town-card">
+<div class="town-name">野毛町二丁目</div>
+<div class="town-score" style="color:#e74c3c">28.7点</div>
+<div class="town-meta">人口 587 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="伊勢佐木町1/" class="town-card">
+<div class="town-name">伊勢佐木町一丁目</div>
+<div class="town-score" style="color:#e74c3c">28.0点</div>
+<div class="town-meta">人口 3 / 犯罪 20件 / 医療 4件</div>
+</a>
+<a href="麦田町3/" class="town-card">
+<div class="town-name">麦田町三丁目</div>
+<div class="town-score" style="color:#e74c3c">27.8点</div>
+<div class="town-meta">人口 239 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="扇町3/" class="town-card">
+<div class="town-name">扇町三丁目</div>
+<div class="town-score" style="color:#e74c3c">27.6点</div>
+<div class="town-meta">人口 67 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="伊勢佐木町2/" class="town-card">
+<div class="town-name">伊勢佐木町二丁目</div>
+<div class="town-score" style="color:#e74c3c">27.4点</div>
+<div class="town-meta">人口 5 / 犯罪 7件 / 医療 0件</div>
+</a>
+<a href="上野町1/" class="town-card">
+<div class="town-name">上野町一丁目</div>
+<div class="town-score" style="color:#e74c3c">27.3点</div>
+<div class="town-meta">人口 673 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="曙町3/" class="town-card">
+<div class="town-name">曙町三丁目</div>
+<div class="town-score" style="color:#e74c3c">27.0点</div>
+<div class="town-meta">人口 125 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="福富町仲通/" class="town-card">
+<div class="town-name">福富町仲通</div>
+<div class="town-score" style="color:#e74c3c">26.7点</div>
+<div class="town-meta">人口 169 / 犯罪 7件 / 医療 0件</div>
+</a>
+<a href="新港2/" class="town-card">
+<div class="town-name">新港二丁目</div>
+<div class="town-score" style="color:#e74c3c">24.5点</div>
+<div class="town-meta">人口 1 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="新山下1/" class="town-card">
+<div class="town-name">新山下一丁目</div>
+<div class="town-score" style="color:#e74c3c">24.5点</div>
+<div class="town-meta">人口 1,952 / 犯罪 14件 / 医療 2件</div>
+</a>
+<a href="本牧ふ頭/" class="town-card">
+<div class="town-name">本牧ふ頭</div>
+<div class="town-score" style="color:#e74c3c">17.0点</div>
+<div class="town-meta">人口 41 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="福富町東通/" class="town-card">
+<div class="town-name">福富町東通</div>
+<div class="town-score" style="color:#e74c3c">14.0点</div>
+<div class="town-meta">人口 87 / 犯罪 5件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

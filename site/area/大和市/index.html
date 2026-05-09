@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大和市 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="大和市の全134エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 大和市</div>
+<h2>大和市 全134エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">239,169</div><div class="label">人口</div></div>
+<div><div class="value">53.0</div><div class="label">平均スコア</div></div>
+<div><div class="value">484</div><div class="label">犯罪件数</div></div>
+<div><div class="value">325</div><div class="label">医療施設</div></div>
+<div><div class="value">126</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="渋谷8/" class="town-card">
+<div class="town-name">渋谷八丁目</div>
+<div class="town-score" style="color:#2ecc71">69.3点</div>
+<div class="town-meta">人口 851 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="深見台3/" class="town-card">
+<div class="town-name">深見台三丁目</div>
+<div class="town-score" style="color:#2ecc71">66.6点</div>
+<div class="town-meta">人口 381 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="つきみ野7/" class="town-card">
+<div class="town-name">つきみ野七丁目</div>
+<div class="town-score" style="color:#2ecc71">66.0点</div>
+<div class="town-meta">人口 858 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="つきみ野5/" class="town-card">
+<div class="town-name">つきみ野五丁目</div>
+<div class="town-score" style="color:#2ecc71">65.4点</div>
+<div class="town-meta">人口 1,618 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="福田/" class="town-card">
+<div class="town-name">福田</div>
+<div class="town-score" style="color:#2ecc71">63.3点</div>
+<div class="town-meta">人口 1,780 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="つきみ野6/" class="town-card">
+<div class="town-name">つきみ野六丁目</div>
+<div class="town-score" style="color:#2ecc71">63.2点</div>
+<div class="town-meta">人口 1,107 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="下和田/" class="town-card">
+<div class="town-name">下和田</div>
+<div class="town-score" style="color:#2ecc71">62.0点</div>
+<div class="town-meta">人口 2,185 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="福田/" class="town-card">
+<div class="town-name">福田</div>
+<div class="town-score" style="color:#2ecc71">61.8点</div>
+<div class="town-meta">人口 282 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="渋谷4/" class="town-card">
+<div class="town-name">渋谷四丁目</div>
+<div class="town-score" style="color:#2ecc71">61.8点</div>
+<div class="town-meta">人口 544 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="西鶴間1/" class="town-card">
+<div class="town-name">西鶴間一丁目</div>
+<div class="town-score" style="color:#2ecc71">61.7点</div>
+<div class="town-meta">人口 2,126 / 犯罪 5件 / 医療 7件</div>
+</a>
+<a href="柳橋5/" class="town-card">
+<div class="town-name">柳橋五丁目</div>
+<div class="town-score" style="color:#2ecc71">61.7点</div>
+<div class="town-meta">人口 580 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="鶴間2/" class="town-card">
+<div class="town-name">鶴間二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.6点</div>
+<div class="town-meta">人口 3,262 / 犯罪 6件 / 医療 12件</div>
+</a>
+<a href="福田8/" class="town-card">
+<div class="town-name">福田八丁目</div>
+<div class="town-score" style="color:#2ecc71">61.6点</div>
+<div class="town-meta">人口 1,397 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中央林間西4/" class="town-card">
+<div class="town-name">中央林間西四丁目</div>
+<div class="town-score" style="color:#2ecc71">61.5点</div>
+<div class="town-meta">人口 1,366 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="草柳3/" class="town-card">
+<div class="town-name">草柳三丁目</div>
+<div class="town-score" style="color:#2ecc71">61.3点</div>
+<div class="town-meta">人口 435 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="福田/" class="town-card">
+<div class="town-name">福田</div>
+<div class="town-score" style="color:#2ecc71">61.3点</div>
+<div class="town-meta">人口 190 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中央林間5/" class="town-card">
+<div class="town-name">中央林間五丁目</div>
+<div class="town-score" style="color:#2ecc71">61.2点</div>
+<div class="town-meta">人口 3,297 / 犯罪 9件 / 医療 6件</div>
+</a>
+<a href="中央3/" class="town-card">
+<div class="town-name">中央三丁目</div>
+<div class="town-score" style="color:#2ecc71">60.9点</div>
+<div class="town-meta">人口 1,559 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="つきみ野3/" class="town-card">
+<div class="town-name">つきみ野三丁目</div>
+<div class="town-score" style="color:#2ecc71">60.8点</div>
+<div class="town-meta">人口 1,587 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="鶴間1/" class="town-card">
+<div class="town-name">鶴間一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.4点</div>
+<div class="town-meta">人口 3,633 / 犯罪 9件 / 医療 10件</div>
+</a>
+<a href="中央1/" class="town-card">
+<div class="town-name">中央一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.4点</div>
+<div class="town-meta">人口 527 / 犯罪 21件 / 医療 6件</div>
+</a>
+<a href="柳橋4/" class="town-card">
+<div class="town-name">柳橋四丁目</div>
+<div class="town-score" style="color:#2ecc71">60.4点</div>
+<div class="town-meta">人口 1,286 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="渋谷2/" class="town-card">
+<div class="town-name">渋谷二丁目</div>
+<div class="town-score" style="color:#2ecc71">60.3点</div>
+<div class="town-meta">人口 831 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="草柳1/" class="town-card">
+<div class="town-name">草柳一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.1点</div>
+<div class="town-meta">人口 1,200 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中央林間6/" class="town-card">
+<div class="town-name">中央林間六丁目</div>
+<div class="town-score" style="color:#f39c12">59.2点</div>
+<div class="town-meta">人口 2,643 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="福田1/" class="town-card">
+<div class="town-name">福田一丁目</div>
+<div class="town-score" style="color:#f39c12">59.1点</div>
+<div class="town-meta">人口 1,017 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="福田/" class="town-card">
+<div class="town-name">福田</div>
+<div class="town-score" style="color:#f39c12">59.1点</div>
+<div class="town-meta">人口 7,929 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="中央林間8/" class="town-card">
+<div class="town-name">中央林間八丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 2,094 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="中央林間9/" class="town-card">
+<div class="town-name">中央林間九丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 1,368 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="渋谷5/" class="town-card">
+<div class="town-name">渋谷五丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 1,359 / 犯罪 6件 / 医療 11件</div>
+</a>
+<a href="西鶴間8/" class="town-card">
+<div class="town-name">西鶴間八丁目</div>
+<div class="town-score" style="color:#f39c12">58.7点</div>
+<div class="town-meta">人口 603 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="福田4/" class="town-card">
+<div class="town-name">福田四丁目</div>
+<div class="town-score" style="color:#f39c12">58.5点</div>
+<div class="town-meta">人口 1,364 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="福田3/" class="town-card">
+<div class="town-name">福田三丁目</div>
+<div class="town-score" style="color:#f39c12">58.4点</div>
+<div class="town-meta">人口 887 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="柳橋3/" class="town-card">
+<div class="town-name">柳橋三丁目</div>
+<div class="town-score" style="color:#f39c12">57.5点</div>
+<div class="town-meta">人口 2,425 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="林間2/" class="town-card">
+<div class="town-name">林間二丁目</div>
+<div class="town-score" style="color:#f39c12">57.4点</div>
+<div class="town-meta">人口 3,188 / 犯罪 6件 / 医療 4件</div>
+</a>
+<a href="南林間2/" class="town-card">
+<div class="town-name">南林間二丁目</div>
+<div class="town-score" style="color:#f39c12">57.2点</div>
+<div class="town-meta">人口 1,773 / 犯罪 5件 / 医療 6件</div>
+</a>
+<a href="代官1/" class="town-card">
+<div class="town-name">代官一丁目</div>
+<div class="town-score" style="color:#f39c12">57.1点</div>
+<div class="town-meta">人口 1,068 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="西鶴間4/" class="town-card">
+<div class="town-name">西鶴間四丁目</div>
+<div class="town-score" style="color:#f39c12">56.9点</div>
+<div class="town-meta">人口 2,342 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="西鶴間6/" class="town-card">
+<div class="town-name">西鶴間六丁目</div>
+<div class="town-score" style="color:#f39c12">56.8点</div>
+<div class="town-meta">人口 1,930 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="桜森3/" class="town-card">
+<div class="town-name">桜森三丁目</div>
+<div class="town-score" style="color:#f39c12">56.8点</div>
+<div class="town-meta">人口 1,937 / 犯罪 7件 / 医療 3件</div>
+</a>
+<a href="福田/" class="town-card">
+<div class="town-name">福田</div>
+<div class="town-score" style="color:#f39c12">56.6点</div>
+<div class="town-meta">人口 1,858 / 犯罪 15件 / 医療 8件</div>
+</a>
+<a href="中央林間西5/" class="town-card">
+<div class="town-name">中央林間西五丁目</div>
+<div class="town-score" style="color:#f39c12">56.2点</div>
+<div class="town-meta">人口 1,653 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中央林間4/" class="town-card">
+<div class="town-name">中央林間四丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 3,004 / 犯罪 15件 / 医療 15件</div>
+</a>
+<a href="中央4/" class="town-card">
+<div class="town-name">中央四丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 2,021 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="下和田/" class="town-card">
+<div class="town-name">下和田</div>
+<div class="town-score" style="color:#f39c12">55.7点</div>
+<div class="town-meta">人口 1,840 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="柳橋1/" class="town-card">
+<div class="town-name">柳橋一丁目</div>
+<div class="town-score" style="color:#f39c12">55.5点</div>
+<div class="town-meta">人口 1,415 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="つきみ野1/" class="town-card">
+<div class="town-name">つきみ野一丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 3,099 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="大和南2/" class="town-card">
+<div class="town-name">大和南二丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 2,396 / 犯罪 7件 / 医療 9件</div>
+</a>
+<a href="福田2/" class="town-card">
+<div class="town-name">福田二丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 1,411 / 犯罪 3件 / 医療 5件</div>
+</a>
+<a href="福田7/" class="town-card">
+<div class="town-name">福田七丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 2,137 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大和東3/" class="town-card">
+<div class="town-name">大和東三丁目</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 2,607 / 犯罪 3件 / 医療 5件</div>
+</a>
+<a href="中央2/" class="town-card">
+<div class="town-name">中央二丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 1,976 / 犯罪 11件 / 医療 6件</div>
+</a>
+<a href="草柳2/" class="town-card">
+<div class="town-name">草柳二丁目</div>
+<div class="town-score" style="color:#f39c12">55.0点</div>
+<div class="town-meta">人口 1,485 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="中央7/" class="town-card">
+<div class="town-name">中央七丁目</div>
+<div class="town-score" style="color:#f39c12">54.9点</div>
+<div class="town-meta">人口 1,507 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="中央5/" class="town-card">
+<div class="town-name">中央五丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 2,319 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="福田/" class="town-card">
+<div class="town-name">福田</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 1,816 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="南林間6/" class="town-card">
+<div class="town-name">南林間六丁目</div>
+<div class="town-score" style="color:#f39c12">54.6点</div>
+<div class="town-meta">人口 3,383 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="上和田/" class="town-card">
+<div class="town-name">上和田</div>
+<div class="town-score" style="color:#f39c12">54.6点</div>
+<div class="town-meta">人口 4,766 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="深見西3/" class="town-card">
+<div class="town-name">深見西三丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 458 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="下鶴間/" class="town-card">
+<div class="town-name">下鶴間</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 1,356 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="福田6/" class="town-card">
+<div class="town-name">福田六丁目</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 758 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中央林間2/" class="town-card">
+<div class="town-name">中央林間二丁目</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 3,364 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="林間1/" class="town-card">
+<div class="town-name">林間一丁目</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 3,313 / 犯罪 6件 / 医療 7件</div>
+</a>
+<a href="福田/" class="town-card">
+<div class="town-name">福田</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 1,123 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="南林間7/" class="town-card">
+<div class="town-name">南林間七丁目</div>
+<div class="town-score" style="color:#f39c12">53.9点</div>
+<div class="town-meta">人口 2,767 / 犯罪 3件 / 医療 5件</div>
+</a>
+<a href="上草柳9/" class="town-card">
+<div class="town-name">上草柳九丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 1,220 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="深見/" class="town-card">
+<div class="town-name">深見</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 4,202 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="中央林間3/" class="town-card">
+<div class="town-name">中央林間三丁目</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 2,557 / 犯罪 12件 / 医療 18件</div>
+</a>
+<a href="深見西1/" class="town-card">
+<div class="town-name">深見西一丁目</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 631 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="上和田/" class="town-card">
+<div class="town-name">上和田</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 2,192 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="渋谷7/" class="town-card">
+<div class="town-name">渋谷七丁目</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 738 / 犯罪 6件 / 医療 6件</div>
+</a>
+<a href="上草柳2/" class="town-card">
+<div class="town-name">上草柳二丁目</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 1,683 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="福田/" class="town-card">
+<div class="town-name">福田</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 992 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="南林間1/" class="town-card">
+<div class="town-name">南林間一丁目</div>
+<div class="town-score" style="color:#f39c12">52.7点</div>
+<div class="town-meta">人口 2,481 / 犯罪 10件 / 医療 11件</div>
+</a>
+<a href="つきみ野8/" class="town-card">
+<div class="town-name">つきみ野八丁目</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 1,304 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="下草柳/" class="town-card">
+<div class="town-name">下草柳</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 76 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大和南1/" class="town-card">
+<div class="town-name">大和南一丁目</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 770 / 犯罪 9件 / 医療 9件</div>
+</a>
+<a href="深見台1/" class="town-card">
+<div class="town-name">深見台一丁目</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 1,832 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="下鶴間/" class="town-card">
+<div class="town-name">下鶴間</div>
+<div class="town-score" style="color:#f39c12">51.7点</div>
+<div class="town-meta">人口 5,919 / 犯罪 19件 / 医療 5件</div>
+</a>
+<a href="つきみ野4/" class="town-card">
+<div class="town-name">つきみ野四丁目</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 1,175 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="深見台4/" class="town-card">
+<div class="town-name">深見台四丁目</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 1,240 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="上草柳7/" class="town-card">
+<div class="town-name">上草柳七丁目</div>
+<div class="town-score" style="color:#f39c12">51.5点</div>
+<div class="town-meta">人口 1,066 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="渋谷3/" class="town-card">
+<div class="town-name">渋谷三丁目</div>
+<div class="town-score" style="color:#f39c12">51.5点</div>
+<div class="town-meta">人口 566 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="上和田/" class="town-card">
+<div class="town-name">上和田</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 5,718 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="代官2/" class="town-card">
+<div class="town-name">代官二丁目</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 917 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上草柳3/" class="town-card">
+<div class="town-name">上草柳三丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 1,615 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="上草柳4/" class="town-card">
+<div class="town-name">上草柳四丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 629 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="下鶴間2/" class="town-card">
+<div class="town-name">下鶴間二丁目</div>
+<div class="town-score" style="color:#f39c12">50.4点</div>
+<div class="town-meta">人口 4,827 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="中央6/" class="town-card">
+<div class="town-name">中央六丁目</div>
+<div class="town-score" style="color:#f39c12">50.4点</div>
+<div class="town-meta">人口 1,687 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="深見西2/" class="town-card">
+<div class="town-name">深見西二丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 2,871 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="西鶴間2/" class="town-card">
+<div class="town-name">西鶴間二丁目</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 2,771 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="南林間4/" class="town-card">
+<div class="town-name">南林間四丁目</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 1,558 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="南林間9/" class="town-card">
+<div class="town-name">南林間九丁目</div>
+<div class="town-score" style="color:#f39c12">50.0点</div>
+<div class="town-meta">人口 432 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="上草柳8/" class="town-card">
+<div class="town-name">上草柳八丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 2,254 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="渋谷1/" class="town-card">
+<div class="town-name">渋谷一丁目</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 823 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大和東2/" class="town-card">
+<div class="town-name">大和東二丁目</div>
+<div class="town-score" style="color:#f39c12">49.3点</div>
+<div class="town-meta">人口 1,185 / 犯罪 16件 / 医療 5件</div>
+</a>
+<a href="渋谷6/" class="town-card">
+<div class="town-name">渋谷六丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 586 / 犯罪 38件 / 医療 7件</div>
+</a>
+<a href="南林間3/" class="town-card">
+<div class="town-name">南林間三丁目</div>
+<div class="town-score" style="color:#f39c12">48.7点</div>
+<div class="town-meta">人口 1,021 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="西鶴間5/" class="town-card">
+<div class="town-name">西鶴間五丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 1,306 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="中央林間1/" class="town-card">
+<div class="town-name">中央林間一丁目</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 2,882 / 犯罪 9件 / 医療 0件</div>
+</a>
+<a href="桜森1/" class="town-card">
+<div class="town-name">桜森一丁目</div>
+<div class="town-score" style="color:#f39c12">47.9点</div>
+<div class="town-meta">人口 773 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="南林間8/" class="town-card">
+<div class="town-name">南林間八丁目</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 2,096 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="福田5/" class="town-card">
+<div class="town-name">福田五丁目</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 1,240 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="下和田/" class="town-card">
+<div class="town-name">下和田</div>
+<div class="town-score" style="color:#f39c12">47.2点</div>
+<div class="town-meta">人口 850 / 犯罪 9件 / 医療 0件</div>
+</a>
+<a href="下鶴間/" class="town-card">
+<div class="town-name">下鶴間</div>
+<div class="town-score" style="color:#f39c12">47.0点</div>
+<div class="town-meta">人口 15,328 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="西鶴間3/" class="town-card">
+<div class="town-name">西鶴間三丁目</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 2,372 / 犯罪 11件 / 医療 6件</div>
+</a>
+<a href="上草柳6/" class="town-card">
+<div class="town-name">上草柳六丁目</div>
+<div class="town-score" style="color:#f39c12">46.6点</div>
+<div class="town-meta">人口 1,468 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="つきみ野2/" class="town-card">
+<div class="town-name">つきみ野二丁目</div>
+<div class="town-score" style="color:#f39c12">46.4点</div>
+<div class="town-meta">人口 999 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="代官3/" class="town-card">
+<div class="town-name">代官三丁目</div>
+<div class="town-score" style="color:#f39c12">46.4点</div>
+<div class="town-meta">人口 885 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="柳橋2/" class="town-card">
+<div class="town-name">柳橋二丁目</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 1,717 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="深見西7/" class="town-card">
+<div class="town-name">深見西七丁目</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 531 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上草柳1/" class="town-card">
+<div class="town-name">上草柳一丁目</div>
+<div class="town-score" style="color:#f39c12">45.9点</div>
+<div class="town-meta">人口 1,000 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="深見台2/" class="town-card">
+<div class="town-name">深見台二丁目</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 874 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="代官4/" class="town-card">
+<div class="town-name">代官四丁目</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 952 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大和東1/" class="town-card">
+<div class="town-name">大和東一丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 865 / 犯罪 7件 / 医療 15件</div>
+</a>
+<a href="深見西8/" class="town-card">
+<div class="town-name">深見西八丁目</div>
+<div class="town-score" style="color:#f39c12">44.9点</div>
+<div class="town-meta">人口 895 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="西鶴間7/" class="town-card">
+<div class="town-name">西鶴間七丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 1,789 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="深見東2/" class="town-card">
+<div class="town-name">深見東二丁目</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 281 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深見/" class="town-card">
+<div class="town-name">深見</div>
+<div class="town-score" style="color:#f39c12">44.5点</div>
+<div class="town-meta">人口 2,833 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="南林間5/" class="town-card">
+<div class="town-name">南林間五丁目</div>
+<div class="town-score" style="color:#f39c12">44.3点</div>
+<div class="town-meta">人口 1,717 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="中央林間西3/" class="town-card">
+<div class="town-name">中央林間西三丁目</div>
+<div class="town-score" style="color:#f39c12">43.8点</div>
+<div class="town-meta">人口 454 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="深見西6/" class="town-card">
+<div class="town-name">深見西六丁目</div>
+<div class="town-score" style="color:#f39c12">43.6点</div>
+<div class="town-meta">人口 621 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中央林間7/" class="town-card">
+<div class="town-name">中央林間七丁目</div>
+<div class="town-score" style="color:#f39c12">43.5点</div>
+<div class="town-meta">人口 1,953 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="上和田/" class="town-card">
+<div class="town-name">上和田</div>
+<div class="town-score" style="color:#f39c12">43.4点</div>
+<div class="town-meta">人口 269 / 犯罪 21件 / 医療 0件</div>
+</a>
+<a href="深見西5/" class="town-card">
+<div class="town-name">深見西五丁目</div>
+<div class="town-score" style="color:#f39c12">42.9点</div>
+<div class="town-meta">人口 23 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上草柳5/" class="town-card">
+<div class="town-name">上草柳五丁目</div>
+<div class="town-score" style="color:#f39c12">42.7点</div>
+<div class="town-meta">人口 146 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中央林間西2/" class="town-card">
+<div class="town-name">中央林間西二丁目</div>
+<div class="town-score" style="color:#f39c12">42.4点</div>
+<div class="town-meta">人口 976 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="上草柳/" class="town-card">
+<div class="town-name">上草柳</div>
+<div class="town-score" style="color:#f39c12">42.2点</div>
+<div class="town-meta">人口 3,430 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="桜森2/" class="town-card">
+<div class="town-name">桜森二丁目</div>
+<div class="town-score" style="color:#f39c12">42.2点</div>
+<div class="town-meta">人口 2,295 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="深見東1/" class="town-card">
+<div class="town-name">深見東一丁目</div>
+<div class="town-score" style="color:#f39c12">42.2点</div>
+<div class="town-meta">人口 955 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中央林間西1/" class="town-card">
+<div class="town-name">中央林間西一丁目</div>
+<div class="town-score" style="color:#f39c12">41.1点</div>
+<div class="town-meta">人口 702 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中央林間西6/" class="town-card">
+<div class="town-name">中央林間西六丁目</div>
+<div class="town-score" style="color:#e74c3c">39.8点</div>
+<div class="town-meta">人口 1,312 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="深見西4/" class="town-card">
+<div class="town-name">深見西四丁目</div>
+<div class="town-score" style="color:#e74c3c">39.5点</div>
+<div class="town-meta">人口 1,316 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="深見東3/" class="town-card">
+<div class="town-name">深見東三丁目</div>
+<div class="town-score" style="color:#e74c3c">35.9点</div>
+<div class="town-meta">人口 885 / 犯罪 2件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a> / <a href="../寒川町/">寒川町</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

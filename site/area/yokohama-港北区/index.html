@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市港北区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市港北区の全108エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市港北区</div>
+<h2>横浜市港北区 全108エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">358,530</div><div class="label">人口</div></div>
+<div><div class="value">48.1</div><div class="label">平均スコア</div></div>
+<div><div class="value">531</div><div class="label">犯罪件数</div></div>
+<div><div class="value">532</div><div class="label">医療施設</div></div>
+<div><div class="value">162</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="大倉山2/" class="town-card">
+<div class="town-name">大倉山二丁目</div>
+<div class="town-score" style="color:#2ecc71">70.6点</div>
+<div class="town-meta">人口 1,907 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="富士塚1/" class="town-card">
+<div class="town-name">富士塚一丁目</div>
+<div class="town-score" style="color:#2ecc71">67.1点</div>
+<div class="town-meta">人口 1,924 / 犯罪 0件 / 医療 7件</div>
+</a>
+<a href="仲手原1/" class="town-card">
+<div class="town-name">仲手原一丁目</div>
+<div class="town-score" style="color:#2ecc71">65.8点</div>
+<div class="town-meta">人口 3,331 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="下田町4/" class="town-card">
+<div class="town-name">下田町四丁目</div>
+<div class="town-score" style="color:#2ecc71">65.4点</div>
+<div class="town-meta">人口 2,440 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="日吉2/" class="town-card">
+<div class="town-name">日吉二丁目</div>
+<div class="town-score" style="color:#2ecc71">65.3点</div>
+<div class="town-meta">人口 3,416 / 犯罪 5件 / 医療 12件</div>
+</a>
+<a href="小机町/" class="town-card">
+<div class="town-name">小机町</div>
+<div class="town-score" style="color:#2ecc71">64.2点</div>
+<div class="town-meta">人口 5,133 / 犯罪 0件 / 医療 7件</div>
+</a>
+<a href="菊名3/" class="town-card">
+<div class="town-name">菊名三丁目</div>
+<div class="town-score" style="color:#2ecc71">63.4点</div>
+<div class="town-meta">人口 2,872 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="日吉本町6/" class="town-card">
+<div class="town-name">日吉本町六丁目</div>
+<div class="town-score" style="color:#2ecc71">63.3点</div>
+<div class="town-meta">人口 3,247 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="大曽根1/" class="town-card">
+<div class="town-name">大曽根一丁目</div>
+<div class="town-score" style="color:#2ecc71">62.8点</div>
+<div class="town-meta">人口 2,197 / 犯罪 2件 / 医療 6件</div>
+</a>
+<a href="篠原北1/" class="town-card">
+<div class="town-name">篠原北一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.8点</div>
+<div class="town-meta">人口 2,743 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="下田町1/" class="town-card">
+<div class="town-name">下田町一丁目</div>
+<div class="town-score" style="color:#f39c12">58.3点</div>
+<div class="town-meta">人口 1,245 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="新吉田東1/" class="town-card">
+<div class="town-name">新吉田東一丁目</div>
+<div class="town-score" style="color:#f39c12">58.3点</div>
+<div class="town-meta">人口 3,490 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="高田西2/" class="town-card">
+<div class="town-name">高田西二丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 1,532 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="大倉山4/" class="town-card">
+<div class="town-name">大倉山四丁目</div>
+<div class="town-score" style="color:#f39c12">57.5点</div>
+<div class="town-meta">人口 4,512 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="下田町2/" class="town-card">
+<div class="town-name">下田町二丁目</div>
+<div class="town-score" style="color:#f39c12">57.4点</div>
+<div class="town-meta">人口 1,468 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="篠原町/" class="town-card">
+<div class="town-name">篠原町</div>
+<div class="town-score" style="color:#f39c12">56.8点</div>
+<div class="town-meta">人口 5,818 / 犯罪 0件 / 医療 10件</div>
+</a>
+<a href="大倉山1/" class="town-card">
+<div class="town-name">大倉山一丁目</div>
+<div class="town-score" style="color:#f39c12">56.6点</div>
+<div class="town-meta">人口 3,491 / 犯罪 12件 / 医療 15件</div>
+</a>
+<a href="綱島台/" class="town-card">
+<div class="town-name">綱島台</div>
+<div class="town-score" style="color:#f39c12">56.6点</div>
+<div class="town-meta">人口 2,273 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="富士塚2/" class="town-card">
+<div class="town-name">富士塚二丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 3,055 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="綱島上町/" class="town-card">
+<div class="town-name">綱島上町</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 4,344 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="高田西3/" class="town-card">
+<div class="town-name">高田西三丁目</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 1,665 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="綱島東2/" class="town-card">
+<div class="town-name">綱島東二丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 1,910 / 犯罪 7件 / 医療 9件</div>
+</a>
+<a href="新吉田東3/" class="town-card">
+<div class="town-name">新吉田東三丁目</div>
+<div class="town-score" style="color:#f39c12">54.7点</div>
+<div class="town-meta">人口 2,539 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="日吉本町5/" class="town-card">
+<div class="town-name">日吉本町五丁目</div>
+<div class="town-score" style="color:#f39c12">54.6点</div>
+<div class="town-meta">人口 2,797 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="菊名4/" class="town-card">
+<div class="town-name">菊名四丁目</div>
+<div class="town-score" style="color:#f39c12">54.1点</div>
+<div class="town-meta">人口 1,806 / 犯罪 10件 / 医療 7件</div>
+</a>
+<a href="高田西4/" class="town-card">
+<div class="town-name">高田西四丁目</div>
+<div class="town-score" style="color:#f39c12">53.7点</div>
+<div class="town-meta">人口 2,093 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="高田東2/" class="town-card">
+<div class="town-name">高田東二丁目</div>
+<div class="town-score" style="color:#f39c12">53.5点</div>
+<div class="town-meta">人口 1,347 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="篠原東2/" class="town-card">
+<div class="town-name">篠原東二丁目</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 1,744 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="大豆戸町/" class="town-card">
+<div class="town-name">大豆戸町</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 6,923 / 犯罪 17件 / 医療 9件</div>
+</a>
+<a href="篠原北2/" class="town-card">
+<div class="town-name">篠原北二丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 1,702 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="仲手原2/" class="town-card">
+<div class="town-name">仲手原二丁目</div>
+<div class="town-score" style="color:#f39c12">52.4点</div>
+<div class="town-meta">人口 3,641 / 犯罪 1件 / 医療 7件</div>
+</a>
+<a href="新羽町/" class="town-card">
+<div class="town-name">新羽町</div>
+<div class="town-score" style="color:#f39c12">52.3点</div>
+<div class="town-meta">人口 5,923 / 犯罪 0件 / 医療 23件</div>
+</a>
+<a href="篠原西町/" class="town-card">
+<div class="town-name">篠原西町</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 3,456 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="菊名5/" class="town-card">
+<div class="town-name">菊名五丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 2,166 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大倉山7/" class="town-card">
+<div class="town-name">大倉山七丁目</div>
+<div class="town-score" style="color:#f39c12">51.2点</div>
+<div class="town-meta">人口 3,043 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="日吉本町2/" class="town-card">
+<div class="town-name">日吉本町二丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 5,445 / 犯罪 6件 / 医療 3件</div>
+</a>
+<a href="篠原台町/" class="town-card">
+<div class="town-name">篠原台町</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 2,800 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="綱島西3/" class="town-card">
+<div class="town-name">綱島西三丁目</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 2,416 / 犯罪 6件 / 医療 10件</div>
+</a>
+<a href="樽町2/" class="town-card">
+<div class="town-name">樽町二丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 4,669 / 犯罪 11件 / 医療 4件</div>
+</a>
+<a href="箕輪町1/" class="town-card">
+<div class="town-name">箕輪町一丁目</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 2,396 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="高田東1/" class="town-card">
+<div class="town-name">高田東一丁目</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 2,596 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="高田東3/" class="town-card">
+<div class="town-name">高田東三丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 2,257 / 犯罪 1件 / 医療 6件</div>
+</a>
+<a href="北新横浜2/" class="town-card">
+<div class="town-name">北新横浜二丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 837 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="菊名2/" class="town-card">
+<div class="town-name">菊名二丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 2,277 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="錦が丘/" class="town-card">
+<div class="town-name">錦が丘</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 1,983 / 犯罪 5件 / 医療 7件</div>
+</a>
+<a href="大倉山6/" class="town-card">
+<div class="town-name">大倉山六丁目</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 2,941 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="樽町1/" class="town-card">
+<div class="town-name">樽町一丁目</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 4,396 / 犯罪 6件 / 医療 3件</div>
+</a>
+<a href="綱島東3/" class="town-card">
+<div class="town-name">綱島東三丁目</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 3,684 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="日吉本町3/" class="town-card">
+<div class="town-name">日吉本町三丁目</div>
+<div class="town-score" style="color:#f39c12">49.8点</div>
+<div class="town-meta">人口 5,627 / 犯罪 2件 / 医療 6件</div>
+</a>
+<a href="日吉本町4/" class="town-card">
+<div class="town-name">日吉本町四丁目</div>
+<div class="town-score" style="color:#f39c12">49.8点</div>
+<div class="town-meta">人口 7,890 / 犯罪 11件 / 医療 5件</div>
+</a>
+<a href="菊名7/" class="town-card">
+<div class="town-name">菊名七丁目</div>
+<div class="town-score" style="color:#f39c12">49.6点</div>
+<div class="town-meta">人口 1,536 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="大曽根台/" class="town-card">
+<div class="town-name">大曽根台</div>
+<div class="town-score" style="color:#f39c12">49.6点</div>
+<div class="town-meta">人口 2,616 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="師岡町/" class="town-card">
+<div class="town-name">師岡町</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 5,629 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="大倉山5/" class="town-card">
+<div class="town-name">大倉山五丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 5,553 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="綱島西1/" class="town-card">
+<div class="town-name">綱島西一丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 2,166 / 犯罪 12件 / 医療 15件</div>
+</a>
+<a href="綱島西2/" class="town-card">
+<div class="town-name">綱島西二丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 4,186 / 犯罪 49件 / 医療 21件</div>
+</a>
+<a href="篠原東3/" class="town-card">
+<div class="town-name">篠原東三丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 2,166 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="高田東4/" class="town-card">
+<div class="town-name">高田東四丁目</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 2,135 / 犯罪 2件 / 医療 8件</div>
+</a>
+<a href="箕輪町2/" class="town-card">
+<div class="town-name">箕輪町二丁目</div>
+<div class="town-score" style="color:#f39c12">48.1点</div>
+<div class="town-meta">人口 6,757 / 犯罪 12件 / 医療 10件</div>
+</a>
+<a href="下田町6/" class="town-card">
+<div class="town-name">下田町六丁目</div>
+<div class="town-score" style="color:#f39c12">48.0点</div>
+<div class="town-meta">人口 2,919 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="菊名1/" class="town-card">
+<div class="town-name">菊名一丁目</div>
+<div class="town-score" style="color:#f39c12">47.8点</div>
+<div class="town-meta">人口 791 / 犯罪 3件 / 医療 7件</div>
+</a>
+<a href="大倉山3/" class="town-card">
+<div class="town-name">大倉山三丁目</div>
+<div class="town-score" style="color:#f39c12">47.8点</div>
+<div class="town-meta">人口 4,087 / 犯罪 7件 / 医療 30件</div>
+</a>
+<a href="綱島西4/" class="town-card">
+<div class="town-name">綱島西四丁目</div>
+<div class="town-score" style="color:#f39c12">47.8点</div>
+<div class="town-meta">人口 3,019 / 犯罪 5件 / 医療 4件</div>
+</a>
+<a href="箕輪町3/" class="town-card">
+<div class="town-name">箕輪町三丁目</div>
+<div class="town-score" style="color:#f39c12">47.1点</div>
+<div class="town-meta">人口 2,827 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="大豆戸町/" class="town-card">
+<div class="town-name">大豆戸町</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 8,044 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="新吉田東7/" class="town-card">
+<div class="town-name">新吉田東七丁目</div>
+<div class="town-score" style="color:#f39c12">46.4点</div>
+<div class="town-meta">人口 1,386 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="高田町/" class="town-card">
+<div class="town-name">高田町</div>
+<div class="town-score" style="color:#f39c12">46.4点</div>
+<div class="town-meta">人口 608 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="新横浜2/" class="town-card">
+<div class="town-name">新横浜二丁目</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 2,424 / 犯罪 8件 / 医療 35件</div>
+</a>
+<a href="日吉本町1/" class="town-card">
+<div class="town-name">日吉本町一丁目</div>
+<div class="town-score" style="color:#f39c12">44.9点</div>
+<div class="town-meta">人口 3,588 / 犯罪 10件 / 医療 42件</div>
+</a>
+<a href="高田西5/" class="town-card">
+<div class="town-name">高田西五丁目</div>
+<div class="town-score" style="color:#f39c12">44.5点</div>
+<div class="town-meta">人口 1,786 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="綱島西6/" class="town-card">
+<div class="town-name">綱島西六丁目</div>
+<div class="town-score" style="color:#f39c12">43.5点</div>
+<div class="town-meta">人口 3,084 / 犯罪 7件 / 医療 0件</div>
+</a>
+<a href="岸根町/" class="town-card">
+<div class="town-name">岸根町</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 4,248 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="樽町3/" class="town-card">
+<div class="town-name">樽町三丁目</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 5,473 / 犯罪 11件 / 医療 4件</div>
+</a>
+<a href="北新横浜1/" class="town-card">
+<div class="town-name">北新横浜一丁目</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 309 / 犯罪 3件 / 医療 8件</div>
+</a>
+<a href="高田西1/" class="town-card">
+<div class="town-name">高田西一丁目</div>
+<div class="town-score" style="color:#f39c12">43.0点</div>
+<div class="town-meta">人口 2,321 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="日吉1/" class="town-card">
+<div class="town-name">日吉一丁目</div>
+<div class="town-score" style="color:#f39c12">42.4点</div>
+<div class="town-meta">人口 2,338 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="篠原町/" class="town-card">
+<div class="town-name">篠原町</div>
+<div class="town-score" style="color:#f39c12">42.1点</div>
+<div class="town-meta">人口 6,201 / 犯罪 17件 / 医療 7件</div>
+</a>
+<a href="日吉3/" class="town-card">
+<div class="town-name">日吉三丁目</div>
+<div class="town-score" style="color:#f39c12">42.0点</div>
+<div class="town-meta">人口 2,918 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="綱島東5/" class="town-card">
+<div class="town-name">綱島東五丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 3,947 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="日吉6/" class="town-card">
+<div class="town-name">日吉六丁目</div>
+<div class="town-score" style="color:#f39c12">41.4点</div>
+<div class="town-meta">人口 2,964 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="下田町3/" class="town-card">
+<div class="town-name">下田町三丁目</div>
+<div class="town-score" style="color:#f39c12">41.3点</div>
+<div class="town-meta">人口 2,377 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="新横浜1/" class="town-card">
+<div class="town-name">新横浜一丁目</div>
+<div class="town-score" style="color:#f39c12">41.2点</div>
+<div class="town-meta">人口 8,216 / 犯罪 6件 / 医療 6件</div>
+</a>
+<a href="新吉田町/" class="town-card">
+<div class="town-name">新吉田町</div>
+<div class="town-score" style="color:#f39c12">41.2点</div>
+<div class="town-meta">人口 385 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="新吉田東5/" class="town-card">
+<div class="town-name">新吉田東五丁目</div>
+<div class="town-score" style="color:#f39c12">40.9点</div>
+<div class="town-meta">人口 3,481 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="綱島東6/" class="town-card">
+<div class="town-name">綱島東六丁目</div>
+<div class="town-score" style="color:#f39c12">40.3点</div>
+<div class="town-meta">人口 1,252 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="菊名6/" class="town-card">
+<div class="town-name">菊名六丁目</div>
+<div class="town-score" style="color:#e74c3c">39.6点</div>
+<div class="town-meta">人口 2,813 / 犯罪 15件 / 医療 8件</div>
+</a>
+<a href="綱島西5/" class="town-card">
+<div class="town-name">綱島西五丁目</div>
+<div class="town-score" style="color:#e74c3c">39.6点</div>
+<div class="town-meta">人口 5,537 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="日吉4/" class="town-card">
+<div class="town-name">日吉四丁目</div>
+<div class="town-score" style="color:#e74c3c">39.4点</div>
+<div class="town-meta">人口 2,163 / 犯罪 10件 / 医療 2件</div>
+</a>
+<a href="新吉田町/" class="town-card">
+<div class="town-name">新吉田町</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 4,380 / 犯罪 7件 / 医療 8件</div>
+</a>
+<a href="新吉田東4/" class="town-card">
+<div class="town-name">新吉田東四丁目</div>
+<div class="town-score" style="color:#e74c3c">38.9点</div>
+<div class="town-meta">人口 1,231 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="新羽町/" class="town-card">
+<div class="town-name">新羽町</div>
+<div class="town-score" style="color:#e74c3c">38.8点</div>
+<div class="town-meta">人口 6,563 / 犯罪 16件 / 医療 0件</div>
+</a>
+<a href="高田町/" class="town-card">
+<div class="town-name">高田町</div>
+<div class="town-score" style="color:#e74c3c">38.6点</div>
+<div class="town-meta">人口 87 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="新横浜3/" class="town-card">
+<div class="town-name">新横浜三丁目</div>
+<div class="town-score" style="color:#e74c3c">38.3点</div>
+<div class="town-meta">人口 2,833 / 犯罪 11件 / 医療 25件</div>
+</a>
+<a href="日吉7/" class="town-card">
+<div class="town-name">日吉七丁目</div>
+<div class="town-score" style="color:#e74c3c">37.9点</div>
+<div class="town-meta">人口 4,831 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="下田町5/" class="town-card">
+<div class="town-name">下田町五丁目</div>
+<div class="town-score" style="color:#e74c3c">37.7点</div>
+<div class="town-meta">人口 3,186 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="小机町/" class="town-card">
+<div class="town-name">小机町</div>
+<div class="town-score" style="color:#e74c3c">37.4点</div>
+<div class="town-meta">人口 7,693 / 犯罪 26件 / 医療 7件</div>
+</a>
+<a href="日吉5/" class="town-card">
+<div class="town-name">日吉五丁目</div>
+<div class="town-score" style="color:#e74c3c">37.1点</div>
+<div class="town-meta">人口 4,922 / 犯罪 8件 / 医療 2件</div>
+</a>
+<a href="新吉田東6/" class="town-card">
+<div class="town-name">新吉田東六丁目</div>
+<div class="town-score" style="color:#e74c3c">36.8点</div>
+<div class="town-meta">人口 4,051 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="新吉田東8/" class="town-card">
+<div class="town-name">新吉田東八丁目</div>
+<div class="town-score" style="color:#e74c3c">36.5点</div>
+<div class="town-meta">人口 5,527 / 犯罪 6件 / 医療 2件</div>
+</a>
+<a href="新吉田東2/" class="town-card">
+<div class="town-name">新吉田東二丁目</div>
+<div class="town-score" style="color:#e74c3c">36.4点</div>
+<div class="town-meta">人口 2,376 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="樽町4/" class="town-card">
+<div class="town-name">樽町四丁目</div>
+<div class="town-score" style="color:#e74c3c">35.9点</div>
+<div class="town-meta">人口 3,362 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="鳥山町/" class="town-card">
+<div class="town-name">鳥山町</div>
+<div class="town-score" style="color:#e74c3c">35.7点</div>
+<div class="town-meta">人口 7,547 / 犯罪 11件 / 医療 5件</div>
+</a>
+<a href="篠原東1/" class="town-card">
+<div class="town-name">篠原東一丁目</div>
+<div class="town-score" style="color:#e74c3c">35.6点</div>
+<div class="town-meta">人口 1,826 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大曽根2/" class="town-card">
+<div class="town-name">大曽根二丁目</div>
+<div class="town-score" style="color:#e74c3c">34.4点</div>
+<div class="town-meta">人口 2,891 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="綱島東1/" class="town-card">
+<div class="town-name">綱島東一丁目</div>
+<div class="town-score" style="color:#e74c3c">34.2点</div>
+<div class="town-meta">人口 2,970 / 犯罪 22件 / 医療 14件</div>
+</a>
+<a href="綱島東4/" class="town-card">
+<div class="town-name">綱島東四丁目</div>
+<div class="town-score" style="color:#e74c3c">33.5点</div>
+<div class="town-meta">人口 4,591 / 犯罪 8件 / 医療 9件</div>
+</a>
+<a href="師岡町/" class="town-card">
+<div class="town-name">師岡町</div>
+<div class="town-score" style="color:#e74c3c">33.0点</div>
+<div class="town-meta">人口 4,727 / 犯罪 35件 / 医療 4件</div>
+</a>
+<a href="大曽根3/" class="town-card">
+<div class="town-name">大曽根三丁目</div>
+<div class="town-score" style="color:#e74c3c">28.1点</div>
+<div class="town-meta">人口 3,279 / 犯罪 3件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

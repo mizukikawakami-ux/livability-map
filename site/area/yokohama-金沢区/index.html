@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市金沢区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市金沢区の全94エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市金沢区</div>
+<h2>横浜市金沢区 全94エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">198,939</div><div class="label">人口</div></div>
+<div><div class="value">49.7</div><div class="label">平均スコア</div></div>
+<div><div class="value">319</div><div class="label">犯罪件数</div></div>
+<div><div class="value">285</div><div class="label">医療施設</div></div>
+<div><div class="value">190</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="富岡西5/" class="town-card">
+<div class="town-name">富岡西五丁目</div>
+<div class="town-score" style="color:#2ecc71">67.6点</div>
+<div class="town-meta">人口 1,497 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="釜利谷西6/" class="town-card">
+<div class="town-name">釜利谷西六丁目</div>
+<div class="town-score" style="color:#2ecc71">64.6点</div>
+<div class="town-meta">人口 1,031 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="寺前2/" class="town-card">
+<div class="town-name">寺前二丁目</div>
+<div class="town-score" style="color:#2ecc71">64.4点</div>
+<div class="town-meta">人口 2,835 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="富岡東2/" class="town-card">
+<div class="town-name">富岡東二丁目</div>
+<div class="town-score" style="color:#2ecc71">64.4点</div>
+<div class="town-meta">人口 3,407 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="大川/" class="town-card">
+<div class="town-name">大川</div>
+<div class="town-score" style="color:#2ecc71">64.0点</div>
+<div class="town-meta">人口 5,763 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="釜利谷南4/" class="town-card">
+<div class="town-name">釜利谷南四丁目</div>
+<div class="town-score" style="color:#2ecc71">63.0点</div>
+<div class="town-meta">人口 1,315 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="富岡西2/" class="town-card">
+<div class="town-name">富岡西二丁目</div>
+<div class="town-score" style="color:#2ecc71">62.7点</div>
+<div class="town-meta">人口 1,948 / 犯罪 0件 / 医療 8件</div>
+</a>
+<a href="釜利谷西2/" class="town-card">
+<div class="town-name">釜利谷西二丁目</div>
+<div class="town-score" style="color:#2ecc71">62.3点</div>
+<div class="town-meta">人口 1,151 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="洲崎町/" class="town-card">
+<div class="town-name">洲崎町</div>
+<div class="town-score" style="color:#2ecc71">62.2点</div>
+<div class="town-meta">人口 2,466 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="六浦南2/" class="town-card">
+<div class="town-name">六浦南二丁目</div>
+<div class="town-score" style="color:#2ecc71">62.2点</div>
+<div class="town-meta">人口 2,221 / 犯罪 6件 / 医療 9件</div>
+</a>
+<a href="能見台東/" class="town-card">
+<div class="town-name">能見台東</div>
+<div class="town-score" style="color:#2ecc71">61.7点</div>
+<div class="town-meta">人口 5,493 / 犯罪 4件 / 医療 8件</div>
+</a>
+<a href="西柴3/" class="town-card">
+<div class="town-name">西柴三丁目</div>
+<div class="town-score" style="color:#2ecc71">61.7点</div>
+<div class="town-meta">人口 1,244 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="並木2/" class="town-card">
+<div class="town-name">並木二丁目</div>
+<div class="town-score" style="color:#2ecc71">60.4点</div>
+<div class="town-meta">人口 5,556 / 犯罪 5件 / 医療 8件</div>
+</a>
+<a href="富岡西3/" class="town-card">
+<div class="town-name">富岡西三丁目</div>
+<div class="town-score" style="color:#f39c12">59.7点</div>
+<div class="town-meta">人口 2,072 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="並木1/" class="town-card">
+<div class="town-name">並木一丁目</div>
+<div class="town-score" style="color:#f39c12">59.1点</div>
+<div class="town-meta">人口 7,333 / 犯罪 25件 / 医療 6件</div>
+</a>
+<a href="富岡西6/" class="town-card">
+<div class="town-name">富岡西六丁目</div>
+<div class="town-score" style="color:#f39c12">59.1点</div>
+<div class="town-meta">人口 1,529 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="富岡西1/" class="town-card">
+<div class="town-name">富岡西一丁目</div>
+<div class="town-score" style="color:#f39c12">58.2点</div>
+<div class="town-meta">人口 2,778 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="長浜2/" class="town-card">
+<div class="town-name">長浜二丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 1,664 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="釜利谷西4/" class="town-card">
+<div class="town-name">釜利谷西四丁目</div>
+<div class="town-score" style="color:#f39c12">57.0点</div>
+<div class="town-meta">人口 571 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="六浦南5/" class="town-card">
+<div class="town-name">六浦南五丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 1,844 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="能見台5/" class="town-card">
+<div class="town-name">能見台五丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 2,016 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="釜利谷南2/" class="town-card">
+<div class="town-name">釜利谷南二丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 3,764 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="能見台1/" class="town-card">
+<div class="town-name">能見台一丁目</div>
+<div class="town-score" style="color:#f39c12">54.6点</div>
+<div class="town-meta">人口 1,125 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="六浦南3/" class="town-card">
+<div class="town-name">六浦南三丁目</div>
+<div class="town-score" style="color:#f39c12">54.4点</div>
+<div class="town-meta">人口 1,164 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="福浦1/" class="town-card">
+<div class="town-name">福浦一丁目</div>
+<div class="town-score" style="color:#f39c12">54.4点</div>
+<div class="town-meta">人口 15 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="能見台3/" class="town-card">
+<div class="town-name">能見台三丁目</div>
+<div class="town-score" style="color:#f39c12">54.1点</div>
+<div class="town-meta">人口 2,825 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="東朝比奈2/" class="town-card">
+<div class="town-name">東朝比奈二丁目</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 1,795 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="平潟町/" class="town-card">
+<div class="town-name">平潟町</div>
+<div class="town-score" style="color:#f39c12">53.8点</div>
+<div class="town-meta">人口 3,267 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="六浦東2/" class="town-card">
+<div class="town-name">六浦東二丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 1,039 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="釜利谷西3/" class="town-card">
+<div class="town-name">釜利谷西三丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 1,806 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東朝比奈1/" class="town-card">
+<div class="town-name">東朝比奈一丁目</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 2,463 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="釜利谷東3/" class="town-card">
+<div class="town-name">釜利谷東三丁目</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 2,719 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="西柴2/" class="town-card">
+<div class="town-name">西柴二丁目</div>
+<div class="town-score" style="color:#f39c12">52.9点</div>
+<div class="town-meta">人口 2,068 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="六浦4/" class="town-card">
+<div class="town-name">六浦四丁目</div>
+<div class="town-score" style="color:#f39c12">52.9点</div>
+<div class="town-meta">人口 1,990 / 犯罪 6件 / 医療 4件</div>
+</a>
+<a href="能見台4/" class="town-card">
+<div class="town-name">能見台四丁目</div>
+<div class="town-score" style="color:#f39c12">52.9点</div>
+<div class="town-meta">人口 4,252 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="能見台通/" class="town-card">
+<div class="town-name">能見台通</div>
+<div class="town-score" style="color:#f39c12">52.6点</div>
+<div class="town-meta">人口 2,300 / 犯罪 3件 / 医療 28件</div>
+</a>
+<a href="寺前1/" class="town-card">
+<div class="town-name">寺前一丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 2,146 / 犯罪 7件 / 医療 3件</div>
+</a>
+<a href="富岡東3/" class="town-card">
+<div class="town-name">富岡東三丁目</div>
+<div class="town-score" style="color:#f39c12">52.3点</div>
+<div class="town-meta">人口 2,026 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="富岡西4/" class="town-card">
+<div class="town-name">富岡西四丁目</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 3,260 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="釜利谷東1/" class="town-card">
+<div class="town-name">釜利谷東一丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 1,792 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="並木3/" class="town-card">
+<div class="town-name">並木三丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 3,947 / 犯罪 9件 / 医療 1件</div>
+</a>
+<a href="柴町/" class="town-card">
+<div class="town-name">柴町</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 6,462 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="六浦3/" class="town-card">
+<div class="town-name">六浦三丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 3,520 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="能見台6/" class="town-card">
+<div class="town-name">能見台六丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 1,574 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大道2/" class="town-card">
+<div class="town-name">大道二丁目</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 1,414 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="六浦南1/" class="town-card">
+<div class="town-name">六浦南一丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 2,125 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="六浦2/" class="town-card">
+<div class="town-name">六浦二丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 2,316 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="釜利谷東8/" class="town-card">
+<div class="town-name">釜利谷東八丁目</div>
+<div class="town-score" style="color:#f39c12">49.8点</div>
+<div class="town-meta">人口 837 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="釜利谷東2/" class="town-card">
+<div class="town-name">釜利谷東二丁目</div>
+<div class="town-score" style="color:#f39c12">49.6点</div>
+<div class="town-meta">人口 2,200 / 犯罪 37件 / 医療 24件</div>
+</a>
+<a href="六浦南4/" class="town-card">
+<div class="town-name">六浦南四丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 2,621 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="釜利谷西1/" class="town-card">
+<div class="town-name">釜利谷西一丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 3,597 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="富岡西7/" class="town-card">
+<div class="town-name">富岡西七丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 2,904 / 犯罪 4件 / 医療 5件</div>
+</a>
+<a href="釜利谷東5/" class="town-card">
+<div class="town-name">釜利谷東五丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 622 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="西柴4/" class="town-card">
+<div class="town-name">西柴四丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 826 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="釜利谷西5/" class="town-card">
+<div class="town-name">釜利谷西五丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 782 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="柳町/" class="town-card">
+<div class="town-name">柳町</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 2,220 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="堀口/" class="town-card">
+<div class="town-name">堀口</div>
+<div class="town-score" style="color:#f39c12">47.3点</div>
+<div class="town-meta">人口 1,271 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="西柴1/" class="town-card">
+<div class="town-name">西柴一丁目</div>
+<div class="town-score" style="color:#f39c12">47.2点</div>
+<div class="town-meta">人口 1,695 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="福浦2/" class="town-card">
+<div class="town-name">福浦二丁目</div>
+<div class="town-score" style="color:#f39c12">47.0点</div>
+<div class="town-meta">人口 26 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="富岡東6/" class="town-card">
+<div class="town-name">富岡東六丁目</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 2,543 / 犯罪 3件 / 医療 5件</div>
+</a>
+<a href="野島町/" class="town-card">
+<div class="town-name">野島町</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 1,122 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="六浦5/" class="town-card">
+<div class="town-name">六浦五丁目</div>
+<div class="town-score" style="color:#f39c12">45.9点</div>
+<div class="town-meta">人口 2,699 / 犯罪 9件 / 医療 5件</div>
+</a>
+<a href="釜利谷南3/" class="town-card">
+<div class="town-name">釜利谷南三丁目</div>
+<div class="town-score" style="color:#f39c12">45.7点</div>
+<div class="town-meta">人口 804 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="金沢町/" class="town-card">
+<div class="town-name">金沢町</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 2,324 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="六浦東3/" class="town-card">
+<div class="town-name">六浦東三丁目</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 1,198 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="釜利谷東6/" class="town-card">
+<div class="town-name">釜利谷東六丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 2,357 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="泥亀1/" class="town-card">
+<div class="town-name">泥亀一丁目</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 3,425 / 犯罪 15件 / 医療 10件</div>
+</a>
+<a href="長浜1/" class="town-card">
+<div class="town-name">長浜一丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 1,182 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="富岡東4/" class="town-card">
+<div class="town-name">富岡東四丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 1,102 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="富岡東5/" class="town-card">
+<div class="town-name">富岡東五丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 1,685 / 犯罪 9件 / 医療 8件</div>
+</a>
+<a href="町屋町/" class="town-card">
+<div class="town-name">町屋町</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 2,505 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="六浦東1/" class="town-card">
+<div class="town-name">六浦東一丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 3,983 / 犯罪 18件 / 医療 2件</div>
+</a>
+<a href="谷津町/" class="town-card">
+<div class="town-name">谷津町</div>
+<div class="town-score" style="color:#f39c12">44.3点</div>
+<div class="town-meta">人口 4,386 / 犯罪 25件 / 医療 19件</div>
+</a>
+<a href="福浦3/" class="town-card">
+<div class="town-name">福浦三丁目</div>
+<div class="town-score" style="color:#f39c12">43.5点</div>
+<div class="town-meta">人口 11 / 犯罪 5件 / 医療 4件</div>
+</a>
+<a href="釜利谷東7/" class="town-card">
+<div class="town-name">釜利谷東七丁目</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 1,803 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="東朝比奈3/" class="town-card">
+<div class="town-name">東朝比奈三丁目</div>
+<div class="town-score" style="color:#f39c12">42.2点</div>
+<div class="town-meta">人口 1,325 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="泥亀2/" class="town-card">
+<div class="town-name">泥亀二丁目</div>
+<div class="town-score" style="color:#f39c12">41.4点</div>
+<div class="town-meta">人口 1,542 / 犯罪 4件 / 医療 7件</div>
+</a>
+<a href="長浜/" class="town-card">
+<div class="town-name">長浜</div>
+<div class="town-score" style="color:#f39c12">41.0点</div>
+<div class="town-meta">人口 458 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="鳥浜町/" class="town-card">
+<div class="town-name">鳥浜町</div>
+<div class="town-score" style="color:#f39c12">40.9点</div>
+<div class="town-meta">人口 28 / 犯罪 3件 / 医療 5件</div>
+</a>
+<a href="幸浦2/" class="town-card">
+<div class="town-name">幸浦二丁目</div>
+<div class="town-score" style="color:#f39c12">40.9点</div>
+<div class="town-meta">人口 11 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="海の公園/" class="town-card">
+<div class="town-name">海の公園</div>
+<div class="town-score" style="color:#f39c12">40.9点</div>
+<div class="town-meta">人口 136 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="釜利谷南1/" class="town-card">
+<div class="town-name">釜利谷南一丁目</div>
+<div class="town-score" style="color:#f39c12">40.1点</div>
+<div class="town-meta">人口 1,438 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="瀬戸/" class="town-card">
+<div class="town-name">瀬戸</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 2,208 / 犯罪 35件 / 医療 21件</div>
+</a>
+<a href="大道1/" class="town-card">
+<div class="town-name">大道一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 2,190 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="乙舳町/" class="town-card">
+<div class="town-name">乙舳町</div>
+<div class="town-score" style="color:#e74c3c">39.0点</div>
+<div class="town-meta">人口 1,324 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="高舟台2/" class="town-card">
+<div class="town-name">高舟台二丁目</div>
+<div class="town-score" style="color:#e74c3c">38.8点</div>
+<div class="town-meta">人口 1,950 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="高舟台1/" class="town-card">
+<div class="town-name">高舟台一丁目</div>
+<div class="town-score" style="color:#e74c3c">38.2点</div>
+<div class="town-meta">人口 1,787 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="片吹/" class="town-card">
+<div class="town-name">片吹</div>
+<div class="town-score" style="color:#e74c3c">37.4点</div>
+<div class="town-meta">人口 2,227 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="能見台2/" class="town-card">
+<div class="town-name">能見台二丁目</div>
+<div class="town-score" style="color:#e74c3c">37.0点</div>
+<div class="town-meta">人口 1,017 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="釜利谷東4/" class="town-card">
+<div class="town-name">釜利谷東四丁目</div>
+<div class="town-score" style="color:#e74c3c">36.5点</div>
+<div class="town-meta">人口 2,649 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="富岡東1/" class="town-card">
+<div class="town-name">富岡東一丁目</div>
+<div class="town-score" style="color:#e74c3c">35.3点</div>
+<div class="town-meta">人口 4,220 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="朝比奈町/" class="town-card">
+<div class="town-name">朝比奈町</div>
+<div class="town-score" style="color:#e74c3c">33.5点</div>
+<div class="town-meta">人口 507 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="六浦1/" class="town-card">
+<div class="town-name">六浦一丁目</div>
+<div class="town-score" style="color:#e74c3c">31.9点</div>
+<div class="town-meta">人口 2,277 / 犯罪 7件 / 医療 4件</div>
+</a>
+<a href="幸浦1/" class="town-card">
+<div class="town-name">幸浦一丁目</div>
+<div class="town-score" style="color:#e74c3c">26.6点</div>
+<div class="town-meta">人口 7 / 犯罪 3件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

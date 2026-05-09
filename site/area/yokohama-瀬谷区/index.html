@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市瀬谷区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市瀬谷区の全59エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市瀬谷区</div>
+<h2>横浜市瀬谷区 全59エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">122,623</div><div class="label">人口</div></div>
+<div><div class="value">46.0</div><div class="label">平均スコア</div></div>
+<div><div class="value">162</div><div class="label">犯罪件数</div></div>
+<div><div class="value">148</div><div class="label">医療施設</div></div>
+<div><div class="value">92</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="中屋敷3/" class="town-card">
+<div class="town-name">中屋敷三丁目</div>
+<div class="town-score" style="color:#2ecc71">71.8点</div>
+<div class="town-meta">人口 117 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="阿久和西3/" class="town-card">
+<div class="town-name">阿久和西三丁目</div>
+<div class="town-score" style="color:#2ecc71">63.3点</div>
+<div class="town-meta">人口 2,322 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="相沢4/" class="town-card">
+<div class="town-name">相沢四丁目</div>
+<div class="town-score" style="color:#2ecc71">61.4点</div>
+<div class="town-meta">人口 1,343 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="瀬谷3/" class="town-card">
+<div class="town-name">瀬谷三丁目</div>
+<div class="town-score" style="color:#f39c12">59.1点</div>
+<div class="town-meta">人口 1,335 / 犯罪 2件 / 医療 7件</div>
+</a>
+<a href="本郷2/" class="town-card">
+<div class="town-name">本郷二丁目</div>
+<div class="town-score" style="color:#f39c12">56.9点</div>
+<div class="town-meta">人口 3,635 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="南台2/" class="town-card">
+<div class="town-name">南台二丁目</div>
+<div class="town-score" style="color:#f39c12">56.4点</div>
+<div class="town-meta">人口 1,856 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="瀬谷4/" class="town-card">
+<div class="town-name">瀬谷四丁目</div>
+<div class="town-score" style="color:#f39c12">55.5点</div>
+<div class="town-meta">人口 3,437 / 犯罪 14件 / 医療 18件</div>
+</a>
+<a href="橋戸3/" class="town-card">
+<div class="town-name">橋戸三丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 2,970 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="阿久和東1/" class="town-card">
+<div class="town-name">阿久和東一丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 1,841 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="相沢6/" class="town-card">
+<div class="town-name">相沢六丁目</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 1,090 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東野台/" class="town-card">
+<div class="town-name">東野台</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 555 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="相沢2/" class="town-card">
+<div class="town-name">相沢二丁目</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 1,410 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="三ツ境/" class="town-card">
+<div class="town-name">三ツ境</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 185 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="阿久和東2/" class="town-card">
+<div class="town-name">阿久和東二丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 2,901 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="阿久和西2/" class="town-card">
+<div class="town-name">阿久和西二丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 2,532 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="竹村町/" class="town-card">
+<div class="town-name">竹村町</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 1,089 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="阿久和東3/" class="town-card">
+<div class="town-name">阿久和東三丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 2,159 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="二ツ橋町/" class="town-card">
+<div class="town-name">二ツ橋町</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 8,365 / 犯罪 6件 / 医療 10件</div>
+</a>
+<a href="宮沢1/" class="town-card">
+<div class="town-name">宮沢一丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 3,415 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="瀬谷6/" class="town-card">
+<div class="town-name">瀬谷六丁目</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 1,136 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="下瀬谷3/" class="town-card">
+<div class="town-name">下瀬谷三丁目</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 3,289 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="瀬谷2/" class="town-card">
+<div class="town-name">瀬谷二丁目</div>
+<div class="town-score" style="color:#f39c12">48.8点</div>
+<div class="town-meta">人口 2,408 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="阿久和南2/" class="town-card">
+<div class="town-name">阿久和南二丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 1,367 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="中屋敷2/" class="town-card">
+<div class="town-name">中屋敷二丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 512 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="宮沢2/" class="town-card">
+<div class="town-name">宮沢二丁目</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 3,626 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="本郷3/" class="town-card">
+<div class="town-name">本郷三丁目</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 2,349 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="下瀬谷1/" class="town-card">
+<div class="town-name">下瀬谷一丁目</div>
+<div class="town-score" style="color:#f39c12">47.3点</div>
+<div class="town-meta">人口 1,989 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="相沢1/" class="town-card">
+<div class="town-name">相沢一丁目</div>
+<div class="town-score" style="color:#f39c12">47.2点</div>
+<div class="town-meta">人口 1,346 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="東野/" class="town-card">
+<div class="town-name">東野</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 2,002 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="阿久和南4/" class="town-card">
+<div class="town-name">阿久和南四丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 3,113 / 犯罪 11件 / 医療 0件</div>
+</a>
+<a href="相沢5/" class="town-card">
+<div class="town-name">相沢五丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 1,341 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上瀬谷町/" class="town-card">
+<div class="town-name">上瀬谷町</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 2,559 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中央/" class="town-card">
+<div class="town-name">中央</div>
+<div class="town-score" style="color:#f39c12">45.8点</div>
+<div class="town-meta">人口 1,983 / 犯罪 12件 / 医療 18件</div>
+</a>
+<a href="南瀬谷1/" class="town-card">
+<div class="town-name">南瀬谷一丁目</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 2,416 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="相沢7/" class="town-card">
+<div class="town-name">相沢七丁目</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 1,763 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="瀬谷5/" class="town-card">
+<div class="town-name">瀬谷五丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 2,619 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="三ツ境/" class="town-card">
+<div class="town-name">三ツ境</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 8,551 / 犯罪 19件 / 医療 30件</div>
+</a>
+<a href="瀬谷町/" class="town-card">
+<div class="town-name">瀬谷町</div>
+<div class="town-score" style="color:#f39c12">43.7点</div>
+<div class="town-meta">人口 2,704 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="阿久和西4/" class="town-card">
+<div class="town-name">阿久和西四丁目</div>
+<div class="town-score" style="color:#f39c12">43.1点</div>
+<div class="town-meta">人口 1,126 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="南台1/" class="town-card">
+<div class="town-name">南台一丁目</div>
+<div class="town-score" style="color:#f39c12">42.5点</div>
+<div class="town-meta">人口 2,196 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="橋戸1/" class="town-card">
+<div class="town-name">橋戸一丁目</div>
+<div class="town-score" style="color:#f39c12">42.5点</div>
+<div class="town-meta">人口 3,909 / 犯罪 7件 / 医療 1件</div>
+</a>
+<a href="本郷1/" class="town-card">
+<div class="town-name">本郷一丁目</div>
+<div class="town-score" style="color:#f39c12">42.0点</div>
+<div class="town-meta">人口 2,749 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="五貫目町/" class="town-card">
+<div class="town-name">五貫目町</div>
+<div class="town-score" style="color:#f39c12">41.7点</div>
+<div class="town-meta">人口 2,925 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="中屋敷1/" class="town-card">
+<div class="town-name">中屋敷一丁目</div>
+<div class="town-score" style="color:#f39c12">41.0点</div>
+<div class="town-meta">人口 1,096 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="宮沢3/" class="town-card">
+<div class="town-name">宮沢三丁目</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 1,643 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="瀬谷1/" class="town-card">
+<div class="town-name">瀬谷一丁目</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 1,211 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="阿久和西1/" class="town-card">
+<div class="town-name">阿久和西一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.5点</div>
+<div class="town-meta">人口 2,653 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="宮沢4/" class="town-card">
+<div class="town-name">宮沢四丁目</div>
+<div class="town-score" style="color:#e74c3c">36.7点</div>
+<div class="town-meta">人口 563 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="本郷4/" class="town-card">
+<div class="town-name">本郷四丁目</div>
+<div class="town-score" style="color:#e74c3c">36.2点</div>
+<div class="town-meta">人口 752 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="北新/" class="town-card">
+<div class="town-name">北新</div>
+<div class="town-score" style="color:#e74c3c">36.1点</div>
+<div class="town-meta">人口 2,319 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="阿久和南1/" class="town-card">
+<div class="town-name">阿久和南一丁目</div>
+<div class="town-score" style="color:#e74c3c">35.5点</div>
+<div class="town-meta">人口 393 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="阿久和南3/" class="town-card">
+<div class="town-name">阿久和南三丁目</div>
+<div class="town-score" style="color:#e74c3c">35.4点</div>
+<div class="town-meta">人口 659 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="北町/" class="town-card">
+<div class="town-name">北町</div>
+<div class="town-score" style="color:#e74c3c">34.5点</div>
+<div class="town-meta">人口 433 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="橋戸2/" class="town-card">
+<div class="town-name">橋戸二丁目</div>
+<div class="town-score" style="color:#e74c3c">34.0点</div>
+<div class="town-meta">人口 1,913 / 犯罪 5件 / 医療 6件</div>
+</a>
+<a href="阿久和東4/" class="town-card">
+<div class="town-name">阿久和東四丁目</div>
+<div class="town-score" style="color:#e74c3c">32.8点</div>
+<div class="town-meta">人口 1,428 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="目黒町/" class="town-card">
+<div class="town-name">目黒町</div>
+<div class="town-score" style="color:#e74c3c">31.7点</div>
+<div class="town-meta">人口 353 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="下瀬谷2/" class="town-card">
+<div class="town-name">下瀬谷二丁目</div>
+<div class="town-score" style="color:#e74c3c">30.1点</div>
+<div class="town-meta">人口 2,788 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="南瀬谷2/" class="town-card">
+<div class="town-name">南瀬谷二丁目</div>
+<div class="town-score" style="color:#e74c3c">29.7点</div>
+<div class="town-meta">人口 605 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="相沢3/" class="town-card">
+<div class="town-name">相沢三丁目</div>
+<div class="town-score" style="color:#e74c3c">29.2点</div>
+<div class="town-meta">人口 1,279 / 犯罪 2件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

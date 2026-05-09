@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海老名市 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="海老名市の全98エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 海老名市</div>
+<h2>海老名市 全98エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">136,516</div><div class="label">人口</div></div>
+<div><div class="value">50.0</div><div class="label">平均スコア</div></div>
+<div><div class="value">206</div><div class="label">犯罪件数</div></div>
+<div><div class="value">164</div><div class="label">医療施設</div></div>
+<div><div class="value">68</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="さつき町/" class="town-card">
+<div class="town-name">さつき町</div>
+<div class="town-score" style="color:#2ecc71">73.1点</div>
+<div class="town-meta">人口 1,806 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="上今泉4/" class="town-card">
+<div class="town-name">上今泉四丁目</div>
+<div class="town-score" style="color:#2ecc71">64.5点</div>
+<div class="town-meta">人口 2,598 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="東柏ケ谷5/" class="town-card">
+<div class="town-name">東柏ケ谷五丁目</div>
+<div class="town-score" style="color:#2ecc71">62.0点</div>
+<div class="town-meta">人口 2,615 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="社家/" class="town-card">
+<div class="town-name">社家</div>
+<div class="town-score" style="color:#2ecc71">60.3点</div>
+<div class="town-meta">人口 4,112 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="国分南3/" class="town-card">
+<div class="town-name">国分南三丁目</div>
+<div class="town-score" style="color:#f39c12">59.7点</div>
+<div class="town-meta">人口 2,085 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="門沢橋5/" class="town-card">
+<div class="town-name">門沢橋五丁目</div>
+<div class="town-score" style="color:#f39c12">59.7点</div>
+<div class="town-meta">人口 913 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="柏ケ谷/" class="town-card">
+<div class="town-name">柏ケ谷</div>
+<div class="town-score" style="color:#f39c12">59.4点</div>
+<div class="town-meta">人口 8,003 / 犯罪 8件 / 医療 14件</div>
+</a>
+<a href="国分北4/" class="town-card">
+<div class="town-name">国分北四丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 470 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="国分北1/" class="town-card">
+<div class="town-name">国分北一丁目</div>
+<div class="town-score" style="color:#f39c12">58.7点</div>
+<div class="town-meta">人口 3,757 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="浜田町/" class="town-card">
+<div class="town-name">浜田町</div>
+<div class="town-score" style="color:#f39c12">58.2点</div>
+<div class="town-meta">人口 1,197 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="東柏ケ谷6/" class="town-card">
+<div class="town-name">東柏ケ谷六丁目</div>
+<div class="town-score" style="color:#f39c12">58.1点</div>
+<div class="town-meta">人口 2,652 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="東柏ケ谷1/" class="town-card">
+<div class="town-name">東柏ケ谷一丁目</div>
+<div class="town-score" style="color:#f39c12">58.0点</div>
+<div class="town-meta">人口 2,113 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="今里3/" class="town-card">
+<div class="town-name">今里三丁目</div>
+<div class="town-score" style="color:#f39c12">58.0点</div>
+<div class="town-meta">人口 1,309 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中野1/" class="town-card">
+<div class="town-name">中野一丁目</div>
+<div class="town-score" style="color:#f39c12">57.8点</div>
+<div class="town-meta">人口 1,721 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="国分南2/" class="town-card">
+<div class="town-name">国分南二丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 3,921 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="国分寺台1/" class="town-card">
+<div class="town-name">国分寺台一丁目</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 1,590 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="門沢橋2/" class="town-card">
+<div class="town-name">門沢橋二丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 1,677 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="中央3/" class="town-card">
+<div class="town-name">中央三丁目</div>
+<div class="town-score" style="color:#f39c12">55.8点</div>
+<div class="town-meta">人口 3,723 / 犯罪 15件 / 医療 13件</div>
+</a>
+<a href="勝瀬/" class="town-card">
+<div class="town-name">勝瀬</div>
+<div class="town-score" style="color:#f39c12">55.8点</div>
+<div class="town-meta">人口 28 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="杉久保北4/" class="town-card">
+<div class="town-name">杉久保北四丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 2,230 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="国分寺台3/" class="town-card">
+<div class="town-name">国分寺台三丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 998 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上今泉5/" class="town-card">
+<div class="town-name">上今泉五丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 2,493 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="泉1/" class="town-card">
+<div class="town-name">泉一丁目</div>
+<div class="town-score" style="color:#f39c12">54.4点</div>
+<div class="town-meta">人口 833 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上今泉1/" class="town-card">
+<div class="town-name">上今泉一丁目</div>
+<div class="town-score" style="color:#f39c12">53.9点</div>
+<div class="town-meta">人口 1,969 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="杉久保南3/" class="town-card">
+<div class="town-name">杉久保南三丁目</div>
+<div class="town-score" style="color:#f39c12">53.7点</div>
+<div class="town-meta">人口 1,198 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="中新田1/" class="town-card">
+<div class="town-name">中新田一丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 1,719 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="中新田2/" class="town-card">
+<div class="town-name">中新田二丁目</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 2,281 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="中央1/" class="town-card">
+<div class="town-name">中央一丁目</div>
+<div class="town-score" style="color:#f39c12">53.3点</div>
+<div class="town-meta">人口 1,969 / 犯罪 26件 / 医療 11件</div>
+</a>
+<a href="河原口3/" class="town-card">
+<div class="town-name">河原口三丁目</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 1,375 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="中野3/" class="town-card">
+<div class="town-name">中野三丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 268 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="河原口4/" class="town-card">
+<div class="town-name">河原口四丁目</div>
+<div class="town-score" style="color:#f39c12">53.0点</div>
+<div class="town-meta">人口 1,856 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="上今泉6/" class="town-card">
+<div class="town-name">上今泉六丁目</div>
+<div class="town-score" style="color:#f39c12">52.9点</div>
+<div class="town-meta">人口 2,147 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="国分寺台2/" class="town-card">
+<div class="town-name">国分寺台二丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 1,087 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="国分寺台5/" class="town-card">
+<div class="town-name">国分寺台五丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 1,110 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="杉久保南4/" class="town-card">
+<div class="town-name">杉久保南四丁目</div>
+<div class="town-score" style="color:#f39c12">52.4点</div>
+<div class="town-meta">人口 584 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="河原口2/" class="town-card">
+<div class="town-name">河原口二丁目</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 1,634 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="門沢橋3/" class="town-card">
+<div class="town-name">門沢橋三丁目</div>
+<div class="town-score" style="color:#f39c12">52.0点</div>
+<div class="town-meta">人口 1,147 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東柏ケ谷3/" class="town-card">
+<div class="town-name">東柏ケ谷三丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 1,309 / 犯罪 20件 / 医療 11件</div>
+</a>
+<a href="杉久保南2/" class="town-card">
+<div class="town-name">杉久保南二丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 807 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大谷南1/" class="town-card">
+<div class="town-name">大谷南一丁目</div>
+<div class="town-score" style="color:#f39c12">51.8点</div>
+<div class="town-meta">人口 41 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大谷南4/" class="town-card">
+<div class="town-name">大谷南四丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 1,231 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="今里2/" class="town-card">
+<div class="town-name">今里二丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 1,043 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東柏ケ谷2/" class="town-card">
+<div class="town-name">東柏ケ谷二丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 2,923 / 犯罪 7件 / 医療 5件</div>
+</a>
+<a href="望地2/" class="town-card">
+<div class="town-name">望地二丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 1,084 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="泉2/" class="town-card">
+<div class="town-name">泉二丁目</div>
+<div class="town-score" style="color:#f39c12">51.2点</div>
+<div class="town-meta">人口 1,620 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="大谷南3/" class="town-card">
+<div class="town-name">大谷南三丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 1,440 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="杉久保南5/" class="town-card">
+<div class="town-name">杉久保南五丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 297 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="杉久保南1/" class="town-card">
+<div class="town-name">杉久保南一丁目</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 1,258 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="国分北3/" class="town-card">
+<div class="town-name">国分北三丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 1,966 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="望地1/" class="town-card">
+<div class="town-name">望地一丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 372 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="扇町/" class="town-card">
+<div class="town-name">扇町</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 1,803 / 犯罪 15件 / 医療 15件</div>
+</a>
+<a href="国分北2/" class="town-card">
+<div class="town-name">国分北二丁目</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 2,166 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="中河内/" class="town-card">
+<div class="town-name">中河内</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 675 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="門沢橋1/" class="town-card">
+<div class="town-name">門沢橋一丁目</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 192 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上郷4/" class="town-card">
+<div class="town-name">上郷四丁目</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 46 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="杉久保北3/" class="town-card">
+<div class="town-name">杉久保北三丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 316 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="めぐみ町/" class="town-card">
+<div class="town-name">めぐみ町</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 632 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="大谷南2/" class="town-card">
+<div class="town-name">大谷南二丁目</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 680 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="大谷北2/" class="town-card">
+<div class="town-name">大谷北二丁目</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 1,506 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大谷北3/" class="town-card">
+<div class="town-name">大谷北三丁目</div>
+<div class="town-score" style="color:#f39c12">49.2点</div>
+<div class="town-meta">人口 1,907 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="下今泉1/" class="town-card">
+<div class="town-name">下今泉一丁目</div>
+<div class="town-score" style="color:#f39c12">49.2点</div>
+<div class="town-meta">人口 1,772 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="河原口1/" class="town-card">
+<div class="town-name">河原口一丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 814 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="門沢橋4/" class="town-card">
+<div class="town-name">門沢橋四丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 1,223 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="国分寺台4/" class="town-card">
+<div class="town-name">国分寺台四丁目</div>
+<div class="town-score" style="color:#f39c12">48.9点</div>
+<div class="town-meta">人口 861 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="今里1/" class="town-card">
+<div class="town-name">今里一丁目</div>
+<div class="town-score" style="color:#f39c12">48.9点</div>
+<div class="town-meta">人口 740 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="中野2/" class="town-card">
+<div class="town-name">中野二丁目</div>
+<div class="town-score" style="color:#f39c12">48.8点</div>
+<div class="town-meta">人口 1,048 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大谷北1/" class="town-card">
+<div class="town-name">大谷北一丁目</div>
+<div class="town-score" style="color:#f39c12">48.7点</div>
+<div class="town-meta">人口 1,031 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="河原口/" class="town-card">
+<div class="town-name">河原口</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 251 / 犯罪 3件 / 医療 5件</div>
+</a>
+<a href="東柏ケ谷4/" class="town-card">
+<div class="town-name">東柏ケ谷四丁目</div>
+<div class="town-score" style="color:#f39c12">47.8点</div>
+<div class="town-meta">人口 3,120 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="河原口5/" class="town-card">
+<div class="town-name">河原口五丁目</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 1,686 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="国分南4/" class="town-card">
+<div class="town-name">国分南四丁目</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 1,620 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上今泉3/" class="town-card">
+<div class="town-name">上今泉三丁目</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 1,201 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="門沢橋/" class="town-card">
+<div class="town-name">門沢橋</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 2 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="杉久保北5/" class="town-card">
+<div class="town-name">杉久保北五丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 1,534 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上郷1/" class="town-card">
+<div class="town-name">上郷一丁目</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 1,714 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="中新田/" class="town-card">
+<div class="town-name">中新田</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 70 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="中央2/" class="town-card">
+<div class="town-name">中央二丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 958 / 犯罪 7件 / 医療 14件</div>
+</a>
+<a href="中新田4/" class="town-card">
+<div class="town-name">中新田四丁目</div>
+<div class="town-score" style="color:#f39c12">45.0点</div>
+<div class="town-meta">人口 1,740 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="中新田3/" class="town-card">
+<div class="town-name">中新田三丁目</div>
+<div class="town-score" style="color:#f39c12">44.4点</div>
+<div class="town-meta">人口 2,895 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="下今泉4/" class="town-card">
+<div class="town-name">下今泉四丁目</div>
+<div class="town-score" style="color:#f39c12">44.0点</div>
+<div class="town-meta">人口 332 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="上河内/" class="town-card">
+<div class="town-name">上河内</div>
+<div class="town-score" style="color:#f39c12">42.5点</div>
+<div class="town-meta">人口 318 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上郷3/" class="town-card">
+<div class="town-name">上郷三丁目</div>
+<div class="town-score" style="color:#f39c12">42.4点</div>
+<div class="town-meta">人口 1,140 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="本郷/" class="town-card">
+<div class="town-name">本郷</div>
+<div class="town-score" style="color:#f39c12">42.2点</div>
+<div class="town-meta">人口 2,176 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="上今泉2/" class="town-card">
+<div class="town-name">上今泉二丁目</div>
+<div class="town-score" style="color:#f39c12">41.8点</div>
+<div class="town-meta">人口 2,602 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="上今泉/" class="town-card">
+<div class="town-name">上今泉</div>
+<div class="town-score" style="color:#f39c12">41.4点</div>
+<div class="town-meta">人口 5 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="杉久保北2/" class="town-card">
+<div class="town-name">杉久保北二丁目</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 1,082 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="下今泉2/" class="town-card">
+<div class="town-name">下今泉二丁目</div>
+<div class="town-score" style="color:#f39c12">40.7点</div>
+<div class="town-meta">人口 630 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="国分南1/" class="town-card">
+<div class="town-name">国分南一丁目</div>
+<div class="town-score" style="color:#f39c12">40.5点</div>
+<div class="town-meta">人口 1,435 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大谷/" class="town-card">
+<div class="town-name">大谷</div>
+<div class="town-score" style="color:#f39c12">40.5点</div>
+<div class="town-meta">人口 23 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="門沢橋6/" class="town-card">
+<div class="town-name">門沢橋六丁目</div>
+<div class="town-score" style="color:#f39c12">40.1点</div>
+<div class="town-meta">人口 495 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="杉久保北1/" class="town-card">
+<div class="town-name">杉久保北一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.9点</div>
+<div class="town-meta">人口 178 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大谷北4/" class="town-card">
+<div class="town-name">大谷北四丁目</div>
+<div class="town-score" style="color:#e74c3c">38.5点</div>
+<div class="town-meta">人口 1,489 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上郷/" class="town-card">
+<div class="town-name">上郷</div>
+<div class="town-score" style="color:#e74c3c">37.5点</div>
+<div class="town-meta">人口 50 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="中新田5/" class="town-card">
+<div class="town-name">中新田五丁目</div>
+<div class="town-score" style="color:#e74c3c">36.8点</div>
+<div class="town-meta">人口 521 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="勝瀬/" class="town-card">
+<div class="town-name">勝瀬</div>
+<div class="town-score" style="color:#e74c3c">36.4点</div>
+<div class="town-meta">人口 642 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="下今泉5/" class="town-card">
+<div class="town-name">下今泉五丁目</div>
+<div class="town-score" style="color:#e74c3c">35.4点</div>
+<div class="town-meta">人口 320 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="下今泉3/" class="town-card">
+<div class="town-name">下今泉三丁目</div>
+<div class="town-score" style="color:#e74c3c">34.9点</div>
+<div class="town-meta">人口 230 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大谷南5/" class="town-card">
+<div class="town-name">大谷南五丁目</div>
+<div class="town-score" style="color:#e74c3c">28.7点</div>
+<div class="town-meta">人口 66 / 犯罪 2件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

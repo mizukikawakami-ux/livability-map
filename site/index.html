@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>青葉区 住みやすさマップ - オープンデータで見る暮らしやすさ</title>
-    <meta name="description" content="横浜市青葉区の住みやすさを交通事故・犯罪・災害リスク・地価・医療・保育所など9つのオープンデータで可視化。町丁目レベルで比較できる引越し検討ツール。">
+    <title>神奈川県 住みやすさマップ - オープンデータで見る暮らしやすさ</title>
+    <meta name="description" content="神奈川県全域の住みやすさを交通事故・犯罪・災害リスク・地価・医療・保育所・駅距離・公園など多角的なオープンデータで可視化。町丁目レベルで比較できる引越し検討ツール。">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
@@ -13,12 +13,22 @@
 <body>
     <div id="app">
         <header id="header">
-            <h1>青葉区 住みやすさマップ</h1>
+            <h1>神奈川県 住みやすさマップ</h1>
             <p class="subtitle">オープンデータで見る、町丁目レベルの暮らしやすさ</p>
         </header>
 
         <div id="main-container">
             <aside id="sidebar">
+                <!-- 住所検索 -->
+                <div id="search-panel">
+                    <h2>住所検索</h2>
+                    <div class="search-box">
+                        <input type="text" id="search-input" placeholder="住所・地名を入力..." autocomplete="off">
+                        <button id="search-btn" type="button">検索</button>
+                    </div>
+                    <div id="search-results"></div>
+                </div>
+
                 <h2>データレイヤー</h2>
                 <div class="layer-controls">
                     <label class="layer-toggle">
@@ -57,14 +67,19 @@
                         医療施設
                     </label>
                     <label class="layer-toggle">
+                        <input type="checkbox" id="layer-station">
+                        <span class="layer-icon station"></span>
+                        鉄道駅
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-park">
+                        <span class="layer-icon park"></span>
+                        都市公園
+                    </label>
+                    <label class="layer-toggle">
                         <input type="checkbox" id="layer-population">
                         <span class="layer-icon population"></span>
                         人口・世帯数
-                    </label>
-                    <label class="layer-toggle">
-                        <input type="checkbox" id="layer-mansion">
-                        <span class="layer-icon mansion"></span>
-                        建設中・予定マンション
                     </label>
                 </div>
 
@@ -99,7 +114,7 @@
 
                 <div id="area-list">
                     <h3>エリア別ページ</h3>
-                    <p class="placeholder">各エリアの詳細レポートは<a href="area/">一覧ページ</a>をご覧ください</p>
+                    <p class="placeholder">各エリアの詳細レポートは<a href="area/">市区町村一覧</a>をご覧ください</p>
                 </div>
             </aside>
 
@@ -113,9 +128,8 @@
                     <a href="https://www.npa.go.jp/publications/statistics/koutsuu/opendata/index_opendata.html" target="_blank" rel="noopener">警察庁交通事故統計(2024)</a> /
                     <a href="https://www.police.pref.kanagawa.jp/mes/mesd0010.htm" target="_blank" rel="noopener">神奈川県警犯罪統計(2024)</a> /
                     <a href="https://disaportal.gsi.go.jp/" target="_blank" rel="noopener">国土地理院ハザードマップ</a> /
-                    <a href="https://nlftp.mlit.go.jp/ksj/" target="_blank" rel="noopener">国土数値情報(地価・医療)</a> /
-                    <a href="https://www.e-stat.go.jp/" target="_blank" rel="noopener">e-Stat国勢調査(2020)</a> /
-                    <a href="https://www.city.yokohama.lg.jp/" target="_blank" rel="noopener">横浜市オープンデータ(保育所)</a>
+                    <a href="https://nlftp.mlit.go.jp/ksj/" target="_blank" rel="noopener">国土数値情報(地価・医療・駅・公園)</a> /
+                    <a href="https://www.e-stat.go.jp/" target="_blank" rel="noopener">e-Stat国勢調査(2020)</a>
                 </div>
                 <p class="disclaimer">本サイトはオープンデータに基づく参考情報です。最新情報は各公式サイトをご確認ください。</p>
             </div>

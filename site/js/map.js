@@ -1,4 +1,5 @@
-const map = L.map('map').setView([35.568, 139.517], 14);
+// 神奈川県全域の中心と初期ズーム
+const map = L.map('map').setView([35.40, 139.45], 10);
 
 L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
     attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>',
@@ -6,6 +7,59 @@ L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 const layers = {};
+
+// --- 住所検索 ---
+(function initSearch() {
+    const input = document.getElementById('search-input');
+    const btn = document.getElementById('search-btn');
+    const results = document.getElementById('search-results');
+    if (!input || !btn) return;
+
+    let searchMarker = null;
+
+    function doSearch() {
+        const q = input.value.trim();
+        if (!q) return;
+        results.innerHTML = '<p style="font-size:0.8rem;color:#888">検索中...</p>';
+
+        fetch('https://msearch.gsi.go.jp/address-search/AddressSearch?q=' + encodeURIComponent(q))
+            .then(res => res.json())
+            .then(data => {
+                if (!data || data.length === 0) {
+                    results.innerHTML = '<p style="font-size:0.8rem;color:#e74c3c">結果が見つかりません</p>';
+                    return;
+                }
+                results.innerHTML = '';
+                data.slice(0, 5).forEach(item => {
+                    const title = item.properties?.title || '不明';
+                    const coords = item.geometry?.coordinates;
+                    if (!coords) return;
+                    const el = document.createElement('a');
+                    el.href = '#';
+                    el.className = 'search-result-item';
+                    el.textContent = title;
+                    el.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const lat = coords[1], lon = coords[0];
+                        map.setView([lat, lon], 15);
+                        if (searchMarker) map.removeLayer(searchMarker);
+                        searchMarker = L.marker([lat, lon]).addTo(map)
+                            .bindPopup(`<strong>${title}</strong>`).openPopup();
+                        results.innerHTML = '';
+                    });
+                    results.appendChild(el);
+                });
+            })
+            .catch(() => {
+                results.innerHTML = '<p style="font-size:0.8rem;color:#e74c3c">検索エラー</p>';
+            });
+    }
+
+    btn.addEventListener('click', doSearch);
+    input.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') doSearch();
+    });
+})();
 
 // --- Tile-based layers (hazard maps) ---
 
@@ -66,7 +120,8 @@ function setupLayerToggle(name) {
 
 const allLayerNames = [
     'accidents', 'flood', 'landslide', 'crime',
-    'landprice', 'nursery', 'medical', 'population', 'mansion'
+    'landprice', 'nursery', 'medical', 'population',
+    'mansion', 'station', 'park'
 ];
 allLayerNames.forEach(setupLayerToggle);
 
@@ -163,6 +218,41 @@ loadGeoJSON('data/medical.geojson', 'medical', {
     onEachFeature(feature, layer) {
         const p = feature.properties;
         layer.bindPopup(`<strong>${p.name || '医療施設'}</strong><br>種別: ${p.type || '不明'}<br>診療科: ${p.department || '不明'}`);
+    }
+});
+
+loadGeoJSON('data/station.geojson', 'station', {
+    _cluster: true,
+    pointToLayer(feature, latlng) {
+        return L.circleMarker(latlng, {
+            radius: 8, fillColor: '#9b59b6', color: '#8e44ad', weight: 2, fillOpacity: 0.9
+        });
+    },
+    onEachFeature(feature, layer) {
+        const p = feature.properties;
+        const psg = p.passengers ? `<br>乗降客数: ${Number(p.passengers).toLocaleString()}人/日` : '';
+        layer.bindPopup(
+            `<strong>${p.name || '駅'}</strong><br>` +
+            `${p.company || ''}・${p.line || ''}${psg}`
+        );
+    }
+});
+
+loadGeoJSON('data/park.geojson', 'park', {
+    _cluster: true,
+    pointToLayer(feature, latlng) {
+        return L.circleMarker(latlng, {
+            radius: 6, fillColor: '#27ae60', color: '#1e8449', weight: 2, fillOpacity: 0.7
+        });
+    },
+    onEachFeature(feature, layer) {
+        const p = feature.properties;
+        const area = p.area_m2 ? `${Number(p.area_m2).toLocaleString()} m²` : '不明';
+        layer.bindPopup(
+            `<strong>${p.name || '公園'}</strong><br>` +
+            `種別: ${p.type || '不明'}<br>面積: ${area}<br>` +
+            `<span style="font-size:0.8em;color:#888">${p.city || ''}</span>`
+        );
     }
 });
 

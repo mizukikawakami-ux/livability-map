@@ -1,0 +1,6 @@
+data/raw/
+*.zip
+__pycache__/
+.netlify/
+.claude/
+*.pyc

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>伊勢原市 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="伊勢原市の全65エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 伊勢原市</div>
+<h2>伊勢原市 全65エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">101,780</div><div class="label">人口</div></div>
+<div><div class="value">50.6</div><div class="label">平均スコア</div></div>
+<div><div class="value">112</div><div class="label">犯罪件数</div></div>
+<div><div class="value">121</div><div class="label">医療施設</div></div>
+<div><div class="value">43</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="大山/" class="town-card">
+<div class="town-name">大山</div>
+<div class="town-score" style="color:#2ecc71">64.0点</div>
+<div class="town-meta">人口 460 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="八幡台1/" class="town-card">
+<div class="town-name">八幡台一丁目</div>
+<div class="town-score" style="color:#2ecc71">61.3点</div>
+<div class="town-meta">人口 730 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="桜台2/" class="town-card">
+<div class="town-name">桜台二丁目</div>
+<div class="town-score" style="color:#2ecc71">60.5点</div>
+<div class="town-meta">人口 1,937 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="八幡台2/" class="town-card">
+<div class="town-name">八幡台二丁目</div>
+<div class="town-score" style="color:#2ecc71">60.2点</div>
+<div class="town-meta">人口 582 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="高森3/" class="town-card">
+<div class="town-name">高森三丁目</div>
+<div class="town-score" style="color:#2ecc71">60.0点</div>
+<div class="town-meta">人口 973 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="高森6/" class="town-card">
+<div class="town-name">高森六丁目</div>
+<div class="town-score" style="color:#f39c12">59.7点</div>
+<div class="town-meta">人口 1,014 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東成瀬/" class="town-card">
+<div class="town-name">東成瀬</div>
+<div class="town-score" style="color:#f39c12">59.7点</div>
+<div class="town-meta">人口 3,964 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="伊勢原3/" class="town-card">
+<div class="town-name">伊勢原三丁目</div>
+<div class="town-score" style="color:#f39c12">59.2点</div>
+<div class="town-meta">人口 1,667 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="東富岡/" class="town-card">
+<div class="town-name">東富岡</div>
+<div class="town-score" style="color:#f39c12">59.1点</div>
+<div class="town-meta">人口 490 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="沼目3/" class="town-card">
+<div class="town-name">沼目三丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 1,293 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="東大竹1/" class="town-card">
+<div class="town-name">東大竹一丁目</div>
+<div class="town-score" style="color:#f39c12">58.9点</div>
+<div class="town-meta">人口 1,391 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="桜台3/" class="town-card">
+<div class="town-name">桜台三丁目</div>
+<div class="town-score" style="color:#f39c12">58.9点</div>
+<div class="town-meta">人口 1,694 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="東大竹/" class="town-card">
+<div class="town-name">東大竹</div>
+<div class="town-score" style="color:#f39c12">58.4点</div>
+<div class="town-meta">人口 4,500 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="大住台2/" class="town-card">
+<div class="town-name">大住台二丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 372 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大住台1/" class="town-card">
+<div class="town-name">大住台一丁目</div>
+<div class="town-score" style="color:#f39c12">56.9点</div>
+<div class="town-meta">人口 438 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大住台3/" class="town-card">
+<div class="town-name">大住台三丁目</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 777 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="沼目4/" class="town-card">
+<div class="town-name">沼目四丁目</div>
+<div class="town-score" style="color:#f39c12">55.9点</div>
+<div class="town-meta">人口 1,154 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="高森2/" class="town-card">
+<div class="town-name">高森二丁目</div>
+<div class="town-score" style="color:#f39c12">55.5点</div>
+<div class="town-meta">人口 1,279 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="桜台5/" class="town-card">
+<div class="town-name">桜台五丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 1,362 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="高森4/" class="town-card">
+<div class="town-name">高森四丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 974 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="伊勢原2/" class="town-card">
+<div class="town-name">伊勢原二丁目</div>
+<div class="town-score" style="color:#f39c12">54.9点</div>
+<div class="town-meta">人口 1,021 / 犯罪 2件 / 医療 9件</div>
+</a>
+<a href="沼目5/" class="town-card">
+<div class="town-name">沼目五丁目</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 1,158 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="高森7/" class="town-card">
+<div class="town-name">高森七丁目</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 1,121 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="桜台4/" class="town-card">
+<div class="town-name">桜台四丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 1,372 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="高森台1/" class="town-card">
+<div class="town-name">高森台一丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 619 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="笠窪/" class="town-card">
+<div class="town-name">笠窪</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 1,945 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="高森5/" class="town-card">
+<div class="town-name">高森五丁目</div>
+<div class="town-score" style="color:#f39c12">52.7点</div>
+<div class="town-meta">人口 963 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="沼目6/" class="town-card">
+<div class="town-name">沼目六丁目</div>
+<div class="town-score" style="color:#f39c12">52.4点</div>
+<div class="town-meta">人口 490 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="下平間/" class="town-card">
+<div class="town-name">下平間</div>
+<div class="town-score" style="color:#f39c12">52.3点</div>
+<div class="town-meta">人口 396 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="桜台1/" class="town-card">
+<div class="town-name">桜台一丁目</div>
+<div class="town-score" style="color:#f39c12">52.0点</div>
+<div class="town-meta">人口 2,527 / 犯罪 14件 / 医療 17件</div>
+</a>
+<a href="伊勢原1/" class="town-card">
+<div class="town-name">伊勢原一丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 1,047 / 犯罪 9件 / 医療 10件</div>
+</a>
+<a href="高森台3/" class="town-card">
+<div class="town-name">高森台三丁目</div>
+<div class="town-score" style="color:#f39c12">51.7点</div>
+<div class="town-meta">人口 411 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="歌川2/" class="town-card">
+<div class="town-name">歌川二丁目</div>
+<div class="town-score" style="color:#f39c12">51.5点</div>
+<div class="town-meta">人口 9 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="高森台2/" class="town-card">
+<div class="town-name">高森台二丁目</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 592 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="板戸/" class="town-card">
+<div class="town-name">板戸</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 7,003 / 犯罪 2件 / 医療 7件</div>
+</a>
+<a href="坪ノ内/" class="town-card">
+<div class="town-name">坪ノ内</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 932 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="東大竹2/" class="town-card">
+<div class="town-name">東大竹二丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 1,430 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="高森/" class="town-card">
+<div class="town-name">高森</div>
+<div class="town-score" style="color:#f39c12">48.7点</div>
+<div class="town-meta">人口 3,730 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="沼目2/" class="town-card">
+<div class="town-name">沼目二丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 1,173 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="石田/" class="town-card">
+<div class="town-name">石田</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 7,133 / 犯罪 19件 / 医療 10件</div>
+</a>
+<a href="小稲葉/" class="town-card">
+<div class="town-name">小稲葉</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 2,374 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="田中/" class="town-card">
+<div class="town-name">田中</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 1,446 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="三ノ宮/" class="town-card">
+<div class="town-name">三ノ宮</div>
+<div class="town-score" style="color:#f39c12">47.9点</div>
+<div class="town-meta">人口 2,171 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="沼目1/" class="town-card">
+<div class="town-name">沼目一丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 333 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="池端/" class="town-card">
+<div class="town-name">池端</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 2,405 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="日向/" class="town-card">
+<div class="town-name">日向</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 1,544 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="子易/" class="town-card">
+<div class="town-name">子易</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 598 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="高森1/" class="town-card">
+<div class="town-name">高森一丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 1,256 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="神戸/" class="town-card">
+<div class="town-name">神戸</div>
+<div class="town-score" style="color:#f39c12">46.2点</div>
+<div class="town-meta">人口 1,236 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="西富岡/" class="town-card">
+<div class="town-name">西富岡</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 1,535 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="串橋/" class="town-card">
+<div class="town-name">串橋</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 2,517 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="伊勢原4/" class="town-card">
+<div class="town-name">伊勢原四丁目</div>
+<div class="town-score" style="color:#f39c12">44.9点</div>
+<div class="town-meta">人口 1,706 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="下糟屋/" class="town-card">
+<div class="town-name">下糟屋</div>
+<div class="town-score" style="color:#f39c12">44.9点</div>
+<div class="town-meta">人口 2,518 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="岡崎/" class="town-card">
+<div class="town-name">岡崎</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 3,960 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="下落合/" class="town-card">
+<div class="town-name">下落合</div>
+<div class="town-score" style="color:#f39c12">43.4点</div>
+<div class="town-meta">人口 1,909 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="沼目/" class="town-card">
+<div class="town-name">沼目</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 173 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="下谷/" class="town-card">
+<div class="town-name">下谷</div>
+<div class="town-score" style="color:#f39c12">41.6点</div>
+<div class="town-meta">人口 1,023 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="沼目7/" class="town-card">
+<div class="town-name">沼目七丁目</div>
+<div class="town-score" style="color:#f39c12">41.1点</div>
+<div class="town-meta">人口 264 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="善波/" class="town-card">
+<div class="town-name">善波</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 329 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="見附島/" class="town-card">
+<div class="town-name">見附島</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 201 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上平間/" class="town-card">
+<div class="town-name">上平間</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 344 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="白根/" class="town-card">
+<div class="town-name">白根</div>
+<div class="town-score" style="color:#f39c12">40.3点</div>
+<div class="town-meta">人口 2,287 / 犯罪 7件 / 医療 3件</div>
+</a>
+<a href="上粕屋/" class="town-card">
+<div class="town-name">上粕屋</div>
+<div class="town-score" style="color:#e74c3c">39.4点</div>
+<div class="town-meta">人口 6,904 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="粟窪/" class="town-card">
+<div class="town-name">粟窪</div>
+<div class="town-score" style="color:#e74c3c">33.5点</div>
+<div class="town-meta">人口 477 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上谷/" class="town-card">
+<div class="town-name">上谷</div>
+<div class="town-score" style="color:#e74c3c">31.2点</div>
+<div class="town-meta">人口 147 / 犯罪 1件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>川崎市麻生区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="川崎市麻生区の全118エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 川崎市麻生区</div>
+<h2>川崎市麻生区 全118エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">180,705</div><div class="label">人口</div></div>
+<div><div class="value">54.0</div><div class="label">平均スコア</div></div>
+<div><div class="value">101</div><div class="label">犯罪件数</div></div>
+<div><div class="value">231</div><div class="label">医療施設</div></div>
+<div><div class="value">222</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="五力田2/" class="town-card">
+<div class="town-name">五力田二丁目</div>
+<div class="town-score" style="color:#2ecc71">74.7点</div>
+<div class="town-meta">人口 1,296 / 犯罪 0件 / 医療 7件</div>
+</a>
+<a href="はるひ野4/" class="town-card">
+<div class="town-name">はるひ野四丁目</div>
+<div class="town-score" style="color:#2ecc71">74.2点</div>
+<div class="town-meta">人口 2,067 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="片平5/" class="town-card">
+<div class="town-name">片平五丁目</div>
+<div class="town-score" style="color:#2ecc71">71.2点</div>
+<div class="town-meta">人口 1,929 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="白鳥2/" class="town-card">
+<div class="town-name">白鳥二丁目</div>
+<div class="town-score" style="color:#2ecc71">70.6点</div>
+<div class="town-meta">人口 854 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="千代ケ丘8/" class="town-card">
+<div class="town-name">千代ケ丘八丁目</div>
+<div class="town-score" style="color:#2ecc71">70.2点</div>
+<div class="town-meta">人口 966 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="王禅寺西4/" class="town-card">
+<div class="town-name">王禅寺西四丁目</div>
+<div class="town-score" style="color:#2ecc71">70.1点</div>
+<div class="town-meta">人口 696 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="細山2/" class="town-card">
+<div class="town-name">細山二丁目</div>
+<div class="town-score" style="color:#2ecc71">69.9点</div>
+<div class="town-meta">人口 805 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="はるひ野1/" class="town-card">
+<div class="town-name">はるひ野一丁目</div>
+<div class="town-score" style="color:#2ecc71">69.4点</div>
+<div class="town-meta">人口 1,904 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="千代ケ丘5/" class="town-card">
+<div class="town-name">千代ケ丘五丁目</div>
+<div class="town-score" style="color:#2ecc71">68.8点</div>
+<div class="town-meta">人口 782 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="五力田3/" class="town-card">
+<div class="town-name">五力田三丁目</div>
+<div class="town-score" style="color:#2ecc71">68.6点</div>
+<div class="town-meta">人口 1,016 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="白鳥3/" class="town-card">
+<div class="town-name">白鳥三丁目</div>
+<div class="town-score" style="color:#2ecc71">68.3点</div>
+<div class="town-meta">人口 1,664 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="栗木台1/" class="town-card">
+<div class="town-name">栗木台一丁目</div>
+<div class="town-score" style="color:#2ecc71">67.5点</div>
+<div class="town-meta">人口 1,385 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="はるひ野5/" class="town-card">
+<div class="town-name">はるひ野五丁目</div>
+<div class="town-score" style="color:#2ecc71">66.5点</div>
+<div class="town-meta">人口 1,253 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="五力田/" class="town-card">
+<div class="town-name">五力田</div>
+<div class="town-score" style="color:#2ecc71">65.9点</div>
+<div class="town-meta">人口 143 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="はるひ野3/" class="town-card">
+<div class="town-name">はるひ野三丁目</div>
+<div class="town-score" style="color:#2ecc71">65.5点</div>
+<div class="town-meta">人口 1,425 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="はるひ野2/" class="town-card">
+<div class="town-name">はるひ野二丁目</div>
+<div class="town-score" style="color:#2ecc71">63.8点</div>
+<div class="town-meta">人口 1,415 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="高石4/" class="town-card">
+<div class="town-name">高石四丁目</div>
+<div class="town-score" style="color:#2ecc71">63.5点</div>
+<div class="town-meta">人口 4,003 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="白鳥4/" class="town-card">
+<div class="town-name">白鳥四丁目</div>
+<div class="town-score" style="color:#2ecc71">63.5点</div>
+<div class="town-meta">人口 2,458 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="栗木台2/" class="town-card">
+<div class="town-name">栗木台二丁目</div>
+<div class="town-score" style="color:#2ecc71">63.0点</div>
+<div class="town-meta">人口 779 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="白山3/" class="town-card">
+<div class="town-name">白山三丁目</div>
+<div class="town-score" style="color:#2ecc71">62.4点</div>
+<div class="town-meta">人口 295 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上麻生5/" class="town-card">
+<div class="town-name">上麻生五丁目</div>
+<div class="town-score" style="color:#2ecc71">62.3点</div>
+<div class="town-meta">人口 4,245 / 犯罪 5件 / 医療 18件</div>
+</a>
+<a href="百合丘3/" class="town-card">
+<div class="town-name">百合丘三丁目</div>
+<div class="town-score" style="color:#2ecc71">62.1点</div>
+<div class="town-meta">人口 3,262 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="高石1/" class="town-card">
+<div class="town-name">高石一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.5点</div>
+<div class="town-meta">人口 2,425 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="白山5/" class="town-card">
+<div class="town-name">白山五丁目</div>
+<div class="town-score" style="color:#2ecc71">60.3点</div>
+<div class="town-meta">人口 1,882 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="百合丘1/" class="town-card">
+<div class="town-name">百合丘一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.1点</div>
+<div class="town-meta">人口 3,345 / 犯罪 3件 / 医療 21件</div>
+</a>
+<a href="細山/" class="town-card">
+<div class="town-name">細山</div>
+<div class="town-score" style="color:#2ecc71">60.0点</div>
+<div class="town-meta">人口 152 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="虹ケ丘3/" class="town-card">
+<div class="town-name">虹ケ丘三丁目</div>
+<div class="town-score" style="color:#f39c12">59.9点</div>
+<div class="town-meta">人口 965 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="高石2/" class="town-card">
+<div class="town-name">高石二丁目</div>
+<div class="town-score" style="color:#f39c12">59.7点</div>
+<div class="town-meta">人口 2,597 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="万福寺2/" class="town-card">
+<div class="town-name">万福寺二丁目</div>
+<div class="town-score" style="color:#f39c12">59.6点</div>
+<div class="town-meta">人口 982 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="万福寺3/" class="town-card">
+<div class="town-name">万福寺三丁目</div>
+<div class="town-score" style="color:#f39c12">59.4点</div>
+<div class="town-meta">人口 2,375 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="万福寺6/" class="town-card">
+<div class="town-name">万福寺六丁目</div>
+<div class="town-score" style="color:#f39c12">59.3点</div>
+<div class="town-meta">人口 1,323 / 犯罪 0件 / 医療 10件</div>
+</a>
+<a href="虹ケ丘1/" class="town-card">
+<div class="town-name">虹ケ丘一丁目</div>
+<div class="town-score" style="color:#f39c12">59.3点</div>
+<div class="town-meta">人口 993 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="細山1/" class="town-card">
+<div class="town-name">細山一丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 729 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="王禅寺西7/" class="town-card">
+<div class="town-name">王禅寺西七丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 1,689 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="栗木台3/" class="town-card">
+<div class="town-name">栗木台三丁目</div>
+<div class="town-score" style="color:#f39c12">59.0点</div>
+<div class="town-meta">人口 813 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="南黒川/" class="town-card">
+<div class="town-name">南黒川</div>
+<div class="town-score" style="color:#f39c12">58.9点</div>
+<div class="town-meta">人口 291 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="千代ケ丘1/" class="town-card">
+<div class="town-name">千代ケ丘一丁目</div>
+<div class="town-score" style="color:#f39c12">58.5点</div>
+<div class="town-meta">人口 1,041 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="王禅寺東3/" class="town-card">
+<div class="town-name">王禅寺東三丁目</div>
+<div class="town-score" style="color:#f39c12">58.5点</div>
+<div class="town-meta">人口 2,561 / 犯罪 1件 / 医療 7件</div>
+</a>
+<a href="王禅寺東4/" class="town-card">
+<div class="town-name">王禅寺東四丁目</div>
+<div class="town-score" style="color:#f39c12">58.0点</div>
+<div class="town-meta">人口 1,152 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="千代ケ丘2/" class="town-card">
+<div class="town-name">千代ケ丘二丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 1,000 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="万福寺4/" class="town-card">
+<div class="town-name">万福寺四丁目</div>
+<div class="town-score" style="color:#f39c12">57.1点</div>
+<div class="town-meta">人口 2,670 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="片平1/" class="town-card">
+<div class="town-name">片平一丁目</div>
+<div class="town-score" style="color:#f39c12">57.0点</div>
+<div class="town-meta">人口 1,837 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="片平8/" class="town-card">
+<div class="town-name">片平八丁目</div>
+<div class="town-score" style="color:#f39c12">56.6点</div>
+<div class="town-meta">人口 304 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="細山7/" class="town-card">
+<div class="town-name">細山七丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 789 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="千代ケ丘6/" class="town-card">
+<div class="town-name">千代ケ丘六丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 903 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="王禅寺西8/" class="town-card">
+<div class="town-name">王禅寺西八丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 1,143 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="向原2/" class="town-card">
+<div class="town-name">向原二丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 1,546 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="細山4/" class="town-card">
+<div class="town-name">細山四丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 1,429 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="白山1/" class="town-card">
+<div class="town-name">白山一丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 976 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="多摩美2/" class="town-card">
+<div class="town-name">多摩美二丁目</div>
+<div class="town-score" style="color:#f39c12">55.9点</div>
+<div class="town-meta">人口 943 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="金程2/" class="town-card">
+<div class="town-name">金程二丁目</div>
+<div class="town-score" style="color:#f39c12">55.8点</div>
+<div class="town-meta">人口 738 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="万福寺5/" class="town-card">
+<div class="town-name">万福寺五丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 956 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="百合丘2/" class="town-card">
+<div class="town-name">百合丘二丁目</div>
+<div class="town-score" style="color:#f39c12">55.6点</div>
+<div class="town-meta">人口 3,027 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="白山4/" class="town-card">
+<div class="town-name">白山四丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 1,664 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="栗木台4/" class="town-card">
+<div class="town-name">栗木台四丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 847 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="栗木/" class="town-card">
+<div class="town-name">栗木</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 175 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="王禅寺東5/" class="town-card">
+<div class="town-name">王禅寺東五丁目</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 2,389 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="古沢/" class="town-card">
+<div class="town-name">古沢</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 527 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="片平/" class="town-card">
+<div class="town-name">片平</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 1,031 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="白鳥1/" class="town-card">
+<div class="town-name">白鳥一丁目</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 1,530 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="栗平2/" class="town-card">
+<div class="town-name">栗平二丁目</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 2,072 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="栗木台5/" class="town-card">
+<div class="town-name">栗木台五丁目</div>
+<div class="town-score" style="color:#f39c12">53.9点</div>
+<div class="town-meta">人口 954 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="王禅寺/" class="town-card">
+<div class="town-name">王禅寺</div>
+<div class="town-score" style="color:#f39c12">53.5点</div>
+<div class="town-meta">人口 1,201 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="千代ケ丘3/" class="town-card">
+<div class="town-name">千代ケ丘三丁目</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 1,057 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="王禅寺西5/" class="town-card">
+<div class="town-name">王禅寺西五丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 1,067 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="片平3/" class="town-card">
+<div class="town-name">片平三丁目</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 1,733 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="王禅寺西3/" class="town-card">
+<div class="town-name">王禅寺西三丁目</div>
+<div class="town-score" style="color:#f39c12">52.3点</div>
+<div class="town-meta">人口 1,950 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="白山2/" class="town-card">
+<div class="town-name">白山二丁目</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 471 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="栗木3/" class="town-card">
+<div class="town-name">栗木三丁目</div>
+<div class="town-score" style="color:#f39c12">52.0点</div>
+<div class="town-meta">人口 253 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="細山8/" class="town-card">
+<div class="town-name">細山八丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 996 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="金程4/" class="town-card">
+<div class="town-name">金程四丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 974 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="上麻生2/" class="town-card">
+<div class="town-name">上麻生二丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 2,184 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="千代ケ丘4/" class="town-card">
+<div class="town-name">千代ケ丘四丁目</div>
+<div class="town-score" style="color:#f39c12">51.2点</div>
+<div class="town-meta">人口 1,509 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="上麻生6/" class="town-card">
+<div class="town-name">上麻生六丁目</div>
+<div class="town-score" style="color:#f39c12">51.2点</div>
+<div class="town-meta">人口 2,795 / 犯罪 3件 / 医療 7件</div>
+</a>
+<a href="高石5/" class="town-card">
+<div class="town-name">高石五丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 1,872 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="岡上/" class="town-card">
+<div class="town-name">岡上</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 6,678 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="栗平1/" class="town-card">
+<div class="town-name">栗平一丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 1,031 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上麻生4/" class="town-card">
+<div class="town-name">上麻生四丁目</div>
+<div class="town-score" style="color:#f39c12">50.6点</div>
+<div class="town-meta">人口 3,553 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="高石6/" class="town-card">
+<div class="town-name">高石六丁目</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 1,764 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="片平2/" class="town-card">
+<div class="town-name">片平二丁目</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 1,915 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="千代ケ丘9/" class="town-card">
+<div class="town-name">千代ケ丘九丁目</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 687 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="細山3/" class="town-card">
+<div class="town-name">細山三丁目</div>
+<div class="town-score" style="color:#f39c12">49.3点</div>
+<div class="town-meta">人口 911 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="東百合丘4/" class="town-card">
+<div class="town-name">東百合丘四丁目</div>
+<div class="town-score" style="color:#f39c12">49.3点</div>
+<div class="town-meta">人口 2,134 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="向原3/" class="town-card">
+<div class="town-name">向原三丁目</div>
+<div class="town-score" style="color:#f39c12">48.7点</div>
+<div class="town-meta">人口 1,038 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="栗木1/" class="town-card">
+<div class="town-name">栗木一丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 1,073 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="東百合丘1/" class="town-card">
+<div class="town-name">東百合丘一丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 2,574 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="向原1/" class="town-card">
+<div class="town-name">向原一丁目</div>
+<div class="town-score" style="color:#f39c12">47.8点</div>
+<div class="town-meta">人口 764 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="細山6/" class="town-card">
+<div class="town-name">細山六丁目</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 522 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="王禅寺西6/" class="town-card">
+<div class="town-name">王禅寺西六丁目</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 1,356 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上麻生1/" class="town-card">
+<div class="town-name">上麻生一丁目</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 660 / 犯罪 9件 / 医療 24件</div>
+</a>
+<a href="細山5/" class="town-card">
+<div class="town-name">細山五丁目</div>
+<div class="town-score" style="color:#f39c12">47.4点</div>
+<div class="town-meta">人口 1,509 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="王禅寺東2/" class="town-card">
+<div class="town-name">王禅寺東二丁目</div>
+<div class="town-score" style="color:#f39c12">47.4点</div>
+<div class="town-meta">人口 2,120 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="高石3/" class="town-card">
+<div class="town-name">高石三丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 3,261 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="東百合丘3/" class="town-card">
+<div class="town-name">東百合丘三丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 1,605 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="五力田1/" class="town-card">
+<div class="town-name">五力田一丁目</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 808 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="片平6/" class="town-card">
+<div class="town-name">片平六丁目</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 657 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="王禅寺西1/" class="town-card">
+<div class="town-name">王禅寺西一丁目</div>
+<div class="town-score" style="color:#f39c12">45.8点</div>
+<div class="town-meta">人口 2,242 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="多摩美1/" class="town-card">
+<div class="town-name">多摩美一丁目</div>
+<div class="town-score" style="color:#f39c12">45.5点</div>
+<div class="town-meta">人口 1,510 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="片平7/" class="town-card">
+<div class="town-name">片平七丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 563 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="王禅寺東1/" class="town-card">
+<div class="town-name">王禅寺東一丁目</div>
+<div class="town-score" style="color:#f39c12">44.9点</div>
+<div class="town-meta">人口 1,158 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="千代ケ丘7/" class="town-card">
+<div class="town-name">千代ケ丘七丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 1,321 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上麻生3/" class="town-card">
+<div class="town-name">上麻生三丁目</div>
+<div class="town-score" style="color:#f39c12">44.6点</div>
+<div class="town-meta">人口 4,174 / 犯罪 10件 / 医療 1件</div>
+</a>
+<a href="東百合丘2/" class="town-card">
+<div class="town-name">東百合丘二丁目</div>
+<div class="town-score" style="color:#f39c12">44.4点</div>
+<div class="town-meta">人口 1,613 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="下麻生1/" class="town-card">
+<div class="town-name">下麻生一丁目</div>
+<div class="town-score" style="color:#f39c12">43.9点</div>
+<div class="town-meta">人口 2,049 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="下麻生2/" class="town-card">
+<div class="town-name">下麻生二丁目</div>
+<div class="town-score" style="color:#f39c12">43.7点</div>
+<div class="town-meta">人口 1,984 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="黒川/" class="town-card">
+<div class="town-name">黒川</div>
+<div class="town-score" style="color:#f39c12">42.9点</div>
+<div class="town-meta">人口 3,526 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="金程1/" class="town-card">
+<div class="town-name">金程一丁目</div>
+<div class="town-score" style="color:#f39c12">42.2点</div>
+<div class="town-meta">人口 1,661 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="金程3/" class="town-card">
+<div class="town-name">金程三丁目</div>
+<div class="town-score" style="color:#f39c12">42.2点</div>
+<div class="town-meta">人口 721 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="片平4/" class="town-card">
+<div class="town-name">片平四丁目</div>
+<div class="town-score" style="color:#f39c12">41.8点</div>
+<div class="town-meta">人口 2,699 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="王禅寺西2/" class="town-card">
+<div class="town-name">王禅寺西二丁目</div>
+<div class="town-score" style="color:#e74c3c">39.6点</div>
+<div class="town-meta">人口 1,106 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="下麻生3/" class="town-card">
+<div class="town-name">下麻生三丁目</div>
+<div class="town-score" style="color:#e74c3c">39.4点</div>
+<div class="town-meta">人口 1,761 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="王禅寺東6/" class="town-card">
+<div class="town-name">王禅寺東六丁目</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 1,261 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="早野/" class="town-card">
+<div class="town-name">早野</div>
+<div class="town-score" style="color:#e74c3c">38.3点</div>
+<div class="town-meta">人口 643 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上麻生7/" class="town-card">
+<div class="town-name">上麻生七丁目</div>
+<div class="town-score" style="color:#e74c3c">37.8点</div>
+<div class="town-meta">人口 2,900 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="万福寺1/" class="town-card">
+<div class="town-name">万福寺一丁目</div>
+<div class="town-score" style="color:#e74c3c">37.4点</div>
+<div class="town-meta">人口 1,223 / 犯罪 13件 / 医療 25件</div>
+</a>
+<a href="上麻生/" class="town-card">
+<div class="town-name">上麻生</div>
+<div class="town-score" style="color:#e74c3c">37.1点</div>
+<div class="town-meta">人口 108 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="虹ケ丘2/" class="town-card">
+<div class="town-name">虹ケ丘二丁目</div>
+<div class="town-score" style="color:#e74c3c">36.8点</div>
+<div class="town-meta">人口 2,379 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="王禅寺/" class="town-card">
+<div class="town-name">王禅寺</div>
+<div class="town-score" style="color:#e74c3c">34.6点</div>
+<div class="town-meta">人口 14 / 犯罪 0件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a> / <a href="../寒川町/">寒川町</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>藤沢市 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="藤沢市の全217エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 藤沢市</div>
+<h2>藤沢市 全217エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">436,905</div><div class="label">人口</div></div>
+<div><div class="value">51.2</div><div class="label">平均スコア</div></div>
+<div><div class="value">974</div><div class="label">犯罪件数</div></div>
+<div><div class="value">718</div><div class="label">医療施設</div></div>
+<div><div class="value">254</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="片瀬山4/" class="town-card">
+<div class="town-name">片瀬山四丁目</div>
+<div class="town-score" style="color:#2ecc71">74.2点</div>
+<div class="town-meta">人口 683 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="鵠沼藤が谷2/" class="town-card">
+<div class="town-name">鵠沼藤が谷二丁目</div>
+<div class="town-score" style="color:#2ecc71">72.8点</div>
+<div class="town-meta">人口 1,377 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="片瀬山5/" class="town-card">
+<div class="town-name">片瀬山五丁目</div>
+<div class="town-score" style="color:#2ecc71">72.3点</div>
+<div class="town-meta">人口 766 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="鵠沼松が岡4/" class="town-card">
+<div class="town-name">鵠沼松が岡四丁目</div>
+<div class="town-score" style="color:#2ecc71">71.2点</div>
+<div class="town-meta">人口 1,698 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="片瀬5/" class="town-card">
+<div class="town-name">片瀬五丁目</div>
+<div class="town-score" style="color:#2ecc71">70.6点</div>
+<div class="town-meta">人口 2,228 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="片瀬山3/" class="town-card">
+<div class="town-name">片瀬山三丁目</div>
+<div class="town-score" style="color:#2ecc71">69.0点</div>
+<div class="town-meta">人口 1,193 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="片瀬3/" class="town-card">
+<div class="town-name">片瀬三丁目</div>
+<div class="town-score" style="color:#2ecc71">67.6点</div>
+<div class="town-meta">人口 1,430 / 犯罪 5件 / 医療 10件</div>
+</a>
+<a href="鵠沼桜が岡4/" class="town-card">
+<div class="town-name">鵠沼桜が岡四丁目</div>
+<div class="town-score" style="color:#2ecc71">66.7点</div>
+<div class="town-meta">人口 1,469 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="片瀬4/" class="town-card">
+<div class="town-name">片瀬四丁目</div>
+<div class="town-score" style="color:#2ecc71">66.5点</div>
+<div class="town-meta">人口 1,900 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="鵠沼松が岡5/" class="town-card">
+<div class="town-name">鵠沼松が岡五丁目</div>
+<div class="town-score" style="color:#2ecc71">66.2点</div>
+<div class="town-meta">人口 1,112 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="鵠沼花沢町/" class="town-card">
+<div class="town-name">鵠沼花沢町</div>
+<div class="town-score" style="color:#2ecc71">65.3点</div>
+<div class="town-meta">人口 1,252 / 犯罪 3件 / 医療 7件</div>
+</a>
+<a href="鵠沼松が岡3/" class="town-card">
+<div class="town-name">鵠沼松が岡三丁目</div>
+<div class="town-score" style="color:#2ecc71">65.2点</div>
+<div class="town-meta">人口 2,326 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="片瀬山1/" class="town-card">
+<div class="town-name">片瀬山一丁目</div>
+<div class="town-score" style="color:#2ecc71">65.2点</div>
+<div class="town-meta">人口 728 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="亀井野/" class="town-card">
+<div class="town-name">亀井野</div>
+<div class="town-score" style="color:#2ecc71">64.5点</div>
+<div class="town-meta">人口 6,402 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="鵠沼松が岡1/" class="town-card">
+<div class="town-name">鵠沼松が岡一丁目</div>
+<div class="town-score" style="color:#2ecc71">62.9点</div>
+<div class="town-meta">人口 1,477 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="大鋸1/" class="town-card">
+<div class="town-name">大鋸一丁目</div>
+<div class="town-score" style="color:#2ecc71">62.3点</div>
+<div class="town-meta">人口 2,213 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="善行2/" class="town-card">
+<div class="town-name">善行二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.7点</div>
+<div class="town-meta">人口 2,016 / 犯罪 4件 / 医療 9件</div>
+</a>
+<a href="鵠沼/" class="town-card">
+<div class="town-name">鵠沼</div>
+<div class="town-score" style="color:#2ecc71">61.7点</div>
+<div class="town-meta">人口 605 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="藤沢2/" class="town-card">
+<div class="town-name">藤沢二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.6点</div>
+<div class="town-meta">人口 687 / 犯罪 1件 / 医療 10件</div>
+</a>
+<a href="亀井野4/" class="town-card">
+<div class="town-name">亀井野四丁目</div>
+<div class="town-score" style="color:#2ecc71">61.6点</div>
+<div class="town-meta">人口 850 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="立石1/" class="town-card">
+<div class="town-name">立石一丁目</div>
+<div class="town-score" style="color:#2ecc71">61.5点</div>
+<div class="town-meta">人口 1,564 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="鵠沼桜が岡2/" class="town-card">
+<div class="town-name">鵠沼桜が岡二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.3点</div>
+<div class="town-meta">人口 1,329 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="本鵠沼3/" class="town-card">
+<div class="town-name">本鵠沼三丁目</div>
+<div class="town-score" style="color:#2ecc71">61.0点</div>
+<div class="town-meta">人口 1,725 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="辻堂太平台2/" class="town-card">
+<div class="town-name">辻堂太平台二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.0点</div>
+<div class="town-meta">人口 2,574 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="鵠沼石上2/" class="town-card">
+<div class="town-name">鵠沼石上二丁目</div>
+<div class="town-score" style="color:#2ecc71">60.9点</div>
+<div class="town-meta">人口 1,229 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="藤が岡1/" class="town-card">
+<div class="town-name">藤が岡一丁目</div>
+<div class="town-score" style="color:#2ecc71">60.9点</div>
+<div class="town-meta">人口 2,738 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="善行6/" class="town-card">
+<div class="town-name">善行六丁目</div>
+<div class="town-score" style="color:#2ecc71">60.6点</div>
+<div class="town-meta">人口 1,973 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="本町2/" class="town-card">
+<div class="town-name">本町二丁目</div>
+<div class="town-score" style="color:#2ecc71">60.5点</div>
+<div class="town-meta">人口 1,347 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="渡内4/" class="town-card">
+<div class="town-name">渡内四丁目</div>
+<div class="town-score" style="color:#2ecc71">60.4点</div>
+<div class="town-meta">人口 1,070 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="善行3/" class="town-card">
+<div class="town-name">善行三丁目</div>
+<div class="town-score" style="color:#f39c12">59.9点</div>
+<div class="town-meta">人口 687 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="本藤沢1/" class="town-card">
+<div class="town-name">本藤沢一丁目</div>
+<div class="town-score" style="color:#f39c12">59.9点</div>
+<div class="town-meta">人口 1,132 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="西富1/" class="town-card">
+<div class="town-name">西富一丁目</div>
+<div class="town-score" style="color:#f39c12">59.6点</div>
+<div class="town-meta">人口 540 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="鵠沼藤が谷1/" class="town-card">
+<div class="town-name">鵠沼藤が谷一丁目</div>
+<div class="town-score" style="color:#f39c12">59.4点</div>
+<div class="town-meta">人口 1,190 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="鵠沼石上1/" class="town-card">
+<div class="town-name">鵠沼石上一丁目</div>
+<div class="town-score" style="color:#f39c12">59.4点</div>
+<div class="town-meta">人口 681 / 犯罪 16件 / 医療 15件</div>
+</a>
+<a href="城南5/" class="town-card">
+<div class="town-name">城南五丁目</div>
+<div class="town-score" style="color:#f39c12">58.9点</div>
+<div class="town-meta">人口 637 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="村岡東3/" class="town-card">
+<div class="town-name">村岡東三丁目</div>
+<div class="town-score" style="color:#f39c12">58.7点</div>
+<div class="town-meta">人口 1,606 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="片瀬/" class="town-card">
+<div class="town-name">片瀬</div>
+<div class="town-score" style="color:#f39c12">58.7点</div>
+<div class="town-meta">人口 1,145 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="遠藤/" class="town-card">
+<div class="town-name">遠藤</div>
+<div class="town-score" style="color:#f39c12">58.6点</div>
+<div class="town-meta">人口 2,339 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="本鵠沼4/" class="town-card">
+<div class="town-name">本鵠沼四丁目</div>
+<div class="town-score" style="color:#f39c12">58.5点</div>
+<div class="town-meta">人口 1,958 / 犯罪 0件 / 医療 7件</div>
+</a>
+<a href="鵠沼橘2/" class="town-card">
+<div class="town-name">鵠沼橘二丁目</div>
+<div class="town-score" style="color:#f39c12">58.5点</div>
+<div class="town-meta">人口 1,714 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="辻堂5/" class="town-card">
+<div class="town-name">辻堂五丁目</div>
+<div class="town-score" style="color:#f39c12">58.5点</div>
+<div class="town-meta">人口 1,651 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="片瀬2/" class="town-card">
+<div class="town-name">片瀬二丁目</div>
+<div class="town-score" style="color:#f39c12">58.2点</div>
+<div class="town-meta">人口 2,247 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="片瀬山2/" class="town-card">
+<div class="town-name">片瀬山二丁目</div>
+<div class="town-score" style="color:#f39c12">58.2点</div>
+<div class="town-meta">人口 603 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="鵠沼桜が岡1/" class="town-card">
+<div class="town-name">鵠沼桜が岡一丁目</div>
+<div class="town-score" style="color:#f39c12">57.9点</div>
+<div class="town-meta">人口 1,926 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="宮前/" class="town-card">
+<div class="town-name">宮前</div>
+<div class="town-score" style="color:#f39c12">57.9点</div>
+<div class="town-meta">人口 1,717 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="辻堂4/" class="town-card">
+<div class="town-name">辻堂四丁目</div>
+<div class="town-score" style="color:#f39c12">57.8点</div>
+<div class="town-meta">人口 1,526 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="善行坂1/" class="town-card">
+<div class="town-name">善行坂一丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 3,080 / 犯罪 5件 / 医療 2件</div>
+</a>
+<a href="藤沢3/" class="town-card">
+<div class="town-name">藤沢三丁目</div>
+<div class="town-score" style="color:#f39c12">57.6点</div>
+<div class="town-meta">人口 1,616 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="鵠沼松が岡2/" class="town-card">
+<div class="town-name">鵠沼松が岡二丁目</div>
+<div class="town-score" style="color:#f39c12">57.4点</div>
+<div class="town-meta">人口 1,698 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="鵠沼神明5/" class="town-card">
+<div class="town-name">鵠沼神明五丁目</div>
+<div class="town-score" style="color:#f39c12">57.4点</div>
+<div class="town-meta">人口 1,015 / 犯罪 4件 / 医療 5件</div>
+</a>
+<a href="片瀬海岸1/" class="town-card">
+<div class="town-name">片瀬海岸一丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 2,420 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="亀井野1/" class="town-card">
+<div class="town-name">亀井野一丁目</div>
+<div class="town-score" style="color:#f39c12">57.3点</div>
+<div class="town-meta">人口 1,507 / 犯罪 9件 / 医療 3件</div>
+</a>
+<a href="鵠沼東/" class="town-card">
+<div class="town-name">鵠沼東</div>
+<div class="town-score" style="color:#f39c12">57.2点</div>
+<div class="town-meta">人口 1,687 / 犯罪 11件 / 医療 3件</div>
+</a>
+<a href="亀井野2/" class="town-card">
+<div class="town-name">亀井野二丁目</div>
+<div class="town-score" style="color:#f39c12">56.6点</div>
+<div class="town-meta">人口 1,982 / 犯罪 6件 / 医療 10件</div>
+</a>
+<a href="大庭/" class="town-card">
+<div class="town-name">大庭</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 3,414 / 犯罪 0件 / 医療 5件</div>
+</a>
+<a href="鵠沼橘1/" class="town-card">
+<div class="town-name">鵠沼橘一丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 1,961 / 犯罪 14件 / 医療 19件</div>
+</a>
+<a href="鵠沼藤が谷3/" class="town-card">
+<div class="town-name">鵠沼藤が谷三丁目</div>
+<div class="town-score" style="color:#f39c12">55.9点</div>
+<div class="town-meta">人口 1,551 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="大庭/" class="town-card">
+<div class="town-name">大庭</div>
+<div class="town-score" style="color:#f39c12">55.9点</div>
+<div class="town-meta">人口 5,930 / 犯罪 0件 / 医療 11件</div>
+</a>
+<a href="辻堂元町3/" class="town-card">
+<div class="town-name">辻堂元町三丁目</div>
+<div class="town-score" style="color:#f39c12">55.8点</div>
+<div class="town-meta">人口 1,703 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="鵠沼海岸1/" class="town-card">
+<div class="town-name">鵠沼海岸一丁目</div>
+<div class="town-score" style="color:#f39c12">55.5点</div>
+<div class="town-meta">人口 1,368 / 犯罪 11件 / 医療 7件</div>
+</a>
+<a href="湘南台3/" class="town-card">
+<div class="town-name">湘南台三丁目</div>
+<div class="town-score" style="color:#f39c12">55.5点</div>
+<div class="town-meta">人口 2,467 / 犯罪 6件 / 医療 8件</div>
+</a>
+<a href="本藤沢6/" class="town-card">
+<div class="town-name">本藤沢六丁目</div>
+<div class="town-score" style="color:#f39c12">55.4点</div>
+<div class="town-meta">人口 1,064 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="城南1/" class="town-card">
+<div class="town-name">城南一丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 2,417 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="湘南台5/" class="town-card">
+<div class="town-name">湘南台五丁目</div>
+<div class="town-score" style="color:#f39c12">55.3点</div>
+<div class="town-meta">人口 3,369 / 犯罪 4件 / 医療 6件</div>
+</a>
+<a href="西富2/" class="town-card">
+<div class="town-name">西富二丁目</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 1,332 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="本町3/" class="town-card">
+<div class="town-name">本町三丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 1,872 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="渡内1/" class="town-card">
+<div class="town-name">渡内一丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 890 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="辻堂新町1/" class="town-card">
+<div class="town-name">辻堂新町一丁目</div>
+<div class="town-score" style="color:#f39c12">54.9点</div>
+<div class="town-meta">人口 2,997 / 犯罪 23件 / 医療 13件</div>
+</a>
+<a href="大庭/" class="town-card">
+<div class="town-name">大庭</div>
+<div class="town-score" style="color:#f39c12">54.6点</div>
+<div class="town-meta">人口 6,342 / 犯罪 0件 / 医療 12件</div>
+</a>
+<a href="辻堂新町2/" class="town-card">
+<div class="town-name">辻堂新町二丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 2,618 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="鵠沼海岸6/" class="town-card">
+<div class="town-name">鵠沼海岸六丁目</div>
+<div class="town-score" style="color:#f39c12">54.4点</div>
+<div class="town-meta">人口 2,082 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="本藤沢3/" class="town-card">
+<div class="town-name">本藤沢三丁目</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 1,146 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="川名/" class="town-card">
+<div class="town-name">川名</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 4,656 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="鵠沼藤が谷4/" class="town-card">
+<div class="town-name">鵠沼藤が谷四丁目</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 1,872 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="片瀬1/" class="town-card">
+<div class="town-name">片瀬一丁目</div>
+<div class="town-score" style="color:#f39c12">54.1点</div>
+<div class="town-meta">人口 1,274 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="辻堂東海岸1/" class="town-card">
+<div class="town-name">辻堂東海岸一丁目</div>
+<div class="town-score" style="color:#f39c12">54.1点</div>
+<div class="town-meta">人口 2,216 / 犯罪 2件 / 医療 9件</div>
+</a>
+<a href="羽鳥2/" class="town-card">
+<div class="town-name">羽鳥二丁目</div>
+<div class="town-score" style="color:#f39c12">54.0点</div>
+<div class="town-meta">人口 1,642 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="村岡東1/" class="town-card">
+<div class="town-name">村岡東一丁目</div>
+<div class="town-score" style="color:#f39c12">53.8点</div>
+<div class="town-meta">人口 979 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="辻堂神台2/" class="town-card">
+<div class="town-name">辻堂神台二丁目</div>
+<div class="town-score" style="color:#f39c12">53.5点</div>
+<div class="town-meta">人口 2,055 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="鵠沼海岸4/" class="town-card">
+<div class="town-name">鵠沼海岸四丁目</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 1,590 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="鵠沼神明2/" class="town-card">
+<div class="town-name">鵠沼神明二丁目</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 1,430 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="弥勒寺2/" class="town-card">
+<div class="town-name">弥勒寺二丁目</div>
+<div class="town-score" style="color:#f39c12">53.4点</div>
+<div class="town-meta">人口 770 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="本鵠沼1/" class="town-card">
+<div class="town-name">本鵠沼一丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 2,975 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="鵠沼海岸7/" class="town-card">
+<div class="town-name">鵠沼海岸七丁目</div>
+<div class="town-score" style="color:#f39c12">53.0点</div>
+<div class="town-meta">人口 2,461 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="本鵠沼2/" class="town-card">
+<div class="town-name">本鵠沼二丁目</div>
+<div class="town-score" style="color:#f39c12">53.0点</div>
+<div class="town-meta">人口 2,312 / 犯罪 2件 / 医療 6件</div>
+</a>
+<a href="善行1/" class="town-card">
+<div class="town-name">善行一丁目</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 2,016 / 犯罪 9件 / 医療 13件</div>
+</a>
+<a href="立石3/" class="town-card">
+<div class="town-name">立石三丁目</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 57 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="村岡東2/" class="town-card">
+<div class="town-name">村岡東二丁目</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 1,544 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="鵠沼海岸3/" class="town-card">
+<div class="town-name">鵠沼海岸三丁目</div>
+<div class="town-score" style="color:#f39c12">52.4点</div>
+<div class="town-meta">人口 1,523 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="江の島2/" class="town-card">
+<div class="town-name">江の島二丁目</div>
+<div class="town-score" style="color:#f39c12">52.4点</div>
+<div class="town-meta">人口 99 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="湘南台7/" class="town-card">
+<div class="town-name">湘南台七丁目</div>
+<div class="town-score" style="color:#f39c12">52.4点</div>
+<div class="town-meta">人口 3,110 / 犯罪 19件 / 医療 6件</div>
+</a>
+<a href="片瀬目白山/" class="town-card">
+<div class="town-name">片瀬目白山</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 289 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="城南3/" class="town-card">
+<div class="town-name">城南三丁目</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 1,769 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="辻堂元町1/" class="town-card">
+<div class="town-name">辻堂元町一丁目</div>
+<div class="town-score" style="color:#f39c12">52.0点</div>
+<div class="town-meta">人口 1,449 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="弥勒寺4/" class="town-card">
+<div class="town-name">弥勒寺四丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 1,322 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="辻堂東海岸2/" class="town-card">
+<div class="town-name">辻堂東海岸二丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 2,059 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="羽鳥3/" class="town-card">
+<div class="town-name">羽鳥三丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 2,983 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="本町4/" class="town-card">
+<div class="town-name">本町四丁目</div>
+<div class="town-score" style="color:#f39c12">51.7点</div>
+<div class="town-meta">人口 1,114 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="片瀬海岸3/" class="town-card">
+<div class="town-name">片瀬海岸三丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 2,359 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="白旗1/" class="town-card">
+<div class="town-name">白旗一丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 1,485 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="大庭/" class="town-card">
+<div class="town-name">大庭</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 4,822 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="辻堂元町6/" class="town-card">
+<div class="town-name">辻堂元町六丁目</div>
+<div class="town-score" style="color:#f39c12">51.2点</div>
+<div class="town-meta">人口 2,633 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="辻堂元町5/" class="town-card">
+<div class="town-name">辻堂元町五丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 2,343 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="本藤沢2/" class="town-card">
+<div class="town-name">本藤沢二丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 1,544 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="立石2/" class="town-card">
+<div class="town-name">立石二丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 649 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="辻堂新町3/" class="town-card">
+<div class="town-name">辻堂新町三丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 2,508 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="円行1/" class="town-card">
+<div class="town-name">円行一丁目</div>
+<div class="town-score" style="color:#f39c12">51.0点</div>
+<div class="town-meta">人口 2,547 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="天神町1/" class="town-card">
+<div class="town-name">天神町一丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 979 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="藤沢/" class="town-card">
+<div class="town-name">藤沢</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 8,829 / 犯罪 46件 / 医療 76件</div>
+</a>
+<a href="善行7/" class="town-card">
+<div class="town-name">善行七丁目</div>
+<div class="town-score" style="color:#f39c12">50.6点</div>
+<div class="town-meta">人口 1,167 / 犯罪 6件 / 医療 4件</div>
+</a>
+<a href="小塚/" class="town-card">
+<div class="town-name">小塚</div>
+<div class="town-score" style="color:#f39c12">50.4点</div>
+<div class="town-meta">人口 876 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="天神町3/" class="town-card">
+<div class="town-name">天神町三丁目</div>
+<div class="town-score" style="color:#f39c12">50.4点</div>
+<div class="town-meta">人口 1,668 / 犯罪 8件 / 医療 0件</div>
+</a>
+<a href="弥勒寺1/" class="town-card">
+<div class="town-name">弥勒寺一丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 1,907 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="辻堂3/" class="town-card">
+<div class="town-name">辻堂三丁目</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 2,207 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="弥勒寺3/" class="town-card">
+<div class="town-name">弥勒寺三丁目</div>
+<div class="town-score" style="color:#f39c12">50.0点</div>
+<div class="town-meta">人口 2,284 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="湘南台4/" class="town-card">
+<div class="town-name">湘南台四丁目</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 5,331 / 犯罪 6件 / 医療 4件</div>
+</a>
+<a href="長後/" class="town-card">
+<div class="town-name">長後</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 78 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="遠藤/" class="town-card">
+<div class="town-name">遠藤</div>
+<div class="town-score" style="color:#f39c12">49.9点</div>
+<div class="town-meta">人口 6,459 / 犯罪 0件 / 医療 9件</div>
+</a>
+<a href="並木台2/" class="town-card">
+<div class="town-name">並木台二丁目</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 915 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="辻堂神台1/" class="town-card">
+<div class="town-name">辻堂神台一丁目</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 1,279 / 犯罪 73件 / 医療 8件</div>
+</a>
+<a href="渡内3/" class="town-card">
+<div class="town-name">渡内三丁目</div>
+<div class="town-score" style="color:#f39c12">49.6点</div>
+<div class="town-meta">人口 757 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="鵠沼海岸5/" class="town-card">
+<div class="town-name">鵠沼海岸五丁目</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 2,097 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="羽鳥4/" class="town-card">
+<div class="town-name">羽鳥四丁目</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 2,499 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="片瀬海岸2/" class="town-card">
+<div class="town-name">片瀬海岸二丁目</div>
+<div class="town-score" style="color:#f39c12">49.3点</div>
+<div class="town-meta">人口 1,395 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="辻堂2/" class="town-card">
+<div class="town-name">辻堂二丁目</div>
+<div class="town-score" style="color:#f39c12">49.3点</div>
+<div class="town-meta">人口 1,495 / 犯罪 17件 / 医療 17件</div>
+</a>
+<a href="渡内/" class="town-card">
+<div class="town-name">渡内</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 23 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="柄沢/" class="town-card">
+<div class="town-name">柄沢</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 944 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="並木台1/" class="town-card">
+<div class="town-name">並木台一丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 784 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="辻堂1/" class="town-card">
+<div class="town-name">辻堂一丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 1,457 / 犯罪 25件 / 医療 7件</div>
+</a>
+<a href="善行5/" class="town-card">
+<div class="town-name">善行五丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 1,021 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="藤が岡3/" class="town-card">
+<div class="town-name">藤が岡三丁目</div>
+<div class="town-score" style="color:#f39c12">48.8点</div>
+<div class="town-meta">人口 1,673 / 犯罪 4件 / 医療 3件</div>
+</a>
+<a href="大鋸3/" class="town-card">
+<div class="town-name">大鋸三丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 2,087 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="城南2/" class="town-card">
+<div class="town-name">城南二丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 1,153 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="本藤沢7/" class="town-card">
+<div class="town-name">本藤沢七丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 472 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="川名1/" class="town-card">
+<div class="town-name">川名一丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 1,612 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="湘南台1/" class="town-card">
+<div class="town-name">湘南台一丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 4,253 / 犯罪 27件 / 医療 24件</div>
+</a>
+<a href="鵠沼海岸2/" class="town-card">
+<div class="town-name">鵠沼海岸二丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 1,932 / 犯罪 13件 / 医療 6件</div>
+</a>
+<a href="亀井野/" class="town-card">
+<div class="town-name">亀井野</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 4,902 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="南藤沢/" class="town-card">
+<div class="town-name">南藤沢</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 2,426 / 犯罪 38件 / 医療 38件</div>
+</a>
+<a href="鵠沼神明3/" class="town-card">
+<div class="town-name">鵠沼神明三丁目</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 705 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="鵠沼石上3/" class="town-card">
+<div class="town-name">鵠沼石上三丁目</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 835 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="川名2/" class="town-card">
+<div class="town-name">川名二丁目</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 385 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="本藤沢5/" class="town-card">
+<div class="town-name">本藤沢五丁目</div>
+<div class="town-score" style="color:#f39c12">48.1点</div>
+<div class="town-meta">人口 1,781 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="亀井野3/" class="town-card">
+<div class="town-name">亀井野三丁目</div>
+<div class="town-score" style="color:#f39c12">47.7点</div>
+<div class="town-meta">人口 1,633 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="村岡東4/" class="town-card">
+<div class="town-name">村岡東四丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 1,138 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="辻堂6/" class="town-card">
+<div class="town-name">辻堂六丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 2,682 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="羽鳥1/" class="town-card">
+<div class="town-name">羽鳥一丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 2,322 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="白旗3/" class="town-card">
+<div class="town-name">白旗三丁目</div>
+<div class="town-score" style="color:#f39c12">47.3点</div>
+<div class="town-meta">人口 997 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="柄沢2/" class="town-card">
+<div class="town-name">柄沢二丁目</div>
+<div class="town-score" style="color:#f39c12">47.2点</div>
+<div class="town-meta">人口 1,819 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="湘南台2/" class="town-card">
+<div class="town-name">湘南台二丁目</div>
+<div class="town-score" style="color:#f39c12">47.1点</div>
+<div class="town-meta">人口 4,139 / 犯罪 33件 / 医療 34件</div>
+</a>
+<a href="獺郷/" class="town-card">
+<div class="town-name">獺郷</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 1,560 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="善行団地/" class="town-card">
+<div class="town-name">善行団地</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 4,105 / 犯罪 13件 / 医療 2件</div>
+</a>
+<a href="朝日町/" class="town-card">
+<div class="town-name">朝日町</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 1,316 / 犯罪 14件 / 医療 5件</div>
+</a>
+<a href="天神町2/" class="town-card">
+<div class="town-name">天神町二丁目</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 1,536 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="渡内2/" class="town-card">
+<div class="town-name">渡内二丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 1,070 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="辻堂東海岸4/" class="town-card">
+<div class="town-name">辻堂東海岸四丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 1,131 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="大庭/" class="town-card">
+<div class="town-name">大庭</div>
+<div class="town-score" style="color:#f39c12">46.4点</div>
+<div class="town-meta">人口 1,236 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="下土棚/" class="town-card">
+<div class="town-name">下土棚</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 8,237 / 犯罪 17件 / 医療 16件</div>
+</a>
+<a href="鵠沼神明4/" class="town-card">
+<div class="town-name">鵠沼神明四丁目</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 1,573 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="大鋸/" class="town-card">
+<div class="town-name">大鋸</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 4,068 / 犯罪 9件 / 医療 2件</div>
+</a>
+<a href="高谷/" class="town-card">
+<div class="town-name">高谷</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 801 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="石川/" class="town-card">
+<div class="town-name">石川</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 2,720 / 犯罪 5件 / 医療 3件</div>
+</a>
+<a href="辻堂東海岸3/" class="town-card">
+<div class="town-name">辻堂東海岸三丁目</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 1,846 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="長後/" class="town-card">
+<div class="town-name">長後</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 12,531 / 犯罪 10件 / 医療 11件</div>
+</a>
+<a href="藤沢1/" class="town-card">
+<div class="town-name">藤沢一丁目</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 1,129 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="辻堂太平台1/" class="town-card">
+<div class="town-name">辻堂太平台一丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 2,478 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="辻堂西海岸1/" class="town-card">
+<div class="town-name">辻堂西海岸一丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 2,203 / 犯罪 7件 / 医療 0件</div>
+</a>
+<a href="辻堂西海岸2/" class="town-card">
+<div class="town-name">辻堂西海岸二丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 4,269 / 犯罪 11件 / 医療 2件</div>
+</a>
+<a href="円行2/" class="town-card">
+<div class="town-name">円行二丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 2,651 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="鵠沼桜が岡3/" class="town-card">
+<div class="town-name">鵠沼桜が岡三丁目</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 2,149 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="大鋸2/" class="town-card">
+<div class="town-name">大鋸二丁目</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 730 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="柄沢1/" class="town-card">
+<div class="town-name">柄沢一丁目</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 1,261 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="高倉/" class="town-card">
+<div class="town-name">高倉</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 12,423 / 犯罪 31件 / 医療 11件</div>
+</a>
+<a href="白旗2/" class="town-card">
+<div class="town-name">白旗二丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 869 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="辻堂元町2/" class="town-card">
+<div class="town-name">辻堂元町二丁目</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 2,581 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="白旗4/" class="town-card">
+<div class="town-name">白旗四丁目</div>
+<div class="town-score" style="color:#f39c12">44.5点</div>
+<div class="town-meta">人口 1,067 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="菖蒲沢/" class="town-card">
+<div class="town-name">菖蒲沢</div>
+<div class="town-score" style="color:#f39c12">44.5点</div>
+<div class="town-meta">人口 4,343 / 犯罪 5件 / 医療 5件</div>
+</a>
+<a href="稲荷1/" class="town-card">
+<div class="town-name">稲荷一丁目</div>
+<div class="town-score" style="color:#f39c12">44.4点</div>
+<div class="town-meta">人口 2,957 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="鵠沼神明1/" class="town-card">
+<div class="town-name">鵠沼神明一丁目</div>
+<div class="town-score" style="color:#f39c12">44.3点</div>
+<div class="town-meta">人口 361 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="遠藤/" class="town-card">
+<div class="town-name">遠藤</div>
+<div class="town-score" style="color:#f39c12">44.3点</div>
+<div class="town-meta">人口 5,269 / 犯罪 25件 / 医療 5件</div>
+</a>
+<a href="花の木/" class="town-card">
+<div class="town-name">花の木</div>
+<div class="town-score" style="color:#f39c12">44.2点</div>
+<div class="town-meta">人口 1,583 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="藤が岡2/" class="town-card">
+<div class="town-name">藤が岡二丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 2,692 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="石川1/" class="town-card">
+<div class="town-name">石川一丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 2,365 / 犯罪 10件 / 医療 2件</div>
+</a>
+<a href="遠藤/" class="town-card">
+<div class="town-name">遠藤</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 1,476 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="善行坂2/" class="town-card">
+<div class="town-name">善行坂二丁目</div>
+<div class="town-score" style="color:#f39c12">44.0点</div>
+<div class="town-meta">人口 2,148 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="みその台/" class="town-card">
+<div class="town-name">みその台</div>
+<div class="town-score" style="color:#f39c12">43.8点</div>
+<div class="town-meta">人口 984 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="藤沢4/" class="town-card">
+<div class="town-name">藤沢四丁目</div>
+<div class="town-score" style="color:#f39c12">43.5点</div>
+<div class="town-meta">人口 1,389 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="西富/" class="town-card">
+<div class="town-name">西富</div>
+<div class="town-score" style="color:#f39c12">43.3点</div>
+<div class="town-meta">人口 1,925 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="羽鳥5/" class="town-card">
+<div class="town-name">羽鳥五丁目</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 2,696 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="善行4/" class="town-card">
+<div class="town-name">善行四丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 429 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="辻堂元町4/" class="town-card">
+<div class="town-name">辻堂元町四丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 1,843 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="石川2/" class="town-card">
+<div class="town-name">石川二丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 1,813 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="宮原/" class="town-card">
+<div class="town-name">宮原</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 2,308 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="土棚/" class="town-card">
+<div class="town-name">土棚</div>
+<div class="town-score" style="color:#f39c12">41.6点</div>
+<div class="town-meta">人口 467 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="城南4/" class="town-card">
+<div class="town-name">城南四丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 1,221 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="弥勒寺/" class="town-card">
+<div class="town-name">弥勒寺</div>
+<div class="town-score" style="color:#f39c12">41.4点</div>
+<div class="town-meta">人口 341 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="石川5/" class="town-card">
+<div class="town-name">石川五丁目</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 2,685 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="円行/" class="town-card">
+<div class="town-name">円行</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 1,639 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="立石4/" class="town-card">
+<div class="town-name">立石四丁目</div>
+<div class="town-score" style="color:#f39c12">40.4点</div>
+<div class="town-meta">人口 9 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="湘南台6/" class="town-card">
+<div class="town-name">湘南台六丁目</div>
+<div class="town-score" style="color:#f39c12">40.3点</div>
+<div class="town-meta">人口 3,157 / 犯罪 11件 / 医療 2件</div>
+</a>
+<a href="本町1/" class="town-card">
+<div class="town-name">本町一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.7点</div>
+<div class="town-meta">人口 1,489 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="本鵠沼5/" class="town-card">
+<div class="town-name">本鵠沼五丁目</div>
+<div class="town-score" style="color:#e74c3c">39.2点</div>
+<div class="town-meta">人口 1,758 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="石川4/" class="town-card">
+<div class="town-name">石川四丁目</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 3,504 / 犯罪 18件 / 医療 2件</div>
+</a>
+<a href="稲荷/" class="town-card">
+<div class="town-name">稲荷</div>
+<div class="town-score" style="color:#e74c3c">38.9点</div>
+<div class="town-meta">人口 39 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="西俣野/" class="town-card">
+<div class="town-name">西俣野</div>
+<div class="town-score" style="color:#e74c3c">38.9点</div>
+<div class="town-meta">人口 2,460 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="用田/" class="town-card">
+<div class="town-name">用田</div>
+<div class="town-score" style="color:#e74c3c">37.7点</div>
+<div class="town-meta">人口 3,683 / 犯罪 11件 / 医療 4件</div>
+</a>
+<a href="石川6/" class="town-card">
+<div class="town-name">石川六丁目</div>
+<div class="town-score" style="color:#e74c3c">37.2点</div>
+<div class="town-meta">人口 2,992 / 犯罪 9件 / 医療 3件</div>
+</a>
+<a href="石川3/" class="town-card">
+<div class="town-name">石川三丁目</div>
+<div class="town-score" style="color:#e74c3c">37.1点</div>
+<div class="town-meta">人口 2,453 / 犯罪 8件 / 医療 1件</div>
+</a>
+<a href="打戻/" class="town-card">
+<div class="town-name">打戻</div>
+<div class="town-score" style="color:#e74c3c">37.1点</div>
+<div class="town-meta">人口 2,754 / 犯罪 4件 / 医療 2件</div>
+</a>
+<a href="辻堂西海岸3/" class="town-card">
+<div class="town-name">辻堂西海岸三丁目</div>
+<div class="town-score" style="color:#e74c3c">36.5点</div>
+<div class="town-meta">人口 1,654 / 犯罪 16件 / 医療 0件</div>
+</a>
+<a href="葛原/" class="town-card">
+<div class="town-name">葛原</div>
+<div class="town-score" style="color:#e74c3c">36.1点</div>
+<div class="town-meta">人口 3,173 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="今田/" class="town-card">
+<div class="town-name">今田</div>
+<div class="town-score" style="color:#e74c3c">36.0点</div>
+<div class="town-meta">人口 1,199 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="藤沢5/" class="town-card">
+<div class="town-name">藤沢五丁目</div>
+<div class="town-score" style="color:#e74c3c">35.6点</div>
+<div class="town-meta">人口 372 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="江の島1/" class="town-card">
+<div class="town-name">江の島一丁目</div>
+<div class="town-score" style="color:#e74c3c">34.4点</div>
+<div class="town-meta">人口 213 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="亀井野/" class="town-card">
+<div class="town-name">亀井野</div>
+<div class="town-score" style="color:#e74c3c">34.3点</div>
+<div class="town-meta">人口 2,487 / 犯罪 27件 / 医療 0件</div>
+</a>
+<a href="渡内5/" class="town-card">
+<div class="town-name">渡内五丁目</div>
+<div class="town-score" style="color:#e74c3c">27.5点</div>
+<div class="town-meta">人口 114 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大庭/" class="town-card">
+<div class="town-name">大庭</div>
+<div class="town-score" style="color:#e74c3c">26.8点</div>
+<div class="town-meta">人口 280 / 犯罪 34件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../yokohama-泉区/">横浜市泉区</a> / <a href="../寒川町/">寒川町</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

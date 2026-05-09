@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市磯子区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市磯子区の全73エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市磯子区</div>
+<h2>横浜市磯子区 全73エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">166,731</div><div class="label">人口</div></div>
+<div><div class="value">48.3</div><div class="label">平均スコア</div></div>
+<div><div class="value">234</div><div class="label">犯罪件数</div></div>
+<div><div class="value">215</div><div class="label">医療施設</div></div>
+<div><div class="value">111</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="杉田坪呑/" class="town-card">
+<div class="town-name">杉田坪呑</div>
+<div class="town-score" style="color:#2ecc71">68.0点</div>
+<div class="town-meta">人口 1,527 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="杉田3/" class="town-card">
+<div class="town-name">杉田三丁目</div>
+<div class="town-score" style="color:#2ecc71">65.7点</div>
+<div class="town-meta">人口 3,566 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="栗木1/" class="town-card">
+<div class="town-name">栗木一丁目</div>
+<div class="town-score" style="color:#2ecc71">64.2点</div>
+<div class="town-meta">人口 2,003 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="中原3/" class="town-card">
+<div class="town-name">中原三丁目</div>
+<div class="town-score" style="color:#2ecc71">64.1点</div>
+<div class="town-meta">人口 2,201 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="洋光台5/" class="town-card">
+<div class="town-name">洋光台五丁目</div>
+<div class="town-score" style="color:#2ecc71">63.8点</div>
+<div class="town-meta">人口 5,945 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="下町/" class="town-card">
+<div class="town-name">下町</div>
+<div class="town-score" style="color:#2ecc71">63.1点</div>
+<div class="town-meta">人口 1,140 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="岡村7/" class="town-card">
+<div class="town-name">岡村七丁目</div>
+<div class="town-score" style="color:#2ecc71">60.2点</div>
+<div class="town-meta">人口 1,819 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="杉田5/" class="town-card">
+<div class="town-name">杉田五丁目</div>
+<div class="town-score" style="color:#2ecc71">60.2点</div>
+<div class="town-meta">人口 2,835 / 犯罪 1件 / 医療 8件</div>
+</a>
+<a href="中原4/" class="town-card">
+<div class="town-name">中原四丁目</div>
+<div class="town-score" style="color:#f39c12">58.7点</div>
+<div class="town-meta">人口 2,504 / 犯罪 1件 / 医療 4件</div>
+</a>
+<a href="杉田2/" class="town-card">
+<div class="town-name">杉田二丁目</div>
+<div class="town-score" style="color:#f39c12">58.6点</div>
+<div class="town-meta">人口 2,349 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="洋光台2/" class="town-card">
+<div class="town-name">洋光台二丁目</div>
+<div class="town-score" style="color:#f39c12">58.3点</div>
+<div class="town-meta">人口 3,788 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="森が丘1/" class="town-card">
+<div class="town-name">森が丘一丁目</div>
+<div class="town-score" style="color:#f39c12">56.1点</div>
+<div class="town-meta">人口 1,525 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="杉田7/" class="town-card">
+<div class="town-name">杉田七丁目</div>
+<div class="town-score" style="color:#f39c12">55.8点</div>
+<div class="town-meta">人口 1,801 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="広地町/" class="town-card">
+<div class="town-name">広地町</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 1,166 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="磯子5/" class="town-card">
+<div class="town-name">磯子五丁目</div>
+<div class="town-score" style="color:#f39c12">55.1点</div>
+<div class="town-meta">人口 1,286 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="森6/" class="town-card">
+<div class="town-name">森六丁目</div>
+<div class="town-score" style="color:#f39c12">54.6点</div>
+<div class="town-meta">人口 3,510 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="森2/" class="town-card">
+<div class="town-name">森二丁目</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 2,058 / 犯罪 4件 / 医療 5件</div>
+</a>
+<a href="栗木2/" class="town-card">
+<div class="town-name">栗木二丁目</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 1,887 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="岡村6/" class="town-card">
+<div class="town-name">岡村六丁目</div>
+<div class="town-score" style="color:#f39c12">53.8点</div>
+<div class="town-meta">人口 1,116 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="磯子6/" class="town-card">
+<div class="town-name">磯子六丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 2,316 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="洋光台6/" class="town-card">
+<div class="town-name">洋光台六丁目</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 3,662 / 犯罪 2件 / 医療 8件</div>
+</a>
+<a href="磯子3/" class="town-card">
+<div class="town-name">磯子三丁目</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 5,149 / 犯罪 11件 / 医療 13件</div>
+</a>
+<a href="洋光台4/" class="town-card">
+<div class="town-name">洋光台四丁目</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 3,571 / 犯罪 6件 / 医療 5件</div>
+</a>
+<a href="氷取沢町/" class="town-card">
+<div class="town-name">氷取沢町</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 3,309 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="岡村4/" class="town-card">
+<div class="town-name">岡村四丁目</div>
+<div class="town-score" style="color:#f39c12">51.5点</div>
+<div class="town-meta">人口 2,996 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="杉田6/" class="town-card">
+<div class="town-name">杉田六丁目</div>
+<div class="town-score" style="color:#f39c12">51.4点</div>
+<div class="town-meta">人口 2,425 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="洋光台1/" class="town-card">
+<div class="town-name">洋光台一丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 2,414 / 犯罪 1件 / 医療 6件</div>
+</a>
+<a href="汐見台2/" class="town-card">
+<div class="town-name">汐見台二丁目</div>
+<div class="town-score" style="color:#f39c12">51.1点</div>
+<div class="town-meta">人口 1,976 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="杉田9/" class="town-card">
+<div class="town-name">杉田九丁目</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 1,614 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="磯子2/" class="town-card">
+<div class="town-name">磯子二丁目</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 4,525 / 犯罪 4件 / 医療 6件</div>
+</a>
+<a href="東町/" class="town-card">
+<div class="town-name">東町</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 2,680 / 犯罪 20件 / 医療 9件</div>
+</a>
+<a href="汐見台1/" class="town-card">
+<div class="town-name">汐見台一丁目</div>
+<div class="town-score" style="color:#f39c12">49.2点</div>
+<div class="town-meta">人口 2,160 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="杉田1/" class="town-card">
+<div class="town-name">杉田一丁目</div>
+<div class="town-score" style="color:#f39c12">49.1点</div>
+<div class="town-meta">人口 1,693 / 犯罪 10件 / 医療 19件</div>
+</a>
+<a href="洋光台3/" class="town-card">
+<div class="town-name">洋光台三丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 3,976 / 犯罪 16件 / 医療 25件</div>
+</a>
+<a href="岡村3/" class="town-card">
+<div class="town-name">岡村三丁目</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 2,659 / 犯罪 7件 / 医療 2件</div>
+</a>
+<a href="磯子1/" class="town-card">
+<div class="town-name">磯子一丁目</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 30 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="峰町/" class="town-card">
+<div class="town-name">峰町</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 450 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="磯子8/" class="town-card">
+<div class="town-name">磯子八丁目</div>
+<div class="town-score" style="color:#f39c12">47.8点</div>
+<div class="town-meta">人口 1,143 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="滝頭3/" class="town-card">
+<div class="town-name">滝頭三丁目</div>
+<div class="town-score" style="color:#f39c12">46.9点</div>
+<div class="town-meta">人口 1,232 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="杉田8/" class="town-card">
+<div class="town-name">杉田八丁目</div>
+<div class="town-score" style="color:#f39c12">46.7点</div>
+<div class="town-meta">人口 2,477 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="汐見台2/" class="town-card">
+<div class="town-name">汐見台二丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 2,025 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="森3/" class="town-card">
+<div class="town-name">森三丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 2,677 / 犯罪 4件 / 医療 8件</div>
+</a>
+<a href="汐見台3/" class="town-card">
+<div class="town-name">汐見台三丁目</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 2,523 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="磯子台/" class="town-card">
+<div class="town-name">磯子台</div>
+<div class="town-score" style="color:#f39c12">45.7点</div>
+<div class="town-meta">人口 3,300 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中原1/" class="town-card">
+<div class="town-name">中原一丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 2,108 / 犯罪 3件 / 医療 3件</div>
+</a>
+<a href="馬場町/" class="town-card">
+<div class="town-name">馬場町</div>
+<div class="town-score" style="color:#f39c12">45.2点</div>
+<div class="town-meta">人口 1,218 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="杉田4/" class="town-card">
+<div class="town-name">杉田四丁目</div>
+<div class="town-score" style="color:#f39c12">44.9点</div>
+<div class="town-meta">人口 2,464 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="田中1/" class="town-card">
+<div class="town-name">田中一丁目</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 1,719 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="森4/" class="town-card">
+<div class="town-name">森四丁目</div>
+<div class="town-score" style="color:#f39c12">44.2点</div>
+<div class="town-meta">人口 2,233 / 犯罪 6件 / 医療 0件</div>
+</a>
+<a href="滝頭1/" class="town-card">
+<div class="town-name">滝頭一丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 2,528 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="岡村8/" class="town-card">
+<div class="town-name">岡村八丁目</div>
+<div class="town-score" style="color:#f39c12">43.7点</div>
+<div class="town-meta">人口 2,143 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="原町/" class="town-card">
+<div class="town-name">原町</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 1,343 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="磯子7/" class="town-card">
+<div class="town-name">磯子七丁目</div>
+<div class="town-score" style="color:#f39c12">42.8点</div>
+<div class="town-meta">人口 1,626 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="滝頭2/" class="town-card">
+<div class="town-name">滝頭二丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 1,606 / 犯罪 9件 / 医療 4件</div>
+</a>
+<a href="森5/" class="town-card">
+<div class="town-name">森五丁目</div>
+<div class="town-score" style="color:#f39c12">41.7点</div>
+<div class="town-meta">人口 1,769 / 犯罪 4件 / 医療 1件</div>
+</a>
+<a href="岡村1/" class="town-card">
+<div class="town-name">岡村一丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 2,048 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="森が丘2/" class="town-card">
+<div class="town-name">森が丘二丁目</div>
+<div class="town-score" style="color:#f39c12">41.0点</div>
+<div class="town-meta">人口 1,764 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="丸山1/" class="town-card">
+<div class="town-name">丸山一丁目</div>
+<div class="town-score" style="color:#f39c12">40.8点</div>
+<div class="town-meta">人口 4,366 / 犯罪 10件 / 医療 4件</div>
+</a>
+<a href="森1/" class="town-card">
+<div class="town-name">森一丁目</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 5,628 / 犯罪 6件 / 医療 15件</div>
+</a>
+<a href="西町/" class="town-card">
+<div class="town-name">西町</div>
+<div class="town-score" style="color:#f39c12">40.5点</div>
+<div class="town-meta">人口 2,845 / 犯罪 14件 / 医療 2件</div>
+</a>
+<a href="岡村2/" class="town-card">
+<div class="town-name">岡村二丁目</div>
+<div class="town-score" style="color:#f39c12">40.5点</div>
+<div class="town-meta">人口 1,017 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="栗木3/" class="town-card">
+<div class="town-name">栗木三丁目</div>
+<div class="town-score" style="color:#f39c12">40.1点</div>
+<div class="town-meta">人口 2,037 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上町/" class="town-card">
+<div class="town-name">上町</div>
+<div class="town-score" style="color:#e74c3c">39.6点</div>
+<div class="town-meta">人口 1,244 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中浜町/" class="town-card">
+<div class="town-name">中浜町</div>
+<div class="town-score" style="color:#e74c3c">39.0点</div>
+<div class="town-meta">人口 1,267 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="坂下町/" class="town-card">
+<div class="town-name">坂下町</div>
+<div class="town-score" style="color:#e74c3c">38.6点</div>
+<div class="town-meta">人口 1,314 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="岡村5/" class="town-card">
+<div class="town-name">岡村五丁目</div>
+<div class="town-score" style="color:#e74c3c">38.0点</div>
+<div class="town-meta">人口 1,813 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="新杉田町/" class="town-card">
+<div class="town-name">新杉田町</div>
+<div class="town-score" style="color:#e74c3c">37.4点</div>
+<div class="town-meta">人口 840 / 犯罪 10件 / 医療 3件</div>
+</a>
+<a href="田中2/" class="town-card">
+<div class="town-name">田中二丁目</div>
+<div class="town-score" style="color:#e74c3c">37.0点</div>
+<div class="town-meta">人口 2,098 / 犯罪 4件 / 医療 0件</div>
+</a>
+<a href="磯子4/" class="town-card">
+<div class="town-name">磯子四丁目</div>
+<div class="town-score" style="color:#e74c3c">35.0点</div>
+<div class="town-meta">人口 823 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上中里町/" class="town-card">
+<div class="town-name">上中里町</div>
+<div class="town-score" style="color:#e74c3c">34.8点</div>
+<div class="town-meta">人口 3,843 / 犯罪 5件 / 医療 1件</div>
+</a>
+<a href="久木町/" class="town-card">
+<div class="town-name">久木町</div>
+<div class="town-score" style="color:#e74c3c">33.4点</div>
+<div class="town-meta">人口 2,437 / 犯罪 4件 / 医療 4件</div>
+</a>
+<a href="丸山2/" class="town-card">
+<div class="town-name">丸山二丁目</div>
+<div class="town-score" style="color:#e74c3c">32.9点</div>
+<div class="town-meta">人口 1,489 / 犯罪 9件 / 医療 8件</div>
+</a>
+<a href="中原2/" class="town-card">
+<div class="town-name">中原二丁目</div>
+<div class="town-score" style="color:#e74c3c">28.8点</div>
+<div class="town-meta">人口 2,093 / 犯罪 2件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

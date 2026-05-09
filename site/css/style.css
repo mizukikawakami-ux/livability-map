@@ -92,6 +92,8 @@ body {
 .layer-icon.medical { background: #1abc9c; }
 .layer-icon.population { background: #34495e; }
 .layer-icon.mansion { background: #e91e63; }
+.layer-icon.station { background: #9b59b6; }
+.layer-icon.park { background: #27ae60; }
 
 #map {
     flex: 1;
@@ -190,6 +192,70 @@ body {
 #area-list .placeholder {
     font-size: 0.8rem;
     color: #999;
+}
+
+/* Search panel */
+#search-panel {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+#search-panel h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.search-box {
+    display: flex;
+    gap: 6px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #1a73e8;
+}
+
+.search-box button {
+    padding: 8px 14px;
+    background: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.search-box button:hover {
+    background: #2d2d4e;
+}
+
+#search-results {
+    margin-top: 6px;
+}
+
+.search-result-item {
+    display: block;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+    color: #1a73e8;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.search-result-item:hover {
+    background: #f0f0f0;
+    text-decoration: underline;
 }
 
 /* Footer */

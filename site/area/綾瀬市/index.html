@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>綾瀬市 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="綾瀬市の全132エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 綾瀬市</div>
+<h2>綾瀬市 全132エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">83,913</div><div class="label">人口</div></div>
+<div><div class="value">48.6</div><div class="label">平均スコア</div></div>
+<div><div class="value">105</div><div class="label">犯罪件数</div></div>
+<div><div class="value">58</div><div class="label">医療施設</div></div>
+<div><div class="value">116</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="上土棚中6/" class="town-card">
+<div class="town-name">上土棚中六丁目</div>
+<div class="town-score" style="color:#2ecc71">67.5点</div>
+<div class="town-meta">人口 601 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="寺尾台4/" class="town-card">
+<div class="town-name">寺尾台四丁目</div>
+<div class="town-score" style="color:#2ecc71">66.5点</div>
+<div class="town-meta">人口 265 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="小園南1/" class="town-card">
+<div class="town-name">小園南一丁目</div>
+<div class="town-score" style="color:#2ecc71">65.1点</div>
+<div class="town-meta">人口 591 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="寺尾北3/" class="town-card">
+<div class="town-name">寺尾北三丁目</div>
+<div class="town-score" style="color:#2ecc71">63.5点</div>
+<div class="town-meta">人口 1,375 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="寺尾北4/" class="town-card">
+<div class="town-name">寺尾北四丁目</div>
+<div class="town-score" style="color:#2ecc71">62.6点</div>
+<div class="town-meta">人口 367 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾台2/" class="town-card">
+<div class="town-name">寺尾台二丁目</div>
+<div class="town-score" style="color:#2ecc71">62.0点</div>
+<div class="town-meta">人口 1,396 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾北2/" class="town-card">
+<div class="town-name">寺尾北二丁目</div>
+<div class="town-score" style="color:#2ecc71">61.8点</div>
+<div class="town-meta">人口 961 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="寺尾中4/" class="town-card">
+<div class="town-name">寺尾中四丁目</div>
+<div class="town-score" style="color:#2ecc71">61.5点</div>
+<div class="town-meta">人口 853 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="早川城山3/" class="town-card">
+<div class="town-name">早川城山三丁目</div>
+<div class="town-score" style="color:#f39c12">59.9点</div>
+<div class="town-meta">人口 687 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="蓼川2/" class="town-card">
+<div class="town-name">蓼川二丁目</div>
+<div class="town-score" style="color:#f39c12">59.4点</div>
+<div class="town-meta">人口 1,094 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上土棚南3/" class="town-card">
+<div class="town-name">上土棚南三丁目</div>
+<div class="town-score" style="color:#f39c12">59.3点</div>
+<div class="town-meta">人口 885 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合南9/" class="town-card">
+<div class="town-name">落合南九丁目</div>
+<div class="town-score" style="color:#f39c12">59.2点</div>
+<div class="town-meta">人口 353 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷南6/" class="town-card">
+<div class="town-name">深谷南六丁目</div>
+<div class="town-score" style="color:#f39c12">58.9点</div>
+<div class="town-meta">人口 170 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾中3/" class="town-card">
+<div class="town-name">寺尾中三丁目</div>
+<div class="town-score" style="color:#f39c12">58.3点</div>
+<div class="town-meta">人口 1,124 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="小園/" class="town-card">
+<div class="town-name">小園</div>
+<div class="town-score" style="color:#f39c12">58.3点</div>
+<div class="town-meta">人口 1,082 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="蓼川1/" class="town-card">
+<div class="town-name">蓼川一丁目</div>
+<div class="town-score" style="color:#f39c12">58.2点</div>
+<div class="town-meta">人口 1,374 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="吉岡/" class="town-card">
+<div class="town-name">吉岡</div>
+<div class="town-score" style="color:#f39c12">58.2点</div>
+<div class="town-meta">人口 225 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾釜田1/" class="town-card">
+<div class="town-name">寺尾釜田一丁目</div>
+<div class="town-score" style="color:#f39c12">58.0点</div>
+<div class="town-meta">人口 943 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="綾西2/" class="town-card">
+<div class="town-name">綾西二丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 587 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾北1/" class="town-card">
+<div class="town-name">寺尾北一丁目</div>
+<div class="town-score" style="color:#f39c12">57.6点</div>
+<div class="town-meta">人口 1,230 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾釜田3/" class="town-card">
+<div class="town-name">寺尾釜田三丁目</div>
+<div class="town-score" style="color:#f39c12">57.2点</div>
+<div class="town-meta">人口 731 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="早川城山2/" class="town-card">
+<div class="town-name">早川城山二丁目</div>
+<div class="town-score" style="color:#f39c12">56.7点</div>
+<div class="town-meta">人口 996 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="小園/" class="town-card">
+<div class="town-name">小園</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 1,501 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="早川/" class="town-card">
+<div class="town-name">早川</div>
+<div class="town-score" style="color:#f39c12">56.5点</div>
+<div class="town-meta">人口 18 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="寺尾南3/" class="town-card">
+<div class="town-name">寺尾南三丁目</div>
+<div class="town-score" style="color:#f39c12">56.3点</div>
+<div class="town-meta">人口 1,070 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="落合北7/" class="town-card">
+<div class="town-name">落合北七丁目</div>
+<div class="town-score" style="color:#f39c12">56.2点</div>
+<div class="town-meta">人口 410 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾台3/" class="town-card">
+<div class="town-name">寺尾台三丁目</div>
+<div class="town-score" style="color:#f39c12">56.0点</div>
+<div class="town-meta">人口 926 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="綾西5/" class="town-card">
+<div class="town-name">綾西五丁目</div>
+<div class="town-score" style="color:#f39c12">55.7点</div>
+<div class="town-meta">人口 775 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="小園南2/" class="town-card">
+<div class="town-name">小園南二丁目</div>
+<div class="town-score" style="color:#f39c12">55.5点</div>
+<div class="town-meta">人口 708 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大上3/" class="town-card">
+<div class="town-name">大上三丁目</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 1,634 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="上土棚中2/" class="town-card">
+<div class="town-name">上土棚中二丁目</div>
+<div class="town-score" style="color:#f39c12">55.2点</div>
+<div class="town-meta">人口 1,148 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大上5/" class="town-card">
+<div class="town-name">大上五丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 1,380 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上土棚南1/" class="town-card">
+<div class="town-name">上土棚南一丁目</div>
+<div class="town-score" style="color:#f39c12">54.8点</div>
+<div class="town-meta">人口 1,094 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="深谷中7/" class="town-card">
+<div class="town-name">深谷中七丁目</div>
+<div class="town-score" style="color:#f39c12">54.7点</div>
+<div class="town-meta">人口 886 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="早川城山1/" class="town-card">
+<div class="town-name">早川城山一丁目</div>
+<div class="town-score" style="color:#f39c12">54.5点</div>
+<div class="town-meta">人口 729 / 犯罪 0件 / 医療 3件</div>
+</a>
+<a href="吉岡東5/" class="town-card">
+<div class="town-name">吉岡東五丁目</div>
+<div class="town-score" style="color:#f39c12">54.3点</div>
+<div class="town-meta">人口 603 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="吉岡/" class="town-card">
+<div class="town-name">吉岡</div>
+<div class="town-score" style="color:#f39c12">54.2点</div>
+<div class="town-meta">人口 216 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷南4/" class="town-card">
+<div class="town-name">深谷南四丁目</div>
+<div class="town-score" style="color:#f39c12">53.6点</div>
+<div class="town-meta">人口 1,165 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="深谷南3/" class="town-card">
+<div class="town-name">深谷南三丁目</div>
+<div class="town-score" style="color:#f39c12">53.2点</div>
+<div class="town-meta">人口 808 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上土棚中5/" class="town-card">
+<div class="town-name">上土棚中五丁目</div>
+<div class="town-score" style="color:#f39c12">53.0点</div>
+<div class="town-meta">人口 524 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="蓼川3/" class="town-card">
+<div class="town-name">蓼川三丁目</div>
+<div class="town-score" style="color:#f39c12">52.8点</div>
+<div class="town-meta">人口 1,357 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="上土棚北5/" class="town-card">
+<div class="town-name">上土棚北五丁目</div>
+<div class="town-score" style="color:#f39c12">52.7点</div>
+<div class="town-meta">人口 396 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上土棚北4/" class="town-card">
+<div class="town-name">上土棚北四丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 732 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷上6/" class="town-card">
+<div class="town-name">深谷上六丁目</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 1,442 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="寺尾西3/" class="town-card">
+<div class="town-name">寺尾西三丁目</div>
+<div class="town-score" style="color:#f39c12">52.1点</div>
+<div class="town-meta">人口 908 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="大上7/" class="town-card">
+<div class="town-name">大上七丁目</div>
+<div class="town-score" style="color:#f39c12">51.9点</div>
+<div class="town-meta">人口 805 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="厚木基地/" class="town-card">
+<div class="town-name">厚木基地</div>
+<div class="town-score" style="color:#f39c12">51.7点</div>
+<div class="town-meta">人口 239 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="落合南2/" class="town-card">
+<div class="town-name">落合南二丁目</div>
+<div class="town-score" style="color:#f39c12">51.7点</div>
+<div class="town-meta">人口 1,252 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷南5/" class="town-card">
+<div class="town-name">深谷南五丁目</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 165 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾中1/" class="town-card">
+<div class="town-name">寺尾中一丁目</div>
+<div class="town-score" style="color:#f39c12">51.6点</div>
+<div class="town-meta">人口 709 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="上土棚北1/" class="town-card">
+<div class="town-name">上土棚北一丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 2 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合南5/" class="town-card">
+<div class="town-name">落合南五丁目</div>
+<div class="town-score" style="color:#f39c12">51.3点</div>
+<div class="town-meta">人口 63 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="早川/" class="town-card">
+<div class="town-name">早川</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 538 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="落合南6/" class="town-card">
+<div class="town-name">落合南六丁目</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 30 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合南8/" class="town-card">
+<div class="town-name">落合南八丁目</div>
+<div class="town-score" style="color:#f39c12">50.9点</div>
+<div class="town-meta">人口 50 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合南7/" class="town-card">
+<div class="town-name">落合南七丁目</div>
+<div class="town-score" style="color:#f39c12">50.7点</div>
+<div class="town-meta">人口 85 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="早川/" class="town-card">
+<div class="town-name">早川</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 140 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合北5/" class="town-card">
+<div class="town-name">落合北五丁目</div>
+<div class="town-score" style="color:#f39c12">50.5点</div>
+<div class="town-meta">人口 824 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合南1/" class="town-card">
+<div class="town-name">落合南一丁目</div>
+<div class="town-score" style="color:#f39c12">50.4点</div>
+<div class="town-meta">人口 487 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上土棚北2/" class="town-card">
+<div class="town-name">上土棚北二丁目</div>
+<div class="town-score" style="color:#f39c12">50.2点</div>
+<div class="town-meta">人口 771 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="綾西1/" class="town-card">
+<div class="town-name">綾西一丁目</div>
+<div class="town-score" style="color:#f39c12">50.1点</div>
+<div class="town-meta">人口 691 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大上2/" class="town-card">
+<div class="town-name">大上二丁目</div>
+<div class="town-score" style="color:#f39c12">50.0点</div>
+<div class="town-meta">人口 106 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="吉岡東3/" class="town-card">
+<div class="town-name">吉岡東三丁目</div>
+<div class="town-score" style="color:#f39c12">49.8点</div>
+<div class="town-meta">人口 83 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="吉岡/" class="town-card">
+<div class="town-name">吉岡</div>
+<div class="town-score" style="color:#f39c12">49.7点</div>
+<div class="town-meta">人口 95 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷上8/" class="town-card">
+<div class="town-name">深谷上八丁目</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 74 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="大上6/" class="town-card">
+<div class="town-name">大上六丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 1,304 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="綾西4/" class="town-card">
+<div class="town-name">綾西四丁目</div>
+<div class="town-score" style="color:#f39c12">49.0点</div>
+<div class="town-meta">人口 690 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="小園/" class="town-card">
+<div class="town-name">小園</div>
+<div class="town-score" style="color:#f39c12">48.9点</div>
+<div class="town-meta">人口 877 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷南2/" class="town-card">
+<div class="town-name">深谷南二丁目</div>
+<div class="town-score" style="color:#f39c12">48.8点</div>
+<div class="town-meta">人口 166 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上土棚南4/" class="town-card">
+<div class="town-name">上土棚南四丁目</div>
+<div class="town-score" style="color:#f39c12">48.8点</div>
+<div class="town-meta">人口 984 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="上土棚南2/" class="town-card">
+<div class="town-name">上土棚南二丁目</div>
+<div class="town-score" style="color:#f39c12">48.6点</div>
+<div class="town-meta">人口 979 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="早川/" class="town-card">
+<div class="town-name">早川</div>
+<div class="town-score" style="color:#f39c12">48.5点</div>
+<div class="town-meta">人口 433 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="早川城山4/" class="town-card">
+<div class="town-name">早川城山四丁目</div>
+<div class="town-score" style="color:#f39c12">48.2点</div>
+<div class="town-meta">人口 1,220 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="深谷上5/" class="town-card">
+<div class="town-name">深谷上五丁目</div>
+<div class="town-score" style="color:#f39c12">48.1点</div>
+<div class="town-meta">人口 1,114 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾中2/" class="town-card">
+<div class="town-name">寺尾中二丁目</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 442 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="落合南3/" class="town-card">
+<div class="town-name">落合南三丁目</div>
+<div class="town-score" style="color:#f39c12">47.3点</div>
+<div class="town-meta">人口 734 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合南4/" class="town-card">
+<div class="town-name">落合南四丁目</div>
+<div class="town-score" style="color:#f39c12">47.2点</div>
+<div class="town-meta">人口 1,452 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="上土棚中3/" class="town-card">
+<div class="town-name">上土棚中三丁目</div>
+<div class="town-score" style="color:#f39c12">47.1点</div>
+<div class="town-meta">人口 449 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾釜田2/" class="town-card">
+<div class="town-name">寺尾釜田二丁目</div>
+<div class="town-score" style="color:#f39c12">46.6点</div>
+<div class="town-meta">人口 787 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大上9/" class="town-card">
+<div class="town-name">大上九丁目</div>
+<div class="town-score" style="color:#f39c12">46.4点</div>
+<div class="town-meta">人口 356 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上土棚中1/" class="town-card">
+<div class="town-name">上土棚中一丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 571 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="大上4/" class="town-card">
+<div class="town-name">大上四丁目</div>
+<div class="town-score" style="color:#f39c12">45.9点</div>
+<div class="town-meta">人口 1,056 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="寺尾西2/" class="town-card">
+<div class="town-name">寺尾西二丁目</div>
+<div class="town-score" style="color:#f39c12">45.9点</div>
+<div class="town-meta">人口 712 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾南2/" class="town-card">
+<div class="town-name">寺尾南二丁目</div>
+<div class="town-score" style="color:#f39c12">45.6点</div>
+<div class="town-meta">人口 976 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="上土棚南5/" class="town-card">
+<div class="town-name">上土棚南五丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 393 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="大上8/" class="town-card">
+<div class="town-name">大上八丁目</div>
+<div class="town-score" style="color:#f39c12">45.1点</div>
+<div class="town-meta">人口 146 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="早川城山5/" class="town-card">
+<div class="town-name">早川城山五丁目</div>
+<div class="town-score" style="color:#f39c12">44.9点</div>
+<div class="town-meta">人口 495 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="綾西3/" class="town-card">
+<div class="town-name">綾西三丁目</div>
+<div class="town-score" style="color:#f39c12">44.9点</div>
+<div class="town-meta">人口 712 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上土棚北3/" class="town-card">
+<div class="town-name">上土棚北三丁目</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 1,282 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="吉岡/" class="town-card">
+<div class="town-name">吉岡</div>
+<div class="town-score" style="color:#f39c12">44.7点</div>
+<div class="town-meta">人口 866 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="寺尾本町2/" class="town-card">
+<div class="town-name">寺尾本町二丁目</div>
+<div class="town-score" style="color:#f39c12">44.4点</div>
+<div class="town-meta">人口 506 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="上土棚中7/" class="town-card">
+<div class="town-name">上土棚中七丁目</div>
+<div class="town-score" style="color:#f39c12">44.4点</div>
+<div class="town-meta">人口 676 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="上土棚中4/" class="town-card">
+<div class="town-name">上土棚中四丁目</div>
+<div class="town-score" style="color:#f39c12">44.1点</div>
+<div class="town-meta">人口 748 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="落合北4/" class="town-card">
+<div class="town-name">落合北四丁目</div>
+<div class="town-score" style="color:#f39c12">43.7点</div>
+<div class="town-meta">人口 432 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="小園/" class="town-card">
+<div class="town-name">小園</div>
+<div class="town-score" style="color:#f39c12">43.0点</div>
+<div class="town-meta">人口 380 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="深谷上4/" class="town-card">
+<div class="town-name">深谷上四丁目</div>
+<div class="town-score" style="color:#f39c12">42.9点</div>
+<div class="town-meta">人口 397 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="寺尾本町1/" class="town-card">
+<div class="town-name">寺尾本町一丁目</div>
+<div class="town-score" style="color:#f39c12">42.6点</div>
+<div class="town-meta">人口 1,033 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="吉岡東1/" class="town-card">
+<div class="town-name">吉岡東一丁目</div>
+<div class="town-score" style="color:#f39c12">42.4点</div>
+<div class="town-meta">人口 423 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="早川/" class="town-card">
+<div class="town-name">早川</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 225 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合北6/" class="town-card">
+<div class="town-name">落合北六丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 365 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷中6/" class="town-card">
+<div class="town-name">深谷中六丁目</div>
+<div class="town-score" style="color:#f39c12">41.9点</div>
+<div class="town-meta">人口 774 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="深谷南1/" class="town-card">
+<div class="town-name">深谷南一丁目</div>
+<div class="town-score" style="color:#f39c12">41.7点</div>
+<div class="town-meta">人口 605 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="深谷中9/" class="town-card">
+<div class="town-name">深谷中九丁目</div>
+<div class="town-score" style="color:#f39c12">41.5点</div>
+<div class="town-meta">人口 198 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷中4/" class="town-card">
+<div class="town-name">深谷中四丁目</div>
+<div class="town-score" style="color:#f39c12">41.4点</div>
+<div class="town-meta">人口 891 / 犯罪 2件 / 医療 3件</div>
+</a>
+<a href="小園/" class="town-card">
+<div class="town-name">小園</div>
+<div class="town-score" style="color:#f39c12">41.3点</div>
+<div class="town-meta">人口 887 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="早川/" class="town-card">
+<div class="town-name">早川</div>
+<div class="town-score" style="color:#f39c12">40.6点</div>
+<div class="town-meta">人口 482 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷上7/" class="town-card">
+<div class="town-name">深谷上七丁目</div>
+<div class="town-score" style="color:#f39c12">40.5点</div>
+<div class="town-meta">人口 1,537 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="吉岡/" class="town-card">
+<div class="town-name">吉岡</div>
+<div class="town-score" style="color:#f39c12">40.3点</div>
+<div class="town-meta">人口 10 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="寺尾南1/" class="town-card">
+<div class="town-name">寺尾南一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.9点</div>
+<div class="town-meta">人口 102 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="吉岡/" class="town-card">
+<div class="town-name">吉岡</div>
+<div class="town-score" style="color:#e74c3c">39.9点</div>
+<div class="town-meta">人口 217 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="深谷中5/" class="town-card">
+<div class="town-name">深谷中五丁目</div>
+<div class="town-score" style="color:#e74c3c">39.8点</div>
+<div class="town-meta">人口 654 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="深谷上2/" class="town-card">
+<div class="town-name">深谷上二丁目</div>
+<div class="town-score" style="color:#e74c3c">39.5点</div>
+<div class="town-meta">人口 586 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="深谷南7/" class="town-card">
+<div class="town-name">深谷南七丁目</div>
+<div class="town-score" style="color:#e74c3c">39.4点</div>
+<div class="town-meta">人口 1 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾台1/" class="town-card">
+<div class="town-name">寺尾台一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.4点</div>
+<div class="town-meta">人口 687 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="深谷中8/" class="town-card">
+<div class="town-name">深谷中八丁目</div>
+<div class="town-score" style="color:#e74c3c">39.3点</div>
+<div class="town-meta">人口 58 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾本町3/" class="town-card">
+<div class="town-name">寺尾本町三丁目</div>
+<div class="town-score" style="color:#e74c3c">39.2点</div>
+<div class="town-meta">人口 675 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="落合北2/" class="town-card">
+<div class="town-name">落合北二丁目</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 27 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合北1/" class="town-card">
+<div class="town-name">落合北一丁目</div>
+<div class="town-score" style="color:#e74c3c">39.0点</div>
+<div class="town-meta">人口 30 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="落合北3/" class="town-card">
+<div class="town-name">落合北三丁目</div>
+<div class="town-score" style="color:#e74c3c">39.0点</div>
+<div class="town-meta">人口 20 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="吉岡/" class="town-card">
+<div class="town-name">吉岡</div>
+<div class="town-score" style="color:#e74c3c">38.9点</div>
+<div class="town-meta">人口 180 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="吉岡東4/" class="town-card">
+<div class="town-name">吉岡東四丁目</div>
+<div class="town-score" style="color:#e74c3c">38.8点</div>
+<div class="town-meta">人口 264 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="寺尾西1/" class="town-card">
+<div class="town-name">寺尾西一丁目</div>
+<div class="town-score" style="color:#e74c3c">38.4点</div>
+<div class="town-meta">人口 565 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="深谷中1/" class="town-card">
+<div class="town-name">深谷中一丁目</div>
+<div class="town-score" style="color:#e74c3c">38.2点</div>
+<div class="town-meta">人口 577 / 犯罪 17件 / 医療 4件</div>
+</a>
+<a href="深谷上1/" class="town-card">
+<div class="town-name">深谷上一丁目</div>
+<div class="town-score" style="color:#e74c3c">37.9点</div>
+<div class="town-meta">人口 278 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="深谷中2/" class="town-card">
+<div class="town-name">深谷中二丁目</div>
+<div class="town-score" style="color:#e74c3c">37.5点</div>
+<div class="town-meta">人口 859 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="大上1/" class="town-card">
+<div class="town-name">大上一丁目</div>
+<div class="town-score" style="color:#e74c3c">36.2点</div>
+<div class="town-meta">人口 1,478 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="深谷中3/" class="town-card">
+<div class="town-name">深谷中三丁目</div>
+<div class="town-score" style="color:#e74c3c">33.6点</div>
+<div class="town-meta">人口 628 / 犯罪 2件 / 医療 0件</div>
+</a>
+<a href="上土棚南6/" class="town-card">
+<div class="town-name">上土棚南六丁目</div>
+<div class="town-score" style="color:#e74c3c">32.3点</div>
+<div class="town-meta">人口 128 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="吉岡東2/" class="town-card">
+<div class="town-name">吉岡東二丁目</div>
+<div class="town-score" style="color:#e74c3c">31.5点</div>
+<div class="town-meta">人口 164 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="本蓼川/" class="town-card">
+<div class="town-name">本蓼川</div>
+<div class="town-score" style="color:#e74c3c">30.9点</div>
+<div class="town-meta">人口 14 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="早川/" class="town-card">
+<div class="town-name">早川</div>
+<div class="town-score" style="color:#e74c3c">29.8点</div>
+<div class="town-meta">人口 349 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="深谷上3/" class="town-card">
+<div class="town-name">深谷上三丁目</div>
+<div class="town-score" style="color:#e74c3c">29.5点</div>
+<div class="town-meta">人口 78 / 犯罪 6件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>

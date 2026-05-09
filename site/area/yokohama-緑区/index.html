@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>横浜市緑区 エリア別住みやすさ一覧 - 神奈川県住みやすさマップ</title>
+<meta name="description" content="横浜市緑区の全63エリアの住みやすさスコアを一覧で比較。7軸パーセンタイルスコアリングで算出。">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
+.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
+.container{max-width:1000px;margin:0 auto;padding:24px 16px}
+.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
+h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
+.muni-summary{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08);display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;text-align:center}
+.muni-summary .value{font-size:1.3rem;font-weight:700;color:#1a1a2e}.muni-summary .label{font-size:.72rem;color:#888}
+.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
+.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
+.town-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.town-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
+.town-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.town-name{font-weight:700;font-size:1rem;margin-bottom:4px}.town-score{font-size:1.3rem;font-weight:700;margin-bottom:4px}.town-meta{font-size:.72rem;color:#888}
+.nearby{margin:20px 0;font-size:.8rem;color:#666;line-height:2}.nearby a{color:#1a73e8;text-decoration:none;margin:0 4px}
+.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
+</style>
+</head>
+<body>
+<div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
+<div class="container">
+<div class="breadcrumb"><a href="../../">トップ</a> &gt; <a href="../">エリア一覧</a> &gt; 横浜市緑区</div>
+<h2>横浜市緑区 全63エリアの住みやすさ</h2>
+<div class="muni-summary">
+<div><div class="value">183,082</div><div class="label">人口</div></div>
+<div><div class="value">46.6</div><div class="label">平均スコア</div></div>
+<div><div class="value">204</div><div class="label">犯罪件数</div></div>
+<div><div class="value">230</div><div class="label">医療施設</div></div>
+<div><div class="value">128</div><div class="label">公園</div></div>
+</div>
+<div class="sort-controls">
+<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
+<button class="sort-btn" onclick="sortCards('name')">名前順</button>
+<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+<button class="sort-btn" onclick="sortCards('crime')">犯罪少ない順</button>
+</div>
+<div class="town-grid" id="townGrid">
+<a href="竹山3/" class="town-card">
+<div class="town-name">竹山三丁目</div>
+<div class="town-score" style="color:#2ecc71">63.6点</div>
+<div class="town-meta">人口 1,292 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="鴨居1/" class="town-card">
+<div class="town-name">鴨居一丁目</div>
+<div class="town-score" style="color:#f39c12">59.8点</div>
+<div class="town-meta">人口 2,517 / 犯罪 6件 / 医療 10件</div>
+</a>
+<a href="寺山町/" class="town-card">
+<div class="town-name">寺山町</div>
+<div class="town-score" style="color:#f39c12">59.7点</div>
+<div class="town-meta">人口 6,521 / 犯罪 3件 / 医療 9件</div>
+</a>
+<a href="霧が丘1/" class="town-card">
+<div class="town-name">霧が丘一丁目</div>
+<div class="town-score" style="color:#f39c12">59.3点</div>
+<div class="town-meta">人口 1,263 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="上山2/" class="town-card">
+<div class="town-name">上山二丁目</div>
+<div class="town-score" style="color:#f39c12">58.7点</div>
+<div class="town-meta">人口 1,809 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="鴨居4/" class="town-card">
+<div class="town-name">鴨居四丁目</div>
+<div class="town-score" style="color:#f39c12">58.5点</div>
+<div class="town-meta">人口 4,561 / 犯罪 3件 / 医療 10件</div>
+</a>
+<a href="鴨居2/" class="town-card">
+<div class="town-name">鴨居二丁目</div>
+<div class="town-score" style="color:#f39c12">57.7点</div>
+<div class="town-meta">人口 1,331 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="霧が丘5/" class="town-card">
+<div class="town-name">霧が丘五丁目</div>
+<div class="town-score" style="color:#f39c12">55.0点</div>
+<div class="town-meta">人口 1,714 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="長津田2/" class="town-card">
+<div class="town-name">長津田二丁目</div>
+<div class="town-score" style="color:#f39c12">54.4点</div>
+<div class="town-meta">人口 4,026 / 犯罪 5件 / 医療 4件</div>
+</a>
+<a href="東本郷2/" class="town-card">
+<div class="town-name">東本郷二丁目</div>
+<div class="town-score" style="color:#f39c12">53.9点</div>
+<div class="town-meta">人口 843 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="鴨居3/" class="town-card">
+<div class="town-name">鴨居三丁目</div>
+<div class="town-score" style="color:#f39c12">53.1点</div>
+<div class="town-meta">人口 1,919 / 犯罪 0件 / 医療 6件</div>
+</a>
+<a href="東本郷1/" class="town-card">
+<div class="town-name">東本郷一丁目</div>
+<div class="town-score" style="color:#f39c12">53.0点</div>
+<div class="town-meta">人口 1,225 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="白山2/" class="town-card">
+<div class="town-name">白山二丁目</div>
+<div class="town-score" style="color:#f39c12">52.6点</div>
+<div class="town-meta">人口 2,508 / 犯罪 1件 / 医療 5件</div>
+</a>
+<a href="東本郷6/" class="town-card">
+<div class="town-name">東本郷六丁目</div>
+<div class="town-score" style="color:#f39c12">52.5点</div>
+<div class="town-meta">人口 4,087 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="東本郷3/" class="town-card">
+<div class="town-name">東本郷三丁目</div>
+<div class="town-score" style="color:#f39c12">52.3点</div>
+<div class="town-meta">人口 1,568 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="長津田1/" class="town-card">
+<div class="town-name">長津田一丁目</div>
+<div class="town-score" style="color:#f39c12">52.2点</div>
+<div class="town-meta">人口 2,192 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="森の台/" class="town-card">
+<div class="town-name">森の台</div>
+<div class="town-score" style="color:#f39c12">50.8点</div>
+<div class="town-meta">人口 4,386 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="竹山1/" class="town-card">
+<div class="town-name">竹山一丁目</div>
+<div class="town-score" style="color:#f39c12">50.6点</div>
+<div class="town-meta">人口 1,984 / 犯罪 2件 / 医療 1件</div>
+</a>
+<a href="長津田みなみ台4/" class="town-card">
+<div class="town-name">長津田みなみ台四丁目</div>
+<div class="town-score" style="color:#f39c12">50.4点</div>
+<div class="town-meta">人口 1,942 / 犯罪 0件 / 医療 4件</div>
+</a>
+<a href="竹山4/" class="town-card">
+<div class="town-name">竹山四丁目</div>
+<div class="town-score" style="color:#f39c12">50.3点</div>
+<div class="town-meta">人口 2,091 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="東本郷町/" class="town-card">
+<div class="town-name">東本郷町</div>
+<div class="town-score" style="color:#f39c12">49.5点</div>
+<div class="town-meta">人口 24 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="竹山2/" class="town-card">
+<div class="town-name">竹山二丁目</div>
+<div class="town-score" style="color:#f39c12">49.4点</div>
+<div class="town-meta">人口 1,205 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="長津田みなみ台1/" class="town-card">
+<div class="town-name">長津田みなみ台一丁目</div>
+<div class="town-score" style="color:#f39c12">48.8点</div>
+<div class="town-meta">人口 2,969 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="鴨居7/" class="town-card">
+<div class="town-name">鴨居七丁目</div>
+<div class="town-score" style="color:#f39c12">48.4点</div>
+<div class="town-meta">人口 1,121 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="中山6/" class="town-card">
+<div class="town-name">中山六丁目</div>
+<div class="town-score" style="color:#f39c12">48.3点</div>
+<div class="town-meta">人口 2,579 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="東本郷5/" class="town-card">
+<div class="town-name">東本郷五丁目</div>
+<div class="town-score" style="color:#f39c12">47.6点</div>
+<div class="town-meta">人口 2,118 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="長津田みなみ台7/" class="town-card">
+<div class="town-name">長津田みなみ台七丁目</div>
+<div class="town-score" style="color:#f39c12">47.5点</div>
+<div class="town-meta">人口 2,019 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="中山4/" class="town-card">
+<div class="town-name">中山四丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 1,956 / 犯罪 4件 / 医療 6件</div>
+</a>
+<a href="長津田みなみ台2/" class="town-card">
+<div class="town-name">長津田みなみ台二丁目</div>
+<div class="town-score" style="color:#f39c12">46.8点</div>
+<div class="town-meta">人口 1,434 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="鴨居6/" class="town-card">
+<div class="town-name">鴨居六丁目</div>
+<div class="town-score" style="color:#f39c12">46.5点</div>
+<div class="town-meta">人口 1,663 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="霧が丘6/" class="town-card">
+<div class="town-name">霧が丘六丁目</div>
+<div class="town-score" style="color:#f39c12">46.3点</div>
+<div class="town-meta">人口 2,285 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中山1/" class="town-card">
+<div class="town-name">中山一丁目</div>
+<div class="town-score" style="color:#f39c12">46.1点</div>
+<div class="town-meta">人口 3,347 / 犯罪 12件 / 医療 24件</div>
+</a>
+<a href="中山3/" class="town-card">
+<div class="town-name">中山三丁目</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 2,991 / 犯罪 2件 / 医療 4件</div>
+</a>
+<a href="長津田みなみ台6/" class="town-card">
+<div class="town-name">長津田みなみ台六丁目</div>
+<div class="town-score" style="color:#f39c12">46.0点</div>
+<div class="town-meta">人口 1,560 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="十日市場町/" class="town-card">
+<div class="town-name">十日市場町</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 15,672 / 犯罪 27件 / 医療 31件</div>
+</a>
+<a href="長津田4/" class="town-card">
+<div class="town-name">長津田四丁目</div>
+<div class="town-score" style="color:#f39c12">45.4点</div>
+<div class="town-meta">人口 3,636 / 犯罪 7件 / 医療 13件</div>
+</a>
+<a href="上山3/" class="town-card">
+<div class="town-name">上山三丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 1,806 / 犯罪 3件 / 医療 0件</div>
+</a>
+<a href="白山4/" class="town-card">
+<div class="town-name">白山四丁目</div>
+<div class="town-score" style="color:#f39c12">45.3点</div>
+<div class="town-meta">人口 2,540 / 犯罪 6件 / 医療 1件</div>
+</a>
+<a href="西八朔町/" class="town-card">
+<div class="town-name">西八朔町</div>
+<div class="town-score" style="color:#f39c12">45.0点</div>
+<div class="town-meta">人口 2,696 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="霧が丘4/" class="town-card">
+<div class="town-name">霧が丘四丁目</div>
+<div class="town-score" style="color:#f39c12">44.8点</div>
+<div class="town-meta">人口 2,184 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="東本郷4/" class="town-card">
+<div class="town-name">東本郷四丁目</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 2,399 / 犯罪 3件 / 医療 1件</div>
+</a>
+<a href="白山1/" class="town-card">
+<div class="town-name">白山一丁目</div>
+<div class="town-score" style="color:#f39c12">43.2点</div>
+<div class="town-meta">人口 4,854 / 犯罪 3件 / 医療 2件</div>
+</a>
+<a href="北八朔町/" class="town-card">
+<div class="town-name">北八朔町</div>
+<div class="town-score" style="color:#f39c12">42.9点</div>
+<div class="town-meta">人口 8,769 / 犯罪 10件 / 医療 3件</div>
+</a>
+<a href="霧が丘2/" class="town-card">
+<div class="town-name">霧が丘二丁目</div>
+<div class="town-score" style="color:#f39c12">42.7点</div>
+<div class="town-meta">人口 1,049 / 犯罪 0件 / 医療 1件</div>
+</a>
+<a href="新治町/" class="town-card">
+<div class="town-name">新治町</div>
+<div class="town-score" style="color:#f39c12">42.5点</div>
+<div class="town-meta">人口 2,599 / 犯罪 5件 / 医療 0件</div>
+</a>
+<a href="青砥町/" class="town-card">
+<div class="town-name">青砥町</div>
+<div class="town-score" style="color:#f39c12">42.5点</div>
+<div class="town-meta">人口 4,595 / 犯罪 2件 / 医療 5件</div>
+</a>
+<a href="長津田みなみ台5/" class="town-card">
+<div class="town-name">長津田みなみ台五丁目</div>
+<div class="town-score" style="color:#f39c12">42.3点</div>
+<div class="town-meta">人口 1,517 / 犯罪 3件 / 医療 4件</div>
+</a>
+<a href="いぶき野/" class="town-card">
+<div class="town-name">いぶき野</div>
+<div class="town-score" style="color:#f39c12">42.1点</div>
+<div class="town-meta">人口 5,208 / 犯罪 1件 / 医療 2件</div>
+</a>
+<a href="鴨居町/" class="town-card">
+<div class="town-name">鴨居町</div>
+<div class="town-score" style="color:#f39c12">42.0点</div>
+<div class="town-meta">人口 1,414 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="中山2/" class="town-card">
+<div class="town-name">中山二丁目</div>
+<div class="town-score" style="color:#f39c12">41.7点</div>
+<div class="town-meta">人口 831 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="鴨居5/" class="town-card">
+<div class="town-name">鴨居五丁目</div>
+<div class="town-score" style="color:#f39c12">41.2点</div>
+<div class="town-meta">人口 1,413 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="三保町/" class="town-card">
+<div class="town-name">三保町</div>
+<div class="town-score" style="color:#f39c12">40.7点</div>
+<div class="town-meta">人口 15,716 / 犯罪 9件 / 医療 8件</div>
+</a>
+<a href="長津田6/" class="town-card">
+<div class="town-name">長津田六丁目</div>
+<div class="town-score" style="color:#f39c12">40.7点</div>
+<div class="town-meta">人口 1,982 / 犯罪 0件 / 医療 2件</div>
+</a>
+<a href="霧が丘3/" class="town-card">
+<div class="town-name">霧が丘三丁目</div>
+<div class="town-score" style="color:#f39c12">40.4点</div>
+<div class="town-meta">人口 2,876 / 犯罪 6件 / 医療 7件</div>
+</a>
+<a href="長津田5/" class="town-card">
+<div class="town-name">長津田五丁目</div>
+<div class="town-score" style="color:#e74c3c">39.2点</div>
+<div class="town-meta">人口 1,598 / 犯罪 14件 / 医療 17件</div>
+</a>
+<a href="中山5/" class="town-card">
+<div class="town-name">中山五丁目</div>
+<div class="town-score" style="color:#e74c3c">39.1点</div>
+<div class="town-meta">人口 1,580 / 犯罪 1件 / 医療 3件</div>
+</a>
+<a href="長津田3/" class="town-card">
+<div class="town-name">長津田三丁目</div>
+<div class="town-score" style="color:#e74c3c">38.2点</div>
+<div class="town-meta">人口 1,777 / 犯罪 2件 / 医療 2件</div>
+</a>
+<a href="長津田町/" class="town-card">
+<div class="town-name">長津田町</div>
+<div class="town-score" style="color:#e74c3c">38.0点</div>
+<div class="town-meta">人口 7,256 / 犯罪 10件 / 医療 7件</div>
+</a>
+<a href="長津田7/" class="town-card">
+<div class="town-name">長津田七丁目</div>
+<div class="town-score" style="color:#e74c3c">37.7点</div>
+<div class="town-meta">人口 2,140 / 犯罪 1件 / 医療 1件</div>
+</a>
+<a href="白山3/" class="town-card">
+<div class="town-name">白山三丁目</div>
+<div class="town-score" style="color:#e74c3c">36.3点</div>
+<div class="town-meta">人口 1,317 / 犯罪 0件 / 医療 0件</div>
+</a>
+<a href="台村町/" class="town-card">
+<div class="town-name">台村町</div>
+<div class="town-score" style="color:#e74c3c">30.4点</div>
+<div class="town-meta">人口 4,519 / 犯罪 24件 / 医療 7件</div>
+</a>
+<a href="小山町/" class="town-card">
+<div class="town-name">小山町</div>
+<div class="town-score" style="color:#e74c3c">30.2点</div>
+<div class="town-meta">人口 781 / 犯罪 1件 / 医療 0件</div>
+</a>
+<a href="上山1/" class="town-card">
+<div class="town-name">上山一丁目</div>
+<div class="town-score" style="color:#e74c3c">24.3点</div>
+<div class="town-meta">人口 1,308 / 犯罪 3件 / 医療 0件</div>
+</a></div>
+<div class="nearby"><strong>他の市区町村:</strong> <a href="../湯河原町/">湯河原町</a> / <a href="../二宮町/">二宮町</a> / <a href="../開成町/">開成町</a> / <a href="../kawasaki-麻生区/">川崎市麻生区</a> / <a href="../yokohama-青葉区/">横浜市青葉区</a> / <a href="../松田町/">松田町</a> / <a href="../鎌倉市/">鎌倉市</a> / <a href="../南足柄市/">南足柄市</a> / <a href="../大和市/">大和市</a> / <a href="../秦野市/">秦野市</a> / <a href="../逗子市/">逗子市</a> / <a href="../yokohama-栄区/">横浜市栄区</a> / <a href="../座間市/">座間市</a> / <a href="../真鶴町/">真鶴町</a> / <a href="../横須賀市/">横須賀市</a> / <a href="../大磯町/">大磯町</a> / <a href="../箱根町/">箱根町</a> / <a href="../yokohama-都筑区/">横浜市都筑区</a> / <a href="../藤沢市/">藤沢市</a> / <a href="../yokohama-泉区/">横浜市泉区</a></div>
+</div>
+<div class="footer">
+データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
+<a href="../../">神奈川県 住みやすさマップ</a>
+</div>
+<script>
+function sortCards(key){
+  const grid=document.getElementById('townGrid');
+  const cards=[...grid.children];
+  cards.sort((a,b)=>{
+    if(key==='score')return parseFloat(b.querySelector('.town-score').textContent)-parseFloat(a.querySelector('.town-score').textContent);
+    if(key==='name')return a.querySelector('.town-name').textContent.localeCompare(b.querySelector('.town-name').textContent,'ja');
+    if(key==='pop'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
+    if(key==='crime'){const g=t=>parseInt(t.querySelector('.town-meta').textContent.match(/犯罪 (\d+)/)?.[1]||0);return g(a)-g(b)}
+  });
+  cards.forEach(c=>grid.appendChild(c));
+  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
+  event.target.classList.add('active');
+}
+</script>
+</body></html>
