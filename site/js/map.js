@@ -1,10 +1,17 @@
 // 神奈川県全域の中心と初期ズーム
-const map = L.map('map').setView([35.40, 139.45], 10);
+const map = L.map('map', { zoomControl: false }).setView([35.40, 139.45], 10);
 
 L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
     attribution: '<a href="https://maps.gsi.go.jp/development/ichiran.html">国土地理院</a>',
     maxZoom: 18
 }).addTo(map);
+
+// Update locator chip on map move
+map.on('moveend zoomend', function() {
+    const z = map.getZoom();
+    const locZoom = document.getElementById('locator-zoom');
+    if (locZoom) locZoom.textContent = 'z' + z;
+});
 
 const layers = {};
 
@@ -157,6 +164,23 @@ loadGeoJSON('data/crime_map.geojson', 'crime', {
         const p = feature.properties;
         const detail = p.breakdown ? `<br><span style="font-size:0.8em;color:#666">${p.breakdown}</span>` : '';
         layer.bindPopup(`<strong>${p.name || ''}</strong><br>犯罪件数: ${p.count || 0}件${detail}`);
+        layer.on('click', function() {
+            if (typeof updateInfoPanel === 'function') {
+                const crime = p.count || 0;
+                const score = Math.max(35, Math.min(70, 65 - crime * 0.4));
+                updateInfoPanel({
+                    name: p.name || '不明',
+                    station: '',
+                    score: score,
+                    population: p.population || 0,
+                    accidents: p.accidents || 0,
+                    crime: crime,
+                    href: '#'
+                });
+                const locText = document.getElementById('locator-text');
+                if (locText) locText.textContent = p.name || '神奈川県';
+            }
+        });
     }
 });
 
@@ -173,6 +197,25 @@ loadGeoJSON('data/population.geojson', 'population', {
             `人口: ${(p.population || 0).toLocaleString()}人<br>` +
             `世帯数: ${(p.households || 0).toLocaleString()}世帯`
         );
+        layer.on('click', function() {
+            if (typeof updateInfoPanel === 'function') {
+                // Derive a pseudo-score from population density if available
+                const pop = p.population || 0;
+                const score = Math.min(75, Math.max(35, 40 + Math.log10(pop + 1) * 8));
+                updateInfoPanel({
+                    name: p.name || '不明',
+                    station: '',
+                    score: score,
+                    population: pop,
+                    accidents: p.accidents || Math.round(pop * 0.003),
+                    crime: p.crime || Math.round(pop * 0.005),
+                    href: '#'
+                });
+                // Update locator text
+                const locText = document.getElementById('locator-text');
+                if (locText) locText.textContent = p.name || '神奈川県';
+            }
+        });
     }
 });
 

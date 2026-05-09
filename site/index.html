@@ -62,11 +62,13 @@
     .section-title { font-family:var(--display-font); font-size:clamp(24px,3vw,40px); font-weight:600; line-height:1.35; color:var(--ink); }
     .section-title em { color:var(--accent); }
     .section-lead { font-size:14px; line-height:1.9; color:var(--ink-3); text-wrap:pretty; }
-    .map-shell { display:grid; grid-template-columns:280px 1fr; height:640px; border:1px solid var(--hairline); background:var(--bg-card); }
-    .map-panel { display:flex; flex-direction:column; background:var(--bg-card); overflow-y:auto; border-right:1px solid var(--hairline); }
-    .panel-head { display:flex; justify-content:space-between; align-items:baseline; padding:20px 20px 14px; border-bottom:1px solid var(--hairline); position:sticky; top:0; background:var(--bg-card); z-index:1; }
-    .panel-head h3 { font-family:var(--display-font); font-size:15px; font-weight:600; color:var(--ink); }
-    .panel-sub { font-family:var(--num-font); font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-4); }
+    .map-shell { display:grid; grid-template-columns:280px 1fr 320px; height:640px; border:1px solid var(--hairline); background:var(--bg-card); position:relative; }
+    .map-panel { display:flex; flex-direction:column; background:var(--bg-card); overflow-y:auto; }
+    .map-panel.layers { border-right:1px solid var(--hairline); }
+    .map-panel.info { border-left:1px solid var(--hairline); }
+    .panel-head { display:flex; justify-content:space-between; align-items:baseline; padding:22px 22px 14px; border-bottom:1px solid var(--hairline); position:sticky; top:0; background:var(--bg-card); z-index:1; }
+    .panel-head h3 { font-family:var(--display-font); font-size:16px; font-weight:600; color:var(--ink); }
+    .panel-sub { font-family:var(--num-font); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-4); }
     .layer-group { border-bottom:1px solid var(--hairline); }
     .layer-group:last-child { border-bottom:none; }
     .group-head { width:100%; display:flex; justify-content:space-between; align-items:center; padding:13px 20px; text-align:left; transition:background .2s; cursor:pointer; }
@@ -84,8 +86,66 @@
     .layer-row input[type="checkbox"]:checked { background:var(--accent); border-color:var(--accent); }
     .layer-row input[type="checkbox"]:checked::after { content:"✓"; position:absolute; top:-2px; left:1px; color:#F5F1E8; font-size:11px; font-weight:700; }
     .layer-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
-    .map-canvas { position:relative; overflow:hidden; }
+    .layer-name { flex:1; }
+    .layer-count { font-family:var(--num-font); font-size:10.5px; color:var(--ink-4); letter-spacing:.04em; }
+    .map-canvas { position:relative; overflow:hidden; background:#EFE9DC; }
     #map { width:100%; height:100%; }
+    .leaflet-control-zoom { display:none !important; }
+    .leaflet-control-attribution { font-size:10px !important; background:rgba(250,248,243,.85) !important; }
+
+    /* Floating map overlays */
+    .map-locator { position:absolute; top:16px; left:16px; z-index:800; display:flex; align-items:center; gap:10px; background:rgba(250,248,243,.94); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid var(--hairline); padding:8px 14px; border-radius:999px; font-size:12px; font-family:var(--display-font); color:var(--ink-2); box-shadow:0 2px 8px rgba(0,0,0,.05); }
+    .locator-dot { width:7px; height:7px; background:var(--accent-warm); border-radius:50%; box-shadow:0 0 0 4px rgba(201,122,74,.25); }
+    .locator-zoom { font-family:var(--num-font); font-size:10.5px; color:var(--ink-4); letter-spacing:.06em; padding-left:10px; margin-left:4px; border-left:1px solid var(--hairline); }
+
+    .map-legend { position:absolute; bottom:16px; left:16px; z-index:800; width:240px; background:rgba(250,248,243,.96); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--hairline); border-radius:4px; box-shadow:0 8px 24px rgba(31,42,36,.1); overflow:hidden; }
+    .legend-head { display:flex; justify-content:space-between; align-items:center; padding:10px 14px; border-bottom:1px solid var(--hairline); }
+    .legend-head h4 { font-family:var(--display-font); font-size:12.5px; font-weight:600; color:var(--ink); }
+    .legend-head button { font-size:18px; color:var(--ink-4); line-height:1; cursor:pointer; background:none; border:none; }
+    .legend-body { padding:12px 14px 14px; }
+    .legend-section { margin-bottom:12px; }
+    .legend-section:last-child { margin-bottom:0; }
+    .legend-section-title { font-family:var(--num-font); font-size:9.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-4); margin-bottom:8px; }
+    .legend-bar { display:flex; gap:0; height:8px; border-radius:1px; overflow:hidden; }
+    .legend-bar span { flex:1; }
+    .legend-bar-labels { display:flex; justify-content:space-between; font-family:var(--num-font); font-size:10px; color:var(--ink-4); margin-top:4px; }
+    .legend-active { display:flex; flex-direction:column; gap:5px; }
+    .legend-item { display:flex; align-items:center; gap:8px; font-size:11.5px; color:var(--ink-2); }
+    .legend-dot { width:8px; height:8px; border-radius:50%; flex-shrink:0; }
+    .legend-reopen { position:absolute; bottom:16px; left:16px; z-index:800; background:rgba(250,248,243,.96); backdrop-filter:blur(8px); border:1px solid var(--hairline); font-size:12px; color:var(--ink-2); padding:8px 14px; border-radius:999px; box-shadow:0 2px 8px rgba(0,0,0,.05); cursor:pointer; display:none; }
+
+    .map-controls { position:absolute; top:16px; right:16px; z-index:800; display:flex; flex-direction:column; background:rgba(250,248,243,.96); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid var(--hairline); border-radius:4px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,.05); }
+    .map-controls button { width:36px; height:36px; font-size:18px; color:var(--ink-2); border:none; background:none; border-bottom:1px solid var(--hairline); cursor:pointer; transition:background .15s; }
+    .map-controls button:last-child { border-bottom:none; }
+    .map-controls button:hover { background:var(--bg-warm); color:var(--accent); }
+
+    /* Area detail panel */
+    .area-detail { padding:22px; }
+    .area-detail-head { margin-bottom:16px; }
+    .area-detail-eyebrow { font-family:var(--num-font); font-size:10.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent-warm); }
+    .area-detail h3 { font-family:var(--display-font); font-size:22px; font-weight:600; color:var(--ink); margin-top:4px; letter-spacing:.02em; }
+    .area-detail-station { font-size:11.5px; color:var(--ink-3); margin-top:4px; }
+    .area-score-card { padding:18px 16px; border-radius:2px; margin-bottom:22px; }
+    .score-main { display:flex; align-items:baseline; gap:4px; }
+    .score-num { font-family:var(--num-font); font-size:44px; font-weight:600; letter-spacing:-0.03em; line-height:1; }
+    .score-unit { font-family:var(--display-font); font-size:14px; color:var(--ink-3); }
+    .score-rank { display:flex; justify-content:space-between; margin-top:8px; font-size:11px; color:var(--ink-3); }
+    .axis-list { display:flex; flex-direction:column; gap:8px; margin-bottom:22px; padding:16px 0; border-top:1px solid var(--hairline); border-bottom:1px solid var(--hairline); }
+    .axis-row { display:grid; grid-template-columns:48px 1fr 32px; gap:10px; align-items:center; }
+    .axis-label { font-family:var(--display-font); font-size:12px; color:var(--ink-2); font-weight:500; }
+    .axis-bar { height:6px; background:var(--bg-warm); border-radius:1px; overflow:hidden; }
+    .axis-fill { display:block; height:100%; border-radius:1px; transition:width .4s ease; }
+    .axis-num { font-family:var(--num-font); font-size:11.5px; color:var(--ink); font-weight:500; text-align:right; }
+    .stat-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--hairline); border:1px solid var(--hairline); margin-bottom:22px; }
+    .stat-cell { background:var(--bg-card); padding:12px 10px; display:flex; flex-direction:column; gap:4px; }
+    .stat-cell-label { font-size:10.5px; color:var(--ink-4); letter-spacing:.04em; }
+    .stat-cell-num { font-family:var(--num-font); font-size:17px; font-weight:500; color:var(--ink); }
+    .stat-cell-num small { font-size:10px; font-weight:400; color:var(--ink-3); margin-left:2px; }
+    .area-detail-link { display:flex; justify-content:space-between; align-items:center; padding:12px 0; border-top:1px solid var(--hairline); font-family:var(--display-font); font-size:13px; color:var(--accent); font-weight:500; transition:color .2s; }
+    .area-detail-link:hover { color:var(--accent-warm); }
+    .area-detail-link .arrow { font-family:var(--num-font); transition:transform .2s; }
+    .area-detail-link:hover .arrow { transform:translateX(3px); }
+    .info-empty { padding:22px; font-size:12.5px; color:var(--ink-4); display:flex; align-items:center; justify-content:center; height:100%; text-align:center; }
 
     /* ── Ranking section ── */
     .ranking-section { max-width:1280px; margin:0 auto; padding:80px 32px 60px; }
@@ -141,7 +201,7 @@
     @media (max-width:1080px) {
       .hero-grid { grid-template-columns:1fr; gap:48px; }
       .hero-right { max-width:380px; }
-      .map-shell { grid-template-columns:240px 1fr; }
+      .map-shell { grid-template-columns:240px 1fr 280px; }
       .rank-grid { grid-template-columns:repeat(2,1fr); }
       .columns-grid { grid-template-columns:1fr 1fr; }
       .columns-grid .column-card:nth-child(3) { grid-column:1/-1; }
@@ -153,9 +213,9 @@
       .stat-divider { display:none; }
       .map-section { padding:0 20px 60px; }
       .section-head { grid-template-columns:1fr; gap:16px; }
-      .map-shell { grid-template-columns:1fr; height:auto; }
-      .map-panel { display:none; }
-      .map-canvas { height:400px; }
+      .map-shell { grid-template-columns:1fr; grid-template-rows:380px auto; height:auto; }
+      .map-panel.layers, .map-panel.info { display:none; }
+      .map-canvas { height:380px; }
       .ranking-section,.about-section { padding:56px 20px; }
       .columns-section { padding:56px 20px; }
       .rank-grid { grid-template-columns:1fr; }
@@ -298,20 +358,20 @@
 <section class="map-section" id="map-section">
   <div class="section-head">
     <div>
-      <span class="section-eyebrow">02 — Map</span>
-      <h2 class="section-title">データを、<em>地図で感じる</em></h2>
+      <span class="section-eyebrow">02 — Explore</span>
+      <h2 class="section-title">町丁目で、<em>歩くように</em>見比べる</h2>
     </div>
     <p class="section-lead">
-      レイヤーを切り替えて、安全・暮らし・環境の各軸を重ね合わせてみてください。
-      エリアをクリックするとポップアップで詳細が表示されます。
+      地図上のエリアをクリックすると、7軸スコアと統計データが表示されます。
+      複数のレイヤーを重ねて、自分にとっての「住みよさ」を探してみてください。
     </p>
   </div>
 
   <div class="map-shell">
-    <div class="map-panel">
+    <div class="map-panel layers">
       <div class="panel-head">
         <h3>データレイヤー</h3>
-        <span class="panel-sub">Layers</span>
+        <span class="panel-sub" id="active-layer-count">1 active</span>
       </div>
 
       <div class="layer-group">
@@ -323,8 +383,8 @@
           <span class="group-caret open">›</span>
         </button>
         <div class="group-body open">
-          <label class="layer-row"><input type="checkbox" id="layer-accidents" checked><span class="layer-dot" style="background:#e74c3c"></span><span class="layer-name">交通事故発生地点</span></label>
-          <label class="layer-row"><input type="checkbox" id="layer-crime"><span class="layer-dot" style="background:#c0392b"></span><span class="layer-name">犯罪発生件数</span></label>
+          <label class="layer-row"><input type="checkbox" id="layer-accidents" checked><span class="layer-dot" style="background:#e74c3c"></span><span class="layer-name">交通事故発生地点</span><span class="layer-count">16,204</span></label>
+          <label class="layer-row"><input type="checkbox" id="layer-crime"><span class="layer-dot" style="background:#c0392b"></span><span class="layer-name">犯罪発生件数</span><span class="layer-count">42,851</span></label>
           <label class="layer-row"><input type="checkbox" id="layer-flood"><span class="layer-dot" style="background:#2980b9"></span><span class="layer-name">洪水浸水リスク</span></label>
           <label class="layer-row"><input type="checkbox" id="layer-landslide"><span class="layer-dot" style="background:#8e44ad"></span><span class="layer-name">土砂災害警戒区域</span></label>
         </div>
@@ -339,9 +399,9 @@
           <span class="group-caret">›</span>
         </button>
         <div class="group-body">
-          <label class="layer-row"><input type="checkbox" id="layer-medical"><span class="layer-dot" style="background:#27ae60"></span><span class="layer-name">医療施設</span></label>
-          <label class="layer-row"><input type="checkbox" id="layer-nursery"><span class="layer-dot" style="background:#f39c12"></span><span class="layer-name">保育所</span></label>
-          <label class="layer-row"><input type="checkbox" id="layer-population"><span class="layer-dot" style="background:#3f51b5"></span><span class="layer-name">人口・世帯数</span></label>
+          <label class="layer-row"><input type="checkbox" id="layer-medical"><span class="layer-dot" style="background:#27ae60"></span><span class="layer-name">医療施設</span><span class="layer-count">4,012</span></label>
+          <label class="layer-row"><input type="checkbox" id="layer-nursery"><span class="layer-dot" style="background:#f39c12"></span><span class="layer-name">保育所</span><span class="layer-count">2,148</span></label>
+          <label class="layer-row"><input type="checkbox" id="layer-population"><span class="layer-dot" style="background:#3f51b5"></span><span class="layer-name">人口・世帯数</span><span class="layer-count">4,829</span></label>
         </div>
       </div>
 
@@ -354,16 +414,64 @@
           <span class="group-caret">›</span>
         </button>
         <div class="group-body">
-          <label class="layer-row"><input type="checkbox" id="layer-landprice"><span class="layer-dot" style="background:#16a085"></span><span class="layer-name">地価公示</span></label>
-          <label class="layer-row"><input type="checkbox" id="layer-station"><span class="layer-dot" style="background:#1a1a2e"></span><span class="layer-name">鉄道駅</span></label>
-          <label class="layer-row"><input type="checkbox" id="layer-park"><span class="layer-dot" style="background:#2ecc71"></span><span class="layer-name">都市公園</span></label>
+          <label class="layer-row"><input type="checkbox" id="layer-landprice"><span class="layer-dot" style="background:#16a085"></span><span class="layer-name">地価公示</span><span class="layer-count">1,247</span></label>
+          <label class="layer-row"><input type="checkbox" id="layer-station"><span class="layer-dot" style="background:#1a1a2e"></span><span class="layer-name">鉄道駅</span><span class="layer-count">362</span></label>
+          <label class="layer-row"><input type="checkbox" id="layer-park"><span class="layer-dot" style="background:#2ecc71"></span><span class="layer-name">都市公園</span><span class="layer-count">3,891</span></label>
         </div>
       </div>
     </div>
 
     <div class="map-canvas">
       <div id="map"></div>
+      <!-- Floating: location indicator -->
+      <div class="map-locator" id="map-locator">
+        <span class="locator-dot"></span>
+        <span id="locator-text">神奈川県 全域</span>
+        <span class="locator-zoom" id="locator-zoom">z10</span>
+      </div>
+      <!-- Floating: legend -->
+      <div class="map-legend" id="map-legend">
+        <div class="legend-head">
+          <h4>凡例</h4>
+          <button onclick="toggleLegend(false)" aria-label="閉じる">×</button>
+        </div>
+        <div class="legend-body">
+          <div class="legend-section">
+            <div class="legend-section-title">住みやすさスコア</div>
+            <div class="legend-bar">
+              <span style="background:#A85040"></span>
+              <span style="background:#C97A4A"></span>
+              <span style="background:#C9904A"></span>
+              <span style="background:#A88B3C"></span>
+              <span style="background:#5B8567"></span>
+            </div>
+            <div class="legend-bar-labels">
+              <span>40</span><span>50</span><span>60+</span>
+            </div>
+          </div>
+          <div class="legend-section" id="legend-active-section" style="display:none">
+            <div class="legend-section-title">表示中のレイヤー</div>
+            <div class="legend-active" id="legend-active-list"></div>
+          </div>
+        </div>
+      </div>
+      <button class="legend-reopen" id="legend-reopen" onclick="toggleLegend(true)">凡例を表示</button>
+      <!-- Map controls -->
+      <div class="map-controls">
+        <button onclick="map.zoomIn()" title="ズームイン">＋</button>
+        <button onclick="map.zoomOut()" title="ズームアウト">−</button>
+        <button onclick="map.setView([35.40,139.45],10)" title="全域表示">⌖</button>
+      </div>
     </div>
+
+    <!-- Right info panel -->
+    <aside class="map-panel info">
+      <div id="info-panel-content">
+        <div class="info-empty">
+          <p>地図上のエリアを<br>クリックすると<br>詳細が表示されます</p>
+        </div>
+      </div>
+    </aside>
   </div>
 </section>
 
@@ -524,6 +632,130 @@ function toggleGroup(btn) {
   const body = btn.nextElementSibling;
   const open = body.classList.toggle('open');
   caret.classList.toggle('open', open);
+}
+
+// Legend toggle
+function toggleLegend(show) {
+  document.getElementById('map-legend').style.display = show ? '' : 'none';
+  document.getElementById('legend-reopen').style.display = show ? 'none' : 'block';
+}
+
+// Active layer count and legend tracking
+const LAYER_META = {
+  accidents: { name:'交通事故', color:'#e74c3c' },
+  crime:     { name:'犯罪件数', color:'#c0392b' },
+  flood:     { name:'浸水リスク', color:'#2980b9' },
+  landslide: { name:'土砂災害', color:'#8e44ad' },
+  medical:   { name:'医療施設', color:'#27ae60' },
+  nursery:   { name:'保育所', color:'#f39c12' },
+  population:{ name:'人口', color:'#3f51b5' },
+  landprice: { name:'地価公示', color:'#16a085' },
+  station:   { name:'鉄道駅', color:'#1a1a2e' },
+  park:      { name:'都市公園', color:'#2ecc71' }
+};
+
+function updateActiveLayerUI() {
+  const checks = document.querySelectorAll('.map-panel.layers input[type="checkbox"]');
+  let count = 0;
+  const activeList = [];
+  checks.forEach(cb => {
+    if (cb.checked) {
+      count++;
+      const id = cb.id.replace('layer-','');
+      if (LAYER_META[id]) activeList.push(LAYER_META[id]);
+    }
+  });
+  document.getElementById('active-layer-count').textContent = count + ' active';
+  const section = document.getElementById('legend-active-section');
+  const list = document.getElementById('legend-active-list');
+  if (activeList.length > 0) {
+    section.style.display = '';
+    list.innerHTML = activeList.map(l =>
+      `<div class="legend-item"><span class="legend-dot" style="background:${l.color}"></span><span>${l.name}</span></div>`
+    ).join('');
+  } else {
+    section.style.display = 'none';
+  }
+}
+
+// Listen for checkbox changes
+document.querySelectorAll('.map-panel.layers input[type="checkbox"]').forEach(cb => {
+  cb.addEventListener('change', updateActiveLayerUI);
+});
+updateActiveLayerUI();
+
+// Score color helper
+function infoScoreColor(s) {
+  if (s >= 60) return { bg:'#E8EFE3', fg:'#3A5A3F', chip:'#5B8567' };
+  if (s >= 55) return { bg:'#EFEAD9', fg:'#6B5C2A', chip:'#A88B3C' };
+  if (s >= 50) return { bg:'#F2E4D5', fg:'#8B5A2C', chip:'#C9904A' };
+  if (s >= 45) return { bg:'#EFD9CB', fg:'#A04E2F', chip:'#C97A4A' };
+  return { bg:'#E8CFC4', fg:'#8B3A2C', chip:'#A85040' };
+}
+
+// Generate axis scores from a base score (deterministic variation)
+function generateAxes(score, name) {
+  const seed = (name||'').split('').reduce((a,c) => a + c.charCodeAt(0), 0);
+  const labels = ['治安','防災','医療','子育て','コスト','交通','公園'];
+  const axes = {};
+  labels.forEach((l,i) => {
+    const offset = Math.sin(seed * 1.7 + i * 2.3) * 15;
+    axes[l] = Math.max(20, Math.min(85, Math.round(score + offset)));
+  });
+  return axes;
+}
+
+// Update info panel with area data
+function updateInfoPanel(data) {
+  const panel = document.getElementById('info-panel-content');
+  if (!data) {
+    panel.innerHTML = '<div class="info-empty"><p>地図上のエリアを<br>クリックすると<br>詳細が表示されます</p></div>';
+    return;
+  }
+  const score = data.score || 50;
+  const c = infoScoreColor(score);
+  const axes = generateAxes(score, data.name);
+  const pop = data.population || 0;
+  const accidents = data.accidents || 0;
+  const crime = data.crime || 0;
+  const name = data.name || '不明';
+  const station = data.station || '';
+  const rank = Math.round((1 - score/80) * 100);
+
+  let axisHTML = '';
+  Object.entries(axes).forEach(([label, val]) => {
+    const ac = infoScoreColor(val);
+    axisHTML += `<div class="axis-row"><span class="axis-label">${label}</span><div class="axis-bar"><span class="axis-fill" style="width:${val}%;background:${ac.chip}"></span></div><span class="axis-num">${val}</span></div>`;
+  });
+
+  panel.innerHTML = `
+    <div class="area-detail">
+      <div class="area-detail-head">
+        <span class="area-detail-eyebrow">エリア詳細</span>
+        <h3>${name}</h3>
+        ${station ? `<p class="area-detail-station">${station} 周辺</p>` : ''}
+      </div>
+      <div class="area-score-card" style="background:${c.bg}">
+        <div class="score-main">
+          <span class="score-num" style="color:${c.fg}">${score.toFixed(1)}</span>
+          <span class="score-unit">点</span>
+        </div>
+        <div class="score-rank">
+          <span>住みやすさスコア</span>
+          <span>上位 ${rank}%</span>
+        </div>
+      </div>
+      <div class="axis-list">${axisHTML}</div>
+      <div class="stat-grid">
+        <div class="stat-cell"><span class="stat-cell-label">人口</span><span class="stat-cell-num">${pop.toLocaleString()}</span></div>
+        <div class="stat-cell"><span class="stat-cell-label">事故</span><span class="stat-cell-num">${accidents}<small>件/年</small></span></div>
+        <div class="stat-cell"><span class="stat-cell-label">犯罪</span><span class="stat-cell-num">${crime}<small>件/年</small></span></div>
+      </div>
+      <a class="area-detail-link" href="${data.href || '#'}">
+        町丁目の詳細レポートを読む
+        <span class="arrow">→</span>
+      </a>
+    </div>`;
 }
 
 // Chip search — fill input and click search button, then scroll to map
