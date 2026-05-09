@@ -1,0 +1,1465 @@
+{
+  "桂台一丁目": {
+    "display_name": "横浜市青葉区桂台一丁目",
+    "slug": "桂台1",
+    "population": 2309,
+    "households": 938,
+    "crime_count": 3,
+    "accident_count": 3,
+    "medical_count": 2,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 57,
+    "scores": {
+      "safety": 17,
+      "traffic": 18,
+      "medical": 4,
+      "childcare": 0,
+      "cost": 18
+    }
+  },
+  "桂台二丁目": {
+    "display_name": "横浜市青葉区桂台二丁目",
+    "slug": "桂台2",
+    "population": 4206,
+    "households": 1753,
+    "crime_count": 3,
+    "accident_count": 7,
+    "medical_count": 3,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 50,
+    "scores": {
+      "safety": 18,
+      "traffic": 16,
+      "medical": 6,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "元石川町": {
+    "display_name": "横浜市青葉区元石川町",
+    "slug": "元石川町",
+    "population": 3065,
+    "households": 1235,
+    "crime_count": 7,
+    "accident_count": 5,
+    "medical_count": 5,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 52,
+    "scores": {
+      "safety": 15,
+      "traffic": 17,
+      "medical": 10,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "美しが丘一丁目": {
+    "display_name": "横浜市青葉区美しが丘一丁目",
+    "slug": "美しが丘1",
+    "population": 5482,
+    "households": 2731,
+    "crime_count": 7,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 3,
+    "mansion_count": 0,
+    "score": 59,
+    "scores": {
+      "safety": 17,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 12,
+      "cost": 10
+    }
+  },
+  "美しが丘二丁目": {
+    "display_name": "横浜市青葉区美しが丘二丁目",
+    "slug": "美しが丘2",
+    "population": 7482,
+    "households": 3039,
+    "crime_count": 5,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 4,
+    "mansion_count": 0,
+    "score": 64,
+    "scores": {
+      "safety": 18,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 16,
+      "cost": 10
+    }
+  },
+  "美しが丘三丁目": {
+    "display_name": "横浜市青葉区美しが丘三丁目",
+    "slug": "美しが丘3",
+    "population": 2730,
+    "households": 1088,
+    "crime_count": 1,
+    "accident_count": 3,
+    "medical_count": 1,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 54,
+    "scores": {
+      "safety": 19,
+      "traffic": 18,
+      "medical": 2,
+      "childcare": 0,
+      "cost": 15
+    }
+  },
+  "美しが丘四丁目": {
+    "display_name": "横浜市青葉区美しが丘四丁目",
+    "slug": "美しが丘4",
+    "population": 5886,
+    "households": 2706,
+    "crime_count": 1,
+    "accident_count": 3,
+    "medical_count": 1,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 53,
+    "scores": {
+      "safety": 19,
+      "traffic": 18,
+      "medical": 2,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "美しが丘五丁目": {
+    "display_name": "横浜市青葉区美しが丘五丁目",
+    "slug": "美しが丘5",
+    "population": 5156,
+    "households": 2457,
+    "crime_count": 2,
+    "accident_count": 1,
+    "medical_count": 1,
+    "nursery_count": 2,
+    "mansion_count": 2,
+    "score": 58,
+    "scores": {
+      "safety": 19,
+      "traffic": 19,
+      "medical": 2,
+      "childcare": 8,
+      "cost": 10
+    }
+  },
+  "荏田町": {
+    "display_name": "横浜市青葉区荏田町",
+    "slug": "荏田町",
+    "population": 0,
+    "households": 0,
+    "crime_count": 10,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 40,
+    "scores": {
+      "safety": 10,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "荏田北一丁目": {
+    "display_name": "横浜市青葉区荏田北一丁目",
+    "slug": "荏田北1",
+    "population": 2081,
+    "households": 811,
+    "crime_count": 1,
+    "accident_count": 2,
+    "medical_count": 1,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 54,
+    "scores": {
+      "safety": 19,
+      "traffic": 19,
+      "medical": 2,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "荏田北二丁目": {
+    "display_name": "横浜市青葉区荏田北二丁目",
+    "slug": "荏田北2",
+    "population": 1593,
+    "households": 833,
+    "crime_count": 1,
+    "accident_count": 1,
+    "medical_count": 0,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 56,
+    "scores": {
+      "safety": 18,
+      "traffic": 19,
+      "medical": 0,
+      "childcare": 4,
+      "cost": 15
+    }
+  },
+  "荏田北三丁目": {
+    "display_name": "横浜市青葉区荏田北三丁目",
+    "slug": "荏田北3",
+    "population": 1682,
+    "households": 752,
+    "crime_count": 2,
+    "accident_count": 2,
+    "medical_count": 5,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 60,
+    "scores": {
+      "safety": 17,
+      "traffic": 19,
+      "medical": 10,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "荏田西一丁目": {
+    "display_name": "横浜市青葉区荏田西一丁目",
+    "slug": "荏田西1",
+    "population": 2659,
+    "households": 1248,
+    "crime_count": 2,
+    "accident_count": 20,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 38,
+    "scores": {
+      "safety": 18,
+      "traffic": 10,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "荏田西二丁目": {
+    "display_name": "横浜市青葉区荏田西二丁目",
+    "slug": "荏田西2",
+    "population": 3737,
+    "households": 1412,
+    "crime_count": 4,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 47,
+    "scores": {
+      "safety": 17,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "荏田西三丁目": {
+    "display_name": "横浜市青葉区荏田西三丁目",
+    "slug": "荏田西3",
+    "population": 2740,
+    "households": 1005,
+    "crime_count": 0,
+    "accident_count": 1,
+    "medical_count": 1,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 55,
+    "scores": {
+      "safety": 20,
+      "traffic": 19,
+      "medical": 2,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "荏田西四丁目": {
+    "display_name": "横浜市青葉区荏田西四丁目",
+    "slug": "荏田西4",
+    "population": 1708,
+    "households": 612,
+    "crime_count": 1,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 1,
+    "mansion_count": 1,
+    "score": 52,
+    "scores": {
+      "safety": 18,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "荏田西五丁目": {
+    "display_name": "横浜市青葉区荏田西五丁目",
+    "slug": "荏田西5",
+    "population": 1466,
+    "households": 538,
+    "crime_count": 1,
+    "accident_count": 5,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 51,
+    "scores": {
+      "safety": 18,
+      "traffic": 17,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 16
+    }
+  },
+  "荏子田一丁目": {
+    "display_name": "横浜市青葉区荏子田一丁目",
+    "slug": "荏子田1",
+    "population": 1164,
+    "households": 415,
+    "crime_count": 0,
+    "accident_count": 1,
+    "medical_count": 1,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 59,
+    "scores": {
+      "safety": 20,
+      "traffic": 19,
+      "medical": 2,
+      "childcare": 0,
+      "cost": 18
+    }
+  },
+  "荏子田二丁目": {
+    "display_name": "横浜市青葉区荏子田二丁目",
+    "slug": "荏子田2",
+    "population": 3543,
+    "households": 1296,
+    "crime_count": 0,
+    "accident_count": 3,
+    "medical_count": 7,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 70,
+    "scores": {
+      "safety": 20,
+      "traffic": 18,
+      "medical": 14,
+      "childcare": 0,
+      "cost": 18
+    }
+  },
+  "荏子田三丁目": {
+    "display_name": "横浜市青葉区荏子田三丁目",
+    "slug": "荏子田3",
+    "population": 1959,
+    "households": 715,
+    "crime_count": 2,
+    "accident_count": 5,
+    "medical_count": 1,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 50,
+    "scores": {
+      "safety": 17,
+      "traffic": 17,
+      "medical": 2,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "市ケ尾町": {
+    "display_name": "横浜市青葉区市ケ尾町",
+    "slug": "市ケ尾町",
+    "population": 5418,
+    "households": 2241,
+    "crime_count": 12,
+    "accident_count": 7,
+    "medical_count": 4,
+    "nursery_count": 2,
+    "mansion_count": 0,
+    "score": 63,
+    "scores": {
+      "safety": 15,
+      "traffic": 16,
+      "medical": 8,
+      "childcare": 8,
+      "cost": 16
+    }
+  },
+  "下谷本町": {
+    "display_name": "横浜市青葉区下谷本町",
+    "slug": "下谷本町",
+    "population": 79,
+    "households": 42,
+    "crime_count": 1,
+    "accident_count": 13,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 23,
+    "scores": {
+      "safety": 0,
+      "traffic": 13,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "藤が丘一丁目": {
+    "display_name": "横浜市青葉区藤が丘一丁目",
+    "slug": "藤が丘1",
+    "population": 7893,
+    "households": 3765,
+    "crime_count": 1,
+    "accident_count": 14,
+    "medical_count": 20,
+    "nursery_count": 3,
+    "mansion_count": 0,
+    "score": 79,
+    "scores": {
+      "safety": 19,
+      "traffic": 13,
+      "medical": 20,
+      "childcare": 12,
+      "cost": 15
+    }
+  },
+  "藤が丘二丁目": {
+    "display_name": "横浜市青葉区藤が丘二丁目",
+    "slug": "藤が丘2",
+    "population": 8232,
+    "households": 3850,
+    "crime_count": 3,
+    "accident_count": 9,
+    "medical_count": 16,
+    "nursery_count": 3,
+    "mansion_count": 1,
+    "score": 74,
+    "scores": {
+      "safety": 19,
+      "traffic": 15,
+      "medical": 20,
+      "childcare": 12,
+      "cost": 8
+    }
+  },
+  "梅が丘": {
+    "display_name": "横浜市青葉区梅が丘",
+    "slug": "梅が丘",
+    "population": 5216,
+    "households": 2206,
+    "crime_count": 0,
+    "accident_count": 3,
+    "medical_count": 2,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 60,
+    "scores": {
+      "safety": 20,
+      "traffic": 18,
+      "medical": 4,
+      "childcare": 0,
+      "cost": 18
+    }
+  },
+  "千草台": {
+    "display_name": "横浜市青葉区千草台",
+    "slug": "千草台",
+    "population": 6679,
+    "households": 2950,
+    "crime_count": 5,
+    "accident_count": 6,
+    "medical_count": 1,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 58,
+    "scores": {
+      "safety": 18,
+      "traffic": 17,
+      "medical": 2,
+      "childcare": 4,
+      "cost": 17
+    }
+  },
+  "つつじが丘": {
+    "display_name": "横浜市青葉区つつじが丘",
+    "slug": "つつじが丘",
+    "population": 5648,
+    "households": 2538,
+    "crime_count": 1,
+    "accident_count": 17,
+    "medical_count": 8,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 65,
+    "scores": {
+      "safety": 19,
+      "traffic": 11,
+      "medical": 16,
+      "childcare": 4,
+      "cost": 15
+    }
+  },
+  "しらとり台": {
+    "display_name": "横浜市青葉区しらとり台",
+    "slug": "しらとり台",
+    "population": 7723,
+    "households": 3641,
+    "crime_count": 7,
+    "accident_count": 20,
+    "medical_count": 11,
+    "nursery_count": 2,
+    "mansion_count": 1,
+    "score": 72,
+    "scores": {
+      "safety": 18,
+      "traffic": 10,
+      "medical": 20,
+      "childcare": 8,
+      "cost": 16
+    }
+  },
+  "恩田町": {
+    "display_name": "横浜市青葉区恩田町",
+    "slug": "恩田町",
+    "population": 3107,
+    "households": 1293,
+    "crime_count": 3,
+    "accident_count": 13,
+    "medical_count": 5,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 51,
+    "scores": {
+      "safety": 18,
+      "traffic": 13,
+      "medical": 10,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "榎が丘": {
+    "display_name": "横浜市青葉区榎が丘",
+    "slug": "榎が丘",
+    "population": 5939,
+    "households": 2663,
+    "crime_count": 7,
+    "accident_count": 7,
+    "medical_count": 10,
+    "nursery_count": 3,
+    "mansion_count": 0,
+    "score": 82,
+    "scores": {
+      "safety": 17,
+      "traffic": 16,
+      "medical": 20,
+      "childcare": 12,
+      "cost": 17
+    }
+  },
+  "松風台": {
+    "display_name": "横浜市青葉区松風台",
+    "slug": "松風台",
+    "population": 6323,
+    "households": 2444,
+    "crime_count": 6,
+    "accident_count": 2,
+    "medical_count": 7,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 71,
+    "scores": {
+      "safety": 18,
+      "traffic": 19,
+      "medical": 14,
+      "childcare": 4,
+      "cost": 16
+    }
+  },
+  "桜台": {
+    "display_name": "横浜市青葉区桜台",
+    "slug": "桜台",
+    "population": 7005,
+    "households": 3064,
+    "crime_count": 5,
+    "accident_count": 4,
+    "medical_count": 5,
+    "nursery_count": 2,
+    "mansion_count": 1,
+    "score": 64,
+    "scores": {
+      "safety": 18,
+      "traffic": 18,
+      "medical": 10,
+      "childcare": 8,
+      "cost": 10
+    }
+  },
+  "青葉台一丁目": {
+    "display_name": "横浜市青葉区青葉台一丁目",
+    "slug": "青葉台1",
+    "population": 4203,
+    "households": 2144,
+    "crime_count": 12,
+    "accident_count": 7,
+    "medical_count": 23,
+    "nursery_count": 4,
+    "mansion_count": 0,
+    "score": 79,
+    "scores": {
+      "safety": 14,
+      "traffic": 16,
+      "medical": 20,
+      "childcare": 16,
+      "cost": 13
+    }
+  },
+  "青葉台二丁目": {
+    "display_name": "横浜市青葉区青葉台二丁目",
+    "slug": "青葉台2",
+    "population": 5249,
+    "households": 2329,
+    "crime_count": 52,
+    "accident_count": 12,
+    "medical_count": 24,
+    "nursery_count": 2,
+    "mansion_count": 0,
+    "score": 52,
+    "scores": {
+      "safety": 0,
+      "traffic": 14,
+      "medical": 20,
+      "childcare": 8,
+      "cost": 10
+    }
+  },
+  "若草台": {
+    "display_name": "横浜市青葉区若草台",
+    "slug": "若草台",
+    "population": 3082,
+    "households": 1278,
+    "crime_count": 0,
+    "accident_count": 2,
+    "medical_count": 5,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 59,
+    "scores": {
+      "safety": 20,
+      "traffic": 19,
+      "medical": 10,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "田奈町": {
+    "display_name": "横浜市青葉区田奈町",
+    "slug": "田奈町",
+    "population": 4820,
+    "households": 2250,
+    "crime_count": 4,
+    "accident_count": 23,
+    "medical_count": 12,
+    "nursery_count": 1,
+    "mansion_count": 1,
+    "score": 67,
+    "scores": {
+      "safety": 18,
+      "traffic": 8,
+      "medical": 20,
+      "childcare": 4,
+      "cost": 17
+    }
+  },
+  "奈良町": {
+    "display_name": "横浜市青葉区奈良町",
+    "slug": "奈良町",
+    "population": 846,
+    "households": 240,
+    "crime_count": 8,
+    "accident_count": 8,
+    "medical_count": 1,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 33,
+    "scores": {
+      "safety": 1,
+      "traffic": 16,
+      "medical": 2,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "上谷本町": {
+    "display_name": "横浜市青葉区上谷本町",
+    "slug": "上谷本町",
+    "population": 95,
+    "households": 54,
+    "crime_count": 1,
+    "accident_count": 3,
+    "medical_count": 5,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 38,
+    "scores": {
+      "safety": 0,
+      "traffic": 18,
+      "medical": 10,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "もえぎ野": {
+    "display_name": "横浜市青葉区もえぎ野",
+    "slug": "もえぎ野",
+    "population": 3682,
+    "households": 1667,
+    "crime_count": 1,
+    "accident_count": 7,
+    "medical_count": 5,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 60,
+    "scores": {
+      "safety": 19,
+      "traffic": 16,
+      "medical": 10,
+      "childcare": 0,
+      "cost": 15
+    }
+  },
+  "柿の木台": {
+    "display_name": "横浜市青葉区柿の木台",
+    "slug": "柿の木台",
+    "population": 5113,
+    "households": 2302,
+    "crime_count": 2,
+    "accident_count": 8,
+    "medical_count": 6,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 68,
+    "scores": {
+      "safety": 19,
+      "traffic": 16,
+      "medical": 12,
+      "childcare": 4,
+      "cost": 17
+    }
+  },
+  "みたけ台": {
+    "display_name": "横浜市青葉区みたけ台",
+    "slug": "みたけ台",
+    "population": 4916,
+    "households": 1918,
+    "crime_count": 3,
+    "accident_count": 6,
+    "medical_count": 4,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 64,
+    "scores": {
+      "safety": 18,
+      "traffic": 17,
+      "medical": 8,
+      "childcare": 4,
+      "cost": 17
+    }
+  },
+  "成合町": {
+    "display_name": "横浜市青葉区成合町",
+    "slug": "成合町",
+    "population": 45,
+    "households": 15,
+    "crime_count": 0,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 50,
+    "scores": {
+      "safety": 20,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "たちばな台一丁目": {
+    "display_name": "横浜市青葉区たちばな台一丁目",
+    "slug": "たちばな台1",
+    "population": 2988,
+    "households": 1153,
+    "crime_count": 2,
+    "accident_count": 7,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 1,
+    "score": 44,
+    "scores": {
+      "safety": 18,
+      "traffic": 16,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "たちばな台二丁目": {
+    "display_name": "横浜市青葉区たちばな台二丁目",
+    "slug": "たちばな台2",
+    "population": 3062,
+    "households": 1349,
+    "crime_count": 4,
+    "accident_count": 1,
+    "medical_count": 4,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 61,
+    "scores": {
+      "safety": 17,
+      "traffic": 19,
+      "medical": 8,
+      "childcare": 0,
+      "cost": 17
+    }
+  },
+  "鴨志田町": {
+    "display_name": "横浜市青葉区鴨志田町",
+    "slug": "鴨志田町",
+    "population": 0,
+    "households": 0,
+    "crime_count": 18,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 40,
+    "scores": {
+      "safety": 10,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "鉄町": {
+    "display_name": "横浜市青葉区鉄町",
+    "slug": "鉄町",
+    "population": 2925,
+    "households": 1037,
+    "crime_count": 6,
+    "accident_count": 17,
+    "medical_count": 4,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 44,
+    "scores": {
+      "safety": 15,
+      "traffic": 11,
+      "medical": 8,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "大場町": {
+    "display_name": "横浜市青葉区大場町",
+    "slug": "大場町",
+    "population": 9214,
+    "households": 3416,
+    "crime_count": 11,
+    "accident_count": 9,
+    "medical_count": 1,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 51,
+    "scores": {
+      "safety": 17,
+      "traffic": 15,
+      "medical": 2,
+      "childcare": 0,
+      "cost": 17
+    }
+  },
+  "さつきが丘": {
+    "display_name": "横浜市青葉区さつきが丘",
+    "slug": "さつきが丘",
+    "population": 3653,
+    "households": 1568,
+    "crime_count": 1,
+    "accident_count": 10,
+    "medical_count": 3,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 54,
+    "scores": {
+      "safety": 19,
+      "traffic": 15,
+      "medical": 6,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "もみの木台": {
+    "display_name": "横浜市青葉区もみの木台",
+    "slug": "もみの木台",
+    "population": 1906,
+    "households": 822,
+    "crime_count": 2,
+    "accident_count": 2,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 46,
+    "scores": {
+      "safety": 17,
+      "traffic": 19,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "すすき野一丁目": {
+    "display_name": "横浜市青葉区すすき野一丁目",
+    "slug": "すすき野1",
+    "population": 2294,
+    "households": 907,
+    "crime_count": 1,
+    "accident_count": 2,
+    "medical_count": 1,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 50,
+    "scores": {
+      "safety": 19,
+      "traffic": 19,
+      "medical": 2,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "すすき野二丁目": {
+    "display_name": "横浜市青葉区すすき野二丁目",
+    "slug": "すすき野2",
+    "population": 2797,
+    "households": 1318,
+    "crime_count": 2,
+    "accident_count": 0,
+    "medical_count": 3,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 58,
+    "scores": {
+      "safety": 18,
+      "traffic": 20,
+      "medical": 6,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "すすき野三丁目": {
+    "display_name": "横浜市青葉区すすき野三丁目",
+    "slug": "すすき野3",
+    "population": 3289,
+    "households": 1574,
+    "crime_count": 2,
+    "accident_count": 3,
+    "medical_count": 5,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 63,
+    "scores": {
+      "safety": 18,
+      "traffic": 18,
+      "medical": 10,
+      "childcare": 0,
+      "cost": 17
+    }
+  },
+  "あざみ野一丁目": {
+    "display_name": "横浜市青葉区あざみ野一丁目",
+    "slug": "あざみ野1",
+    "population": 4392,
+    "households": 2046,
+    "crime_count": 7,
+    "accident_count": 2,
+    "medical_count": 6,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 61,
+    "scores": {
+      "safety": 16,
+      "traffic": 19,
+      "medical": 12,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "あざみ野二丁目": {
+    "display_name": "横浜市青葉区あざみ野二丁目",
+    "slug": "あざみ野2",
+    "population": 3272,
+    "households": 1582,
+    "crime_count": 15,
+    "accident_count": 4,
+    "medical_count": 8,
+    "nursery_count": 2,
+    "mansion_count": 0,
+    "score": 62,
+    "scores": {
+      "safety": 10,
+      "traffic": 18,
+      "medical": 16,
+      "childcare": 8,
+      "cost": 10
+    }
+  },
+  "あざみ野三丁目": {
+    "display_name": "横浜市青葉区あざみ野三丁目",
+    "slug": "あざみ野3",
+    "population": 4782,
+    "households": 1936,
+    "crime_count": 3,
+    "accident_count": 7,
+    "medical_count": 1,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 54,
+    "scores": {
+      "safety": 18,
+      "traffic": 16,
+      "medical": 2,
+      "childcare": 4,
+      "cost": 14
+    }
+  },
+  "あざみ野四丁目": {
+    "display_name": "横浜市青葉区あざみ野四丁目",
+    "slug": "あざみ野4",
+    "population": 4588,
+    "households": 1795,
+    "crime_count": 3,
+    "accident_count": 9,
+    "medical_count": 1,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 48,
+    "scores": {
+      "safety": 18,
+      "traffic": 15,
+      "medical": 2,
+      "childcare": 0,
+      "cost": 13
+    }
+  },
+  "すみよし台": {
+    "display_name": "横浜市青葉区すみよし台",
+    "slug": "すみよし台",
+    "population": 4755,
+    "households": 2134,
+    "crime_count": 12,
+    "accident_count": 6,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 50,
+    "scores": {
+      "safety": 14,
+      "traffic": 17,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 19
+    }
+  },
+  "新石川一丁目": {
+    "display_name": "横浜市青葉区新石川一丁目",
+    "slug": "新石川1",
+    "population": 4351,
+    "households": 1918,
+    "crime_count": 14,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 2,
+    "mansion_count": 1,
+    "score": 51,
+    "scores": {
+      "safety": 13,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 8,
+      "cost": 10
+    }
+  },
+  "新石川二丁目": {
+    "display_name": "横浜市青葉区新石川二丁目",
+    "slug": "新石川2",
+    "population": 3905,
+    "households": 1858,
+    "crime_count": 1,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 4,
+    "mansion_count": 0,
+    "score": 65,
+    "scores": {
+      "safety": 19,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 16,
+      "cost": 10
+    }
+  },
+  "新石川三丁目": {
+    "display_name": "横浜市青葉区新石川三丁目",
+    "slug": "新石川3",
+    "population": 3480,
+    "households": 1592,
+    "crime_count": 6,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 3,
+    "mansion_count": 1,
+    "score": 58,
+    "scores": {
+      "safety": 16,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 12,
+      "cost": 10
+    }
+  },
+  "新石川四丁目": {
+    "display_name": "横浜市青葉区新石川四丁目",
+    "slug": "新石川4",
+    "population": 4247,
+    "households": 1959,
+    "crime_count": 4,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 1,
+    "score": 48,
+    "scores": {
+      "safety": 18,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "黒須田": {
+    "display_name": "横浜市青葉区黒須田",
+    "slug": "黒須田",
+    "population": 3061,
+    "households": 1075,
+    "crime_count": 11,
+    "accident_count": 3,
+    "medical_count": 5,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 60,
+    "scores": {
+      "safety": 12,
+      "traffic": 18,
+      "medical": 10,
+      "childcare": 0,
+      "cost": 20
+    }
+  },
+  "あかね台一丁目": {
+    "display_name": "横浜市青葉区あかね台一丁目",
+    "slug": "あかね台1",
+    "population": 2728,
+    "households": 1050,
+    "crime_count": 8,
+    "accident_count": 3,
+    "medical_count": 1,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 54,
+    "scores": {
+      "safety": 14,
+      "traffic": 18,
+      "medical": 2,
+      "childcare": 0,
+      "cost": 20
+    }
+  },
+  "あかね台二丁目": {
+    "display_name": "横浜市青葉区あかね台二丁目",
+    "slug": "あかね台2",
+    "population": 2262,
+    "households": 842,
+    "crime_count": 1,
+    "accident_count": 2,
+    "medical_count": 0,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 52,
+    "scores": {
+      "safety": 19,
+      "traffic": 19,
+      "medical": 0,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "美しが丘西一丁目": {
+    "display_name": "横浜市青葉区美しが丘西一丁目",
+    "slug": "美しが丘西1",
+    "population": 2126,
+    "households": 712,
+    "crime_count": 0,
+    "accident_count": 1,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 49,
+    "scores": {
+      "safety": 20,
+      "traffic": 19,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "美しが丘西二丁目": {
+    "display_name": "横浜市青葉区美しが丘西二丁目",
+    "slug": "美しが丘西2",
+    "population": 4294,
+    "households": 1476,
+    "crime_count": 4,
+    "accident_count": 2,
+    "medical_count": 4,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 55,
+    "scores": {
+      "safety": 18,
+      "traffic": 19,
+      "medical": 8,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "美しが丘西三丁目": {
+    "display_name": "横浜市青葉区美しが丘西三丁目",
+    "slug": "美しが丘西3",
+    "population": 4719,
+    "households": 1780,
+    "crime_count": 3,
+    "accident_count": 8,
+    "medical_count": 8,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 68,
+    "scores": {
+      "safety": 18,
+      "traffic": 16,
+      "medical": 16,
+      "childcare": 0,
+      "cost": 18
+    }
+  },
+  "あざみ野南一丁目": {
+    "display_name": "横浜市青葉区あざみ野南一丁目",
+    "slug": "あざみ野南1",
+    "population": 1966,
+    "households": 643,
+    "crime_count": 1,
+    "accident_count": 0,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 48,
+    "scores": {
+      "safety": 18,
+      "traffic": 20,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "あざみ野南二丁目": {
+    "display_name": "横浜市青葉区あざみ野南二丁目",
+    "slug": "あざみ野南2",
+    "population": 1663,
+    "households": 668,
+    "crime_count": 1,
+    "accident_count": 2,
+    "medical_count": 0,
+    "nursery_count": 1,
+    "mansion_count": 0,
+    "score": 51,
+    "scores": {
+      "safety": 18,
+      "traffic": 19,
+      "medical": 0,
+      "childcare": 4,
+      "cost": 10
+    }
+  },
+  "あざみ野南三丁目": {
+    "display_name": "横浜市青葉区あざみ野南三丁目",
+    "slug": "あざみ野南3",
+    "population": 992,
+    "households": 362,
+    "crime_count": 0,
+    "accident_count": 1,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 49,
+    "scores": {
+      "safety": 20,
+      "traffic": 19,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "あざみ野南四丁目": {
+    "display_name": "横浜市青葉区あざみ野南四丁目",
+    "slug": "あざみ野南4",
+    "population": 1333,
+    "households": 430,
+    "crime_count": 0,
+    "accident_count": 0,
+    "medical_count": 3,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 58,
+    "scores": {
+      "safety": 20,
+      "traffic": 20,
+      "medical": 6,
+      "childcare": 0,
+      "cost": 12
+    }
+  },
+  "みすずが丘": {
+    "display_name": "横浜市青葉区みすずが丘",
+    "slug": "みすずが丘",
+    "population": 1194,
+    "households": 403,
+    "crime_count": 0,
+    "accident_count": 5,
+    "medical_count": 2,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 56,
+    "scores": {
+      "safety": 20,
+      "traffic": 17,
+      "medical": 4,
+      "childcare": 0,
+      "cost": 15
+    }
+  },
+  "奈良一丁目": {
+    "display_name": "横浜市青葉区奈良一丁目",
+    "slug": "奈良1",
+    "population": 746,
+    "households": 313,
+    "crime_count": 1,
+    "accident_count": 3,
+    "medical_count": 12,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 65,
+    "scores": {
+      "safety": 17,
+      "traffic": 18,
+      "medical": 20,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "奈良二丁目": {
+    "display_name": "横浜市青葉区奈良二丁目",
+    "slug": "奈良2",
+    "population": 1850,
+    "households": 650,
+    "crime_count": 1,
+    "accident_count": 1,
+    "medical_count": 0,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 47,
+    "scores": {
+      "safety": 18,
+      "traffic": 19,
+      "medical": 0,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "奈良三丁目": {
+    "display_name": "横浜市青葉区奈良三丁目",
+    "slug": "奈良3",
+    "population": 2798,
+    "households": 1005,
+    "crime_count": 1,
+    "accident_count": 2,
+    "medical_count": 2,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 62,
+    "scores": {
+      "safety": 19,
+      "traffic": 19,
+      "medical": 4,
+      "childcare": 0,
+      "cost": 20
+    }
+  },
+  "奈良四丁目": {
+    "display_name": "横浜市青葉区奈良四丁目",
+    "slug": "奈良4",
+    "population": 2905,
+    "households": 1017,
+    "crime_count": 1,
+    "accident_count": 1,
+    "medical_count": 2,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 52,
+    "scores": {
+      "safety": 19,
+      "traffic": 19,
+      "medical": 4,
+      "childcare": 0,
+      "cost": 10
+    }
+  },
+  "奈良五丁目": {
+    "display_name": "横浜市青葉区奈良五丁目",
+    "slug": "奈良5",
+    "population": 2344,
+    "households": 910,
+    "crime_count": 1,
+    "accident_count": 0,
+    "medical_count": 6,
+    "nursery_count": 0,
+    "mansion_count": 0,
+    "score": 61,
+    "scores": {
+      "safety": 19,
+      "traffic": 20,
+      "medical": 12,
+      "childcare": 0,
+      "cost": 10
+    }
+  }
+}

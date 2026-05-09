@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+#header {
+    background: #1a1a2e;
+    color: white;
+    padding: 16px 24px;
+}
+
+#header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#header .subtitle {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+#main-container {
+    display: flex;
+    height: calc(100vh - 80px - 60px);
+}
+
+#sidebar {
+    width: 280px;
+    background: white;
+    padding: 16px;
+    overflow-y: auto;
+    border-right: 1px solid #e0e0e0;
+    flex-shrink: 0;
+}
+
+#sidebar h2 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.layer-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.layer-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.layer-toggle:hover {
+    background: #f0f0f0;
+}
+
+.layer-toggle input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.layer-icon {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.layer-icon.accident { background: #e74c3c; }
+.layer-icon.flood { background: #3498db; }
+.layer-icon.landslide { background: #e67e22; }
+.layer-icon.crime { background: #9b59b6; }
+.layer-icon.landprice { background: #2ecc71; }
+.layer-icon.nursery { background: #f39c12; }
+.layer-icon.medical { background: #1abc9c; }
+.layer-icon.population { background: #34495e; }
+.layer-icon.mansion { background: #e91e63; }
+
+#map {
+    flex: 1;
+    z-index: 1;
+}
+
+/* Legend panel */
+#legend-panel {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+#legend-panel h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.legend-group {
+    margin-bottom: 12px;
+}
+
+.legend-title {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.legend-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.legend-color {
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Info panel */
+#info-panel {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+#info-panel h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#info-panel .placeholder {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Area list */
+#area-list {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+}
+
+#area-list h3 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+#area-list a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+#area-list a:hover {
+    text-decoration: underline;
+}
+
+#area-list .placeholder {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Footer */
+#footer {
+    background: #1a1a2e;
+    color: #aaa;
+    padding: 12px 24px;
+    font-size: 0.72rem;
+    line-height: 1.6;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.data-sources {
+    margin-bottom: 4px;
+}
+
+.data-sources a {
+    color: #8ab4f8;
+    text-decoration: none;
+}
+
+.data-sources a:hover {
+    text-decoration: underline;
+}
+
+.disclaimer {
+    color: #777;
+    font-size: 0.68rem;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #main-container {
+        flex-direction: column;
+        height: calc(100vh - 60px - 80px);
+    }
+    #header {
+        padding: 10px 16px;
+    }
+    #header h1 {
+        font-size: 1.1rem;
+    }
+    #sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 45vh;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+        padding: 12px;
+    }
+    .layer-controls {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px;
+    }
+    .layer-toggle {
+        padding: 4px 6px;
+        font-size: 0.78rem;
+    }
+    #legend-panel, #info-panel, #area-list {
+        display: none;
+    }
+    #footer {
+        padding: 8px 12px;
+        font-size: 0.65rem;
+    }
+}

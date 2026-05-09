@@ -1,0 +1,9605 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52228972222224,
+          35.53091916666666
+        ]
+      },
+      "properties": {
+        "date": "2024/01/04",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51986222222223,
+          35.53019138888889
+        ]
+      },
+      "properties": {
+        "date": "2023/11/23",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5246952777778,
+          35.531641388888886
+        ]
+      },
+      "properties": {
+        "date": "2023/08/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50089166666666,
+          35.53129944444444
+        ]
+      },
+      "properties": {
+        "date": "2024/01/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.498425,
+          35.534996111111106
+        ]
+      },
+      "properties": {
+        "date": "2024/01/09",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49858333333333,
+          35.5319575
+        ]
+      },
+      "properties": {
+        "date": "2024/01/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50525777777779,
+          35.53245472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/01/24",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53378694444444,
+          35.57038194444445
+        ]
+      },
+      "properties": {
+        "date": "2024/01/01",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5164677777778,
+          35.54154833333333
+        ]
+      },
+      "properties": {
+        "date": "2024/01/05",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50337055555556,
+          35.562185
+        ]
+      },
+      "properties": {
+        "date": "2024/01/06",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49002194444444,
+          35.55280222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/01/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52326694444446,
+          35.54375916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/01/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53667944444445,
+          35.55032555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/01/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54834833333334,
+          35.54124611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/01/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52911250000002,
+          35.573303611111115
+        ]
+      },
+      "properties": {
+        "date": "2024/01/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.515545,
+          35.55005027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/01/04",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53881805555557,
+          35.549858888888885
+        ]
+      },
+      "properties": {
+        "date": "2024/01/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50377722222223,
+          35.53738472222222
+        ]
+      },
+      "properties": {
+        "date": "2023/12/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49113083333333,
+          35.53775666666667
+        ]
+      },
+      "properties": {
+        "date": "2024/01/12",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53968666666665,
+          35.5651575
+        ]
+      },
+      "properties": {
+        "date": "2024/01/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51915361111114,
+          35.54209833333333
+        ]
+      },
+      "properties": {
+        "date": "2024/01/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52771777777778,
+          35.58020833333334
+        ]
+      },
+      "properties": {
+        "date": "2024/01/14",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50769861111112,
+          35.548989166666665
+        ]
+      },
+      "properties": {
+        "date": "2024/01/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50291027777777,
+          35.541784166666666
+        ]
+      },
+      "properties": {
+        "date": "2023/12/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54900305555554,
+          35.556400277777776
+        ]
+      },
+      "properties": {
+        "date": "2024/01/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50926972222223,
+          35.56915361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/01/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52403805555556,
+          35.56792083333334
+        ]
+      },
+      "properties": {
+        "date": "2024/01/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.510165,
+          35.54750305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/01/17",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54519249999998,
+          35.54971194444444
+        ]
+      },
+      "properties": {
+        "date": "2024/01/18",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50706305555556,
+          35.53610444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/01/16",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54022055555555,
+          35.552075555555554
+        ]
+      },
+      "properties": {
+        "date": "2024/01/18",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53481527777777,
+          35.55506111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/01/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54307722222222,
+          35.58644972222223
+        ]
+      },
+      "properties": {
+        "date": "2023/12/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54500222222222,
+          35.57818944444445
+        ]
+      },
+      "properties": {
+        "date": "2024/01/10",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50003777777778,
+          35.55854083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/01/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51351444444444,
+          35.55663277777777
+        ]
+      },
+      "properties": {
+        "date": "2024/01/20",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53811833333333,
+          35.549908888888886
+        ]
+      },
+      "properties": {
+        "date": "2024/01/20",
+        "weather": "雨",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52563333333336,
+          35.54866166666667
+        ]
+      },
+      "properties": {
+        "date": "2024/01/21",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51258666666666,
+          35.558057777777776
+        ]
+      },
+      "properties": {
+        "date": "2024/01/23",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50895194444445,
+          35.53570444444444
+        ]
+      },
+      "properties": {
+        "date": "2023/12/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5385038888889,
+          35.55736916666666
+        ]
+      },
+      "properties": {
+        "date": "2024/01/23",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51258166666668,
+          35.545300555555556
+        ]
+      },
+      "properties": {
+        "date": "2024/01/19",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52696666666668,
+          35.54533416666666
+        ]
+      },
+      "properties": {
+        "date": "2024/01/23",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50637583333332,
+          35.56050722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/01/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5351863888889,
+          35.58459694444445
+        ]
+      },
+      "properties": {
+        "date": "2024/01/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53463472222222,
+          35.557094166666666
+        ]
+      },
+      "properties": {
+        "date": "2024/01/27",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50893222222223,
+          35.535712777777775
+        ]
+      },
+      "properties": {
+        "date": "2024/01/28",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54439888888888,
+          35.53794361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/01/28",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54601444444444,
+          35.554783611111105
+        ]
+      },
+      "properties": {
+        "date": "2023/10/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53556388888887,
+          35.58526638888889
+        ]
+      },
+      "properties": {
+        "date": "2024/01/29",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50896583333332,
+          35.535712777777775
+        ]
+      },
+      "properties": {
+        "date": "2024/01/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5436347222222,
+          35.54026555555556
+        ]
+      },
+      "properties": {
+        "date": "2024/01/31",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52754416666667,
+          35.54597861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/01/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51471555555557,
+          35.58747666666667
+        ]
+      },
+      "properties": {
+        "date": "2024/01/09",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51805722222224,
+          35.586307500000004
+        ]
+      },
+      "properties": {
+        "date": "2024/01/14",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52474305555558,
+          35.57926388888889
+        ]
+      },
+      "properties": {
+        "date": "2024/01/16",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51071305555556,
+          35.58793222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/01/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5071722222222,
+          35.57758333333334
+        ]
+      },
+      "properties": {
+        "date": "2024/01/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5071861111111,
+          35.582702222222224
+        ]
+      },
+      "properties": {
+        "date": "2024/01/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4850961111111,
+          35.58266833333334
+        ]
+      },
+      "properties": {
+        "date": "2024/01/22",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4955061111111,
+          35.58603777777778
+        ]
+      },
+      "properties": {
+        "date": "2024/01/23",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50985,
+          35.57496972222223
+        ]
+      },
+      "properties": {
+        "date": "2024/01/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54634055555556,
+          35.53035583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/02/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49451694444443,
+          35.53473472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/02/08",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50283583333334,
+          35.53055777777778
+        ]
+      },
+      "properties": {
+        "date": "2024/02/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4981308333333,
+          35.530229999999996
+        ]
+      },
+      "properties": {
+        "date": "2024/02/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50664666666665,
+          35.5335575
+        ]
+      },
+      "properties": {
+        "date": "2024/02/17",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4948447222222,
+          35.534485
+        ]
+      },
+      "properties": {
+        "date": "2024/02/18",
+        "weather": "雨",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50423305555555,
+          35.531599444444446
+        ]
+      },
+      "properties": {
+        "date": "2024/02/19",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52995305555558,
+          35.53303861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/02/21",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4954811111111,
+          35.53001305555556
+        ]
+      },
+      "properties": {
+        "date": "2024/02/25",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50218611111111,
+          35.53004111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/02/29",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52075555555558,
+          35.5548
+        ]
+      },
+      "properties": {
+        "date": "2024/02/01",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48746166666666,
+          35.54114777777777
+        ]
+      },
+      "properties": {
+        "date": "2024/02/01",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52969777777778,
+          35.58802138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/02/03",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54789444444444,
+          35.56641305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/02/03",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4909611111111,
+          35.54864444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/02/01",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53784777777778,
+          35.56950694444445
+        ]
+      },
+      "properties": {
+        "date": "2024/02/05",
+        "weather": "雪",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5478475,
+          35.55983305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/01/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53968944444443,
+          35.56518527777777
+        ]
+      },
+      "properties": {
+        "date": "2024/02/06",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.546195,
+          35.555050277777774
+        ]
+      },
+      "properties": {
+        "date": "2024/02/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5451686111111,
+          35.58971583333334
+        ]
+      },
+      "properties": {
+        "date": "2024/02/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51634833333333,
+          35.53651555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/02/08",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49774666666664,
+          35.54307
+        ]
+      },
+      "properties": {
+        "date": "2024/02/10",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5424363888889,
+          35.570506944444446
+        ]
+      },
+      "properties": {
+        "date": "2024/02/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48501138888886,
+          35.54864416666666
+        ]
+      },
+      "properties": {
+        "date": "2024/02/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52571944444446,
+          35.548445
+        ]
+      },
+      "properties": {
+        "date": "2024/02/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49868222222221,
+          35.55591333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/02/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48918944444443,
+          35.53818444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/02/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52252555555557,
+          35.54153722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/02/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5419188888889,
+          35.58791333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/02/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5139922222222,
+          35.55456083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/02/15",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52691472222224,
+          35.586005
+        ]
+      },
+      "properties": {
+        "date": "2024/02/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54932777777776,
+          35.5652075
+        ]
+      },
+      "properties": {
+        "date": "2024/02/17",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52385500000003,
+          35.55997722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/02/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49903305555554,
+          35.53856222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/02/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53130222222222,
+          35.54758694444444
+        ]
+      },
+      "properties": {
+        "date": "2024/02/20",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52458555555557,
+          35.559805
+        ]
+      },
+      "properties": {
+        "date": "2024/02/23",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53422583333332,
+          35.56942361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/02/23",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54256222222222,
+          35.55305305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/02/25",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49057,
+          35.53883444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/02/27",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53681555555556,
+          35.55250861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/02/28",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49171666666666,
+          35.54552805555555
+        ]
+      },
+      "properties": {
+        "date": "2024/02/29",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50343222222222,
+          35.55031388888889
+        ]
+      },
+      "properties": {
+        "date": "2024/02/29",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5173077777778,
+          35.57228972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/02/02",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4943286111111,
+          35.58667361111112
+        ]
+      },
+      "properties": {
+        "date": "2024/02/05",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50651638888888,
+          35.58539638888889
+        ]
+      },
+      "properties": {
+        "date": "2024/02/06",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49882277777778,
+          35.58175222222223
+        ]
+      },
+      "properties": {
+        "date": "2024/02/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5075775,
+          35.583754722222224
+        ]
+      },
+      "properties": {
+        "date": "2024/01/28",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51746833333334,
+          35.58379666666667
+        ]
+      },
+      "properties": {
+        "date": "2024/02/10",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49942277777777,
+          35.58101611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/02/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50707472222223,
+          35.584429722222225
+        ]
+      },
+      "properties": {
+        "date": "2024/02/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52135972222223,
+          35.58673805555556
+        ]
+      },
+      "properties": {
+        "date": "2024/02/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5120413888889,
+          35.57828055555556
+        ]
+      },
+      "properties": {
+        "date": "2024/02/13",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49624194444442,
+          35.589534722222226
+        ]
+      },
+      "properties": {
+        "date": "2024/02/22",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49851166666664,
+          35.585304722222226
+        ]
+      },
+      "properties": {
+        "date": "2024/02/26",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48144916666666,
+          35.58032694444445
+        ]
+      },
+      "properties": {
+        "date": "2024/02/29",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54573249999999,
+          35.53042527777777
+        ]
+      },
+      "properties": {
+        "date": "2024/03/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5193927777778,
+          35.530210833333335
+        ]
+      },
+      "properties": {
+        "date": "2024/03/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5488227777778,
+          35.553372777777774
+        ]
+      },
+      "properties": {
+        "date": "2024/03/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52724222222224,
+          35.532513333333334
+        ]
+      },
+      "properties": {
+        "date": "2024/03/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49557527777776,
+          35.53001305555556
+        ]
+      },
+      "properties": {
+        "date": "2024/03/19",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5390486111111,
+          35.549839722222224
+        ]
+      },
+      "properties": {
+        "date": "2024/02/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5472922222222,
+          35.55560305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/02/17",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5091113888889,
+          35.56911194444445
+        ]
+      },
+      "properties": {
+        "date": "2024/03/03",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5360902777778,
+          35.55577222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/03/03",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51964444444445,
+          35.556530277777775
+        ]
+      },
+      "properties": {
+        "date": "2024/03/04",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53974305555556,
+          35.54902305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/03/04",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51337333333333,
+          35.543342777777774
+        ]
+      },
+      "properties": {
+        "date": "2024/02/28",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5030825,
+          35.54257861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/02/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53496277777776,
+          35.55538333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/03/06",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49009138888889,
+          35.55255777777778
+        ]
+      },
+      "properties": {
+        "date": "2024/03/06",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53031611111112,
+          35.54722583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/03/06",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48305611111113,
+          35.54908583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/03/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5182925,
+          35.54168444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/03/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53613194444443,
+          35.55566944444444
+        ]
+      },
+      "properties": {
+        "date": "2024/03/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50888111111112,
+          35.56184888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/03/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54304,
+          35.551853333333334
+        ]
+      },
+      "properties": {
+        "date": "2024/03/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54294583333333,
+          35.54484583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/03/12",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54764972222222,
+          35.57302055555556
+        ]
+      },
+      "properties": {
+        "date": "2024/03/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5376875,
+          35.55105333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/03/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52425583333334,
+          35.544198333333334
+        ]
+      },
+      "properties": {
+        "date": "2024/03/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49006666666665,
+          35.55125527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/03/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53321305555556,
+          35.54807583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/03/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5137861111111,
+          35.56709
+        ]
+      },
+      "properties": {
+        "date": "2024/03/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54089249999998,
+          35.56039111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/03/21",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49906916666666,
+          35.538489999999996
+        ]
+      },
+      "properties": {
+        "date": "2024/03/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51323444444444,
+          35.543265
+        ]
+      },
+      "properties": {
+        "date": "2024/03/24",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5364475,
+          35.57835055555556
+        ]
+      },
+      "properties": {
+        "date": "2024/03/24",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5179341666667,
+          35.541264999999996
+        ]
+      },
+      "properties": {
+        "date": "2024/02/05",
+        "weather": "雪",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52741277777778,
+          35.57039555555556
+        ]
+      },
+      "properties": {
+        "date": "2024/03/25",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51747250000003,
+          35.55235
+        ]
+      },
+      "properties": {
+        "date": "2024/03/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5141863888889,
+          35.55971583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/03/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5324425,
+          35.57612277777778
+        ]
+      },
+      "properties": {
+        "date": "2024/03/20",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4956186111111,
+          35.55531611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/03/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54632555555554,
+          35.55513361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/03/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52699444444445,
+          35.54535361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/03/28",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5030986111111,
+          35.55391638888889
+        ]
+      },
+      "properties": {
+        "date": "2024/03/28",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54969472222223,
+          35.55880555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/03/18",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54239194444443,
+          35.5705875
+        ]
+      },
+      "properties": {
+        "date": "2024/03/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5440875,
+          35.54438472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/03/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54434944444444,
+          35.58292222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/03/31",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5023363888889,
+          35.580782777777785
+        ]
+      },
+      "properties": {
+        "date": "2024/03/01",
+        "weather": "曇",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49478944444442,
+          35.58710138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/03/07",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50877777777777,
+          35.577133333333336
+        ]
+      },
+      "properties": {
+        "date": "2024/03/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50674972222222,
+          35.58435472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/03/17",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51074444444444,
+          35.574089444444446
+        ]
+      },
+      "properties": {
+        "date": "2024/03/22",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51309722222223,
+          35.570011944444445
+        ]
+      },
+      "properties": {
+        "date": "2024/03/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5089913888889,
+          35.580710833333335
+        ]
+      },
+      "properties": {
+        "date": "2024/03/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49956444444445,
+          35.58119944444445
+        ]
+      },
+      "properties": {
+        "date": "2024/03/26",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49873944444442,
+          35.58551861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/02/03",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54017694444445,
+          35.53601888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/03/26",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50533555555555,
+          35.53245472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/04/01",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50412472222223,
+          35.531485555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/04/04",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52961972222224,
+          35.5325275
+        ]
+      },
+      "properties": {
+        "date": "2024/04/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50463583333334,
+          35.53201027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/04/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5018247222222,
+          35.53419916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/04/19",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50676611111112,
+          35.53362138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/04/26",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50546305555557,
+          35.540659444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/01/29",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51570388888888,
+          35.53639611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/04/02",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5347461111111,
+          35.55512777777778
+        ]
+      },
+      "properties": {
+        "date": "2024/04/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5257777777778,
+          35.545073055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/04/05",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50895722222222,
+          35.53568222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/03/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5186313888889,
+          35.54117333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/04/05",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50897972222222,
+          35.53570166666667
+        ]
+      },
+      "properties": {
+        "date": "2024/04/08",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5369961111111,
+          35.55235333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/04/09",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5424563888889,
+          35.55320861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/04/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5335211111111,
+          35.55630277777777
+        ]
+      },
+      "properties": {
+        "date": "2024/04/13",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5418672222222,
+          35.56729888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/04/14",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51683416666668,
+          35.545050833333335
+        ]
+      },
+      "properties": {
+        "date": "2024/04/17",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5424261111111,
+          35.553086666666665
+        ]
+      },
+      "properties": {
+        "date": "2024/04/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4955436111111,
+          35.55535194444444
+        ]
+      },
+      "properties": {
+        "date": "2024/04/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53761444444444,
+          35.572228888888894
+        ]
+      },
+      "properties": {
+        "date": "2024/04/20",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50133166666666,
+          35.562151666666665
+        ]
+      },
+      "properties": {
+        "date": "2024/04/20",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50591805555555,
+          35.552677499999994
+        ]
+      },
+      "properties": {
+        "date": "2024/04/21",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51790000000003,
+          35.55861888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/04/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53862,
+          35.57184
+        ]
+      },
+      "properties": {
+        "date": "2024/04/23",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54584555555556,
+          35.54418194444444
+        ]
+      },
+      "properties": {
+        "date": "2024/04/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48982194444443,
+          35.55388277777777
+        ]
+      },
+      "properties": {
+        "date": "2024/03/28",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5258913888889,
+          35.54826444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/04/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51788305555556,
+          35.563426666666665
+        ]
+      },
+      "properties": {
+        "date": "2024/04/26",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52027555555557,
+          35.54660333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/04/26",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5114236111111,
+          35.54284527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/04/27",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48388083333333,
+          35.55423805555555
+        ]
+      },
+      "properties": {
+        "date": "2024/04/27",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5142013888889,
+          35.539229166666665
+        ]
+      },
+      "properties": {
+        "date": "2024/04/29",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.532205,
+          35.541959722222224
+        ]
+      },
+      "properties": {
+        "date": "2024/04/29",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54714333333334,
+          35.53176388888889
+        ]
+      },
+      "properties": {
+        "date": "2024/04/03",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49774194444444,
+          35.588795833333336
+        ]
+      },
+      "properties": {
+        "date": "2024/04/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5210763888889,
+          35.58673805555556
+        ]
+      },
+      "properties": {
+        "date": "2024/04/10",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50663055555555,
+          35.57880277777778
+        ]
+      },
+      "properties": {
+        "date": "2024/04/22",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51277777777779,
+          35.570550833333336
+        ]
+      },
+      "properties": {
+        "date": "2024/04/24",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52083166666668,
+          35.5306275
+        ]
+      },
+      "properties": {
+        "date": "2024/04/06",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53586333333334,
+          35.53846583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/05/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53196944444446,
+          35.53453555555556
+        ]
+      },
+      "properties": {
+        "date": "2024/05/09",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53555527777777,
+          35.53245527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/05/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5054911111111,
+          35.53259361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/05/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50461916666666,
+          35.53107722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/05/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50250527777777,
+          35.53236861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/05/23",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54866638888888,
+          35.56876277777778
+        ]
+      },
+      "properties": {
+        "date": "2024/05/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5316288888889,
+          35.56848472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/05/02",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51641194444446,
+          35.54242611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/04/26",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5009963888889,
+          35.54636138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/05/06",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5126975,
+          35.56136583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/05/07",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51700416666668,
+          35.53297444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/05/09",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5089738888889,
+          35.535709999999995
+        ]
+      },
+      "properties": {
+        "date": "2024/05/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5210338888889,
+          35.54280388888888
+        ]
+      },
+      "properties": {
+        "date": "2024/05/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54446055555556,
+          35.58306666666667
+        ]
+      },
+      "properties": {
+        "date": "2024/05/05",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54994805555555,
+          35.54351
+        ]
+      },
+      "properties": {
+        "date": "2024/05/13",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53918333333334,
+          35.579505833333336
+        ]
+      },
+      "properties": {
+        "date": "2024/05/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54407583333332,
+          35.55260333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/05/14",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53631833333333,
+          35.55021166666666
+        ]
+      },
+      "properties": {
+        "date": "2024/05/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52639166666668,
+          35.548897777777775
+        ]
+      },
+      "properties": {
+        "date": "2024/05/07",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48547277777777,
+          35.544375277777775
+        ]
+      },
+      "properties": {
+        "date": "2024/05/16",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4981772222222,
+          35.54630583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/05/08",
+        "weather": "雨",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5216425,
+          35.535018611111106
+        ]
+      },
+      "properties": {
+        "date": "2024/05/17",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51026416666667,
+          35.567370555555556
+        ]
+      },
+      "properties": {
+        "date": "2024/05/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51020166666666,
+          35.536535
+        ]
+      },
+      "properties": {
+        "date": "2024/05/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5420677777778,
+          35.552925277777774
+        ]
+      },
+      "properties": {
+        "date": "2024/05/23",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54500916666666,
+          35.554847499999994
+        ]
+      },
+      "properties": {
+        "date": "2024/05/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51872305555557,
+          35.541445555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/05/26",
+        "weather": "曇",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48888111111108,
+          35.53881194444444
+        ]
+      },
+      "properties": {
+        "date": "2024/05/27",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54295666666667,
+          35.55335861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/05/28",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51400972222223,
+          35.53945972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/05/28",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51406527777777,
+          35.53947083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/05/29",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51224194444444,
+          35.564007222222216
+        ]
+      },
+      "properties": {
+        "date": "2024/05/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5349977777778,
+          35.57388138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/05/31",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54754055555554,
+          35.531016666666666
+        ]
+      },
+      "properties": {
+        "date": "2024/05/09",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51211666666666,
+          35.57260055555556
+        ]
+      },
+      "properties": {
+        "date": "2024/05/10",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50400027777778,
+          35.578097222222226
+        ]
+      },
+      "properties": {
+        "date": "2024/05/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5194263888889,
+          35.5868575
+        ]
+      },
+      "properties": {
+        "date": "2024/05/13",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.510105,
+          35.588368333333335
+        ]
+      },
+      "properties": {
+        "date": "2024/05/18",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49796416666666,
+          35.58924027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/05/19",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51042777777778,
+          35.57438916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/05/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49846138888887,
+          35.588548611111115
+        ]
+      },
+      "properties": {
+        "date": "2024/05/22",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5127611111111,
+          35.57058138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/05/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49400583333332,
+          35.53592361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/06/03",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50384694444443,
+          35.531438055555554
+        ]
+      },
+      "properties": {
+        "date": "2024/06/15",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49355027777776,
+          35.53619027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/06/19",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52323361111112,
+          35.54382888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/06/02",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51135694444446,
+          35.53739888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/05/13",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5356072222222,
+          35.54955611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/06/03",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54128722222222,
+          35.55336416666666
+        ]
+      },
+      "properties": {
+        "date": "2024/06/03",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52449944444444,
+          35.55981055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/06/05",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50328861111112,
+          35.53535722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/05/13",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48527777777775,
+          35.55697111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/06/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51400055555555,
+          35.55384972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/03/26",
+        "weather": "雨",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4854922222222,
+          35.54361972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/06/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53235194444446,
+          35.548048055555554
+        ]
+      },
+      "properties": {
+        "date": "2024/06/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53733805555555,
+          35.54235722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/06/09",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5400686111111,
+          35.53548
+        ]
+      },
+      "properties": {
+        "date": "2024/06/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51646194444444,
+          35.547314444444446
+        ]
+      },
+      "properties": {
+        "date": "2024/04/10",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52817472222225,
+          35.54613416666666
+        ]
+      },
+      "properties": {
+        "date": "2024/06/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53505972222223,
+          35.555166666666665
+        ]
+      },
+      "properties": {
+        "date": "2024/06/05",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5231916666667,
+          35.551983611111105
+        ]
+      },
+      "properties": {
+        "date": "2024/06/05",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53977833333335,
+          35.56462416666666
+        ]
+      },
+      "properties": {
+        "date": "2024/06/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54996194444445,
+          35.543531944444446
+        ]
+      },
+      "properties": {
+        "date": "2024/05/23",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54558722222222,
+          35.54445972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/06/10",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5190675,
+          35.54100416666667
+        ]
+      },
+      "properties": {
+        "date": "2024/06/15",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5303763888889,
+          35.565785
+        ]
+      },
+      "properties": {
+        "date": "2024/06/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54897583333334,
+          35.544326388888884
+        ]
+      },
+      "properties": {
+        "date": "2024/06/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4955661111111,
+          35.55365527777777
+        ]
+      },
+      "properties": {
+        "date": "2024/06/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50178527777777,
+          35.546016944444446
+        ]
+      },
+      "properties": {
+        "date": "2024/06/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51339,
+          35.54324805555555
+        ]
+      },
+      "properties": {
+        "date": "2024/06/17",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54618333333332,
+          35.56902111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/06/01",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4993522222222,
+          35.54586972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/06/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53683805555556,
+          35.54227083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/06/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52058333333335,
+          35.554738888888885
+        ]
+      },
+      "properties": {
+        "date": "2024/06/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51654833333333,
+          35.54065694444444
+        ]
+      },
+      "properties": {
+        "date": "2024/06/21",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52364972222225,
+          35.55714416666667
+        ]
+      },
+      "properties": {
+        "date": "2024/06/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54373694444445,
+          35.5564475
+        ]
+      },
+      "properties": {
+        "date": "2024/06/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5000488888889,
+          35.55746305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/06/24",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.546525,
+          35.56732944444445
+        ]
+      },
+      "properties": {
+        "date": "2024/06/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5266611111111,
+          35.54429
+        ]
+      },
+      "properties": {
+        "date": "2024/06/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54918333333333,
+          35.56321055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/06/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4903386111111,
+          35.55123861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/06/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50041583333334,
+          35.54966388888889
+        ]
+      },
+      "properties": {
+        "date": "2024/06/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5392261111111,
+          35.55598611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/06/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51907583333335,
+          35.540995833333334
+        ]
+      },
+      "properties": {
+        "date": "2024/06/18",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5404536111111,
+          35.56186333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/06/28",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54918083333334,
+          35.556489166666665
+        ]
+      },
+      "properties": {
+        "date": "2024/06/29",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53317305555558,
+          35.57482027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/06/30",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51272138888888,
+          35.58519916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/06/11",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.513625,
+          35.568623333333335
+        ]
+      },
+      "properties": {
+        "date": "2024/05/28",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49684777777776,
+          35.58835694444445
+        ]
+      },
+      "properties": {
+        "date": "2024/06/19",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50329722222222,
+          35.58862916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/06/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51313305555556,
+          35.5756225
+        ]
+      },
+      "properties": {
+        "date": "2024/06/25",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4955838888889,
+          35.589243055555556
+        ]
+      },
+      "properties": {
+        "date": "2024/06/27",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53740444444443,
+          35.54632333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/07/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53195000000002,
+          35.534882777777774
+        ]
+      },
+      "properties": {
+        "date": "2024/07/06",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52286500000002,
+          35.53111916666666
+        ]
+      },
+      "properties": {
+        "date": "2024/07/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49299749999997,
+          35.53673194444444
+        ]
+      },
+      "properties": {
+        "date": "2024/07/01",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53359694444444,
+          35.53507444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/07/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5172363888889,
+          35.558838333333334
+        ]
+      },
+      "properties": {
+        "date": "2024/06/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54061472222222,
+          35.561654999999995
+        ]
+      },
+      "properties": {
+        "date": "2024/07/02",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54398694444444,
+          35.55395305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/07/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52915777777778,
+          35.55484166666666
+        ]
+      },
+      "properties": {
+        "date": "2024/06/21",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5176563888889,
+          35.54449805555555
+        ]
+      },
+      "properties": {
+        "date": "2024/07/04",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5005575,
+          35.54902222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/05/31",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49233833333332,
+          35.554874444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/07/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51052944444444,
+          35.537906944444444
+        ]
+      },
+      "properties": {
+        "date": "2024/07/09",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51222666666666,
+          35.53812361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/07/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50629805555556,
+          35.559685277777774
+        ]
+      },
+      "properties": {
+        "date": "2024/07/10",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53898611111111,
+          35.580269722222226
+        ]
+      },
+      "properties": {
+        "date": "2024/07/11",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5192952777778,
+          35.541870555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/07/12",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54805055555556,
+          35.556058611111105
+        ]
+      },
+      "properties": {
+        "date": "2024/07/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49978499999997,
+          35.55702972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/07/15",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52962305555556,
+          35.57987527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/07/16",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5454313888889,
+          35.55468083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/07/16",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4825775,
+          35.57023083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/07/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54598388888888,
+          35.55424472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/07/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52126111111113,
+          35.554075
+        ]
+      },
+      "properties": {
+        "date": "2024/07/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50366833333334,
+          35.54714222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/07/20",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5463088888889,
+          35.555072499999994
+        ]
+      },
+      "properties": {
+        "date": "2024/07/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50708666666668,
+          35.56740944444445
+        ]
+      },
+      "properties": {
+        "date": "2024/07/23",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54434805555556,
+          35.55414194444444
+        ]
+      },
+      "properties": {
+        "date": "2024/07/23",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5197177777778,
+          35.53192166666667
+        ]
+      },
+      "properties": {
+        "date": "2024/07/23",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54085388888888,
+          35.55274472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/07/24",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54114277777776,
+          35.550394999999995
+        ]
+      },
+      "properties": {
+        "date": "2024/07/25",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54862333333332,
+          35.54400972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/07/29",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53754027777777,
+          35.551444999999994
+        ]
+      },
+      "properties": {
+        "date": "2024/06/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51671472222225,
+          35.547711666666665
+        ]
+      },
+      "properties": {
+        "date": "2024/07/31",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51096083333334,
+          35.58113305555556
+        ]
+      },
+      "properties": {
+        "date": "2024/07/11",
+        "weather": "曇",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51346388888888,
+          35.56937611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/07/15",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4982922222222,
+          35.58405472222223
+        ]
+      },
+      "properties": {
+        "date": "2024/07/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50709416666666,
+          35.58266888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/07/23",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51285277777777,
+          35.57065083333334
+        ]
+      },
+      "properties": {
+        "date": "2024/07/28",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54241805555554,
+          35.546015
+        ]
+      },
+      "properties": {
+        "date": "2024/08/09",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49935,
+          35.53555444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/08/03",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5433725,
+          35.567929444444445
+        ]
+      },
+      "properties": {
+        "date": "2024/08/01",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51654222222223,
+          35.55161666666666
+        ]
+      },
+      "properties": {
+        "date": "2024/08/01",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51720666666668,
+          35.537390555555554
+        ]
+      },
+      "properties": {
+        "date": "2024/08/03",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52826944444445,
+          35.54389277777778
+        ]
+      },
+      "properties": {
+        "date": "2024/08/03",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48329444444445,
+          35.56263722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/08/03",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54193444444445,
+          35.55289777777777
+        ]
+      },
+      "properties": {
+        "date": "2024/08/04",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5444425,
+          35.55417805555555
+        ]
+      },
+      "properties": {
+        "date": "2024/08/06",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51059055555555,
+          35.53679888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/08/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52514444444446,
+          35.54462611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/08/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51732333333334,
+          35.536673888888885
+        ]
+      },
+      "properties": {
+        "date": "2024/08/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5089047222222,
+          35.53567694444444
+        ]
+      },
+      "properties": {
+        "date": "2024/05/04",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52526444444445,
+          35.53867944444444
+        ]
+      },
+      "properties": {
+        "date": "2024/08/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50023194444444,
+          35.55862138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/08/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48850277777777,
+          35.554068888888885
+        ]
+      },
+      "properties": {
+        "date": "2024/08/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52432972222223,
+          35.569026111111114
+        ]
+      },
+      "properties": {
+        "date": "2024/08/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5381886111111,
+          35.58996583333334
+        ]
+      },
+      "properties": {
+        "date": "2024/08/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51034611111112,
+          35.53471583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/08/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5089238888889,
+          35.535709999999995
+        ]
+      },
+      "properties": {
+        "date": "2024/08/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52082611111112,
+          35.53222722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/08/23",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52673833333336,
+          35.55688305555555
+        ]
+      },
+      "properties": {
+        "date": "2024/08/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48841194444444,
+          35.536315277777774
+        ]
+      },
+      "properties": {
+        "date": "2024/08/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5236252777778,
+          35.544084444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/08/27",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54098194444444,
+          35.54429861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/08/28",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52794416666669,
+          35.54657861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/08/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5355338888889,
+          35.57549527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/08/28",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5237113888889,
+          35.544045555555556
+        ]
+      },
+      "properties": {
+        "date": "2024/08/29",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54898083333333,
+          35.55634194444444
+        ]
+      },
+      "properties": {
+        "date": "2024/08/31",
+        "weather": "曇",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51185416666667,
+          35.5378125
+        ]
+      },
+      "properties": {
+        "date": "2024/08/31",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53642805555555,
+          35.57882
+        ]
+      },
+      "properties": {
+        "date": "2024/08/31",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51173305555557,
+          35.57342833333334
+        ]
+      },
+      "properties": {
+        "date": "2024/08/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5064888888889,
+          35.57770277777778
+        ]
+      },
+      "properties": {
+        "date": "2024/08/10",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50240027777778,
+          35.580782777777785
+        ]
+      },
+      "properties": {
+        "date": "2024/08/25",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5111825,
+          35.53013833333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/05",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53109444444445,
+          35.534054999999995
+        ]
+      },
+      "properties": {
+        "date": "2024/09/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "死亡"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50373027777778,
+          35.531405
+        ]
+      },
+      "properties": {
+        "date": "2024/09/10",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5041136111111,
+          35.53155777777778
+        ]
+      },
+      "properties": {
+        "date": "2024/09/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50824916666667,
+          35.53489611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/09/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50304972222222,
+          35.533165833333335
+        ]
+      },
+      "properties": {
+        "date": "2024/09/23",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50094166666668,
+          35.53032722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/09/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50439972222222,
+          35.53181583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/30",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51907583333335,
+          35.54187611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/09/01",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52429944444447,
+          35.55994944444444
+        ]
+      },
+      "properties": {
+        "date": "2024/09/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53701527777778,
+          35.55238111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/09/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5089238888889,
+          35.535715833333335
+        ]
+      },
+      "properties": {
+        "date": "2024/09/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50031027777777,
+          35.54618083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54804944444444,
+          35.57669527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/09/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51386527777777,
+          35.539362499999996
+        ]
+      },
+      "properties": {
+        "date": "2024/09/06",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51245694444444,
+          35.538351388888884
+        ]
+      },
+      "properties": {
+        "date": "2024/09/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52169694444447,
+          35.56191583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/10",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50422166666667,
+          35.537104166666666
+        ]
+      },
+      "properties": {
+        "date": "2024/08/26",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52738694444446,
+          35.58674916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/09/10",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51868972222223,
+          35.54154555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/09/10",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49162222222222,
+          35.54646972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/09/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52128444444446,
+          35.531488333333336
+        ]
+      },
+      "properties": {
+        "date": "2024/09/04",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5425925,
+          35.55312555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/09/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5405947222222,
+          35.57378138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/09/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52127000000002,
+          35.54279277777778
+        ]
+      },
+      "properties": {
+        "date": "2024/08/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51189583333334,
+          35.53785694444444
+        ]
+      },
+      "properties": {
+        "date": "2024/08/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54441972222222,
+          35.56639638888888
+        ]
+      },
+      "properties": {
+        "date": "2024/09/16",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53896805555556,
+          35.549769999999995
+        ]
+      },
+      "properties": {
+        "date": "2024/09/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51717611111113,
+          35.53707111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/09/18",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54286888888888,
+          35.58686083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49684138888887,
+          35.541306388888884
+        ]
+      },
+      "properties": {
+        "date": "2024/09/20",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50826805555556,
+          35.54925861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/09/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49035527777775,
+          35.55423833333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5421736111111,
+          35.54440972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/09/20",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51189027777778,
+          35.53787083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/24",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54002916666667,
+          35.5483425
+        ]
+      },
+      "properties": {
+        "date": "2024/09/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54936138888888,
+          35.55656694444444
+        ]
+      },
+      "properties": {
+        "date": "2024/09/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50341055555555,
+          35.53737916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/09/25",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4893033333333,
+          35.53831222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/09/25",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54264194444445,
+          35.57033472222223
+        ]
+      },
+      "properties": {
+        "date": "2024/09/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54534694444445,
+          35.572812222222225
+        ]
+      },
+      "properties": {
+        "date": "2024/09/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52751111111112,
+          35.54482333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53910416666668,
+          35.54972861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/09/29",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54895888888888,
+          35.55248944444444
+        ]
+      },
+      "properties": {
+        "date": "2024/09/30",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51253555555556,
+          35.585191111111115
+        ]
+      },
+      "properties": {
+        "date": "2024/09/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51525722222223,
+          35.58896277777778
+        ]
+      },
+      "properties": {
+        "date": "2024/09/03",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50786916666667,
+          35.58392444444445
+        ]
+      },
+      "properties": {
+        "date": "2024/09/03",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49777527777778,
+          35.588568055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/09/06",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51146583333335,
+          35.588726666666666
+        ]
+      },
+      "properties": {
+        "date": "2024/09/07",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5073052777778,
+          35.58441027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/09/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5064747222222,
+          35.5843575
+        ]
+      },
+      "properties": {
+        "date": "2024/09/10",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5122722222222,
+          35.57182305555556
+        ]
+      },
+      "properties": {
+        "date": "2024/09/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5207677777778,
+          35.58812972222223
+        ]
+      },
+      "properties": {
+        "date": "2024/09/20",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49776694444444,
+          35.5887625
+        ]
+      },
+      "properties": {
+        "date": "2024/09/24",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5354461111111,
+          35.549636666666665
+        ]
+      },
+      "properties": {
+        "date": "2024/10/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53965722222222,
+          35.54317638888889
+        ]
+      },
+      "properties": {
+        "date": "2024/10/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5407936111111,
+          35.535177222222224
+        ]
+      },
+      "properties": {
+        "date": "2024/10/19",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53929888888888,
+          35.54277083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/10/23",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50538,
+          35.53077444444445
+        ]
+      },
+      "properties": {
+        "date": "2024/10/06",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49523638888888,
+          35.53378222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/10/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5089738888889,
+          35.535709999999995
+        ]
+      },
+      "properties": {
+        "date": "2024/10/01",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5109961111111,
+          35.53793472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/10/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5347125,
+          35.55511944444444
+        ]
+      },
+      "properties": {
+        "date": "2024/10/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51450277777778,
+          35.56435416666666
+        ]
+      },
+      "properties": {
+        "date": "2024/10/03",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50407944444444,
+          35.54605861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/09/29",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53049722222224,
+          35.53644083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/09/22",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53155194444446,
+          35.552614166666665
+        ]
+      },
+      "properties": {
+        "date": "2024/10/04",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52657361111113,
+          35.572656388888895
+        ]
+      },
+      "properties": {
+        "date": "2024/10/04",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53957027777778,
+          35.56294916666666
+        ]
+      },
+      "properties": {
+        "date": "2024/10/05",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51940055555556,
+          35.54202055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/10/05",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54509916666666,
+          35.58967444444445
+        ]
+      },
+      "properties": {
+        "date": "2024/10/06",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54175416666666,
+          35.54898972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/10/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50364833333333,
+          35.559482499999994
+        ]
+      },
+      "properties": {
+        "date": "2024/10/08",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51770666666667,
+          35.53544361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/10/09",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52743611111111,
+          35.54593972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/10/09",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52760805555556,
+          35.54597305555556
+        ]
+      },
+      "properties": {
+        "date": "2024/10/10",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5425786111111,
+          35.55313361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/09/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53325305555558,
+          35.58409694444445
+        ]
+      },
+      "properties": {
+        "date": "2024/10/12",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52398361111113,
+          35.544198333333334
+        ]
+      },
+      "properties": {
+        "date": "2024/10/12",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53416583333333,
+          35.54906444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/10/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50895472222223,
+          35.53570166666667
+        ]
+      },
+      "properties": {
+        "date": "2024/10/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51862027777779,
+          35.54114555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/10/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54155416666666,
+          35.549795277777775
+        ]
+      },
+      "properties": {
+        "date": "2024/10/14",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51190416666665,
+          35.537843055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/10/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54543388888888,
+          35.55468638888889
+        ]
+      },
+      "properties": {
+        "date": "2024/10/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5201838888889,
+          35.54224
+        ]
+      },
+      "properties": {
+        "date": "2024/10/16",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51697555555558,
+          35.547603333333335
+        ]
+      },
+      "properties": {
+        "date": "2024/10/17",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53570722222221,
+          35.55394472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/10/19",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51703583333335,
+          35.56593472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/10/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53381194444444,
+          35.573617500000005
+        ]
+      },
+      "properties": {
+        "date": "2024/10/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54425083333334,
+          35.55407527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/10/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5387477777778,
+          35.57190944444445
+        ]
+      },
+      "properties": {
+        "date": "2024/10/19",
+        "weather": "曇",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48801444444442,
+          35.537731666666666
+        ]
+      },
+      "properties": {
+        "date": "2024/10/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5361,
+          35.58466083333334
+        ]
+      },
+      "properties": {
+        "date": "2024/10/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5432711111111,
+          35.540948888888884
+        ]
+      },
+      "properties": {
+        "date": "2024/10/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5350322222222,
+          35.54861444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/10/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50331,
+          35.55087222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/10/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49571333333333,
+          35.555349166666666
+        ]
+      },
+      "properties": {
+        "date": "2024/10/25",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53877333333332,
+          35.55609166666667
+        ]
+      },
+      "properties": {
+        "date": "2024/10/25",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51123777777778,
+          35.537684722222224
+        ]
+      },
+      "properties": {
+        "date": "2024/10/12",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54883833333332,
+          35.576014722222226
+        ]
+      },
+      "properties": {
+        "date": "2024/10/30",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54365583333333,
+          35.566046388888886
+        ]
+      },
+      "properties": {
+        "date": "2024/09/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51638416666665,
+          35.54344527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/10/31",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5114011111111,
+          35.54830027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/10/31",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50744972222222,
+          35.58455194444445
+        ]
+      },
+      "properties": {
+        "date": "2024/10/03",
+        "weather": "雨",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5095025,
+          35.58018027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/10/03",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4835022222222,
+          35.572097500000005
+        ]
+      },
+      "properties": {
+        "date": "2024/10/10",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4981311111111,
+          35.58407416666667
+        ]
+      },
+      "properties": {
+        "date": "2024/10/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53911555555555,
+          35.542565277777776
+        ]
+      },
+      "properties": {
+        "date": "2024/11/02",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54551777777777,
+          35.54888694444444
+        ]
+      },
+      "properties": {
+        "date": "2024/11/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51991222222225,
+          35.5303775
+        ]
+      },
+      "properties": {
+        "date": "2024/11/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54452416666666,
+          35.53120277777778
+        ]
+      },
+      "properties": {
+        "date": "2024/11/28",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54273805555556,
+          35.53177222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/11/01",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5060188888889,
+          35.53299916666666
+        ]
+      },
+      "properties": {
+        "date": "2024/11/13",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5074075,
+          35.53424083333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/20",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50409694444446,
+          35.53162972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/11/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49935,
+          35.53363777777778
+        ]
+      },
+      "properties": {
+        "date": "2024/11/23",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54399805555556,
+          35.55386416666666
+        ]
+      },
+      "properties": {
+        "date": "2024/11/02",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51545666666667,
+          35.54212333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/02",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48818944444443,
+          35.540256388888885
+        ]
+      },
+      "properties": {
+        "date": "2024/11/02",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5310888888889,
+          35.53672972222222
+        ]
+      },
+      "properties": {
+        "date": "2024/11/04",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48397527777777,
+          35.55493527777777
+        ]
+      },
+      "properties": {
+        "date": "2024/11/04",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50964611111112,
+          35.53609888888889
+        ]
+      },
+      "properties": {
+        "date": "2024/11/02",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5409872222222,
+          35.55274472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/11/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5326238888889,
+          35.55712194444444
+        ]
+      },
+      "properties": {
+        "date": "2024/11/11",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51338388888888,
+          35.55663
+        ]
+      },
+      "properties": {
+        "date": "2024/11/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54434166666667,
+          35.575656388888895
+        ]
+      },
+      "properties": {
+        "date": "2024/11/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54722444444445,
+          35.58102527777778
+        ]
+      },
+      "properties": {
+        "date": "2024/11/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5361061111111,
+          35.57285388888889
+        ]
+      },
+      "properties": {
+        "date": "2024/10/31",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50833722222222,
+          35.55551055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/11/13",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51701444444447,
+          35.54750333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/13",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54735888888888,
+          35.55883055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/11/12",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5133811111111,
+          35.55663833333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48362777777777,
+          35.56225666666666
+        ]
+      },
+      "properties": {
+        "date": "2024/11/17",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50859166666666,
+          35.57526138888889
+        ]
+      },
+      "properties": {
+        "date": "2024/11/18",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5490336111111,
+          35.55643361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/11/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52756222222223,
+          35.58079166666667
+        ]
+      },
+      "properties": {
+        "date": "2024/11/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54178694444445,
+          35.5609525
+        ]
+      },
+      "properties": {
+        "date": "2024/11/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51899250000002,
+          35.54094861111111
+        ]
+      },
+      "properties": {
+        "date": "2024/11/20",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53596472222222,
+          35.57177611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/11/09",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52868861111114,
+          35.54497583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/21",
+        "weather": "雨",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53485416666666,
+          35.55530833333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/21",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52764416666668,
+          35.5459925
+        ]
+      },
+      "properties": {
+        "date": "2024/11/21",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5282302777778,
+          35.54621472222222
+        ]
+      },
+      "properties": {
+        "date": "2024/11/21",
+        "weather": "雨",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5476522222222,
+          35.58015055555556
+        ]
+      },
+      "properties": {
+        "date": "2024/11/12",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54208166666666,
+          35.552903055555554
+        ]
+      },
+      "properties": {
+        "date": "2024/11/21",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5191663888889,
+          35.56356833333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53989277777777,
+          35.5539475
+        ]
+      },
+      "properties": {
+        "date": "2024/11/22",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5172288888889,
+          35.53664333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/24",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52584222222222,
+          35.53538555555556
+        ]
+      },
+      "properties": {
+        "date": "2024/11/22",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5419625,
+          35.54570388888889
+        ]
+      },
+      "properties": {
+        "date": "2024/11/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51737305555557,
+          35.544509166666664
+        ]
+      },
+      "properties": {
+        "date": "2024/11/25",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49169416666666,
+          35.55506055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/11/15",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51907194444445,
+          35.56200444444444
+        ]
+      },
+      "properties": {
+        "date": "2024/11/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54970583333332,
+          35.55708611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/11/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50565361111111,
+          35.56049611111111
+        ]
+      },
+      "properties": {
+        "date": "2024/11/27",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54073166666666,
+          35.55305583333333
+        ]
+      },
+      "properties": {
+        "date": "2024/11/27",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53611,
+          35.550058888888884
+        ]
+      },
+      "properties": {
+        "date": "2024/11/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51031833333334,
+          35.53471
+        ]
+      },
+      "properties": {
+        "date": "2024/11/28",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53554194444445,
+          35.58526916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/11/28",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48533694444444,
+          35.53769
+        ]
+      },
+      "properties": {
+        "date": "2024/11/29",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54797722222222,
+          35.57665638888889
+        ]
+      },
+      "properties": {
+        "date": "2024/11/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54791444444444,
+          35.55583361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/11/30",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54586555555557,
+          35.53464694444444
+        ]
+      },
+      "properties": {
+        "date": "2024/11/26",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50098666666668,
+          35.57936361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/11/05",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50809166666667,
+          35.577283333333334
+        ]
+      },
+      "properties": {
+        "date": "2024/11/06",
+        "weather": "曇",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5111325,
+          35.588143333333335
+        ]
+      },
+      "properties": {
+        "date": "2024/11/07",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50903333333332,
+          35.575430833333336
+        ]
+      },
+      "properties": {
+        "date": "2024/11/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4962086111111,
+          35.589418055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/11/14",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52020694444445,
+          35.53030805555556
+        ]
+      },
+      "properties": {
+        "date": "2024/12/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52008166666667,
+          35.53028027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/12/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54887555555555,
+          35.55320333333333
+        ]
+      },
+      "properties": {
+        "date": "2024/12/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50022777777778,
+          35.53036055555555
+        ]
+      },
+      "properties": {
+        "date": "2024/12/02",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49866416666666,
+          35.531974166666664
+        ]
+      },
+      "properties": {
+        "date": "2024/12/11",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50699666666668,
+          35.5338825
+        ]
+      },
+      "properties": {
+        "date": "2024/12/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5413288888889,
+          35.552611388888884
+        ]
+      },
+      "properties": {
+        "date": "2024/12/01",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5244163888889,
+          35.55366111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/12/01",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5461225,
+          35.56144416666666
+        ]
+      },
+      "properties": {
+        "date": "2024/11/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52197,
+          35.543115
+        ]
+      },
+      "properties": {
+        "date": "2024/11/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53698166666666,
+          35.5635075
+        ]
+      },
+      "properties": {
+        "date": "2024/12/05",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5129002777778,
+          35.55923527777777
+        ]
+      },
+      "properties": {
+        "date": "2024/11/01",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49022194444444,
+          35.55419944444444
+        ]
+      },
+      "properties": {
+        "date": "2024/12/07",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50895194444445,
+          35.535709999999995
+        ]
+      },
+      "properties": {
+        "date": "2024/11/15",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5344988888889,
+          35.555280555555555
+        ]
+      },
+      "properties": {
+        "date": "2024/12/10",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53479472222222,
+          35.58453027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/12/11",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54496583333332,
+          35.586844166666666
+        ]
+      },
+      "properties": {
+        "date": "2024/12/12",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51599833333333,
+          35.542456666666666
+        ]
+      },
+      "properties": {
+        "date": "2024/12/05",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54861472222223,
+          35.543956944444446
+        ]
+      },
+      "properties": {
+        "date": "2024/12/08",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54500888888887,
+          35.556463888888885
+        ]
+      },
+      "properties": {
+        "date": "2024/12/14",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53840416666665,
+          35.551095
+        ]
+      },
+      "properties": {
+        "date": "2024/12/15",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5380175,
+          35.563849166666664
+        ]
+      },
+      "properties": {
+        "date": "2024/12/16",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5376875,
+          35.55104222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/12/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51391944444444,
+          35.56644027777777
+        ]
+      },
+      "properties": {
+        "date": "2024/12/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5480022222222,
+          35.576728611111115
+        ]
+      },
+      "properties": {
+        "date": "2024/12/20",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5254913888889,
+          35.54973111111111
+        ]
+      },
+      "properties": {
+        "date": "2024/12/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5303066666667,
+          35.57365916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/12/21",
+        "weather": "曇",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5473911111111,
+          35.57645361111111
+        ]
+      },
+      "properties": {
+        "date": "2024/12/21",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5261163888889,
+          35.55320833333333
+        ]
+      },
+      "properties": {
+        "date": "2024/12/22",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54616944444444,
+          35.56909027777778
+        ]
+      },
+      "properties": {
+        "date": "2024/12/23",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5254602777778,
+          35.561410277777775
+        ]
+      },
+      "properties": {
+        "date": "2024/12/20",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53039416666667,
+          35.54015722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/12/18",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51858416666667,
+          35.541556666666665
+        ]
+      },
+      "properties": {
+        "date": "2024/12/25",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54000194444444,
+          35.535510555555554
+        ]
+      },
+      "properties": {
+        "date": "2024/12/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52154805555557,
+          35.53703222222222
+        ]
+      },
+      "properties": {
+        "date": "2024/12/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53835138888888,
+          35.55128666666666
+        ]
+      },
+      "properties": {
+        "date": "2024/12/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51387527777777,
+          35.564209722222216
+        ]
+      },
+      "properties": {
+        "date": "2024/12/26",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5439375,
+          35.542051666666666
+        ]
+      },
+      "properties": {
+        "date": "2024/12/27",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.55,
+          35.5620275
+        ]
+      },
+      "properties": {
+        "date": "2024/12/29",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53795416666665,
+          35.55116722222222
+        ]
+      },
+      "properties": {
+        "date": "2024/12/30",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54754333333332,
+          35.531013888888886
+        ]
+      },
+      "properties": {
+        "date": "2024/12/09",
+        "weather": "晴",
+        "type": "車両相互",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54621527777778,
+          35.533716388888884
+        ]
+      },
+      "properties": {
+        "date": "2024/12/27",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4977336111111,
+          35.58882916666667
+        ]
+      },
+      "properties": {
+        "date": "2024/12/12",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50535583333334,
+          35.578300000000006
+        ]
+      },
+      "properties": {
+        "date": "2024/12/13",
+        "weather": "曇",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5128025,
+          35.57427555555556
+        ]
+      },
+      "properties": {
+        "date": "2024/12/04",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51801833333334,
+          35.58134694444445
+        ]
+      },
+      "properties": {
+        "date": "2024/12/20",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49387027777777,
+          35.584696111111114
+        ]
+      },
+      "properties": {
+        "date": "2024/12/25",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5261288888889,
+          35.579594444444446
+        ]
+      },
+      "properties": {
+        "date": "2024/12/25",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5093772222222,
+          35.58915972222223
+        ]
+      },
+      "properties": {
+        "date": "2024/12/28",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50939722222222,
+          35.57584194444445
+        ]
+      },
+      "properties": {
+        "date": "2024/12/28",
+        "weather": "晴",
+        "type": "車両単独",
+        "severity": "負傷"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49779194444443,
+          35.5887625
+        ]
+      },
+      "properties": {
+        "date": "2024/12/28",
+        "weather": "晴",
+        "type": "人対車両",
+        "severity": "負傷"
+      }
+    }
+  ]
+}

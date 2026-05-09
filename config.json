@@ -1,0 +1,81 @@
+{
+  "area": {
+    "name": "横浜市青葉区",
+    "name_short": "青葉区",
+    "prefecture": "神奈川県",
+    "city": "横浜市",
+    "ward": "青葉区",
+    "center": [35.568, 139.517],
+    "zoom": 14,
+    "bounds": {
+      "lat_min": 35.53,
+      "lat_max": 35.59,
+      "lon_min": 139.48,
+      "lon_max": 139.55
+    },
+    "boundary_code": "14117",
+    "police_pref_code": "45"
+  },
+  "data_sources": {
+    "accidents": {
+      "name": "交通事故",
+      "source": "警察庁オープンデータ",
+      "year": 2024,
+      "url": "https://www.npa.go.jp/publications/statistics/koutsuu/opendata/index_opendata.html"
+    },
+    "crime": {
+      "name": "犯罪統計",
+      "source": "神奈川県警オープンデータ",
+      "year": 2024,
+      "url": "https://www.police.pref.kanagawa.jp/mes/mesd0010.htm"
+    },
+    "flood": {
+      "name": "洪水浸水リスク",
+      "source": "国土地理院ハザードマップポータル",
+      "year": 2024,
+      "url": "https://disaportal.gsi.go.jp/"
+    },
+    "landslide": {
+      "name": "土砂災害警戒区域",
+      "source": "国土地理院ハザードマップポータル",
+      "year": 2024,
+      "url": "https://disaportal.gsi.go.jp/"
+    },
+    "landprice": {
+      "name": "地価公示",
+      "source": "国土数値情報（国土交通省）",
+      "year": 2025,
+      "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-L01-v3_1.html"
+    },
+    "medical": {
+      "name": "医療施設",
+      "source": "国土数値情報（厚生労働省）",
+      "year": 2020,
+      "url": "https://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-P04-v3_0.html"
+    },
+    "nursery": {
+      "name": "保育所",
+      "source": "横浜市オープンデータ",
+      "year": 2024,
+      "url": "https://www.city.yokohama.lg.jp/kurashi/kosodate-kyoiku/hoiku-yoji/shisetsu/hoikusho/ninkagai-hoiku/"
+    },
+    "population": {
+      "name": "人口・世帯数",
+      "source": "e-Stat 国勢調査",
+      "year": 2020,
+      "url": "https://www.e-stat.go.jp/"
+    },
+    "mansion": {
+      "name": "建設中・予定マンション",
+      "source": "PRTIMESプレスリリース・デベロッパー公式サイト",
+      "year": 2025,
+      "url": ""
+    }
+  },
+  "paths": {
+    "raw_data": "data/raw",
+    "site_data": "site/data",
+    "boundary_shapefile": "data/raw/aoba_boundary/r2ka14117",
+    "site_root": "site"
+  }
+}

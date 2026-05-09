@@ -1,0 +1,872 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4882189000001,
+          35.53269694000005
+        ]
+      },
+      "properties": {
+        "price": 220000,
+        "address": "神奈川県　横浜市緑区長津田町字柳下２４２６番１１",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.8%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4946811000001,
+          35.53321611000007
+        ]
+      },
+      "properties": {
+        "price": 365000,
+        "address": "神奈川県　横浜市緑区長津田４丁目１９５９番７３",
+        "use": "住宅",
+        "area_type": "1中専",
+        "change": "+3.7%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49557,
+          35.53564
+        ]
+      },
+      "properties": {
+        "price": 301000,
+        "address": "神奈川県　横浜市緑区長津田３丁目２０００番３３０",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+3.8%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49650310000004,
+          35.53073806000003
+        ]
+      },
+      "properties": {
+        "price": 493000,
+        "address": "神奈川県　横浜市緑区長津田５丁目１８５７番１",
+        "use": "住宅,店舗",
+        "area_type": "商業",
+        "change": "+4.9%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52023,
+          35.552683890000026
+        ]
+      },
+      "properties": {
+        "price": 278000,
+        "address": "神奈川県　横浜市青葉区みたけ台７番２４",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.8%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5467761000001,
+          35.539186940000036
+        ]
+      },
+      "properties": {
+        "price": 244000,
+        "address": "神奈川県　横浜市青葉区市ケ尾町４９７番７",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.1%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51328190000004,
+          35.53738389000006
+        ]
+      },
+      "properties": {
+        "price": 300000,
+        "address": "神奈川県　横浜市青葉区しらとり台１７番５４",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.0%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4933850000001,
+          35.55238306000007
+        ]
+      },
+      "properties": {
+        "price": 217000,
+        "address": "神奈川県　横浜市青葉区すみよし台２４番１９",
+        "use": "その他",
+        "area_type": "1低専",
+        "change": "+0.5%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54091690000007,
+          35.548811940000064
+        ]
+      },
+      "properties": {
+        "price": 346000,
+        "address": "神奈川県　横浜市青葉区市ケ尾町１０５３番１",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+3.3%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5083661000001,
+          35.557593060000045
+        ]
+      },
+      "properties": {
+        "price": 228000,
+        "address": "神奈川県　横浜市青葉区鴨志田町８０３番１７",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+0.9%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54538890000003,
+          35.56226
+        ]
+      },
+      "properties": {
+        "price": 423000,
+        "address": "神奈川県　横浜市青葉区あざみ野南４丁目１５番２",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+3.2%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48775000000012,
+          35.54244306000004
+        ]
+      },
+      "properties": {
+        "price": 187000,
+        "address": "神奈川県　横浜市青葉区あかね台１丁目２０番２３",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.1%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.541665,
+          35.56186167000004
+        ]
+      },
+      "properties": {
+        "price": 338000,
+        "address": "神奈川県　横浜市青葉区みすずが丘３番４１",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.7%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5194461000001,
+          35.54707111000005
+        ]
+      },
+      "properties": {
+        "price": 392000,
+        "address": "神奈川県　横浜市青葉区青葉台１丁目２１番２２",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+4.3%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5302739000001,
+          35.584825
+        ]
+      },
+      "properties": {
+        "price": 233000,
+        "address": "神奈川県　横浜市青葉区美しが丘西３丁目３７番１３",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.6%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50538390000008,
+          35.55177611000005
+        ]
+      },
+      "properties": {
+        "price": 253000,
+        "address": "神奈川県　横浜市青葉区桂台１丁目１９番１３",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.0%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50763690000008,
+          35.545191110000076
+        ]
+      },
+      "properties": {
+        "price": 312000,
+        "address": "神奈川県　横浜市青葉区松風台２２番３０４",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.6%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53252610000004,
+          35.54167889000007
+        ]
+      },
+      "properties": {
+        "price": 288000,
+        "address": "神奈川県　横浜市青葉区千草台６番１１",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.9%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5398589,
+          35.56622389000006
+        ]
+      },
+      "properties": {
+        "price": 365000,
+        "address": "神奈川県　横浜市青葉区あざみ野３丁目２１番１１",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.2%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54242610000006,
+          35.557255
+        ]
+      },
+      "properties": {
+        "price": 343000,
+        "address": "神奈川県　横浜市青葉区荏田北２丁目１６番３２",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.4%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48509,
+          35.55234806000004
+        ]
+      },
+      "properties": {
+        "price": 191000,
+        "address": "神奈川県　横浜市青葉区奈良３丁目６番９外",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.1%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54782810000006,
+          35.56573111000006
+        ]
+      },
+      "properties": {
+        "price": 484000,
+        "address": "神奈川県　横浜市青葉区あざみ野２丁目２３番２４",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+6.8%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52942110000004,
+          35.56649389000006
+        ]
+      },
+      "properties": {
+        "price": 200000,
+        "address": "神奈川県　横浜市青葉区黒須田１７番３１外",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.5%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50388,
+          35.56189611000008
+        ]
+      },
+      "properties": {
+        "price": 198000,
+        "address": "神奈川県　横浜市青葉区鴨志田町５５４番２６",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.0%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.531535,
+          35.57822889000005
+        ]
+      },
+      "properties": {
+        "price": 272000,
+        "address": "神奈川県　横浜市青葉区すすき野３丁目４番２５２",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.3%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53165,
+          35.54572
+        ]
+      },
+      "properties": {
+        "price": 316000,
+        "address": "神奈川県　横浜市青葉区藤が丘１丁目２５番２３",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.9%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52668810000011,
+          35.55062306000008
+        ]
+      },
+      "properties": {
+        "price": 274000,
+        "address": "神奈川県　横浜市青葉区柿の木台１２番２９",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.5%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50758810000002,
+          35.541736110000045
+        ]
+      },
+      "properties": {
+        "price": 289000,
+        "address": "神奈川県　横浜市青葉区榎が丘３９番５",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.5%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53487690000009,
+          35.56728194000004
+        ]
+      },
+      "properties": {
+        "price": 274000,
+        "address": "神奈川県　横浜市青葉区大場町３６８番４２外",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.2%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.516095,
+          35.532375
+        ]
+      },
+      "properties": {
+        "price": 270000,
+        "address": "神奈川県　横浜市青葉区しらとり台５２番２０",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.9%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50462310000012,
+          35.53853694000003
+        ]
+      },
+      "properties": {
+        "price": 267000,
+        "address": "神奈川県　横浜市青葉区田奈町３０番１４外",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.9%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54446310000003,
+          35.57878111000008
+        ]
+      },
+      "properties": {
+        "price": 252000,
+        "address": "神奈川県　横浜市青葉区荏子田１丁目５番２１",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.2%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54711810000003,
+          35.57395194000003
+        ]
+      },
+      "properties": {
+        "price": 401000,
+        "address": "神奈川県　横浜市青葉区あざみ野４丁目２６番１６",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+3.4%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54844890000004,
+          35.54537306000003
+        ]
+      },
+      "properties": {
+        "price": 299000,
+        "address": "神奈川県　横浜市青葉区荏田西５丁目２番３１",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.7%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54865110000003,
+          35.58714111000006
+        ]
+      },
+      "properties": {
+        "price": 341000,
+        "address": "神奈川県　横浜市青葉区美しが丘３丁目５０番４",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+3.0%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52482110000005,
+          35.545787500000074
+        ]
+      },
+      "properties": {
+        "price": 337000,
+        "address": "神奈川県　横浜市青葉区もえぎ野５番１９",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.4%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5105781000001,
+          35.554405280000026
+        ]
+      },
+      "properties": {
+        "price": 261000,
+        "address": "神奈川県　横浜市青葉区たちばな台２丁目５番４５",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.6%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52687,
+          35.53462611000003
+        ]
+      },
+      "properties": {
+        "price": 243000,
+        "address": "神奈川県　横浜市青葉区梅が丘２６番３６",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+1.7%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5205611,
+          35.538981110000066
+        ]
+      },
+      "properties": {
+        "price": 325000,
+        "address": "神奈川県　横浜市青葉区つつじが丘１５番１５",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+3.2%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5342131000001,
+          35.58061694000003
+        ]
+      },
+      "properties": {
+        "price": 253000,
+        "address": "神奈川県　横浜市青葉区荏子田２丁目２４番１６",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+0.8%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5403669000001,
+          35.55157306000007
+        ]
+      },
+      "properties": {
+        "price": 617000,
+        "address": "神奈川県　横浜市青葉区市ケ尾町１１５４番１外",
+        "use": "店舗,銀行",
+        "area_type": "近商",
+        "change": "+2.8%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5273281000001,
+          35.54454694000003
+        ]
+      },
+      "properties": {
+        "price": 552000,
+        "address": "神奈川県　横浜市青葉区藤が丘２丁目４番１３",
+        "use": "住宅,店舗",
+        "area_type": "近商",
+        "change": "+2.4%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52995110000006,
+          35.54729194000004
+        ]
+      },
+      "properties": {
+        "price": 340000,
+        "address": "神奈川県　横浜市青葉区藤が丘１丁目９番６",
+        "use": "その他",
+        "area_type": "準住居",
+        "change": "+2.1%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5447861,
+          35.544093890000056
+        ]
+      },
+      "properties": {
+        "price": 342000,
+        "address": "神奈川県　横浜市青葉区市ケ尾町５２３番１０",
+        "use": "住宅,店舗",
+        "area_type": "準住居",
+        "change": "+2.4%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51702000000012,
+          35.537081940000064
+        ]
+      },
+      "properties": {
+        "price": 372000,
+        "address": "神奈川県　横浜市青葉区しらとり台２番１７",
+        "use": "住宅,店舗",
+        "area_type": "近商",
+        "change": "+1.9%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5458489,
+          35.531274720000056
+        ]
+      },
+      "properties": {
+        "price": 174000,
+        "address": "神奈川県　横浜市都筑区川和町字餅田１５２５番２３",
+        "use": "住宅",
+        "area_type": "_",
+        "change": "+3.6%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51360110000007,
+          35.58282889000003
+        ]
+      },
+      "properties": {
+        "price": 183000,
+        "address": "神奈川県　川崎市麻生区王禅寺東５丁目１９７番２３",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+2.2%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5085,
+          35.57903889000005
+        ]
+      },
+      "properties": {
+        "price": 163000,
+        "address": "神奈川県　川崎市麻生区下麻生２丁目６７０番１７",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+3.2%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5216689,
+          35.58178611000005
+        ]
+      },
+      "properties": {
+        "price": 207000,
+        "address": "神奈川県　川崎市麻生区虹ケ丘１丁目１２番８",
+        "use": "住宅",
+        "area_type": "1低専",
+        "change": "+3.5%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49901190000003,
+          35.58184694000005
+        ]
+      },
+      "properties": {
+        "price": 220000,
+        "address": "神奈川県　川崎市麻生区上麻生７丁目２８１番２７",
+        "use": "住宅",
+        "area_type": "2住居",
+        "change": "+4.3%"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50632110000004,
+          35.576188890000026
+        ]
+      },
+      "properties": {
+        "price": 121000,
+        "address": "神奈川県　川崎市麻生区下麻生３丁目４２２番６",
+        "use": "住宅",
+        "area_type": "_",
+        "change": "+2.5%"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6613 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49111280913294,
+          35.533801890885606
+        ]
+      },
+      "properties": {
+        "name": "グレースデンタルクリニック 横浜分院",
+        "type": "診療所",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正　内科",
+        "address": "緑区長津田町2258-2 1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49782140305737,
+          35.53123074460417
+        ]
+      },
+      "properties": {
+        "name": "しらはた胃腸肛門クリニック横浜",
+        "type": "診療所",
+        "department": "内科　内視鏡　外科　肛門　内科　胃腸　内科　漢方",
+        "address": "緑区長津田5-6-32"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49695696095557,
+          35.53134588570927
+        ]
+      },
+      "properties": {
+        "name": "ながつた脳神経外科",
+        "type": "診療所",
+        "department": "外科　脳神経　内科　神経",
+        "address": "緑区長津田5-5-13 長津田ﾒﾃﾞｨｶﾙｽｸｴｱ6F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49695696095557,
+          35.53134588570927
+        ]
+      },
+      "properties": {
+        "name": "長田整形外科",
+        "type": "診療所",
+        "department": "外科　整形　リハビリテーション科　リウマチ科",
+        "address": "緑区長津田5-5-13 長津田ﾒﾃﾞｨｶﾙｽｸｴｱ2F 3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49695696095557,
+          35.53134588570927
+        ]
+      },
+      "properties": {
+        "name": "長津田南口デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　口腔外科",
+        "address": "緑区長津田5-5-13 長津田ﾒﾃﾞｨｶﾙｽｸｴｱ 5F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49700251618012,
+          35.53135005810149
+        ]
+      },
+      "properties": {
+        "name": "ホワイト歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "緑区長津田5-5-12ｱﾙﾃﾌｨ-ﾁｪ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4964675262786,
+          35.53107029724188
+        ]
+      },
+      "properties": {
+        "name": "とくち歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　矯正　歯科　小児　歯科　口腔外科",
+        "address": "緑区長津田5-4-43 ﾌﾟﾛｸﾞﾚｽ301号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49652288531084,
+          35.530980201995895
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団 じあい会 メディカルスキャニング長津田",
+        "type": "診療所",
+        "department": "放射線科　内科",
+        "address": "緑区長津田5-4-42 ｸﾛｯｶ1F 101号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4965136834574,
+          35.53065020945209
+        ]
+      },
+      "properties": {
+        "name": "田園ひかりクリニック",
+        "type": "診療所",
+        "department": "内科　精神科　神経科　心療内科",
+        "address": "緑区長津田5-4-39ｶｰｻｱﾆｰﾙ101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49671254199006,
+          35.530214069696164
+        ]
+      },
+      "properties": {
+        "name": "ながつた歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "緑区長津田5-4-32鈴木ｺ-ﾎﾟﾗｽ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49643585630508,
+          35.5312402678365
+        ]
+      },
+      "properties": {
+        "name": "長津田駅前眼科",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "緑区長津田5-4-1長津田ｸﾘﾆｯｸﾋﾞﾙ4F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4964925867014,
+          35.53116463878938
+        ]
+      },
+      "properties": {
+        "name": "なごや耳鼻咽喉科クリニック",
+        "type": "診療所",
+        "department": "アレルギー科　耳鼻咽喉科",
+        "address": "緑区長津田5-4-1 長津田ｸﾘﾆｯｸﾋﾞﾙ5F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49643585630508,
+          35.5312402678365
+        ]
+      },
+      "properties": {
+        "name": "長津田ファミリークリニック",
+        "type": "診療所",
+        "department": "内科　内科　循環器　外科　小児科　外科　心臓血管　皮膚科　内科　消化器　内科　呼吸器",
+        "address": "緑区長津田5-4-1 長津田ｸﾘﾆｯｸﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49607392139532,
+          35.53095330932565
+        ]
+      },
+      "properties": {
+        "name": "長津田眼科クリニック",
+        "type": "診療所",
+        "department": "眼科　眼科　小児",
+        "address": "緑区長津田5-3-7ｿﾙﾀｽ長津田2FD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49607392139532,
+          35.53095330932565
+        ]
+      },
+      "properties": {
+        "name": "長津田レディースクリニック",
+        "type": "診療所",
+        "department": "産婦人科　外科　乳腺　麻酔科",
+        "address": "緑区長津田5-3-7Saltus Nagatsuta 2-B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49552810125888,
+          35.53058550080355
+        ]
+      },
+      "properties": {
+        "name": "あべ歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "緑区長津田5-3-34ｻﾝｴ-ｽﾋﾞﾙ201"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.495083185533,
+          35.5311285071853
+        ]
+      },
+      "properties": {
+        "name": "長津田メンタルクリニック",
+        "type": "診療所",
+        "department": "精神科　神経科　心療内科",
+        "address": "緑区長津田5-2-67鈴木ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.495083185533,
+          35.5311285071853
+        ]
+      },
+      "properties": {
+        "name": "中村歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　小児歯科　歯科口腔外科",
+        "address": "緑区長津田5-2-67鈴木ﾋﾞﾙ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49501180319288,
+          35.53395034383834
+        ]
+      },
+      "properties": {
+        "name": "つちはし歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科",
+        "address": "緑区長津田4-9-6ﾎﾄﾞｶﾞﾔﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49403751018662,
+          35.53279689937881
+        ]
+      },
+      "properties": {
+        "name": "長津田皮膚科",
+        "type": "診療所",
+        "department": "皮膚科",
+        "address": "緑区長津田4-5-5 長津田ﾒﾃﾞｨｶﾙｳﾞｨﾚｯｼﾞB棟2F 201号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49403751018662,
+          35.53279689937881
+        ]
+      },
+      "properties": {
+        "name": "長津田駅前胃腸内科",
+        "type": "診療所",
+        "department": "内科　内科　胃腸　内科　内視鏡　外科　外科　肛門",
+        "address": "緑区長津田4-5-5 長津田ﾒﾃﾞｨｶﾙｳﾞｨﾚｯｼﾞB棟101号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49424806639536,
+          35.5326888914348
+        ]
+      },
+      "properties": {
+        "name": "すずき歯科口腔外科",
+        "type": "歯科",
+        "department": "歯科　歯科口腔外科",
+        "address": "緑区長津田4-5-4長津田ﾒﾃﾞｨｶﾙｳﾞｨﾚｯｼﾞA棟2F201号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49482324785066,
+          35.532975667675714
+        ]
+      },
+      "properties": {
+        "name": "長津田ふじた歯科・矯正歯科",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "緑区長津田4-3-141F-101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49333131455614,
+          35.53604799987347
+        ]
+      },
+      "properties": {
+        "name": "一般社団法人日本厚生団長津田厚生総合病院",
+        "type": "病院",
+        "department": "内科　内科　呼吸器　内科　循環器　内科　消化器　内科　糖尿病　内科　腎臓　内科　神経　外科　外科　脳神経　外科　整形　皮膚科　泌尿器科　婦人科　眼科　耳鼻いんこう科　リハビリテーション科　放射線科　麻酔科",
+        "address": "緑区長津田4-23-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49522083206716,
+          35.532863736935106
+        ]
+      },
+      "properties": {
+        "name": "あかおぎ内科リウマチクリニック",
+        "type": "診療所",
+        "department": "内科　アレルギー科　リウマチ科",
+        "address": "緑区長津田4-2-18-2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49522083206716,
+          35.532863736935106
+        ]
+      },
+      "properties": {
+        "name": "長津田矯正歯科クリニック",
+        "type": "歯科",
+        "department": "矯正歯科",
+        "address": "緑区長津田4-2-18 高木ﾋﾞﾙ1F 102号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4922614133418,
+          35.532827457427125
+        ]
+      },
+      "properties": {
+        "name": "さくらば歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科",
+        "address": "緑区長津田4-15-8-1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4928604576738,
+          35.53282663452934
+        ]
+      },
+      "properties": {
+        "name": "長津田アキュア歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　口腔外科　歯科　小児　歯科　矯正",
+        "address": "緑区長津田4-11-14 さくらｸﾘﾆｯｸﾓ-ﾙ内"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49288799492322,
+          35.53284224265723
+        ]
+      },
+      "properties": {
+        "name": "横浜ながつた内科・呼吸器クリニック",
+        "type": "診療所",
+        "department": "内科　内科　呼吸器　アレルギー科",
+        "address": "緑区長津田4-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4928664279779,
+          35.5328162167009
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団鶴永会 長津田いこいの森診療所",
+        "type": "診療所",
+        "department": "精神科　内科　心療",
+        "address": "緑区長津田4-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4928664279779,
+          35.5328162167009
+        ]
+      },
+      "properties": {
+        "name": "あっぷりけキッズクリニック",
+        "type": "診療所",
+        "department": "小児科　アレルギー科",
+        "address": "緑区長津田4-11-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49511440670423,
+          35.53454847862595
+        ]
+      },
+      "properties": {
+        "name": "裕香整形外科",
+        "type": "診療所",
+        "department": "外科　整形　リハビリテーション科",
+        "address": "緑区長津田3-1-43"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4951016056906,
+          35.53435135353711
+        ]
+      },
+      "properties": {
+        "name": "三島歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "緑区長津田3-1-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4969371950264,
+          35.53243230772247
+        ]
+      },
+      "properties": {
+        "name": "よしだ健康ケアクリニック",
+        "type": "診療所",
+        "department": "内科　循環器科　泌尿器科　こう門科",
+        "address": "緑区長津田2-5-14長津田森島ﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49977380782425,
+          35.53415601892378
+        ]
+      },
+      "properties": {
+        "name": "井手歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "緑区長津田2-37-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49654300787708,
+          35.53452231034505
+        ]
+      },
+      "properties": {
+        "name": "宍戸歯科",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "緑区長津田2-25-29ｱ-ﾃﾞﾝﾊｳｽ101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49625886985672,
+          35.53328800067077
+        ]
+      },
+      "properties": {
+        "name": "さくら歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "緑区長津田2-1-1 長津田ﾏ-ｸﾀｳﾝ201号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53035022518972,
+          35.531360478137
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホームふじ寿か園診療所",
+        "type": "診療所",
+        "department": "内科",
+        "address": "緑区西八朔町773-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54841850641648,
+          35.53868520502597
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団若葉会つづき病院",
+        "type": "病院",
+        "department": "内科　リハビリ科",
+        "address": "都筑区川和町2674-83"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54757147577064,
+          35.535368122318076
+        ]
+      },
+      "properties": {
+        "name": "アーバンクリニック 石川オフィス",
+        "type": "診療所",
+        "department": "内科　小児科　外科　整形外科　リハビリ科",
+        "address": "都筑区川和町2338-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5230804752659,
+          35.57624487283078
+        ]
+      },
+      "properties": {
+        "name": "虹ヶ丘クリニック",
+        "type": "診療所",
+        "department": "泌尿器科　内科",
+        "address": "川崎市麻生区虹ヶ丘３−２−１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52034620748734,
+          35.58006062405403
+        ]
+      },
+      "properties": {
+        "name": "地域密着型特別養護老人ホーム　ヴィラージュ虹ヶ丘医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "川崎市麻生区虹ヶ丘１−２２−１−２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52229052270255,
+          35.58216442270414
+        ]
+      },
+      "properties": {
+        "name": "あさお・百合クリニック",
+        "type": "診療所",
+        "department": "内科",
+        "address": "川崎市麻生区虹ヶ丘１−１０−１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50285727076826,
+          35.57832704149442
+        ]
+      },
+      "properties": {
+        "name": "渡辺クリニック",
+        "type": "診療所",
+        "department": "内科　脳神経外科　リハビリテーション科　泌尿器科　整形外科　人工透析内科",
+        "address": "川崎市麻生区上麻生７−２２−１１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49565193411829,
+          35.58882490818391
+        ]
+      },
+      "properties": {
+        "name": "柿生めぐみ歯科",
+        "type": "歯科",
+        "department": "歯科　小児歯科　歯科口腔外科",
+        "address": "川崎市麻生区上麻生６−９−１４　１階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4979720208225,
+          35.58862551603833
+        ]
+      },
+      "properties": {
+        "name": "かきお駅前さいとうクリニック",
+        "type": "診療所",
+        "department": "内科　アレルギー科　呼吸器内科　皮膚科",
+        "address": "川崎市麻生区上麻生６−３９−３５　１階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49786843663082,
+          35.58693191957172
+        ]
+      },
+      "properties": {
+        "name": "おおたクリニック",
+        "type": "診療所",
+        "department": "内科　外科　消化器内科",
+        "address": "川崎市麻生区上麻生６−３１−１　ドウェルイナリヤマ１Ｆ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4963237097557,
+          35.58718966681277
+        ]
+      },
+      "properties": {
+        "name": "柿生記念病院",
+        "type": "病院",
+        "department": "内科　消化器内科　神経内科　リハビリテーション科",
+        "address": "川崎市麻生区上麻生６−２８−２０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49658043329563,
+          35.585806609212
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団総生会　麻生総合病院",
+        "type": "病院",
+        "department": "内科　外科　呼吸器外科　形成外科　整形外科　脳神経外科　泌尿器科　眼科　耳鼻咽喉科　放射線科　リハビリテーション科　麻酔科　消化器内科　循環器内科　脳神経内科　糖尿病内科　腎臓内科　呼吸器内科　消化器外科　肛門外科　乳腺外科　救急科　透析内科　血管外科",
+        "address": "川崎市麻生区上麻生６−２５−１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49726899625784,
+          35.58491863148996
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団総生会　麻生リハビリ総合病院",
+        "type": "病院",
+        "department": "内科　整形外科　脳神経外科　リハビリテーション科　リウマチ科",
+        "address": "川崎市麻生区上麻生６−２３−５０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50126641372688,
+          35.58633981744027
+        ]
+      },
+      "properties": {
+        "name": "芥川バースクリニック",
+        "type": "診療所",
+        "department": "産科　婦人科　精神科",
+        "address": "川崎市麻生区上麻生５−４７−１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4981766264413,
+          35.589552885498115
+        ]
+      },
+      "properties": {
+        "name": "柿生駅前ファミリー歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "川崎市麻生区上麻生５−４３−５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49819626258022,
+          35.58964631410707
+        ]
+      },
+      "properties": {
+        "name": "麻生区オーク歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "川崎市麻生区上麻生５−４３−３　小野店舗１階、２階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4965552200802,
+          35.588939015972
+        ]
+      },
+      "properties": {
+        "name": "上條歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "川崎市麻生区上麻生５−４１−１　マルエツ柿生店２階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.497203834933,
+          35.589571028342284
+        ]
+      },
+      "properties": {
+        "name": "かきお北口皮ふ科クリニック",
+        "type": "診療所",
+        "department": "皮膚科　美容皮膚科　小児皮膚科",
+        "address": "川崎市麻生区上麻生５−４０−４　パーム・スクエア１階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49671832384797,
+          35.58955274565783
+        ]
+      },
+      "properties": {
+        "name": "ユミカ内科小児科ファミリークリニック",
+        "type": "診療所",
+        "department": "内科　呼吸器科　消化器科　循環器科　アレルギー科　リウマチ科　小児科　外科　整形外科　こう門科　婦人科",
+        "address": "川崎市麻生区上麻生５−４０−１　鈴木ビル１階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49654982357262,
+          35.58955701567421
+        ]
+      },
+      "properties": {
+        "name": "医療法人育柿会　あさお井澤クリニック",
+        "type": "診療所",
+        "department": "心療内科　精神科　神経科",
+        "address": "川崎市麻生区上麻生５−４０−１　柿生駅前鈴木ビル２０２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49667332404934,
+          35.58960239563847
+        ]
+      },
+      "properties": {
+        "name": "坂巻歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科口腔外科",
+        "address": "川崎市麻生区上麻生５−４０−１　柿生駅前鈴木ビル"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49845952910403,
+          35.58993402524441
+        ]
+      },
+      "properties": {
+        "name": "鈴木耳鼻咽喉科医院",
+        "type": "診療所",
+        "department": "耳鼻咽喉科",
+        "address": "川崎市麻生区上麻生５−３８−５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50894577415426,
+          35.576884183873545
+        ]
+      },
+      "properties": {
+        "name": "キウイファミリークリニック",
+        "type": "診療所",
+        "department": "小児科　内科",
+        "address": "川崎市麻生区下麻生３−２３−２８"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50728377061498,
+          35.57705902275427
+        ]
+      },
+      "properties": {
+        "name": "下麻生デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "川崎市麻生区下麻生３−２１−５　麻生メディカルセンター３０１号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50728377061498,
+          35.57705902275427
+        ]
+      },
+      "properties": {
+        "name": "かきお整形外科",
+        "type": "診療所",
+        "department": "整形外科　リハビリテーション科",
+        "address": "川崎市麻生区下麻生３−２１−５　麻生メディカルセンター２Ｆ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50632957184598,
+          35.57753332235648
+        ]
+      },
+      "properties": {
+        "name": "かさい歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "川崎市麻生区下麻生３−１９−２２　エトワール柿生２Ｆ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50913548045597,
+          35.5771497277369
+        ]
+      },
+      "properties": {
+        "name": "アトピちあき皮膚科",
+        "type": "診療所",
+        "department": "皮膚科　アレルギー科　漢方内科　美容皮膚科",
+        "address": "川崎市麻生区下麻生２−４０−１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4868883685708,
+          35.58285360638587
+        ]
+      },
+      "properties": {
+        "name": "小児科　後藤医院",
+        "type": "診療所",
+        "department": "内科　小児科",
+        "address": "川崎市麻生区岡上１００"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51507994970342,
+          35.58758970581997
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団北村会　堀野メディカルクリニック",
+        "type": "診療所",
+        "department": "内科　消化器内科　肛門内科",
+        "address": "川崎市麻生区王禅寺東三丁目２６番６号王禅寺メディカル１階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5113236021209,
+          35.58509159188677
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団ゆうじん会　ゆうクリニック",
+        "type": "診療所",
+        "department": "内科　循環器科　呼吸器科　消化器科　外科　形成外科",
+        "address": "川崎市麻生区王禅寺東５−２−９"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51240162648514,
+          35.58509787826823
+        ]
+      },
+      "properties": {
+        "name": "ミオ医院",
+        "type": "診療所",
+        "department": "内科　整形外科　リハビリテーション科　麻酔科　リウマチ科",
+        "address": "川崎市麻生区王禅寺東５−１−５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5147931479245,
+          35.58825759606922
+        ]
+      },
+      "properties": {
+        "name": "葛西皮膚科医院",
+        "type": "診療所",
+        "department": "皮膚科",
+        "address": "川崎市麻生区王禅寺東４−１３−５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51302332768137,
+          35.58515032829853
+        ]
+      },
+      "properties": {
+        "name": "いしわた歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "川崎市麻生区王禅寺東３−５２−１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51553424138896,
+          35.58693163713765
+        ]
+      },
+      "properties": {
+        "name": "村松小児科医院",
+        "type": "診療所",
+        "department": "小児科",
+        "address": "川崎市麻生区王禅寺東３−２９−３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51511734486473,
+          35.587641426552835
+        ]
+      },
+      "properties": {
+        "name": "かねこ眼科クリニック",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "川崎市麻生区王禅寺東３−２６−６　王禅寺メディカル３Ｆ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5151335450029,
+          35.58766141653658
+        ]
+      },
+      "properties": {
+        "name": "王禅寺整形外科",
+        "type": "診療所",
+        "department": "整形外科　リハビリテーション科　リウマチ科",
+        "address": "川崎市麻生区王禅寺東３−２６−６　王禅寺メディカル２階"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.515144046546,
+          35.587927736321426
+        ]
+      },
+      "properties": {
+        "name": "あおば歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "川崎市麻生区王禅寺東３−２６−４　Ｂ−３　１Ｆ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52249008514192,
+          35.58810457539726
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム　ルピナス王禅寺医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "川崎市麻生区王禅寺東３−２−３６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5065533208166,
+          35.58593230771194
+        ]
+      },
+      "properties": {
+        "name": "的場歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "川崎市麻生区王禅寺西７−２７−２６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5245496036689,
+          35.58770303181712
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団晃進会　川崎みどりの病院",
+        "type": "病院",
+        "department": "内科　リハビリテーション科",
+        "address": "川崎市麻生区王禅寺字五郎谷１１４２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52327933472466,
+          35.58395312107014
+        ]
+      },
+      "properties": {
+        "name": "社会福祉法人慈正会　特別養護老人ホーム虹の里　医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "川崎市麻生区王禅寺９６３−２６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5261654637048,
+          35.5867021180347
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団晃進会　たま日吉台病院",
+        "type": "病院",
+        "department": "内科　外科　整形外科　皮膚科　リハビリテーション科　呼吸器内科　精神科",
+        "address": "川崎市麻生区王禅寺１１０５番地"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5462772671579,
+          35.58411829590362
+        ]
+      },
+      "properties": {
+        "name": "松本クリニック",
+        "type": "診療所",
+        "department": "内科　小児科　小児外科",
+        "address": "川崎市中原区丸子通２−４４１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53524507942646,
+          35.58809096587599
+        ]
+      },
+      "properties": {
+        "name": "てづか耳鼻咽喉科クリニック",
+        "type": "診療所",
+        "department": "耳鼻咽喉科　気管食道科",
+        "address": "青葉区美しが丘西3-65-6美しが丘西ｸﾘﾆｯｸﾌﾟﾗｻﾞF棟2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53526437636367,
+          35.58806038820017
+        ]
+      },
+      "properties": {
+        "name": "三原クリニック",
+        "type": "診療所",
+        "department": "精神科　神経科　心療内科",
+        "address": "青葉区美しが丘西3-65-6美しが丘西ｸﾘﾆｯｸﾌﾟﾗｻﾞ3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53524507942646,
+          35.58809096587599
+        ]
+      },
+      "properties": {
+        "name": "医療法人正美会 おぎし歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区美しが丘西3-65-6 美しが丘西ｸﾘﾆｯｸﾌﾟﾗｻﾞS棟2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53524507942646,
+          35.58809096587599
+        ]
+      },
+      "properties": {
+        "name": "あざがみクリニック",
+        "type": "診療所",
+        "department": "小児科　アレルギー科",
+        "address": "青葉区美しが丘西3-65-6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5348440751861,
+          35.5879598682408
+        ]
+      },
+      "properties": {
+        "name": "篠原歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区美しが丘西3-65-5ﾙｳﾞｪﾃﾞｭｿﾚｲﾕ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53298997297432,
+          35.587944293410615
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団伍光会 川崎北部在宅診療所",
+        "type": "診療所",
+        "department": "内科　精神科",
+        "address": "青葉区美しが丘西3-64-13 ｱｽﾃｨｵﾝ美しが丘1F 1-A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53682547383107,
+          35.58722231966451
+        ]
+      },
+      "properties": {
+        "name": "MoM Dental Cｌinic",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区美しが丘西3-2-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53438134958586,
+          35.583622823920706
+        ]
+      },
+      "properties": {
+        "name": "河津歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区美しが丘西3-12-18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53466677760753,
+          35.5884257675802
+        ]
+      },
+      "properties": {
+        "name": "松田クリニック",
+        "type": "診療所",
+        "department": "内科　呼吸器科　消化器科　皮膚科　リハビリ科　麻酔科",
+        "address": "青葉区美しが丘西2-6-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53539497888616,
+          35.588468537684996
+        ]
+      },
+      "properties": {
+        "name": "美しが丘クリニック",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区美しが丘西2-6-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53494787796714,
+          35.58841888765184
+        ]
+      },
+      "properties": {
+        "name": "ホワイトレディースクリニック",
+        "type": "診療所",
+        "department": "婦人科　泌尿器科",
+        "address": "青葉区美しが丘西2-6-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53203254121493,
+          35.587958722209954
+        ]
+      },
+      "properties": {
+        "name": "吉本歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児",
+        "address": "青葉区美しが丘西2-11-6 ｱﾙﾌｧ保野坂 1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54917669982345,
+          35.57691815568144
+        ]
+      },
+      "properties": {
+        "name": "あらい歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区美しが丘5-28-11ｶ-ｻ・ｱﾒﾆﾃｨ・たまﾌﾟﾗ-ｻﾞ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54978307982213,
+          35.585568964748454
+        ]
+      },
+      "properties": {
+        "name": "桑原クリニック",
+        "type": "診療所",
+        "department": "小児科",
+        "address": "青葉区美しが丘3-32-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5258486572523,
+          35.537370688658285
+        ]
+      },
+      "properties": {
+        "name": "菊池医院",
+        "type": "診療所",
+        "department": "内科　小児科　麻酔科",
+        "address": "青葉区梅が丘9-6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52942025811925,
+          35.53675566134234
+        ]
+      },
+      "properties": {
+        "name": "梅が丘歯科診療所",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区梅が丘24-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48807854104905,
+          35.55911311968479
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム創生園青葉 医務室",
+        "type": "診療所",
+        "department": "内科　外科　脳神経外科　リハビリ科",
+        "address": "青葉区奈良町881-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4802246663081,
+          35.56581490176817
+        ]
+      },
+      "properties": {
+        "name": "緑協和病院",
+        "type": "病院",
+        "department": "内科　リハビリテーション科",
+        "address": "青葉区奈良町1802"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.484673834451,
+          35.55872940622943
+        ]
+      },
+      "properties": {
+        "name": "きむら歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区奈良5-8-20"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48370687014392,
+          35.5585816235134
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団成隆会 こんどう歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区奈良5-4-1 ﾚ-ﾍﾞﾝｽﾗｳﾑ105号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48408802757623,
+          35.55760742589282
+        ]
+      },
+      "properties": {
+        "name": "山の手台歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正",
+        "address": "青葉区奈良5-3-8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48122883643478,
+          35.559962612475935
+        ]
+      },
+      "properties": {
+        "name": "あおばデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区奈良5-16-10103"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48590643403693,
+          35.55834361766872
+        ]
+      },
+      "properties": {
+        "name": "こどもの国歯科",
+        "type": "歯科",
+        "department": "歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区奈良5-1-10103"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48589873381837,
+          35.5583058476719
+        ]
+      },
+      "properties": {
+        "name": "こどもの国整形外科",
+        "type": "診療所",
+        "department": "整形外科　リハビリ科",
+        "address": "青葉区奈良5-1-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4823731380269,
+          35.551554826598164
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団咲月会 サンメディカルクリニック青葉",
+        "type": "診療所",
+        "department": "内科　内科　循環器　泌尿器科　アレルギー科",
+        "address": "青葉区奈良4-6-15 わかたけの杜ｸﾘﾆｯｸ棟"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4829263965527,
+          35.552163616416756
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム わかたけ青葉医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区奈良4-6-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48583319814048,
+          35.551924909726104
+        ]
+      },
+      "properties": {
+        "name": "えんどう歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科",
+        "address": "青葉区奈良3-7-9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48412008256582,
+          35.553087836703945
+        ]
+      },
+      "properties": {
+        "name": "シニアライフデンタルクリニック青葉",
+        "type": "歯科",
+        "department": "歯科　歯科　口腔外科",
+        "address": "青葉区奈良3-2-11 ﾘﾊﾞﾃｨ緑山102号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4861259272868,
+          35.557083988331634
+        ]
+      },
+      "properties": {
+        "name": "こどもの国こどもクリニック",
+        "type": "診療所",
+        "department": "小児科　アレルギー科",
+        "address": "青葉区奈良1-5-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48599802892332,
+          35.557405938082205
+        ]
+      },
+      "properties": {
+        "name": "こどもの国安西クリニック",
+        "type": "診療所",
+        "department": "内科　胃腸科　外科　こう門科",
+        "address": "青葉区奈良1-3-5こどもの国KSﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48573632903074,
+          35.55721093964098
+        ]
+      },
+      "properties": {
+        "name": "耳鼻咽喉科むつみクリニック",
+        "type": "診療所",
+        "department": "耳鼻咽喉科",
+        "address": "青葉区奈良1-3-2 ﾋﾞｸﾄﾘｱ奈良1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48404132499834,
+          35.557148215994
+        ]
+      },
+      "properties": {
+        "name": "スターヒルズ歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区奈良1-2-1三和子供の国店3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48406445186512,
+          35.55562810520799
+        ]
+      },
+      "properties": {
+        "name": "おおぜき医院",
+        "type": "診療所",
+        "department": "内科　精神科　内科　心療",
+        "address": "青葉区奈良1-19-1 鴨志田第一ﾋﾞﾙ202号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48406976007877,
+          35.554610717411855
+        ]
+      },
+      "properties": {
+        "name": "井口デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区奈良1-18-1ｱｺﾞ-ﾗ205"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48406976007877,
+          35.554610717411855
+        ]
+      },
+      "properties": {
+        "name": "あおばクリニック",
+        "type": "診療所",
+        "department": "内科　小児科　皮膚科",
+        "address": "青葉区奈良1-18-1ｱｺﾞ-ﾗ201"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48416900721801,
+          35.55387933722551
+        ]
+      },
+      "properties": {
+        "name": "あい内科クリニック",
+        "type": "診療所",
+        "department": "内科　循環器科　神経内科　アレルギー科",
+        "address": "青葉区奈良1-18-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48407450615503,
+          35.55370437717884
+        ]
+      },
+      "properties": {
+        "name": "川崎歯科",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区奈良1-18-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48434144981965,
+          35.553647801983644
+        ]
+      },
+      "properties": {
+        "name": "こどもの国レディスクリニック",
+        "type": "診療所",
+        "department": "産婦人科",
+        "address": "青葉区奈良1-18-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48592864127448,
+          35.554149912585295
+        ]
+      },
+      "properties": {
+        "name": "こどものくに皮膚科",
+        "type": "診療所",
+        "department": "皮膚科",
+        "address": "青葉区奈良1-13-9ｵ-ｸｳﾞｨﾚｯｼﾞ1F A号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48599000948258,
+          35.553927519232786
+        ]
+      },
+      "properties": {
+        "name": "明かり歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区奈良1-13-9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5272140761267,
+          35.54292144536152
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団藤の会 かない小児科",
+        "type": "診療所",
+        "department": "小児科",
+        "address": "青葉区藤が丘2-6-9-2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5272140761267,
+          35.54292144536152
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団藤の会 藤が丘耳鼻咽喉科",
+        "type": "診療所",
+        "department": "耳鼻いんこう科　小児科",
+        "address": "青葉区藤が丘2-6-9 -1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52731999485596,
+          35.54305799352792
+        ]
+      },
+      "properties": {
+        "name": "ワキタ産婦人科",
+        "type": "診療所",
+        "department": "産婦人科",
+        "address": "青葉区藤が丘2-6-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52810315370823,
+          35.543167525038555
+        ]
+      },
+      "properties": {
+        "name": "横浜青葉デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区藤が丘2-5-5F・GARE3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52810315370823,
+          35.543167525038555
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団顕伊会 藤が丘駅整形外科",
+        "type": "診療所",
+        "department": "外科　整形　リハビリテーション科　外科　形成",
+        "address": "青葉区藤が丘2-5-5 F・GARE3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5276704962372,
+          35.543206383535306
+        ]
+      },
+      "properties": {
+        "name": "藤が丘南口クリニック",
+        "type": "診療所",
+        "department": "内科　アレルギー科　皮膚科　泌尿器科　性病科",
+        "address": "青葉区藤が丘2-5-5 3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52735260199876,
+          35.54422878237161
+        ]
+      },
+      "properties": {
+        "name": "大越クリニック",
+        "type": "診療所",
+        "department": "内科　消化器科　小児科　外科　整形外科　皮膚科　こう門科",
+        "address": "青葉区藤が丘2-4-3藤が丘会館3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52736063899934,
+          35.54432676285752
+        ]
+      },
+      "properties": {
+        "name": "藤が丘デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区藤が丘2-4-3藤が丘会館302"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52606802043923,
+          35.54349299911131
+        ]
+      },
+      "properties": {
+        "name": "荒木皮膚科医院",
+        "type": "診療所",
+        "department": "皮膚科",
+        "address": "青葉区藤が丘2-3-3第2飯田ﾋﾞﾙ203号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52606802043923,
+          35.54349299911131
+        ]
+      },
+      "properties": {
+        "name": "みた歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　口腔外科　歯科　小児　歯科　矯正",
+        "address": "青葉区藤が丘2-3-3第2飯田ﾋﾞﾙ202号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.526842403461,
+          35.54136249482474
+        ]
+      },
+      "properties": {
+        "name": "河村内科クリニック",
+        "type": "診療所",
+        "department": "内科　内科　消化器　内科　循環器　皮膚科",
+        "address": "青葉区藤が丘2-31-201F-101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52689698295637,
+          35.54137531931106
+        ]
+      },
+      "properties": {
+        "name": "ワキタ産婦人科ｐｌｕｓ",
+        "type": "診療所",
+        "department": "産婦人科",
+        "address": "青葉区藤が丘2-31-20 河村医療ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52461286493494,
+          35.53883926639979
+        ]
+      },
+      "properties": {
+        "name": "青山歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区藤が丘2-29-11ﾛｲﾔﾙﾊｲﾂ藤が丘1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52187036049023,
+          35.54281334984452
+        ]
+      },
+      "properties": {
+        "name": "山本歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区藤が丘2-19-1ﾍﾞﾙｴ-ﾙ藤が丘1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52212458583872,
+          35.542710630367324
+        ]
+      },
+      "properties": {
+        "name": "山本内科循環器医院",
+        "type": "診療所",
+        "department": "内科　内科　循環器　小児科",
+        "address": "青葉区藤が丘2-19-11A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5266144029158,
+          35.54455176172054
+        ]
+      },
+      "properties": {
+        "name": "昭和大学藤が丘リハビリテーション病院",
+        "type": "病院",
+        "department": "内科　呼吸器　内科　循環器　内科　脳神経　小児科　外科　整形　外科　形成　眼科　リハビリテーション科　歯科",
+        "address": "青葉区藤が丘2-1-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53220609719816,
+          35.54235486640265
+        ]
+      },
+      "properties": {
+        "name": "荻原医院",
+        "type": "診療所",
+        "department": "内科　循環器科　小児科",
+        "address": "青葉区藤が丘1-44-8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52929975678134,
+          35.54291048498495
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団三喜会 新緑ホームケアクリニック藤が丘",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区藤が丘1-37-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53467461237705,
+          35.5442472256074
+        ]
+      },
+      "properties": {
+        "name": "ノグチ歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区藤が丘1-36ｱﾎﾟﾗﾝ藤が丘内A-1棟1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5287253149975,
+          35.54332889468162
+        ]
+      },
+      "properties": {
+        "name": "すずき眼科クリニック",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "青葉区藤が丘1-36-3ｱﾎﾟﾗﾝ藤が丘ｵﾘ-ﾌﾞ館3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52944430774775,
+          35.54468922284082
+        ]
+      },
+      "properties": {
+        "name": "昭和大学藤が丘病院",
+        "type": "病院",
+        "department": "内科　呼吸器　内科　循環器　内科　消化器　内科　血液　内科　糖尿病　内科　代謝　内科　内分泌　内科　腎臓　内科　腫瘍　内科　疼痛緩和　内科　脳神経　外科　呼吸器　外科　心臓血管　外科　消化器　外科　乳腺　外科　小児　外科　整形　外科　脳神経　外科　形成",
+        "address": "青葉区藤が丘1-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52866382081547,
+          35.54509027016839
+        ]
+      },
+      "properties": {
+        "name": "おおぎや整形外科",
+        "type": "診療所",
+        "department": "外科　整形　外科　小児　整形　リハビリテーション科　内科",
+        "address": "青葉区藤が丘1-28-7 第一飯田ﾋﾞﾙ201号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52948011316198,
+          35.54556571198024
+        ]
+      },
+      "properties": {
+        "name": "はなわ小児科内科クリニック",
+        "type": "診療所",
+        "department": "内科　小児科",
+        "address": "青葉区藤が丘1-28-3ｳｲｽﾀﾘｱ28-2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53007589078157,
+          35.54569631452657
+        ]
+      },
+      "properties": {
+        "name": "藤が丘スピカデンタルケアクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科",
+        "address": "青葉区藤が丘1-28-29"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52855019410492,
+          35.54542327134936
+        ]
+      },
+      "properties": {
+        "name": "さとう内科クリニック",
+        "type": "診療所",
+        "department": "内科　内科　糖尿病　内科　内分泌　精神科　外科　整形　放射線科　内科　心療　眼科　耳鼻いんこう科　泌尿器科　内科　緩和ケア",
+        "address": "青葉区藤が丘1-28-20 ﾌｧﾐ-ﾕ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5279036217448,
+          35.54479891432868
+        ]
+      },
+      "properties": {
+        "name": "ムラヤマ内科クリニック",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区藤が丘1-28-17T-BOX藤が丘3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5279036217448,
+          35.54479891432868
+        ]
+      },
+      "properties": {
+        "name": "鈴木ペインクリニック",
+        "type": "診療所",
+        "department": "内科　ペインクリニック　麻酔科",
+        "address": "青葉区藤が丘1-28-17T-BOX 3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5279036217448,
+          35.54479891432868
+        ]
+      },
+      "properties": {
+        "name": "こうクリニック",
+        "type": "診療所",
+        "department": "外科　外科　乳腺　アレルギー科　内科　内科　漢方",
+        "address": "青葉区藤が丘1-28-17T-BOX 3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52791470603105,
+          35.5447626120876
+        ]
+      },
+      "properties": {
+        "name": "河合メンタルクリニック",
+        "type": "診療所",
+        "department": "精神科　神経科",
+        "address": "青葉区藤が丘1-28-17T・BOX3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5282164576773,
+          35.54490198706789
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団恵明早蕨会イケ忠診療部in藤が丘",
+        "type": "診療所",
+        "department": "内科　胃腸　外科　内視鏡　外科　肛門",
+        "address": "青葉区藤が丘1-28-11 ｼ-ｽﾞﾚﾌｨﾈﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53196001699163,
+          35.545608603039526
+        ]
+      },
+      "properties": {
+        "name": "ゆうきクリニック",
+        "type": "診療所",
+        "department": "内科　内科　循環器",
+        "address": "青葉区藤が丘1-24-13 藤が丘医療複合ﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52746668199237,
+          35.54520772900931
+        ]
+      },
+      "properties": {
+        "name": "アーバン・プラザ歯科藤尾",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区藤が丘1-16-10ｱ-ﾊﾞﾝ・ﾌﾟﾗｻﾞ2F J号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52726932540045,
+          35.547229069779334
+        ]
+      },
+      "properties": {
+        "name": "上條整形外科皮膚科医院",
+        "type": "診療所",
+        "department": "整形外科　皮膚泌尿器科",
+        "address": "青葉区藤が丘1-14-72"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52676191286582,
+          35.54636816533464
+        ]
+      },
+      "properties": {
+        "name": "はるの木こどもクリニック",
+        "type": "診療所",
+        "department": "小児科",
+        "address": "青葉区藤が丘1-14-49横浜藤が丘NBIﾋﾞﾙ2A"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52676684030962,
+          35.546406253982774
+        ]
+      },
+      "properties": {
+        "name": "フジ皮フ科クリニック",
+        "type": "診療所",
+        "department": "皮膚科　アレルギー科　皮膚科　美容",
+        "address": "青葉区藤が丘1-14-49 横浜藤が丘NBIﾋﾞﾙ2F 2B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52674210759474,
+          35.54637222343806
+        ]
+      },
+      "properties": {
+        "name": "藤が丘みらい歯科",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区藤が丘1-14-49"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50500332214588,
+          35.53556123303205
+        ]
+      },
+      "properties": {
+        "name": "染谷医院",
+        "type": "診療所",
+        "department": "内科　内科　糖尿病　内科　循環器　内科　消化器　内科　呼吸器　内科　神経",
+        "address": "青葉区田奈町77-66"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50186353467043,
+          35.53807991708619
+        ]
+      },
+      "properties": {
+        "name": "モリワキ歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区田奈町46-4-101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50182493802674,
+          35.53862000648185
+        ]
+      },
+      "properties": {
+        "name": "川瀬医院",
+        "type": "診療所",
+        "department": "内科　消化器科　小児科",
+        "address": "青葉区田奈町45-6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5027642339325,
+          35.53782036825164
+        ]
+      },
+      "properties": {
+        "name": "さかもと歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区田奈町43-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50447923416937,
+          35.53758485021564
+        ]
+      },
+      "properties": {
+        "name": "上原歯科",
+        "type": "歯科",
+        "department": "歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区田奈町29-27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50484712396684,
+          35.536875650300026
+        ]
+      },
+      "properties": {
+        "name": "あい歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区田奈町29-1 ｱ-ﾊﾞﾝｸﾚ-ﾙｿｼｱ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50502504692997,
+          35.539555368525754
+        ]
+      },
+      "properties": {
+        "name": "田奈クリニック",
+        "type": "診療所",
+        "department": "内科　外科　外科　脳神経　リハビリテーション科",
+        "address": "青葉区田奈町25-7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50527592989368,
+          35.53676605194448
+        ]
+      },
+      "properties": {
+        "name": "田奈整形外科・外科",
+        "type": "診療所",
+        "department": "外科　整形外科　皮膚科　リハビリ科",
+        "address": "青葉区田奈町15-7第二東ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5054160228375,
+          35.53654105676833
+        ]
+      },
+      "properties": {
+        "name": "長津田アオバ矯正歯科",
+        "type": "歯科",
+        "department": "歯科　歯科　矯正",
+        "address": "青葉区田奈町15-4田奈駅前ｸﾘﾆｯｸﾋﾞﾙ3F301号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5054160228375,
+          35.53654105676833
+        ]
+      },
+      "properties": {
+        "name": "横浜まちだクリニック",
+        "type": "診療所",
+        "department": "リハビリテーション科　内科　外科　整形",
+        "address": "青葉区田奈町15-4 田奈駅前ｸﾘﾆｯｸﾋﾞﾙ2F 202号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5054160228375,
+          35.53654105676833
+        ]
+      },
+      "properties": {
+        "name": "田奈駅前ことり内科",
+        "type": "診療所",
+        "department": "内科　内科　腎臓　内科　糖尿病　アレルギー科",
+        "address": "青葉区田奈町15-4 田奈駅前ｸﾘﾆｯｸﾋﾞﾙ102号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50559249940076,
+          35.53659131373557
+        ]
+      },
+      "properties": {
+        "name": "かじわら田奈駅前こどもクリニック",
+        "type": "診療所",
+        "department": "小児科",
+        "address": "青葉区田奈町15-4 201号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51478110744637,
+          35.56443816596734
+        ]
+      },
+      "properties": {
+        "name": "ふるた内科小児科クリニック",
+        "type": "診療所",
+        "department": "内科　小児科",
+        "address": "青葉区鉄町57-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5267630807697,
+          35.570187528974124
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団緑成会 横浜総合病院",
+        "type": "病院",
+        "department": "内科　内科　呼吸器　内科　循環器　内科　消化器　内科　神経　外科　消化器　外科　心臓血管　外科　脳神経　外科　乳腺　外科　肛門　外科　整形　外科　形成　小児科　皮膚科　泌尿器科　泌尿器科　人工透析　産婦人科　眼科　耳鼻いんこう科　リハビリテーション科",
+        "address": "青葉区鉄町2201-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52646285458422,
+          35.569563336528724
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム緑の郷医務室",
+        "type": "診療所",
+        "department": "内科　脳神経外科　皮膚科",
+        "address": "青葉区鉄町2075-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51819358715255,
+          35.566279936119024
+        ]
+      },
+      "properties": {
+        "name": "桐蔭学園診療所",
+        "type": "診療所",
+        "department": "内科　小児科　外科　整形外科　皮膚泌尿器科　放射線科",
+        "address": "青葉区鉄町1614"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53183773977827,
+          35.565759142834565
+        ]
+      },
+      "properties": {
+        "name": "池端歯科室",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区大場町356-7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5326281911028,
+          35.54128823773389
+        ]
+      },
+      "properties": {
+        "name": "内木歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区千草台10-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51609594028932,
+          35.54423145916649
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団健美歯会ササキ歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区青葉台2-9-7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5163965890716,
+          35.54442999411039
+        ]
+      },
+      "properties": {
+        "name": "木崎眼科",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "青葉区青葉台2-9-10第3ﾌｼﾞﾓﾄﾋﾞﾙ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51639878916595,
+          35.544444694100854
+        ]
+      },
+      "properties": {
+        "name": "白鳥整形外科",
+        "type": "診療所",
+        "department": "整形外科　リハビリ科",
+        "address": "青葉区青葉台2-9-10 第3ﾌｼﾞﾓﾄﾋﾞﾙ3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51414417775698,
+          35.5430821432318
+        ]
+      },
+      "properties": {
+        "name": "富川歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台2-6-13青葉台T.Kﾋﾞﾙ4F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51397184405485,
+          35.54310860499293
+        ]
+      },
+      "properties": {
+        "name": "青葉台脳神経クリニック",
+        "type": "診療所",
+        "department": "外科　脳神経　内科　神経",
+        "address": "青葉区青葉台2-6-12 ｾｲｼﾞｮ-青葉台ﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5156534792663,
+          35.543010754570034
+        ]
+      },
+      "properties": {
+        "name": "みみ・はな・のど はねだ耳鼻咽喉科",
+        "type": "診療所",
+        "department": "耳鼻咽喉科",
+        "address": "青葉区青葉台2-5-11ｹﾝｼｭｳ第7ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5158931736135,
+          35.54304260177855
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団永康会 青葉台腎クリニック",
+        "type": "診療所",
+        "department": "内科　人工透析",
+        "address": "青葉区青葉台2-5 4F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50984990408082,
+          35.54809014613794
+        ]
+      },
+      "properties": {
+        "name": "佐川耳鼻咽喉科医院",
+        "type": "診療所",
+        "department": "小児科　アレルギー科　耳鼻咽喉科　外科　気管食道",
+        "address": "青葉区青葉台2-35-43"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51530381510835,
+          35.542298600002944
+        ]
+      },
+      "properties": {
+        "name": "岡田理学クリニック",
+        "type": "診療所",
+        "department": "外科　整形",
+        "address": "青葉区青葉台2-3-1ﾍﾞﾙﾗｲﾄ青葉台409"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5152843605872,
+          35.54248106714954
+        ]
+      },
+      "properties": {
+        "name": "青葉台ようこ皮膚科クリニック",
+        "type": "診療所",
+        "department": "皮膚科　皮膚科　美容",
+        "address": "青葉区青葉台2-3-16ﾃﾞｲﾗｲﾄﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.515266308912,
+          35.54241607624025
+        ]
+      },
+      "properties": {
+        "name": "イカリデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区青葉台2-3-15ｶ-ｻ青葉台ﾋﾞﾙ3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5150094745541,
+          35.542392124474446
+        ]
+      },
+      "properties": {
+        "name": "吉本内科医院",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区青葉台2-3-10ﾗﾙｸ青葉台4F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51496797119356,
+          35.54255907665077
+        ]
+      },
+      "properties": {
+        "name": "田園都市レディースクリニック青葉台",
+        "type": "診療所",
+        "department": "産婦人科　内科",
+        "address": "青葉区青葉台2-3-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5132875219637,
+          35.546914009016525
+        ]
+      },
+      "properties": {
+        "name": "クリニック医庵 青葉台",
+        "type": "診療所",
+        "department": "内科　精神科　精神科　老年　外科",
+        "address": "青葉区青葉台2-30-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51480688680246,
+          35.54210635785397
+        ]
+      },
+      "properties": {
+        "name": "あおば半沢クリニック",
+        "type": "診療所",
+        "department": "精神科　心療内科",
+        "address": "青葉区青葉台2-2-18青葉台ｺ-ﾎﾟ203号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51310096559814,
+          35.54430415638462
+        ]
+      },
+      "properties": {
+        "name": "橋本クリニック",
+        "type": "診療所",
+        "department": "内科　精神科　神経科　心療内科",
+        "address": "青葉区青葉台2-18-3ﾓﾘｴ-ﾙ青葉台2A号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5131695837564,
+          35.54423202161522
+        ]
+      },
+      "properties": {
+        "name": "うかい歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台2-18-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51620889740323,
+          35.54580429290534
+        ]
+      },
+      "properties": {
+        "name": "川原歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台2-12-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51670520209197,
+          35.5464603927808
+        ]
+      },
+      "properties": {
+        "name": "さぬきだ歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台2-11-25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51680460599948,
+          35.54706948238051
+        ]
+      },
+      "properties": {
+        "name": "あおばメンタルクリニック",
+        "type": "診療所",
+        "department": "精神科",
+        "address": "青葉区青葉台2-11-24ｾｶﾝﾄﾞｴｲﾄﾞ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5168618222473,
+          35.54706157352701
+        ]
+      },
+      "properties": {
+        "name": "爪と皮膚の診療所 形成外科・皮膚科",
+        "type": "診療所",
+        "department": "外科　形成　皮膚科",
+        "address": "青葉区青葉台2-11-14 SGﾋﾞﾙ 2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51670629764425,
+          35.545745253338566
+        ]
+      },
+      "properties": {
+        "name": "ベルデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区青葉台2-10-33"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51649559195837,
+          35.54482495456625
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団八千代 田園クリニック",
+        "type": "診療所",
+        "department": "内科　皮膚科　泌尿器科",
+        "address": "青葉区青葉台2-10-20 第二志田ﾋﾞﾙ4F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51661769577626,
+          35.54546254348895
+        ]
+      },
+      "properties": {
+        "name": "医療法人駿和会いなげ矯正歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科",
+        "address": "青葉区青葉台2-10-15鈴木ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51652568778908,
+          35.543246341804064
+        ]
+      },
+      "properties": {
+        "name": "小川眼科青葉台",
+        "type": "診療所",
+        "department": "眼科　小児　眼科",
+        "address": "青葉区青葉台1-7-4 青葉台東急ｽｸｴｱ North-1 2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5171159822456,
+          35.543184935680074
+        ]
+      },
+      "properties": {
+        "name": "ほりぐち歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区青葉台1-7-1東急ｽｸｴｱSouth2 7F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51719021999037,
+          35.54171084520795
+        ]
+      },
+      "properties": {
+        "name": "さくら歯科クリニックあおば",
+        "type": "歯科",
+        "department": "歯科　歯科　口腔外科　歯科　小児",
+        "address": "青葉区青葉台1-6-16 G・Hﾋﾞﾙ4F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5166832586557,
+          35.54205961940174
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団岩井皮フ科",
+        "type": "診療所",
+        "department": "皮膚科",
+        "address": "青葉区青葉台1-6-14青葉台日興ﾋﾞﾙ5F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51673574311837,
+          35.54230180507698
+        ]
+      },
+      "properties": {
+        "name": "ごとう小児科アレルギー科",
+        "type": "診療所",
+        "department": "小児科　アレルギー科",
+        "address": "青葉区青葉台1-6-13ｹﾝﾄﾛﾝﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51667287611787,
+          35.542292175998604
+        ]
+      },
+      "properties": {
+        "name": "青葉台駅前眼科",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "青葉区青葉台1-6-13 ｹﾝﾄﾛﾝﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51667287611787,
+          35.542292175998604
+        ]
+      },
+      "properties": {
+        "name": "中山医院",
+        "type": "診療所",
+        "department": "内科　胃腸科　外科　皮膚科　こう門科",
+        "address": "青葉区青葉台1-6-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51667287611787,
+          35.542292175998604
+        ]
+      },
+      "properties": {
+        "name": "青葉歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台1-6-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5167616034286,
+          35.541861884280785
+        ]
+      },
+      "properties": {
+        "name": "スマイル眼科クリニック",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "青葉区青葉台1-6-12 ｶﾝｾﾞ-ﾑﾋﾞﾙ4F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51666166899713,
+          35.54941367797512
+        ]
+      },
+      "properties": {
+        "name": "岡本診療所",
+        "type": "診療所",
+        "department": "外科　整形　内科　内科　ペインクリニック",
+        "address": "青葉区青葉台1-29-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51630114263833,
+          35.549138690323794
+        ]
+      },
+      "properties": {
+        "name": "リムクリニック",
+        "type": "診療所",
+        "department": "内科　内科　糖尿病　内科　胃腸　内科　内視鏡",
+        "address": "青葉区青葉台1-29-2ﾙﾌﾟﾙﾐｴ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51743872230733,
+          35.54957746085067
+        ]
+      },
+      "properties": {
+        "name": "あおばウィメンズホスピタル",
+        "type": "病院",
+        "department": "小児科　産婦人科　麻酔科",
+        "address": "青葉区青葉台1-29-15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51695262088893,
+          35.549437020631416
+        ]
+      },
+      "properties": {
+        "name": "石曽根歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台1-29-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51656341750862,
+          35.54896441073236
+        ]
+      },
+      "properties": {
+        "name": "青葉台歯科診療所",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台1-29-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51671951555375,
+          35.54862159110783
+        ]
+      },
+      "properties": {
+        "name": "清水内科医院",
+        "type": "診療所",
+        "department": "内科　内科　循環器",
+        "address": "青葉区青葉台1-28-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5172071103521,
+          35.54769352218599
+        ]
+      },
+      "properties": {
+        "name": "阿部歯科",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台1-24-1電興ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51915700074824,
+          35.54576197523633
+        ]
+      },
+      "properties": {
+        "name": "横浜青葉台クリニック",
+        "type": "診療所",
+        "department": "内科　小児科　眼科　放射線科",
+        "address": "青葉区青葉台1-19-35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5172190144586,
+          35.54736711260903
+        ]
+      },
+      "properties": {
+        "name": "もてき歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区青葉台1-15-14ﾘｯﾁﾊｲﾑ青葉台1F 左号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51721269673934,
+          35.54549958392827
+        ]
+      },
+      "properties": {
+        "name": "朝比奈耳鼻咽喉科医院",
+        "type": "診療所",
+        "department": "耳鼻咽喉科",
+        "address": "青葉区青葉台1-13-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5171543947323,
+          35.54518791412885
+        ]
+      },
+      "properties": {
+        "name": "新妻歯科クリニック",
+        "type": "診療所",
+        "department": "歯科　歯科　矯正　歯科　小児　歯科　口腔外科　皮膚科　美容",
+        "address": "青葉区青葉台1-13-2新妻ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5171543947323,
+          35.54518791412885
+        ]
+      },
+      "properties": {
+        "name": "新妻医院",
+        "type": "診療所",
+        "department": "皮膚科",
+        "address": "青葉区青葉台1-13-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51734329567904,
+          35.545302774187626
+        ]
+      },
+      "properties": {
+        "name": "遠藤歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区青葉台1-13-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51739049672838,
+          35.54546253409767
+        ]
+      },
+      "properties": {
+        "name": "岩谷産婦人科医院",
+        "type": "診療所",
+        "department": "産婦人科",
+        "address": "青葉区青葉台1-13-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51728328080873,
+          35.55919474139225
+        ]
+      },
+      "properties": {
+        "name": "浅沼歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区上谷本町723-1-2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51728328080873,
+          35.55919474139225
+        ]
+      },
+      "properties": {
+        "name": "たざわ耳鼻咽喉科クリニック",
+        "type": "診療所",
+        "department": "耳鼻咽喉科　気管食道科",
+        "address": "青葉区上谷本町723-1-2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51744418102473,
+          35.55919436149613
+        ]
+      },
+      "properties": {
+        "name": "ふじた内科こども医院",
+        "type": "診療所",
+        "department": "内科　消化器科　循環器科　小児科　アレルギー科",
+        "address": "青葉区上谷本町723-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51726648049186,
+          35.559143981421734
+        ]
+      },
+      "properties": {
+        "name": "いわい整形外科",
+        "type": "診療所",
+        "department": "整形外科　皮膚科　リハビリ科　麻酔科",
+        "address": "青葉区上谷本町723-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.523669681711,
+          35.557917056750284
+        ]
+      },
+      "properties": {
+        "name": "わたなべ歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区上谷本町107-7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50780729270716,
+          35.54663389529312
+        ]
+      },
+      "properties": {
+        "name": "松風台アニュー歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区松風台46-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50603399505528,
+          35.54736767322767
+        ]
+      },
+      "properties": {
+        "name": "坂井歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区松風台37-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5096135295318,
+          35.54703153818842
+        ]
+      },
+      "properties": {
+        "name": "田園都市歯科・シニア口腔ケアクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　矯正　歯科　小児",
+        "address": "青葉区松風台14-15 田園都市ｹｱ・ﾌﾟﾗｻﾞ3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51205489328194,
+          35.54594824952587
+        ]
+      },
+      "properties": {
+        "name": "マツザワデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区松風台13-5ﾗｲﾑﾗｲﾄ松風台3-D"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5119123935191,
+          35.54601114935726
+        ]
+      },
+      "properties": {
+        "name": "田園都市整形外科クリニック",
+        "type": "診療所",
+        "department": "内科　リウマチ科　整形外科　形成外科　美容外科　皮膚科　リハビリ科",
+        "address": "青葉区松風台13-5ﾗｲﾑﾗｲﾄ松風台3-1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5119123935191,
+          35.54601114935726
+        ]
+      },
+      "properties": {
+        "name": "はやし小児科医院",
+        "type": "診療所",
+        "department": "小児科",
+        "address": "青葉区松風台13-5ﾗｲﾑﾗｲﾄ松風台3-1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51154950338787,
+          35.54626092801715
+        ]
+      },
+      "properties": {
+        "name": "横田内科クリニック",
+        "type": "診療所",
+        "department": "内科　呼吸器科　胃腸科　循環器科",
+        "address": "青葉区松風台13-5ﾗｲﾑﾗｲﾄ松風台3 1F-1室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5107202542831,
+          35.55308621942834
+        ]
+      },
+      "properties": {
+        "name": "山崎歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科",
+        "address": "青葉区若草台5-57"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5106365327403,
+          35.552630843064016
+        ]
+      },
+      "properties": {
+        "name": "若草台内科眼科外科クリニック",
+        "type": "診療所",
+        "department": "内科　内科　胃腸　外科　外科　肛門　眼科",
+        "address": "青葉区若草台4-16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5076533172923,
+          35.550719102286095
+        ]
+      },
+      "properties": {
+        "name": "しもやま歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区若草台1-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50786214458117,
+          35.55522084852298
+        ]
+      },
+      "properties": {
+        "name": "佐氏歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区若草台10-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50875773035924,
+          35.554778870295394
+        ]
+      },
+      "properties": {
+        "name": "こまつ歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区若草台10-1ﾌﾟﾗﾄｳﾓﾘ106号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5042275279136,
+          35.57052202566298
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム ヴェルデの森診療所",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区寺家町548-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54493211962057,
+          35.542981171432345
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム ピア市ヶ尾医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区市ケ尾町522-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54623818526292,
+          35.543949035494556
+        ]
+      },
+      "properties": {
+        "name": "松本クリニック",
+        "type": "診療所",
+        "department": "内科　神経内科　眼科",
+        "address": "青葉区市ヶ尾町518-1東急ﾄﾞｴﾙｱﾙｽ南101号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54623818526292,
+          35.543949035494556
+        ]
+      },
+      "properties": {
+        "name": "たかはし歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区市ヶ尾町518-1東急ﾄﾞｴﾙｱﾙｽ市ｹ尾南204号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54447614608787,
+          35.537988902154474
+        ]
+      },
+      "properties": {
+        "name": "内野医院",
+        "type": "診療所",
+        "department": "内科　消化器科",
+        "address": "青葉区市ヶ尾町330"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53611157653512,
+          35.5528612069249
+        ]
+      },
+      "properties": {
+        "name": "青葉区休日急患診療所",
+        "type": "診療所",
+        "department": "内科　小児科",
+        "address": "青葉区市ケ尾町31-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53842895087098,
+          35.54950217202102
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム ビオラ市ヶ尾医務室",
+        "type": "診療所",
+        "department": "外科",
+        "address": "青葉区市ケ尾町25-6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54002906056664,
+          35.54790024179299
+        ]
+      },
+      "properties": {
+        "name": "市ケ尾病院",
+        "type": "病院",
+        "department": "内科　内科　呼吸器　内科　消化器　内科　循環器　内科　神経　内科　糖尿病　内科　代謝　内科　内分泌　外科　外科　消化器　外科　乳腺　外科　脳神経　外科　整形　外科　形成　アレルギー科　精神科　泌尿器科　リハビリテーション科　歯科　歯科　口腔外科",
+        "address": "青葉区市ケ尾町23-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53317439016195,
+          35.557214251973555
+        ]
+      },
+      "properties": {
+        "name": "たむら歯科",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区市ケ尾町1867"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53935548735305,
+          35.55203498882962
+        ]
+      },
+      "properties": {
+        "name": "原歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区市ケ尾町1175-121F B号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5405295365872,
+          35.552524907875
+        ]
+      },
+      "properties": {
+        "name": "永楽整形外科リウマチ科",
+        "type": "診療所",
+        "department": "リウマチ科　整形外科　リハビリ科",
+        "address": "青葉区市ヶ尾町1169-9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54059700664524,
+          35.552878750674736
+        ]
+      },
+      "properties": {
+        "name": "ファミリア歯科",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区市ケ尾町1169-5ﾌｫﾝﾃ-ﾇ市ｹ尾 102号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54056926433654,
+          35.55239020383077
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団プラタナス青葉アーバンクリニック",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区市ケ尾町1169 市ｹ尾STCﾋﾞﾙ5F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54047141924812,
+          35.55351005373599
+        ]
+      },
+      "properties": {
+        "name": "梅の木眼科医院",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "青葉区市ケ尾町1168-1 ｶ-ｻ-ｳﾁﾉ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5399719719203,
+          35.55419745376497
+        ]
+      },
+      "properties": {
+        "name": "ロコデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区市ヶ尾町1167-1ﾗﾊﾞ-ﾌﾞﾙ昌和 G"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5399719719203,
+          35.55419745376497
+        ]
+      },
+      "properties": {
+        "name": "きくち内科",
+        "type": "診療所",
+        "department": "内科　アレルギー科　内科　呼吸器",
+        "address": "青葉区市ヶ尾町1167-1ﾗﾊﾞ-ﾌﾞﾙ昌和 1Fﾃﾅﾝﾄ D/E"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5399719719203,
+          35.55419745376497
+        ]
+      },
+      "properties": {
+        "name": "井上小児科医院",
+        "type": "診療所",
+        "department": "小児科　アレルギー科",
+        "address": "青葉区市ヶ尾町1167-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5411941875083,
+          35.55269766940171
+        ]
+      },
+      "properties": {
+        "name": "熊谷医院",
+        "type": "診療所",
+        "department": "胃腸科　外科　こう門科　放射線科",
+        "address": "青葉区市ケ尾町1162-1ﾌｧﾐﾘ-ｺ-ﾎﾟ市ｹ尾208号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54275880225254,
+          35.552205525395586
+        ]
+      },
+      "properties": {
+        "name": "しろくま内科小児科クリニック",
+        "type": "診療所",
+        "department": "内科　内科　循環器　小児科　アレルギー科",
+        "address": "青葉区市ヶ尾町1156-6ﾏｽﾄﾗｲﾌ市が尾1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54258299116873,
+          35.55210914726555
+        ]
+      },
+      "properties": {
+        "name": "クボタ歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区市ヶ尾町1156-15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5427501894639,
+          35.55224218731451
+        ]
+      },
+      "properties": {
+        "name": "西山耳鼻咽喉科",
+        "type": "診療所",
+        "department": "耳鼻咽喉科　気管食道科",
+        "address": "青葉区市ケ尾町1156-11ｱﾋﾞﾀｼｵﾚ市が尾1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54052096881674,
+          35.5518944356097
+        ]
+      },
+      "properties": {
+        "name": "レディースクリニック市ヶ尾",
+        "type": "診療所",
+        "department": "婦人科",
+        "address": "青葉区市ヶ尾町1154市が尾ﾌﾟﾗ-ｻﾞﾋﾞﾙ 1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54052096881674,
+          35.5518944356097
+        ]
+      },
+      "properties": {
+        "name": "杉原クリニック",
+        "type": "診療所",
+        "department": "内科　消化器　内科　外科　外科　肛門　内科　内視鏡　アレルギー科　内科　糖尿病",
+        "address": "青葉区市ヶ尾町1154-2 市ｹ尾ﾌﾟﾗ-ｻﾞﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54052096881674,
+          35.5518944356097
+        ]
+      },
+      "properties": {
+        "name": "市が尾駅前プラーザ歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区市ヶ尾町1154 ﾌﾟﾗｻﾞﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53986582757588,
+          35.55074847230043
+        ]
+      },
+      "properties": {
+        "name": "一ツ葉矯正歯科クリニック",
+        "type": "歯科",
+        "department": "矯正歯科",
+        "address": "青葉区市ヶ尾町1153-2-206"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5432125714366,
+          35.55184113180811
+        ]
+      },
+      "properties": {
+        "name": "市が尾歯科・歯科口腔外科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区市ケ尾町1075-1栄和ﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54309684560107,
+          35.551933340644275
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団吉田会 吉田内科クリニック",
+        "type": "診療所",
+        "department": "内科　消化器科　循環器科　小児科　アレルギー科　リハビリ科",
+        "address": "青葉区市ケ尾町1075-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5433280689527,
+          35.55140148229909
+        ]
+      },
+      "properties": {
+        "name": "遠山内科",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区市ケ尾町1074-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54513876340894,
+          35.549559203338696
+        ]
+      },
+      "properties": {
+        "name": "Ｋ．デンタル",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区市ヶ尾町1070-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54205225865942,
+          35.55131730032473
+        ]
+      },
+      "properties": {
+        "name": "早乙女歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区市ヶ尾町1064-4横山ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5409882413278,
+          35.55052434144957
+        ]
+      },
+      "properties": {
+        "name": "市が尾耳鼻咽喉科",
+        "type": "診療所",
+        "department": "耳鼻いんこう科　アレルギー科",
+        "address": "青葉区市ヶ尾町1063-3ｳﾞｪﾙﾄﾞﾐ-ﾙ204"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5409882413278,
+          35.55052434144957
+        ]
+      },
+      "properties": {
+        "name": "古澤歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区市ケ尾町1063-3ｳﾞｪﾙﾄﾞﾐ-ﾙ203"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5409882413278,
+          35.55052434144957
+        ]
+      },
+      "properties": {
+        "name": "市が尾ペインクリニック内科",
+        "type": "診療所",
+        "department": "内科　内科　ペインクリニック　内科　緩和ケア　内科　心療　皮膚科",
+        "address": "青葉区市ケ尾町1063-3ｳﾞｪﾙﾄﾞﾐ-ﾙ201号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54054358850195,
+          35.550091618551576
+        ]
+      },
+      "properties": {
+        "name": "市が尾整形外科クリニック",
+        "type": "診療所",
+        "department": "整形外科　リハビリ科",
+        "address": "青葉区市ケ尾町1063-12ｺｽﾓｽ市が尾ﾊﾟ-ﾄ2 101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.541724256472,
+          35.55096289954955
+        ]
+      },
+      "properties": {
+        "name": "西山内科皮膚科クリニック",
+        "type": "診療所",
+        "department": "内科　皮膚科",
+        "address": "青葉区市ケ尾町1062-5 ｸﾞﾗﾝﾄﾞﾊｲﾂ森1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54134904794347,
+          35.55043685474579
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団田端歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区市ヶ尾町1062-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5413543557642,
+          35.54965526316811
+        ]
+      },
+      "properties": {
+        "name": "漢方クリニック市ケ尾",
+        "type": "診療所",
+        "department": "内科　漢方　内科　アレルギー科",
+        "address": "青葉区市ケ尾町1055-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5403591690889,
+          35.54996802303732
+        ]
+      },
+      "properties": {
+        "name": "磯野デンタルクリニック市ケ尾",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区市ケ尾町1054-6 ﾗﾐﾈｽ市ｹ尾102号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5400561621337,
+          35.54965389700786
+        ]
+      },
+      "properties": {
+        "name": "市ヶ尾眼科",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "青葉区市ケ尾町1054-4秦野ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53996123099327,
+          35.548760127073486
+        ]
+      },
+      "properties": {
+        "name": "デンタルハーモニー・横浜",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区市ケ尾町1052-2ｵ-ｸﾊ-ﾓﾆ-市ｹ尾1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5385070092107,
+          35.55555807842468
+        ]
+      },
+      "properties": {
+        "name": "岩井歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区市ヶ尾1627-1ｴﾐﾈﾝｽ市ｹ尾1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54047141924812,
+          35.55351005373599
+        ]
+      },
+      "properties": {
+        "name": "山根歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区市ヶ尾1168-1ｶ-ｻｳﾁﾉ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54169159436577,
+          35.553414247356706
+        ]
+      },
+      "properties": {
+        "name": "藤下歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区市ヶ尾1164-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54019061390818,
+          35.54936421374869
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団栗原歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区市ヶ尾1053-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53938453884993,
+          35.54991247104745
+        ]
+      },
+      "properties": {
+        "name": "ミナト歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区市が尾1150-2ｺｽﾓ市が尾ﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50874791210614,
+          35.54961994413851
+        ]
+      },
+      "properties": {
+        "name": "ミロデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区桜台44-54"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51398582457088,
+          35.55089238042589
+        ]
+      },
+      "properties": {
+        "name": "加々見歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区桜台29-16桜台ｶﾞ-ﾃﾞﾝ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51512672329642,
+          35.55015444881762
+        ]
+      },
+      "properties": {
+        "name": "歯科さくらクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区桜台29-1 ｲｻﾐﾋﾞﾙI-1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51698252315344,
+          35.54979603036956
+        ]
+      },
+      "properties": {
+        "name": "みどり小児歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区桜台2-2-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5170447327584,
+          35.55135078889995
+        ]
+      },
+      "properties": {
+        "name": "島崎歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区桜台13-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53349345865485,
+          35.56857124032714
+        ]
+      },
+      "properties": {
+        "name": "地域療育センターあおば診療所",
+        "type": "診療所",
+        "department": "小児科　精神科　耳鼻咽喉科　リハビリ科",
+        "address": "青葉区黒須田34-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53410966269652,
+          35.569110839899075
+        ]
+      },
+      "properties": {
+        "name": "あおぞら歯科",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区黒須田33-51F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53423375448727,
+          35.56921350143464
+        ]
+      },
+      "properties": {
+        "name": "メディカルクリニックあざみ野",
+        "type": "診療所",
+        "department": "内科　内科　神経　内科　循環器　アレルギー科",
+        "address": "青葉区黒須田33-5 ﾀｳﾝｺ-ﾄあざみ野1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53423375448727,
+          35.56921350143464
+        ]
+      },
+      "properties": {
+        "name": "カク小児クリニック",
+        "type": "診療所",
+        "department": "小児科　アレルギー科",
+        "address": "青葉区黒須田33-5 ﾀｳﾝｺ-ﾄあざみ野1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5328175596343,
+          35.56889718966719
+        ]
+      },
+      "properties": {
+        "name": "鳥居歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区黒須田32-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53860827305428,
+          35.57235369269279
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団博慈会 青葉さわい病院",
+        "type": "病院",
+        "department": "内科　内科　呼吸器　内科　消化器　内科　循環器　内科　糖尿病　外科　整形　外科　脳神経　リハビリテーション科",
+        "address": "青葉区元石川町4300"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53837552025226,
+          35.5777292309288
+        ]
+      },
+      "properties": {
+        "name": "元石川青葉クリニック",
+        "type": "診療所",
+        "department": "内科　リハビリ科",
+        "address": "青葉区元石川町4094-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53888872208887,
+          35.57727098959638
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団悠志会横浜悠愛クリニック",
+        "type": "診療所",
+        "department": "内科　消化器科　皮膚科　リハビリ科",
+        "address": "青葉区元石川町4094-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5431250023041,
+          35.57625403594714
+        ]
+      },
+      "properties": {
+        "name": "あざみ野フォレスト歯科",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区元石川町3716-3ｽｶｲｶﾞ-ﾃﾞﾝ元石川103号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54797233176265,
+          35.5776266346269
+        ]
+      },
+      "properties": {
+        "name": "たまプラーザ倶楽部診療所",
+        "type": "診療所",
+        "department": "内科　整形外科",
+        "address": "青葉区元石川町3697-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50301094850894,
+          35.55349974044216
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団 翔栄会 アーク歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区桂台2-29-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5038315187102,
+          35.551804708127605
+        ]
+      },
+      "properties": {
+        "name": "えなみクリニック",
+        "type": "診療所",
+        "department": "内科　小児科　外科",
+        "address": "青葉区桂台2-27-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49961471317042,
+          35.551807234494454
+        ]
+      },
+      "properties": {
+        "name": "げんかい歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区桂台2-21-16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5049747281331,
+          35.55312114803659
+        ]
+      },
+      "properties": {
+        "name": "桂台内科クリニック",
+        "type": "診療所",
+        "department": "内科　呼吸器科　循環器科　リハビリ科",
+        "address": "青葉区桂台1-21-61F No1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50773110674658,
+          35.54958555316262
+        ]
+      },
+      "properties": {
+        "name": "あおばファミリー歯科",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正",
+        "address": "青葉区桂台1-11-49ﾘﾘｱ-ﾚ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5036713631678,
+          35.55930380235473
+        ]
+      },
+      "properties": {
+        "name": "地挽歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区鴨志田町824-25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50666336044915,
+          35.55813190516648
+        ]
+      },
+      "properties": {
+        "name": "石井歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区鴨志田町815-35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5031933119764,
+          35.56386326906884
+        ]
+      },
+      "properties": {
+        "name": "かもしだ内科クリニック",
+        "type": "診療所",
+        "department": "内科　胃腸科　小児科　リウマチ科",
+        "address": "青葉区鴨志田町540-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50629057708036,
+          35.56025483001365
+        ]
+      },
+      "properties": {
+        "name": "なるみや内科",
+        "type": "診療所",
+        "department": "内科　内科　循環器",
+        "address": "青葉区鴨志田町509-1中谷都第三ﾋﾞﾙ 2F 201号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50633667246225,
+          35.56031687345622
+        ]
+      },
+      "properties": {
+        "name": "上野歯科",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区鴨志田町509-1中谷都第3ﾋﾞﾙ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4999449516723,
+          35.558162030618625
+        ]
+      },
+      "properties": {
+        "name": "青葉ヒルズ医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区鴨志田町1260"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50136027564554,
+          35.557243821747456
+        ]
+      },
+      "properties": {
+        "name": "三菱ケミカル株式会社横浜研究所医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区鴨志田町1000"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52578343307312,
+          35.549509776714835
+        ]
+      },
+      "properties": {
+        "name": "横濱もえぎ野クリニック",
+        "type": "診療所",
+        "department": "内科　外科　脳神経　内科　脳神経　リハビリテーション科",
+        "address": "青葉区柿の木台4-7ﾎﾞﾅ-ﾙもえぎ野1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52576072541962,
+          35.54859742417581
+        ]
+      },
+      "properties": {
+        "name": "三浦歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区柿ノ木台4-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52495015560055,
+          35.553526061994944
+        ]
+      },
+      "properties": {
+        "name": "松永デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区柿の木台32-35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52436314132444,
+          35.55137785375182
+        ]
+      },
+      "properties": {
+        "name": "たばな歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区柿の木台14-2ｷｬｸﾀｽ柿の木台1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5250888378059,
+          35.550685454908795
+        ]
+      },
+      "properties": {
+        "name": "みたけ歯科",
+        "type": "歯科",
+        "department": "歯科　歯科　口腔外科　歯科　小児　歯科　矯正",
+        "address": "青葉区柿の木台13-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5252515369205,
+          35.55050597516059
+        ]
+      },
+      "properties": {
+        "name": "たなべ歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　口腔外科　歯科　小児",
+        "address": "青葉区柿の木台13-27"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4976971623986,
+          35.54332647799906
+        ]
+      },
+      "properties": {
+        "name": "池田医院",
+        "type": "診療所",
+        "department": "内科　呼吸器科　胃腸科　循環器科　小児科",
+        "address": "青葉区恩田町3032-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.49917216567061,
+          35.54512787862461
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム 青葉あさくら苑 医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区恩田町2994-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4972205815797,
+          35.5468048351506
+        ]
+      },
+      "properties": {
+        "name": "介護老人福祉施設 大樹の郷 医務室",
+        "type": "診療所",
+        "department": "内科　皮膚科",
+        "address": "青葉区恩田町2282"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.4845278573766,
+          35.5448334815422
+        ]
+      },
+      "properties": {
+        "name": "あかね台さの内科クリニック",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区恩田町1779-1-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48433965908282,
+          35.545164451116406
+        ]
+      },
+      "properties": {
+        "name": "あかね台眼科脳神経外科クリニック",
+        "type": "診療所",
+        "department": "脳神経外科　眼科",
+        "address": "青葉区恩田町1777-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5140252736033,
+          35.54123475249018
+        ]
+      },
+      "properties": {
+        "name": "大橋歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　小児",
+        "address": "青葉区榎が丘5-5ﾓﾝﾀ-ﾅ青葉台3号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5054177434352,
+          35.54360031293199
+        ]
+      },
+      "properties": {
+        "name": "アルクスデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区榎が丘54-18"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50861447207808,
+          35.54311439835697
+        ]
+      },
+      "properties": {
+        "name": "増田歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区榎が丘34-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5125125747583,
+          35.54294243193624
+        ]
+      },
+      "properties": {
+        "name": "村田歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科",
+        "address": "青葉区榎が丘26-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51161487281675,
+          35.54277078125307
+        ]
+      },
+      "properties": {
+        "name": "榎が丘歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区榎が丘26-35"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51630662774878,
+          35.54153189285622
+        ]
+      },
+      "properties": {
+        "name": "青葉台たけだ整形外科",
+        "type": "診療所",
+        "department": "外科　整形　リハビリテーション科",
+        "address": "青葉区榎が丘1-9 青葉台由樹ﾋﾞﾙ3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5157932699317,
+          35.54148245593287
+        ]
+      },
+      "properties": {
+        "name": "あおばだい矯正歯科",
+        "type": "歯科",
+        "department": "矯正歯科",
+        "address": "青葉区榎が丘1-6第2森野ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51574635479665,
+          35.54153044404359
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団一宥会青葉台みなみクリニック",
+        "type": "診療所",
+        "department": "精神科　内科　心療　精神科　老年",
+        "address": "青葉区榎が丘1-6 第2森野ﾋﾞﾙ7F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51562496946812,
+          35.54144300583342
+        ]
+      },
+      "properties": {
+        "name": "いまむらメディカルクリニック",
+        "type": "診療所",
+        "department": "内科　皮膚科　泌尿器科",
+        "address": "青葉区榎が丘1-5青木ﾋﾞﾙ4F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5127036346941,
+          35.54085161529307
+        ]
+      },
+      "properties": {
+        "name": "えのきがおか内科医院",
+        "type": "診療所",
+        "department": "内科　内科　代謝　内科　内分泌　内科　糖尿病　内科　消化器　小児科　内科　循環器",
+        "address": "青葉区榎が丘11-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54838932354903,
+          35.55937615657383
+        ]
+      },
+      "properties": {
+        "name": "とみた矯正歯科クリニック青葉診療所",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区荏田北3-7-9椿ﾏﾝｼｮﾝ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5487014241596,
+          35.55940855668015
+        ]
+      },
+      "properties": {
+        "name": "江田きむら耳鼻咽喉科",
+        "type": "診療所",
+        "department": "耳鼻咽喉科",
+        "address": "青葉区荏田北3-7-35SKﾒﾃﾞｨｶﾙﾌﾟﾗｻﾞ3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54878602206085,
+          35.559039967086335
+        ]
+      },
+      "properties": {
+        "name": "あおば江田クリニック",
+        "type": "診療所",
+        "department": "内科　泌尿器科",
+        "address": "青葉区荏田北3-7-35SKﾒﾃﾞｨｶﾙﾌﾟﾗｻﾞ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54947642718912,
+          35.55974125669189
+        ]
+      },
+      "properties": {
+        "name": "なかの歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区荏田北3-7-35SKﾒﾃﾞｨｶﾙﾋﾞﾙ3F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54996732362144,
+          35.55903755761376
+        ]
+      },
+      "properties": {
+        "name": "つたの葉デンタルクリニック・歯科口腔外科",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区荏田北3-2-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5498725149817,
+          35.55761866899053
+        ]
+      },
+      "properties": {
+        "name": "えだ皮膚科クリニック",
+        "type": "診療所",
+        "department": "皮膚科",
+        "address": "青葉区荏田北1-2-1 platform103"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54907486930674,
+          35.550183426071285
+        ]
+      },
+      "properties": {
+        "name": "いせ歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区荏田西3-11-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5371834877904,
+          35.5725816164667
+        ]
+      },
+      "properties": {
+        "name": "あおば皮ふ科",
+        "type": "診療所",
+        "department": "アレルギー科　形成外科　皮膚科",
+        "address": "青葉区荏子田3-1-1青葉福祉援助会ﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53532872036013,
+          35.57849419935629
+        ]
+      },
+      "properties": {
+        "name": "イモト歯科",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区荏子田2-2-9ｱﾄﾞﾊﾞﾝｽﾞﾋﾞﾙ2F-G"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53457113263843,
+          35.57853913982666
+        ]
+      },
+      "properties": {
+        "name": "順伸クリニック小児科・眼科",
+        "type": "診療所",
+        "department": "小児科　アレルギー科　皮膚科　小児　眼科　内科",
+        "address": "青葉区荏子田2-2-9ｱﾄﾞﾊﾞﾝｽﾞﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53532872036013,
+          35.57849419935629
+        ]
+      },
+      "properties": {
+        "name": "水野整形外科",
+        "type": "診療所",
+        "department": "整形外科",
+        "address": "青葉区荏子田2-2-9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5347182189805,
+          35.57842253929229
+        ]
+      },
+      "properties": {
+        "name": "ケセラスキンケアクリニック",
+        "type": "診療所",
+        "department": "皮膚科　外科　形成　アレルギー科",
+        "address": "青葉区荏子田2-2-8ｱﾄﾞﾊﾞﾝｽﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53473991897522,
+          35.578416029303625
+        ]
+      },
+      "properties": {
+        "name": "藤本内科クリニック",
+        "type": "診療所",
+        "department": "内科　内科　糖尿病　内科　内分泌　内科　代謝　内科　循環器　内科　消化器　内科　呼吸器　内科　神経　リウマチ科　アレルギー科　内科　心療　外科　脳神経",
+        "address": "青葉区荏子田2-2-6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53569262024232,
+          35.57838021955114
+        ]
+      },
+      "properties": {
+        "name": "ノアデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区荏子田2-2-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53674444047846,
+          35.57853563701771
+        ]
+      },
+      "properties": {
+        "name": "ひらやまデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区荏子田2-1-16ﾌﾟﾗｼ-ﾄﾞ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54488082954938,
+          35.57791823312044
+        ]
+      },
+      "properties": {
+        "name": "よしむら内科クリニック",
+        "type": "診療所",
+        "department": "内科　内科　循環器　内科　消化器",
+        "address": "青葉区荏子田1-3-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5256325484739,
+          35.54664246091185
+        ]
+      },
+      "properties": {
+        "name": "山下歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区もえぎ野6-3 地下1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5256325484739,
+          35.54664246091185
+        ]
+      },
+      "properties": {
+        "name": "田園都市オーラルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区もえぎ野6-3 ・105号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5262559123144,
+          35.54619330991966
+        ]
+      },
+      "properties": {
+        "name": "佐々木クリニック",
+        "type": "診療所",
+        "department": "胃腸科　循環器科",
+        "address": "青葉区もえぎ野6-25"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52653365072658,
+          35.545843997845566
+        ]
+      },
+      "properties": {
+        "name": "浜田歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区もえぎ野1-21ｲﾜｺ-藤が丘ﾋﾞﾙ101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52639740960993,
+          35.5457112604646
+        ]
+      },
+      "properties": {
+        "name": "あらいクリニック",
+        "type": "診療所",
+        "department": "内科　内科　糖尿病",
+        "address": "青葉区もえぎ野1-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52324284716624,
+          35.55251168187113
+        ]
+      },
+      "properties": {
+        "name": "漢一診療所",
+        "type": "診療所",
+        "department": "内科　小児科　耳鼻咽喉科　皮膚科",
+        "address": "青葉区みたけ台44-1ｸﾞﾚｲｽﾑﾗﾀ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52228865456775,
+          35.55362399123659
+        ]
+      },
+      "properties": {
+        "name": "レガロ歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科　歯科　矯正",
+        "address": "青葉区みたけ台40-1ｱﾝﾍﾞﾘ-ﾙ藤が丘"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5211749679457,
+          35.55623734676685
+        ]
+      },
+      "properties": {
+        "name": "ルンビニ合掌苑老人ホーム診療所",
+        "type": "診療所",
+        "department": "内科　リハビリ科",
+        "address": "青葉区みたけ台32-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52303065378436,
+          35.55219313997117
+        ]
+      },
+      "properties": {
+        "name": "宮本内科循環器科クリニック",
+        "type": "診療所",
+        "department": "内科　呼吸器科　循環器科",
+        "address": "青葉区みたけ台3-18 ﾊﾟﾙｺ-ﾄｲｲﾀﾞ101号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54060071307666,
+          35.55951979394175
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホーム みすずが丘医務室",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区みすずが丘23-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54050221874886,
+          35.5603288121158
+        ]
+      },
+      "properties": {
+        "name": "みすずが丘歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区みすずが丘22-6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52025537097802,
+          35.540696030763215
+        ]
+      },
+      "properties": {
+        "name": "谷本歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　口腔外科　歯科　小児　歯科　矯正",
+        "address": "青葉区つつじが丘7-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51803083524777,
+          35.53535691517516
+        ]
+      },
+      "properties": {
+        "name": "井出眼科医院",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "青葉区つつじが丘36-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51832164287262,
+          35.53654064399011
+        ]
+      },
+      "properties": {
+        "name": "原内科医院",
+        "type": "診療所",
+        "department": "内科　消化器科　小児科　神経内科",
+        "address": "青葉区つつじが丘30-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51716113434773,
+          35.538547842892136
+        ]
+      },
+      "properties": {
+        "name": "あおば胃腸内科クリニック",
+        "type": "診療所",
+        "department": "内科　内科　胃腸　内科　内視鏡　内科　肝臓",
+        "address": "青葉区つつじが丘24-58"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51724269308147,
+          35.5377759874714
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団清恩会 あおば眼科",
+        "type": "診療所",
+        "department": "眼科",
+        "address": "青葉区つつじが丘24-23"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51688986004504,
+          35.5396280591578
+        ]
+      },
+      "properties": {
+        "name": "エムズデンタル",
+        "type": "歯科",
+        "department": "歯科　歯科口腔外科",
+        "address": "青葉区つつじが丘23-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52078626731003,
+          35.53999483200142
+        ]
+      },
+      "properties": {
+        "name": "つつじが丘診療所",
+        "type": "診療所",
+        "department": "内科　消化器科",
+        "address": "青葉区つつじが丘11-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5191684695702,
+          35.540698169822754
+        ]
+      },
+      "properties": {
+        "name": "小林歯科医院",
+        "type": "歯科",
+        "department": "歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区つつじが丘10-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51363562049767,
+          35.554451818030536
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団一成会 たちばな台クリニック",
+        "type": "診療所",
+        "department": "内科　皮膚科　小児科　内科　循環器　リウマチ科",
+        "address": "青葉区たちばな台2-7-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51369093013568,
+          35.55387273635243
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団一成会たちばな台病院",
+        "type": "病院",
+        "department": "内科　内科　人工透析　内科　循環器　外科　外科　整形　外科　消化器　外科　脳神経　リハビリテーション科　麻酔科　放射線科",
+        "address": "青葉区たちばな台2-2-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5132184885789,
+          35.553183906371984
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団薫風会まき歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区たちばな台2-1-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51379484027714,
+          35.55321454486959
+        ]
+      },
+      "properties": {
+        "name": "のんの歯科・矯正クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区たちばな台2-1-1 1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52765566938132,
+          35.57955544693144
+        ]
+      },
+      "properties": {
+        "name": "わたぎ歯科医院",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科",
+        "address": "青葉区すすき野3-7-2ﾌﾟﾛｽﾍﾟ-ﾙすすき野 1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53068297361364,
+          35.58215051454797
+        ]
+      },
+      "properties": {
+        "name": "みのわデンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　矯正　歯科　口腔外科",
+        "address": "青葉区すすき野3-5-28"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52892310673212,
+          35.57760893461946
+        ]
+      },
+      "properties": {
+        "name": "ファミリークリニックあざみ野",
+        "type": "診療所",
+        "department": "内科　外科　小児科　内科　消化器",
+        "address": "青葉区すすき野3-2-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5279828031386,
+          35.57752843868963
+        ]
+      },
+      "properties": {
+        "name": "おがさわら歯科・のり矯正歯科",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区すすき野3-2-1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.527540805253,
+          35.57799542812442
+        ]
+      },
+      "properties": {
+        "name": "嶮山クリニック",
+        "type": "診療所",
+        "department": "内科　消化器科　小児科　麻酔科",
+        "address": "青葉区すすき野3-1-10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5271936954405,
+          35.576449999592725
+        ]
+      },
+      "properties": {
+        "name": "河合医院",
+        "type": "診療所",
+        "department": "内科　精神科　婦人科　皮膚科　リハビリ科",
+        "address": "青葉区すすき野2-6-12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52499258544648,
+          35.57535462019686
+        ]
+      },
+      "properties": {
+        "name": "すすき野デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　歯科口腔外科",
+        "address": "青葉区すすき野2-5-4すすき野東急2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52891698413998,
+          35.57408487243636
+        ]
+      },
+      "properties": {
+        "name": "バンビ歯科",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区すすき野2-1-4小駒ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52951607384608,
+          35.573586040959306
+        ]
+      },
+      "properties": {
+        "name": "あんどう歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区すすき野1-9-1 TSビル C号室"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.517404531194,
+          35.53481471537589
+        ]
+      },
+      "properties": {
+        "name": "冨岡歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区しらとり台35-25 1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51624285372182,
+          35.538727079729306
+        ]
+      },
+      "properties": {
+        "name": "しらとり台クリニック",
+        "type": "診療所",
+        "department": "皮膚科",
+        "address": "青葉区しらとり台3-34"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5171110904302,
+          35.53675476200891
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団藤栄会あおば台デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　歯科　小児　歯科　口腔外科",
+        "address": "青葉区しらとり台2-19"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51702051414426,
+          35.53707025112637
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団啓友会しらとり台耳鼻咽喉科",
+        "type": "診療所",
+        "department": "アレルギー科　耳鼻咽喉科",
+        "address": "青葉区しらとり台2-17中山ﾋﾞﾙ2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5170302253186,
+          35.53724661030211
+        ]
+      },
+      "properties": {
+        "name": "よしやま歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区しらとり台2-15ｺ-ﾗﾙﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51180383741044,
+          35.536909118412105
+        ]
+      },
+      "properties": {
+        "name": "松岡医院",
+        "type": "診療所",
+        "department": "小児科",
+        "address": "青葉区しらとり台20-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51125403449782,
+          35.536518928360906
+        ]
+      },
+      "properties": {
+        "name": "カトウ歯科",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区しらとり台19-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5165942473867,
+          35.53954615767919
+        ]
+      },
+      "properties": {
+        "name": "あらおクリニック",
+        "type": "診療所",
+        "department": "外科　形成　皮膚科　外科　美容　皮膚科　美容　外科　血管",
+        "address": "青葉区しらとり台1-7 ｳﾞｧﾝﾃｱﾝﾋﾞﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51657951764113,
+          35.53966891245352
+        ]
+      },
+      "properties": {
+        "name": "古川心療内科",
+        "type": "診療所",
+        "department": "内科　精神科　神経科　心療内科",
+        "address": "青葉区しらとり台1-6嶋ﾋﾞﾙ201号"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51639927699404,
+          35.53906233031614
+        ]
+      },
+      "properties": {
+        "name": "あおば整形外科",
+        "type": "診療所",
+        "department": "リウマチ科　整形外科　リハビリ科",
+        "address": "青葉区しらとり台1-12ｸﾞﾘ-ﾝｸﾞﾗｽﾋﾞﾙ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51678485581058,
+          35.538957459887726
+        ]
+      },
+      "properties": {
+        "name": "しらとり台歯科",
+        "type": "歯科",
+        "department": "歯科　小児歯科",
+        "address": "青葉区しらとり台1-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5187039144005,
+          35.53188776995113
+        ]
+      },
+      "properties": {
+        "name": "特別養護老人ホームひかり苑診療所",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区さつきが丘8-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5175400204413,
+          35.5330457676312
+        ]
+      },
+      "properties": {
+        "name": "アイル歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区さつきが丘5-3-101"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51754797926515,
+          35.53377904781192
+        ]
+      },
+      "properties": {
+        "name": "さつきが丘こどもクリニック",
+        "type": "診療所",
+        "department": "小児科　皮膚科",
+        "address": "青葉区さつきが丘4-10ｱﾓﾝｸ-ﾙ1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54201079172904,
+          35.56055413160038
+        ]
+      },
+      "properties": {
+        "name": "マアク皮膚科",
+        "type": "診療所",
+        "department": "皮膚科　皮膚科　美容　アレルギー科",
+        "address": "青葉区あざみ野南4-5-8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5419860999792,
+          35.5601477963573
+        ]
+      },
+      "properties": {
+        "name": "ほほえみあかちゃんこどもクリニック",
+        "type": "診療所",
+        "department": "小児科",
+        "address": "青葉区あざみ野南4-5-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5422138482313,
+          35.560276673391705
+        ]
+      },
+      "properties": {
+        "name": "ささき内科・消化器内科",
+        "type": "診療所",
+        "department": "内科　内科　消化器",
+        "address": "青葉区あざみ野南4-5-1 街のお医者さんｳﾞｨﾚｯｼﾞ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54080980662607,
+          35.57122139851
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団健生会長浜医院",
+        "type": "診療所",
+        "department": "内科　小児科　アレルギー科　リハビリ科",
+        "address": "青葉区あざみ野4-2-4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5395733538226,
+          35.56638084565091
+        ]
+      },
+      "properties": {
+        "name": "野村クリニック",
+        "type": "診療所",
+        "department": "内科　皮膚科　麻酔科",
+        "address": "青葉区あざみ野3-14-21"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54460207790413,
+          35.56641233641054
+        ]
+      },
+      "properties": {
+        "name": "漢方内科スペースシン",
+        "type": "診療所",
+        "department": "内科　漢方",
+        "address": "青葉区あざみ野2-35-381F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54500316452865,
+          35.569115964567715
+        ]
+      },
+      "properties": {
+        "name": "橋本内科・循環器内科",
+        "type": "診療所",
+        "department": "内科　内科　循環器",
+        "address": "青葉区あざみ野2-30 あざみ野三規庭2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54500316452865,
+          35.569115964567715
+        ]
+      },
+      "properties": {
+        "name": "あざみ野ヒルズスキンクリニック",
+        "type": "診療所",
+        "department": "皮膚科　美容　皮膚科　外科　形成",
+        "address": "青葉区あざみ野2-30 あざみ野三規庭2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54509507621665,
+          35.56888614485995
+        ]
+      },
+      "properties": {
+        "name": "あざみ野青葉デンタルクリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区あざみ野2-30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54801487823556,
+          35.56857378657413
+        ]
+      },
+      "properties": {
+        "name": "藤井歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区あざみ野2-28-6ﾒｿﾞﾝあざみ野2F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5478726696275,
+          35.568533873195776
+        ]
+      },
+      "properties": {
+        "name": "f歯科口腔オフィス",
+        "type": "歯科",
+        "department": "歯科　歯科　矯正　歯科　小児　歯科　口腔外科",
+        "address": "青葉区あざみ野2-28-21あざみ野ﾋﾞﾙ別館1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54802556862617,
+          35.56696984871747
+        ]
+      },
+      "properties": {
+        "name": "稲川歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科　歯科口腔外科",
+        "address": "青葉区あざみ野2-17-13"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5492058957506,
+          35.56825058718661
+        ]
+      },
+      "properties": {
+        "name": "あざみ野耳鼻咽喉科",
+        "type": "診療所",
+        "department": "耳鼻いんこう科　内科　気管食道　外科　気管食道",
+        "address": "青葉区あざみ野2-13-5 ﾚﾕ-ﾙあざみ野1F"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54489888099337,
+          35.569725863653126
+        ]
+      },
+      "properties": {
+        "name": "西川内科胃腸科",
+        "type": "診療所",
+        "department": "内科　胃腸科　放射線科",
+        "address": "青葉区あざみ野1-26-6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.5454556139198,
+          35.56942648152904
+        ]
+      },
+      "properties": {
+        "name": "あざみ野矯正歯科",
+        "type": "歯科",
+        "department": "歯科　矯正",
+        "address": "青葉区あざみ野1-26-3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54437098252174,
+          35.570097902922456
+        ]
+      },
+      "properties": {
+        "name": "宮下歯科クリニック",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区あざみ野1-26-11"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.548641127508,
+          35.57063799550041
+        ]
+      },
+      "properties": {
+        "name": "医療法人社団三喜会 あざみ野ガーデンクリニック",
+        "type": "診療所",
+        "department": "内科",
+        "address": "青葉区あざみ野1-23-6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54795598609778,
+          35.569897244783334
+        ]
+      },
+      "properties": {
+        "name": "四季芸術センター本館医務室",
+        "type": "診療所",
+        "department": "内科　外科　婦人科",
+        "address": "青葉区あざみ野1-23-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.54971198165785,
+          35.56876703707072
+        ]
+      },
+      "properties": {
+        "name": "あざみ野歯科医院",
+        "type": "歯科",
+        "department": "歯科　矯正歯科　小児歯科",
+        "address": "青葉区あざみ野1-12-5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.48672534876977,
+          35.543016715725315
+        ]
+      },
+      "properties": {
+        "name": "あかね台歯科医院",
+        "type": "歯科",
+        "department": "歯科",
+        "address": "青葉区あかね台1-22-15"
+      }
+    }
+  ]
+}

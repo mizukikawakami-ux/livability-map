@@ -1,0 +1,980 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.554871,
+          35.575184
+        ]
+      },
+      "properties": {
+        "name": "ポピンズナーサリースクールたまプラーザ",
+        "capacity": 76,
+        "address": "横浜市青葉区美しが丘５－２－３４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.548157,
+          35.560158
+        ]
+      },
+      "properties": {
+        "name": "荏田北保育園",
+        "capacity": 120,
+        "address": "横浜市青葉区荏田北３丁目６－１４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.522583,
+          35.542557
+        ]
+      },
+      "properties": {
+        "name": "しらとり台保育園　青葉台",
+        "capacity": 56,
+        "address": "横浜市青葉区藤が丘２－２０－１０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.53978,
+          35.550961
+        ]
+      },
+      "properties": {
+        "name": "ベネッセ　市ヶ尾駅前保育園",
+        "capacity": 56,
+        "address": "横浜市青葉区市ケ尾町１１５３－３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.559586,
+          35.578224
+        ]
+      },
+      "properties": {
+        "name": "パレット保育園・たまプラーザ",
+        "capacity": 40,
+        "address": "横浜市青葉区美しが丘１－１－２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.560516,
+          35.581646
+        ]
+      },
+      "properties": {
+        "name": "アートチャイルドケアろりぽっぷたまプラーザ",
+        "capacity": 90,
+        "address": "横浜市青葉区美しが丘２－１２－１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.555908,
+          35.56815
+        ]
+      },
+      "properties": {
+        "name": "エンゼルベアあざみ野保育園",
+        "capacity": 54,
+        "address": "横浜市青葉区新石川１－１３－１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.517746,
+          35.536076
+        ]
+      },
+      "properties": {
+        "name": "しらとり台保育園つつじが丘",
+        "capacity": 45,
+        "address": "横浜市青葉区つつじが丘２９－１８"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.562378,
+          35.57732
+        ]
+      },
+      "properties": {
+        "name": "木下の保育園　たまプラーザ",
+        "capacity": 63,
+        "address": "横浜市青葉区新石川３－５－２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.544983,
+          35.566471
+        ]
+      },
+      "properties": {
+        "name": "ポピンズナーサリースクールあざみ野",
+        "capacity": 60,
+        "address": "横浜市青葉区あざみ野２－３５－１２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.518616,
+          35.546406
+        ]
+      },
+      "properties": {
+        "name": "プレスクールあおば",
+        "capacity": 43,
+        "address": "横浜市青葉区青葉台１－１８－１３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.524948,
+          35.577484
+        ]
+      },
+      "properties": {
+        "name": "横浜市すすき野保育園",
+        "capacity": 106,
+        "address": "横浜市青葉区すすき野２－８－６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.558151,
+          35.575802
+        ]
+      },
+      "properties": {
+        "name": "たまプラーザ小桜愛児園",
+        "capacity": 90,
+        "address": "横浜市青葉区新石川２－３－１５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.549179,
+          35.547436
+        ]
+      },
+      "properties": {
+        "name": "サンキッズ荏田西保育園",
+        "capacity": 98,
+        "address": "横浜市青葉区荏田西４－５－２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.525879,
+          35.539314
+        ]
+      },
+      "properties": {
+        "name": "藤が丘もみじ保育センター",
+        "capacity": 40,
+        "address": "横浜市青葉区藤が丘２－３０－３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.55925,
+          35.58012
+        ]
+      },
+      "properties": {
+        "name": "グローバルキッズたまプラーザ保育園",
+        "capacity": 60,
+        "address": "横浜市青葉区美しが丘２－１７－１６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.499954,
+          35.538994
+        ]
+      },
+      "properties": {
+        "name": "もみじ第二保育園",
+        "capacity": 80,
+        "address": "横浜市青葉区田奈町５１－１５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.543839,
+          35.543999
+        ]
+      },
+      "properties": {
+        "name": "市ヶ尾保育園",
+        "capacity": 60,
+        "address": "横浜市青葉区市ケ尾町５２４－１５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.546646,
+          35.558228
+        ]
+      },
+      "properties": {
+        "name": "スターチャイルド≪荏田北ナーサリー≫",
+        "capacity": 60,
+        "address": "横浜市青葉区荏田北１－１３－１４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.516068,
+          35.540623
+        ]
+      },
+      "properties": {
+        "name": "ベネッセ　青葉台保育園",
+        "capacity": 70,
+        "address": "横浜市青葉区榎が丘２－３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.550537,
+          35.561573
+        ]
+      },
+      "properties": {
+        "name": "スターチャイルド≪江田ナーサリー≫",
+        "capacity": 30,
+        "address": "横浜市青葉区あざみ野南２－４－７"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.508514,
+          35.545803
+        ]
+      },
+      "properties": {
+        "name": "もみじ保育園",
+        "capacity": 160,
+        "address": "横浜市青葉区松風台１８－１０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.551422,
+          35.566933
+        ]
+      },
+      "properties": {
+        "name": "アスクあざみ野保育園",
+        "capacity": 60,
+        "address": "横浜市青葉区あざみ野２－８－１３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.512695,
+          35.537231
+        ]
+      },
+      "properties": {
+        "name": "しらとり台保育園",
+        "capacity": 90,
+        "address": "横浜市青葉区しらとり台１７－５８"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.520905,
+          35.555683
+        ]
+      },
+      "properties": {
+        "name": "りんどう保育園",
+        "capacity": 80,
+        "address": "横浜市青葉区みたけ台３２－１９"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.551727,
+          35.558414
+        ]
+      },
+      "properties": {
+        "name": "にじいろ保育園江田",
+        "capacity": 54,
+        "address": "横浜市青葉区荏田町２３６１－３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.548569,
+          35.580914
+        ]
+      },
+      "properties": {
+        "name": "ニチイキッズ美しが丘保育園",
+        "capacity": 90,
+        "address": "横浜市青葉区美しが丘４－２４－２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.547592,
+          35.550934
+        ]
+      },
+      "properties": {
+        "name": "ピッピ保育園",
+        "capacity": 28,
+        "address": "横浜市青葉区荏田西３－１－１９"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.561279,
+          35.578259
+        ]
+      },
+      "properties": {
+        "name": "横浜市美しが丘保育園",
+        "capacity": 111,
+        "address": "横浜市青葉区美しが丘２－２－１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.56076,
+          35.575279
+        ]
+      },
+      "properties": {
+        "name": "たまプラーザもみじ保育園",
+        "capacity": 120,
+        "address": "横浜市青葉区新石川３－１７－１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.541702,
+          35.556152
+        ]
+      },
+      "properties": {
+        "name": "横浜市荏田保育園",
+        "capacity": 102,
+        "address": "横浜市青葉区荏田北２－１１－４０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.526993,
+          35.544201
+        ]
+      },
+      "properties": {
+        "name": "アスク藤が丘保育園",
+        "capacity": 46,
+        "address": "横浜市青葉区藤が丘２－４－１０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.516022,
+          35.550167
+        ]
+      },
+      "properties": {
+        "name": "太陽の子　桜台第二保育園",
+        "capacity": 66,
+        "address": "横浜市青葉区桜台２７－１６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.555222,
+          35.56628
+        ]
+      },
+      "properties": {
+        "name": "グローバルキッズあざみ野園",
+        "capacity": 60,
+        "address": "横浜市青葉区新石川１－２－１０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.55777,
+          35.576641
+        ]
+      },
+      "properties": {
+        "name": "たまプラーザ　こどもの詩保育園",
+        "capacity": 50,
+        "address": "横浜市青葉区新石川２－１－１５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.553665,
+          35.583813
+        ]
+      },
+      "properties": {
+        "name": "美しが丘どろんこ保育園",
+        "capacity": 60,
+        "address": "横浜市青葉区美しが丘１－２３－６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.482101,
+          35.562809
+        ]
+      },
+      "properties": {
+        "name": "横浜市奈良保育園",
+        "capacity": 69,
+        "address": "横浜市青葉区奈良町１８４３－１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.559158,
+          35.574654
+        ]
+      },
+      "properties": {
+        "name": "青葉フレール保育園",
+        "capacity": 120,
+        "address": "横浜市青葉区新石川２－９－６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.518219,
+          35.545494
+        ]
+      },
+      "properties": {
+        "name": "オルタスそらいろ",
+        "capacity": 60,
+        "address": "横浜市青葉区青葉台１－４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.483749,
+          35.542236
+        ]
+      },
+      "properties": {
+        "name": "MIWAあかね台光の子保育園",
+        "capacity": 90,
+        "address": "横浜市青葉区あかね台２－１８－１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.52887,
+          35.545326
+        ]
+      },
+      "properties": {
+        "name": "ぽれぽれ保育園藤が丘",
+        "capacity": 38,
+        "address": "横浜市青葉区藤が丘１－２８－４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.513199,
+          35.544628
+        ]
+      },
+      "properties": {
+        "name": "明日葉保育園青葉台園",
+        "capacity": 60,
+        "address": "横浜市青葉区青葉台２－１８－３４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.513519,
+          35.54192
+        ]
+      },
+      "properties": {
+        "name": "エンゼルベア青葉台保育園",
+        "capacity": 60,
+        "address": "横浜市青葉区榎が丘１３－３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.551392,
+          35.572826
+        ]
+      },
+      "properties": {
+        "name": "天才キッズクラブ楽学館あざみ野園",
+        "capacity": 54,
+        "address": "横浜市青葉区美しが丘５－３３－４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.518677,
+          35.545544
+        ]
+      },
+      "properties": {
+        "name": "にじいろ保育園青葉台",
+        "capacity": 70,
+        "address": "横浜市青葉区青葉台１－１９－１５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.541061,
+          35.551044
+        ]
+      },
+      "properties": {
+        "name": "グローバルキッズ市が尾園",
+        "capacity": 60,
+        "address": "横浜市青葉区市ケ尾町１０６３－４"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.519226,
+          35.55043
+        ]
+      },
+      "properties": {
+        "name": "太陽の子　桜台保育園",
+        "capacity": 60,
+        "address": "横浜市青葉区桜台１－５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.517044,
+          35.549355
+        ]
+      },
+      "properties": {
+        "name": "みどり乳児園",
+        "capacity": 50,
+        "address": "横浜市青葉区青葉台１－２９－１５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.557373,
+          35.575661
+        ]
+      },
+      "properties": {
+        "name": "スターチャイルド≪たまプラーザナーサリー≫",
+        "capacity": 60,
+        "address": "横浜市青葉区新石川２－４－７"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.521347,
+          35.534218
+        ]
+      },
+      "properties": {
+        "name": "しらとり台保育園さつきが丘",
+        "capacity": 70,
+        "address": "横浜市青葉区さつきが丘１１－２"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.559906,
+          35.580433
+        ]
+      },
+      "properties": {
+        "name": "小学館アカデミーたまプラーザ保育園",
+        "capacity": 78,
+        "address": "横浜市青葉区美しが丘２－１８－８"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.515121,
+          35.544205
+        ]
+      },
+      "properties": {
+        "name": "いずみ青葉台保育園",
+        "capacity": 70,
+        "address": "横浜市青葉区青葉台２－８－２７"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.530334,
+          35.53693
+        ]
+      },
+      "properties": {
+        "name": "ちぐさのもり保育園",
+        "capacity": 75,
+        "address": "横浜市青葉区千草台３２－１５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.560089,
+          35.576935
+        ]
+      },
+      "properties": {
+        "name": "京進のほいくえんＨＯＰＰＡたまプラーザ",
+        "capacity": 60,
+        "address": "横浜市青葉区新石川３－２－５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.527893,
+          35.548264
+        ]
+      },
+      "properties": {
+        "name": "茶々かきのきだい保育園",
+        "capacity": 180,
+        "address": "横浜市青葉区柿の木台７－５"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.549927,
+          35.573452
+        ]
+      },
+      "properties": {
+        "name": "小桜愛児園",
+        "capacity": 180,
+        "address": "横浜市青葉区あざみ野１－３２－６"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.528183,
+          35.545696
+        ]
+      },
+      "properties": {
+        "name": "グローバルキッズ藤が丘園",
+        "capacity": 60,
+        "address": "横浜市青葉区藤が丘１－１６－２０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.540634,
+          35.568356
+        ]
+      },
+      "properties": {
+        "name": "シャローム保育園",
+        "capacity": 128,
+        "address": "横浜市青葉区あざみ野３－１１－２７"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.546814,
+          35.539726
+        ]
+      },
+      "properties": {
+        "name": "市が尾こどものいえ保育園",
+        "capacity": 60,
+        "address": "横浜市青葉区市ケ尾町４９８－８"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.513672,
+          35.539639
+        ]
+      },
+      "properties": {
+        "name": "あっぷるキッズ青葉台",
+        "capacity": 50,
+        "address": "横浜市青葉区榎が丘７－１０"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.528717,
+          35.543217
+        ]
+      },
+      "properties": {
+        "name": "スターチャイルド≪藤が丘ナーサリー≫",
+        "capacity": 50,
+        "address": "横浜市青葉区藤が丘１－３６－３"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.557449,
+          35.579784
+        ]
+      },
+      "properties": {
+        "name": "グローバルキッズ美しが丘保育園",
+        "capacity": 63,
+        "address": "横浜市青葉区美しが丘１－８－１"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.516495,
+          35.539627
+        ]
+      },
+      "properties": {
+        "name": "横浜ナザレ保育園",
+        "capacity": 70,
+        "address": "横浜市青葉区しらとり台１－３８"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.543716,
+          35.55352
+        ]
+      },
+      "properties": {
+        "name": "ピッピみんなの保育園",
+        "capacity": 29,
+        "address": "横浜市青葉区市ケ尾町１１６１－８"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.533722,
+          35.577286
+        ]
+      },
+      "properties": {
+        "name": "青葉保育園",
+        "capacity": 109,
+        "address": "横浜市青葉区荏子田３－２３－１０"
+      }
+    }
+  ]
+}

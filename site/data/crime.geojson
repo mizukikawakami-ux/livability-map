@@ -1,0 +1,685 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区あかね台１丁目",
+        "town": "あかね台１丁目",
+        "count": 8,
+        "breakdown": "自転車盗:7, 車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区あかね台２丁目",
+        "town": "あかね台２丁目",
+        "count": 1,
+        "breakdown": "自転車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区あざみ野南１丁目",
+        "town": "あざみ野南１丁目",
+        "count": 1,
+        "breakdown": "車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区あざみ野南２丁目",
+        "town": "あざみ野南２丁目",
+        "count": 1,
+        "breakdown": "車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区あざみ野１丁目",
+        "town": "あざみ野１丁目",
+        "count": 7,
+        "breakdown": "自転車盗:6, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区あざみ野２丁目",
+        "town": "あざみ野２丁目",
+        "count": 15,
+        "breakdown": "自転車盗:14, 自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区あざみ野３丁目",
+        "town": "あざみ野３丁目",
+        "count": 3,
+        "breakdown": "自転車盗:1, 自動車盗:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区あざみ野４丁目",
+        "town": "あざみ野４丁目",
+        "count": 3,
+        "breakdown": "自転車盗:3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区さつきが丘",
+        "town": "さつきが丘",
+        "count": 1,
+        "breakdown": "自転車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区しらとり台",
+        "town": "しらとり台",
+        "count": 7,
+        "breakdown": "自転車盗:5, 車上ねらい:1, 部品ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区すすき野１丁目",
+        "town": "すすき野１丁目",
+        "count": 1,
+        "breakdown": "部品ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区すすき野２丁目",
+        "town": "すすき野２丁目",
+        "count": 2,
+        "breakdown": "自転車盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区すすき野３丁目",
+        "town": "すすき野３丁目",
+        "count": 2,
+        "breakdown": "自転車盗:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区すみよし台",
+        "town": "すみよし台",
+        "count": 12,
+        "breakdown": "自転車盗:10, 車上ねらい:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区たちばな台１丁目",
+        "town": "たちばな台１丁目",
+        "count": 2,
+        "breakdown": "車上ねらい:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区たちばな台２丁目",
+        "town": "たちばな台２丁目",
+        "count": 4,
+        "breakdown": "自転車盗:2, 部品ねらい:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区つつじが丘",
+        "town": "つつじが丘",
+        "count": 1,
+        "breakdown": "自転車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区みたけ台",
+        "town": "みたけ台",
+        "count": 3,
+        "breakdown": "自転車盗:2, 部品ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区もえぎ野",
+        "town": "もえぎ野",
+        "count": 1,
+        "breakdown": "自転車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区もみの木台",
+        "town": "もみの木台",
+        "count": 2,
+        "breakdown": "自転車盗:1, 部品ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区上谷本町",
+        "town": "上谷本町",
+        "count": 1,
+        "breakdown": "部品ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区下谷本町",
+        "town": "下谷本町",
+        "count": 1,
+        "breakdown": "自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区元石川町",
+        "town": "元石川町",
+        "count": 7,
+        "breakdown": "自転車盗:5, オートバイ盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区千草台",
+        "town": "千草台",
+        "count": 5,
+        "breakdown": "自転車盗:2, 車上ねらい:2, 自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区大場町",
+        "town": "大場町",
+        "count": 11,
+        "breakdown": "自転車盗:7, 車上ねらい:4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区奈良",
+        "town": "奈良",
+        "count": 1,
+        "breakdown": "自転車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区奈良町",
+        "town": "奈良町",
+        "count": 8,
+        "breakdown": "自転車盗:6, 部品ねらい:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区奈良１丁目",
+        "town": "奈良１丁目",
+        "count": 3,
+        "breakdown": "自転車盗:3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区奈良２丁目",
+        "town": "奈良２丁目",
+        "count": 3,
+        "breakdown": "自転車盗:2, 自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区奈良３丁目",
+        "town": "奈良３丁目",
+        "count": 3,
+        "breakdown": "自転車盗:1, 部品ねらい:1, 自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区奈良４丁目",
+        "town": "奈良４丁目",
+        "count": 2,
+        "breakdown": "自転車盗:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区奈良５丁目",
+        "town": "奈良５丁目",
+        "count": 3,
+        "breakdown": "自転車盗:3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区市ケ尾町",
+        "town": "市ケ尾町",
+        "count": 12,
+        "breakdown": "自転車盗:7, 車上ねらい:4, 部品ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区恩田町",
+        "town": "恩田町",
+        "count": 3,
+        "breakdown": "自転車盗:2, 車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区新石川１丁目",
+        "town": "新石川１丁目",
+        "count": 14,
+        "breakdown": "自転車盗:12, 自動車盗:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区新石川２丁目",
+        "town": "新石川２丁目",
+        "count": 1,
+        "breakdown": "自転車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区新石川３丁目",
+        "town": "新石川３丁目",
+        "count": 6,
+        "breakdown": "自転車盗:4, 自動車盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区新石川４丁目",
+        "town": "新石川４丁目",
+        "count": 4,
+        "breakdown": "自転車盗:3, 車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区松風台",
+        "town": "松風台",
+        "count": 6,
+        "breakdown": "自転車盗:5, 車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区柿の木台",
+        "town": "柿の木台",
+        "count": 2,
+        "breakdown": "車上ねらい:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区桂台１丁目",
+        "town": "桂台１丁目",
+        "count": 3,
+        "breakdown": "自転車盗:2, 部品ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区桂台２丁目",
+        "town": "桂台２丁目",
+        "count": 3,
+        "breakdown": "自転車盗:3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区桜台",
+        "town": "桜台",
+        "count": 5,
+        "breakdown": "自転車盗:4, 車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区榎が丘",
+        "town": "榎が丘",
+        "count": 7,
+        "breakdown": "自転車盗:5, 自動車盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区田奈町",
+        "town": "田奈町",
+        "count": 4,
+        "breakdown": "自転車盗:3, 車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区美しが丘西２丁目",
+        "town": "美しが丘西２丁目",
+        "count": 4,
+        "breakdown": "部品ねらい:2, オートバイ盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区美しが丘西３丁目",
+        "town": "美しが丘西３丁目",
+        "count": 3,
+        "breakdown": "自転車盗:2, 車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区美しが丘１丁目",
+        "town": "美しが丘１丁目",
+        "count": 7,
+        "breakdown": "自転車盗:3, 車上ねらい:1, オートバイ盗:3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区美しが丘２丁目",
+        "town": "美しが丘２丁目",
+        "count": 5,
+        "breakdown": "自転車盗:4, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区美しが丘３丁目",
+        "town": "美しが丘３丁目",
+        "count": 1,
+        "breakdown": "自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区美しが丘４丁目",
+        "town": "美しが丘４丁目",
+        "count": 1,
+        "breakdown": "オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区美しが丘５丁目",
+        "town": "美しが丘５丁目",
+        "count": 2,
+        "breakdown": "自転車盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏子田３丁目",
+        "town": "荏子田３丁目",
+        "count": 2,
+        "breakdown": "自転車盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏田北１丁目",
+        "town": "荏田北１丁目",
+        "count": 1,
+        "breakdown": "自転車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏田北２丁目",
+        "town": "荏田北２丁目",
+        "count": 1,
+        "breakdown": "自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏田北３丁目",
+        "town": "荏田北３丁目",
+        "count": 2,
+        "breakdown": "自転車盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏田町",
+        "town": "荏田町",
+        "count": 10,
+        "breakdown": "自転車盗:8, 自動車盗:1, オートバイ盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏田西１丁目",
+        "town": "荏田西１丁目",
+        "count": 2,
+        "breakdown": "自転車盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏田西２丁目",
+        "town": "荏田西２丁目",
+        "count": 4,
+        "breakdown": "自転車盗:1, 部品ねらい:1, 自動車盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏田西４丁目",
+        "town": "荏田西４丁目",
+        "count": 1,
+        "breakdown": "自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区荏田西５丁目",
+        "town": "荏田西５丁目",
+        "count": 1,
+        "breakdown": "車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区藤が丘１丁目",
+        "town": "藤が丘１丁目",
+        "count": 1,
+        "breakdown": "自転車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区藤が丘２丁目",
+        "town": "藤が丘２丁目",
+        "count": 3,
+        "breakdown": "自転車盗:3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区鉄町",
+        "town": "鉄町",
+        "count": 6,
+        "breakdown": "自転車盗:2, 車上ねらい:3, 自動車盗:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区青葉台１丁目",
+        "town": "青葉台１丁目",
+        "count": 12,
+        "breakdown": "自転車盗:10, オートバイ盗:2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区青葉台２丁目",
+        "town": "青葉台２丁目",
+        "count": 52,
+        "breakdown": "自転車盗:48, 自動車盗:1, オートバイ盗:3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区鴨志田町",
+        "town": "鴨志田町",
+        "count": 18,
+        "breakdown": "自転車盗:17, 車上ねらい:1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "name": "横浜市青葉区黒須田",
+        "town": "黒須田",
+        "count": 11,
+        "breakdown": "自転車盗:6, 車上ねらい:3, 部品ねらい:1, オートバイ盗:1"
+      }
+    }
+  ]
+}

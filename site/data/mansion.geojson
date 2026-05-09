@@ -1,0 +1,192 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.51416,
+          35.55159
+        ]
+      },
+      "properties": {
+        "name": "プロミライズ青葉台",
+        "status": "建設中（一部竣工済み）",
+        "completion": "2025年9月～2026年5月",
+        "scale": "761戸 / 複数棟（5棟構成）",
+        "developer": "横浜市住宅供給公社"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.553833,
+          35.578064
+        ]
+      },
+      "properties": {
+        "name": "ドレッセたまプラーザ プレイス",
+        "status": "建設中",
+        "completion": "2026年2月",
+        "scale": "67戸 / 地上6階",
+        "developer": "東急"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.556076,
+          35.567242
+        ]
+      },
+      "properties": {
+        "name": "シエリアあざみ野",
+        "status": "建設中",
+        "completion": "2026年7月",
+        "scale": "145戸 / 地上8階",
+        "developer": "関電不動産開発・日鉄興和不動産"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.550003,
+          35.574875
+        ]
+      },
+      "properties": {
+        "name": "プラウド美しが丘ヒルサイド",
+        "status": "竣工済み（販売中）",
+        "completion": "2025年10月",
+        "scale": "37戸 / 地上4階・地下1階",
+        "developer": "野村不動産"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.516235,
+          35.538235
+        ]
+      },
+      "properties": {
+        "name": "ブリシア青葉台テラス",
+        "status": "建設中",
+        "completion": "2026年4月",
+        "scale": "68戸 / 地上5階・地下1階",
+        "developer": "国際総合計画・ブリス"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.515533,
+          35.5578
+        ]
+      },
+      "properties": {
+        "name": "デュオセーヌ横浜青葉台",
+        "status": "建設中",
+        "completion": "2026年1月",
+        "scale": "71戸 / 地上5階",
+        "developer": "（シニア向け分譲）"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.528397,
+          35.542492
+        ]
+      },
+      "properties": {
+        "name": "ドルフィーノ青葉藤が丘",
+        "status": "建設中",
+        "completion": "2025年9月",
+        "scale": "24戸 / 地上5階",
+        "developer": "タクトホーム"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.561127,
+          35.577225
+        ]
+      },
+      "properties": {
+        "name": "ヴァースクレイシアIDZたまプラーザ",
+        "status": "建設中",
+        "completion": "2025年8月",
+        "scale": "28戸 / 地上7階",
+        "developer": "プロパティエージェント"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.565521,
+          35.572506
+        ]
+      },
+      "properties": {
+        "name": "ドレッセたまプラーザ ラベニュー",
+        "status": "建設予定",
+        "completion": "2027年3月",
+        "scale": "34戸 / 不明",
+        "developer": "東急"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.549088,
+          35.548447
+        ]
+      },
+      "properties": {
+        "name": "パークホームズ市が尾 ブライトアベニュー",
+        "status": "建設予定",
+        "completion": "2027年1月",
+        "scale": "148戸 / 地上5階",
+        "developer": "三井不動産レジデンシャル"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          139.50293,
+          35.53791
+        ]
+      },
+      "properties": {
+        "name": "パレステージ横浜田奈",
+        "status": "建設中",
+        "completion": "2027年3月",
+        "scale": "59戸 / 地上6階",
+        "developer": "日神不動産"
+      }
+    }
+  ]
+}

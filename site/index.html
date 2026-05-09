@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青葉区 住みやすさマップ - オープンデータで見る暮らしやすさ</title>
+    <meta name="description" content="横浜市青葉区の住みやすさを交通事故・犯罪・災害リスク・地価・医療・保育所など9つのオープンデータで可視化。町丁目レベルで比較できる引越し検討ツール。">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div id="app">
+        <header id="header">
+            <h1>青葉区 住みやすさマップ</h1>
+            <p class="subtitle">オープンデータで見る、町丁目レベルの暮らしやすさ</p>
+        </header>
+
+        <div id="main-container">
+            <aside id="sidebar">
+                <h2>データレイヤー</h2>
+                <div class="layer-controls">
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-accidents" checked>
+                        <span class="layer-icon accident"></span>
+                        交通事故発生地点
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-flood">
+                        <span class="layer-icon flood"></span>
+                        洪水浸水リスク
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-landslide">
+                        <span class="layer-icon landslide"></span>
+                        土砂災害警戒区域
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-crime">
+                        <span class="layer-icon crime"></span>
+                        犯罪発生件数
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-landprice">
+                        <span class="layer-icon landprice"></span>
+                        地価公示
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-nursery">
+                        <span class="layer-icon nursery"></span>
+                        保育所
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-medical">
+                        <span class="layer-icon medical"></span>
+                        医療施設
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-population">
+                        <span class="layer-icon population"></span>
+                        人口・世帯数
+                    </label>
+                    <label class="layer-toggle">
+                        <input type="checkbox" id="layer-mansion">
+                        <span class="layer-icon mansion"></span>
+                        建設中・予定マンション
+                    </label>
+                </div>
+
+                <div id="legend-panel">
+                    <h3>凡例</h3>
+                    <div id="legend-content">
+                        <div class="legend-group" data-layer="crime">
+                            <p class="legend-title">犯罪件数</p>
+                            <div class="legend-items">
+                                <span class="legend-item"><span class="legend-color" style="background:#c0392b"></span>20件超</span>
+                                <span class="legend-item"><span class="legend-color" style="background:#e74c3c"></span>11〜20件</span>
+                                <span class="legend-item"><span class="legend-color" style="background:#f39c12"></span>6〜10件</span>
+                                <span class="legend-item"><span class="legend-color" style="background:#2ecc71"></span>5件以下</span>
+                            </div>
+                        </div>
+                        <div class="legend-group" data-layer="population">
+                            <p class="legend-title">人口</p>
+                            <div class="legend-items">
+                                <span class="legend-item"><span class="legend-color" style="background:#1a237e"></span>5,000人超</span>
+                                <span class="legend-item"><span class="legend-color" style="background:#283593"></span>3,001〜5,000</span>
+                                <span class="legend-item"><span class="legend-color" style="background:#3f51b5"></span>1,001〜3,000</span>
+                                <span class="legend-item"><span class="legend-color" style="background:#9fa8da"></span>1,000以下</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="info-panel">
+                    <h3>エリア情報</h3>
+                    <p class="placeholder">地図上のエリアをクリックすると詳細が表示されます</p>
+                </div>
+
+                <div id="area-list">
+                    <h3>エリア別ページ</h3>
+                    <p class="placeholder">各エリアの詳細レポートは<a href="area/">一覧ページ</a>をご覧ください</p>
+                </div>
+            </aside>
+
+            <div id="map"></div>
+        </div>
+
+        <footer id="footer">
+            <div class="footer-content">
+                <div class="data-sources">
+                    <strong>データ出典:</strong>
+                    <a href="https://www.npa.go.jp/publications/statistics/koutsuu/opendata/index_opendata.html" target="_blank" rel="noopener">警察庁交通事故統計(2024)</a> /
+                    <a href="https://www.police.pref.kanagawa.jp/mes/mesd0010.htm" target="_blank" rel="noopener">神奈川県警犯罪統計(2024)</a> /
+                    <a href="https://disaportal.gsi.go.jp/" target="_blank" rel="noopener">国土地理院ハザードマップ</a> /
+                    <a href="https://nlftp.mlit.go.jp/ksj/" target="_blank" rel="noopener">国土数値情報(地価・医療)</a> /
+                    <a href="https://www.e-stat.go.jp/" target="_blank" rel="noopener">e-Stat国勢調査(2020)</a> /
+                    <a href="https://www.city.yokohama.lg.jp/" target="_blank" rel="noopener">横浜市オープンデータ(保育所)</a>
+                </div>
+                <p class="disclaimer">本サイトはオープンデータに基づく参考情報です。最新情報は各公式サイトをご確認ください。</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
