@@ -734,6 +734,8 @@ h2{{font-size:1.5rem;margin-bottom:8px;color:#1a1a2e}}
 .nearby{{margin:20px 0;font-size:.8rem;color:#666;line-height:2}}.nearby a{{color:#1a73e8;text-decoration:none;margin:0 4px}}.nearby a:hover{{text-decoration:underline}}
 .footer{{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}}.footer a{{color:#8ab4f8;text-decoration:none}}
 </style>
+<script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <div class="header"><h1><a href="../../../">神奈川県 住みやすさマップ</a></h1></div>
@@ -816,6 +818,8 @@ h2{{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}}
 .nearby{{margin:20px 0;font-size:.8rem;color:#666;line-height:2}}.nearby a{{color:#1a73e8;text-decoration:none;margin:0 4px}}
 .footer{{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}}.footer a{{color:#8ab4f8;text-decoration:none}}
 </style>
+<script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <div class="header"><h1><a href="../../">神奈川県 住みやすさマップ</a></h1></div>
@@ -897,6 +901,8 @@ h2{{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}}
 .muni-name{{font-weight:700;font-size:1.1rem;margin-bottom:4px}}.muni-score{{font-size:1.4rem;font-weight:700;margin-bottom:4px}}.muni-meta{{font-size:.75rem;color:#888}}
 .footer{{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}}.footer a{{color:#8ab4f8;text-decoration:none}}
 </style>
+<script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <div class="header"><h1><a href="../">神奈川県 住みやすさマップ</a></h1></div>

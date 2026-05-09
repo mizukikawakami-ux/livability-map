@@ -349,6 +349,8 @@ def render_town_page(town, scores, total, description, all_towns):
         .footer {{ background:#1a1a2e; color:#aaa; padding:16px 24px; font-size:0.72rem; margin-top:40px; text-align:center; }}
         .footer a {{ color:#8ab4f8; text-decoration:none; }}
     </style>
+    <script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
     <div class="header">
@@ -437,6 +439,8 @@ def render_index_page(all_towns):
         .footer {{ background:#1a1a2e; color:#aaa; padding:16px 24px; font-size:0.72rem; margin-top:40px; text-align:center; }}
         .footer a {{ color:#8ab4f8; text-decoration:none; }}
     </style>
+    <script>window.va = window.va || function () {{ (window.vaq = window.vaq || []).push(arguments); }};</script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
     <div class="header">
