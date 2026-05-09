@@ -14,13 +14,6 @@ import sys
 import os
 from pathlib import Path
 
-AOBA_KU_BOUNDS = {
-    'lat_min': 35.53,
-    'lat_max': 35.59,
-    'lon_min': 139.48,
-    'lon_max': 139.55
-}
-
 WEATHER_MAP = {
     '1': '晴', '2': '曇', '3': '雨', '4': '霧', '5': '雪'
 }
@@ -58,14 +51,20 @@ def parse_lon(raw):
     return degrees + minutes / 60 + (seconds + milliseconds / 1000) / 3600
 
 
-def is_in_aoba(lat, lon):
-    """青葉区の範囲内かチェック"""
-    return (AOBA_KU_BOUNDS['lat_min'] <= lat <= AOBA_KU_BOUNDS['lat_max'] and
-            AOBA_KU_BOUNDS['lon_min'] <= lon <= AOBA_KU_BOUNDS['lon_max'])
+KANAGAWA_BOUNDS = {
+    'lat_min': 35.05, 'lat_max': 35.75,
+    'lon_min': 138.90, 'lon_max': 139.85
+}
+
+
+def is_in_kanagawa(lat, lon):
+    """神奈川県の範囲内かチェック"""
+    return (KANAGAWA_BOUNDS['lat_min'] <= lat <= KANAGAWA_BOUNDS['lat_max'] and
+            KANAGAWA_BOUNDS['lon_min'] <= lon <= KANAGAWA_BOUNDS['lon_max'])
 
 
 def process_accident_csv(input_path, output_path):
-    """警察庁交通事故CSVをGeoJSONに変換（青葉区のみ抽出）"""
+    """警察庁交通事故CSVをGeoJSONに変換（神奈川県全域）"""
     features = []
 
     encodings = ['cp932', 'utf-8-sig', 'utf-8', 'shift_jis']
@@ -92,7 +91,7 @@ def process_accident_csv(input_path, output_path):
                     if lat is None or lon is None:
                         continue
 
-                    if not is_in_aoba(lat, lon):
+                    if not is_in_kanagawa(lat, lon):
                         continue
 
                     year = row.get('発生日時　　年', '')
@@ -137,7 +136,7 @@ def process_accident_csv(input_path, output_path):
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(geojson, f, ensure_ascii=False, indent=2)
 
-    print(f"処理完了: {len(features)}件の事故データを青葉区から抽出")
+    print(f"処理完了: {len(features)}件の事故データを神奈川県から抽出")
     return len(features)
 
 

@@ -1,6 +1,6 @@
 """
 保育所データ処理スクリプト
-ソース: 横浜市オープンデータ
+ソース: 横浜市オープンデータ（横浜市全18区対応）
 ジオコーディング: 国土地理院 住所検索API
 """
 
@@ -41,7 +41,7 @@ def process():
                 reader = csv.DictReader(f)
                 for row in reader:
                     city = row.get('施設の所在地 市区町村', '')
-                    if '青葉区' not in city:
+                    if not city:
                         continue
 
                     name = row.get('施設の名称', '')
@@ -52,16 +52,15 @@ def process():
                     except ValueError:
                         capacity = 0
 
-                    full_address = '横浜市青葉区' + address
+                    full_address = city + address
                     lon, lat = geocode(full_address)
 
                     if lon is None:
-                        short_address = '横浜市青葉区' + address.split('－')[0] if '－' in address else full_address
+                        short_address = city + address.split('－')[0] if '－' in address else full_address
                         lon, lat = geocode(short_address)
 
                     if lon is None:
                         skipped += 1
-                        print(f'  スキップ: {name} ({address})')
                         continue
 
                     geocoded += 1
@@ -74,10 +73,10 @@ def process():
                         'properties': {
                             'name': name,
                             'capacity': capacity,
-                            'address': f'横浜市青葉区{address}'
+                            'address': f'{city}{address}'
                         }
                     })
-                    time.sleep(0.2)
+                    time.sleep(0.1)
             break
         except (UnicodeDecodeError, UnicodeError):
             continue
