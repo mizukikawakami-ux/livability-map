@@ -4,3 +4,5 @@ __pycache__/
 .netlify/
 .claude/
 *.pyc
+design_handoff/
+design_dump.txt

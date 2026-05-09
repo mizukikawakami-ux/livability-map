@@ -3,344 +3,282 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>神奈川県 市区町村別住みやすさ一覧</title>
-<meta name="description" content="神奈川県の全58市区町村の住みやすさスコアを比較。治安・交通・医療・子育て・コスト・交通利便性・公園の7軸で評価。">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333}
-.header{background:#1a1a2e;color:#fff;padding:16px 24px}.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
-.container{max-width:1000px;margin:0 auto;padding:24px 16px}
-.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
-h2{font-size:1.4rem;margin-bottom:8px;color:#1a1a2e}
-.sort-controls{margin:16px 0;display:flex;gap:8px;flex-wrap:wrap}
-.sort-btn{padding:6px 14px;border:1px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:.8rem;color:#555}.sort-btn.active{background:#1a1a2e;color:#fff;border-color:#1a1a2e}
-.muni-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
-.muni-card{display:block;background:#fff;border-radius:8px;padding:16px;text-decoration:none;color:#333;box-shadow:0 1px 3px rgba(0,0,0,.08);transition:box-shadow .2s}
-.muni-card:hover{box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.muni-name{font-weight:700;font-size:1.1rem;margin-bottom:4px}.muni-score{font-size:1.4rem;font-weight:700;margin-bottom:4px}.muni-meta{font-size:.75rem;color:#888}
-.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}.footer a{color:#8ab4f8;text-decoration:none}
-</style>
-    <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
-    <script defer src="/_vercel/insights/script.js"></script>
+<title>市区町村ランキング — 神奈川 住みやすさマップ</title>
+<meta name="description" content="神奈川県全58市区町村の住みやすさスコアランキング。治安・防災・医療・子育て・コスト・交通・公園の7軸で評価。ソート・フィルター対応。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/shared.css">
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-<div class="header"><h1><a href="../">神奈川県 住みやすさマップ</a></h1></div>
-<div class="container">
-<div class="breadcrumb"><a href="../">トップ</a> &gt; エリア一覧</div>
-<h2>神奈川県 全58市区町村の住みやすさ</h2>
-<div class="sort-controls">
-<button class="sort-btn active" onclick="sortCards('score')">スコア順</button>
-<button class="sort-btn" onclick="sortCards('name')">名前順</button>
-<button class="sort-btn" onclick="sortCards('pop')">人口順</button>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../" class="brand">
+      <span class="brand-mark">住</span>
+      <span class="brand-text">
+        <span class="brand-jp">神奈川 住みやすさマップ</span>
+        <span class="brand-en">Kanagawa Livability Map</span>
+      </span>
+    </a>
+    <nav class="header-nav">
+      <a href="../">マップ</a>
+      <a href="index.html" class="on">ランキング</a>
+      <a href="../column/">特集</a>
+      <a href="../#about">このサイトについて</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-wrap">
+  <nav class="breadcrumb">
+    <a href="../">トップ</a>
+    <span class="sep">/</span>
+    <span class="current">市区町村ランキング</span>
+  </nav>
+
+  <header class="page-header">
+    <span class="page-eyebrow">All Municipalities</span>
+    <h1 class="page-title">神奈川の<em class="warm">58の街</em>を、<br>横並びで眺める。</h1>
+    <p class="page-lead">
+      治安・防災・医療・子育て・コスト・交通・公園の7軸で算出した総合スコアで並べています。
+      上位だから「正解」ではなく、自分の優先軸と照らし合わせて選ぶための地図です。
+    </p>
+  </header>
+
+  <div class="stat-row">
+    <div class="stat-cell-lg">
+      <span class="stat-cell-lg-label">市区町村</span>
+      <span class="stat-cell-lg-num">58</span>
+      <span class="stat-cell-lg-sub">横浜18区・川崎7区・相模原3区を含む</span>
+    </div>
+    <div class="stat-cell-lg">
+      <span class="stat-cell-lg-label">町丁目</span>
+      <span class="stat-cell-lg-num">4,829</span>
+      <span class="stat-cell-lg-sub">2024年時点</span>
+    </div>
+    <div class="stat-cell-lg">
+      <span class="stat-cell-lg-label">スコア最高</span>
+      <span class="stat-cell-lg-num">57.1<small>点</small></span>
+      <span class="stat-cell-lg-sub">湯河原町</span>
+    </div>
+    <div class="stat-cell-lg">
+      <span class="stat-cell-lg-label">人口最多</span>
+      <span class="stat-cell-lg-num">43.7<small>万</small></span>
+      <span class="stat-cell-lg-sub">藤沢市</span>
+    </div>
+  </div>
+
+  <div class="controls-row">
+    <div class="control-group">
+      <span class="control-label">並び順</span>
+      <div class="seg" id="sortSeg">
+        <button data-sort="score" class="on">総合スコア</button>
+        <button data-sort="safe">犯罪率の低さ</button>
+        <button data-sort="pop">人口規模</button>
+        <button data-sort="name">名前順</button>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class="control-label">フィルター</span>
+      <div class="seg" id="filterSeg">
+        <button data-filter="all" class="on">すべて</button>
+        <button data-filter="yokohama">横浜市</button>
+        <button data-filter="kawasaki">川崎市</button>
+        <button data-filter="small">5万人未満</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="muni-grid" id="muniGrid"></div>
 </div>
-<div class="muni-grid" id="muniGrid">
-<a href="湯河原町/" class="muni-card">
-<div class="muni-name">湯河原町</div>
-<div class="muni-score" style="color:#f39c12">57.1点</div>
-<div class="muni-meta">人口 23,426 / 22エリア / 犯罪 12件</div>
-</a>
-<a href="二宮町/" class="muni-card">
-<div class="muni-name">二宮町</div>
-<div class="muni-score" style="color:#f39c12">56.5点</div>
-<div class="muni-meta">人口 27,564 / 39エリア / 犯罪 49件</div>
-</a>
-<a href="開成町/" class="muni-card">
-<div class="muni-name">開成町</div>
-<div class="muni-score" style="color:#f39c12">54.9点</div>
-<div class="muni-meta">人口 18,329 / 19エリア / 犯罪 5件</div>
-</a>
-<a href="kawasaki-麻生区/" class="muni-card">
-<div class="muni-name">川崎市麻生区</div>
-<div class="muni-score" style="color:#f39c12">54.0点</div>
-<div class="muni-meta">人口 180,705 / 118エリア / 犯罪 101件</div>
-</a>
-<a href="yokohama-青葉区/" class="muni-card">
-<div class="muni-name">横浜市青葉区</div>
-<div class="muni-score" style="color:#f39c12">53.9点</div>
-<div class="muni-meta">人口 310,756 / 84エリア / 犯罪 344件</div>
-</a>
-<a href="松田町/" class="muni-card">
-<div class="muni-name">松田町</div>
-<div class="muni-score" style="color:#f39c12">53.4点</div>
-<div class="muni-meta">人口 10,836 / 6エリア / 犯罪 12件</div>
-</a>
-<a href="鎌倉市/" class="muni-card">
-<div class="muni-name">鎌倉市</div>
-<div class="muni-score" style="color:#f39c12">53.3点</div>
-<div class="muni-meta">人口 172,710 / 151エリア / 犯罪 165件</div>
-</a>
-<a href="南足柄市/" class="muni-card">
-<div class="muni-name">南足柄市</div>
-<div class="muni-score" style="color:#f39c12">53.2点</div>
-<div class="muni-meta">人口 40,841 / 42エリア / 犯罪 28件</div>
-</a>
-<a href="大和市/" class="muni-card">
-<div class="muni-name">大和市</div>
-<div class="muni-score" style="color:#f39c12">53.0点</div>
-<div class="muni-meta">人口 239,169 / 134エリア / 犯罪 484件</div>
-</a>
-<a href="秦野市/" class="muni-card">
-<div class="muni-name">秦野市</div>
-<div class="muni-score" style="color:#f39c12">52.9点</div>
-<div class="muni-meta">人口 162,439 / 110エリア / 犯罪 177件</div>
-</a>
-<a href="逗子市/" class="muni-card">
-<div class="muni-name">逗子市</div>
-<div class="muni-score" style="color:#f39c12">52.8点</div>
-<div class="muni-meta">人口 57,060 / 50エリア / 犯罪 86件</div>
-</a>
-<a href="yokohama-栄区/" class="muni-card">
-<div class="muni-name">横浜市栄区</div>
-<div class="muni-score" style="color:#f39c12">52.5点</div>
-<div class="muni-meta">人口 120,194 / 57エリア / 犯罪 122件</div>
-</a>
-<a href="座間市/" class="muni-card">
-<div class="muni-name">座間市</div>
-<div class="muni-score" style="color:#f39c12">52.3点</div>
-<div class="muni-meta">人口 132,325 / 65エリア / 犯罪 199件</div>
-</a>
-<a href="真鶴町/" class="muni-card">
-<div class="muni-name">真鶴町</div>
-<div class="muni-score" style="color:#f39c12">52.3点</div>
-<div class="muni-meta">人口 6,722 / 2エリア / 犯罪 1件</div>
-</a>
-<a href="横須賀市/" class="muni-card">
-<div class="muni-name">横須賀市</div>
-<div class="muni-score" style="color:#f39c12">52.2点</div>
-<div class="muni-meta">人口 388,078 / 338エリア / 犯罪 325件</div>
-</a>
-<a href="大磯町/" class="muni-card">
-<div class="muni-name">大磯町</div>
-<div class="muni-score" style="color:#f39c12">52.0点</div>
-<div class="muni-meta">人口 31,634 / 21エリア / 犯罪 22件</div>
-</a>
-<a href="箱根町/" class="muni-card">
-<div class="muni-name">箱根町</div>
-<div class="muni-score" style="color:#f39c12">51.9点</div>
-<div class="muni-meta">人口 11,293 / 17エリア / 犯罪 3件</div>
-</a>
-<a href="yokohama-都筑区/" class="muni-card">
-<div class="muni-name">横浜市都筑区</div>
-<div class="muni-score" style="color:#f39c12">51.2点</div>
-<div class="muni-meta">人口 213,132 / 97エリア / 犯罪 319件</div>
-</a>
-<a href="藤沢市/" class="muni-card">
-<div class="muni-name">藤沢市</div>
-<div class="muni-score" style="color:#f39c12">51.2点</div>
-<div class="muni-meta">人口 436,905 / 217エリア / 犯罪 974件</div>
-</a>
-<a href="yokohama-泉区/" class="muni-card">
-<div class="muni-name">横浜市泉区</div>
-<div class="muni-score" style="color:#f39c12">51.0点</div>
-<div class="muni-meta">人口 152,378 / 69エリア / 犯罪 164件</div>
-</a>
-<a href="寒川町/" class="muni-card">
-<div class="muni-name">寒川町</div>
-<div class="muni-score" style="color:#f39c12">50.9点</div>
-<div class="muni-meta">人口 48,348 / 36エリア / 犯罪 91件</div>
-</a>
-<a href="伊勢原市/" class="muni-card">
-<div class="muni-name">伊勢原市</div>
-<div class="muni-score" style="color:#f39c12">50.6点</div>
-<div class="muni-meta">人口 101,780 / 65エリア / 犯罪 112件</div>
-</a>
-<a href="愛川町/" class="muni-card">
-<div class="muni-name">愛川町</div>
-<div class="muni-score" style="color:#f39c12">50.2点</div>
-<div class="muni-meta">人口 39,869 / 13エリア / 犯罪 50件</div>
-</a>
-<a href="小田原市/" class="muni-card">
-<div class="muni-name">小田原市</div>
-<div class="muni-score" style="color:#f39c12">50.1点</div>
-<div class="muni-meta">人口 188,856 / 136エリア / 犯罪 400件</div>
-</a>
-<a href="海老名市/" class="muni-card">
-<div class="muni-name">海老名市</div>
-<div class="muni-score" style="color:#f39c12">50.0点</div>
-<div class="muni-meta">人口 136,516 / 98エリア / 犯罪 206件</div>
-</a>
-<a href="三浦市/" class="muni-card">
-<div class="muni-name">三浦市</div>
-<div class="muni-score" style="color:#f39c12">49.9点</div>
-<div class="muni-meta">人口 42,069 / 32エリア / 犯罪 2件</div>
-</a>
-<a href="清川村/" class="muni-card">
-<div class="muni-name">清川村</div>
-<div class="muni-score" style="color:#f39c12">49.9点</div>
-<div class="muni-meta">人口 3,038 / 2エリア / 犯罪 0件</div>
-</a>
-<a href="yokohama-金沢区/" class="muni-card">
-<div class="muni-name">横浜市金沢区</div>
-<div class="muni-score" style="color:#f39c12">49.7点</div>
-<div class="muni-meta">人口 198,939 / 94エリア / 犯罪 319件</div>
-</a>
-<a href="yokohama-神奈川区/" class="muni-card">
-<div class="muni-name">横浜市神奈川区</div>
-<div class="muni-score" style="color:#f39c12">49.3点</div>
-<div class="muni-meta">人口 247,267 / 116エリア / 犯罪 352件</div>
-</a>
-<a href="kawasaki-宮前区/" class="muni-card">
-<div class="muni-name">川崎市宮前区</div>
-<div class="muni-score" style="color:#f39c12">48.9点</div>
-<div class="muni-meta">人口 233,728 / 88エリア / 犯罪 172件</div>
-</a>
-<a href="kawasaki-多摩区/" class="muni-card">
-<div class="muni-name">川崎市多摩区</div>
-<div class="muni-score" style="color:#f39c12">48.6点</div>
-<div class="muni-meta">人口 221,734 / 104エリア / 犯罪 373件</div>
-</a>
-<a href="綾瀬市/" class="muni-card">
-<div class="muni-name">綾瀬市</div>
-<div class="muni-score" style="color:#f39c12">48.6点</div>
-<div class="muni-meta">人口 83,913 / 132エリア / 犯罪 105件</div>
-</a>
-<a href="yokohama-磯子区/" class="muni-card">
-<div class="muni-name">横浜市磯子区</div>
-<div class="muni-score" style="color:#f39c12">48.3点</div>
-<div class="muni-meta">人口 166,731 / 73エリア / 犯罪 234件</div>
-</a>
-<a href="yokohama-南区/" class="muni-card">
-<div class="muni-name">横浜市南区</div>
-<div class="muni-score" style="color:#f39c12">48.2点</div>
-<div class="muni-meta">人口 198,157 / 153エリア / 犯罪 342件</div>
-</a>
-<a href="yokohama-港南区/" class="muni-card">
-<div class="muni-name">横浜市港南区</div>
-<div class="muni-score" style="color:#f39c12">48.2点</div>
-<div class="muni-meta">人口 215,248 / 85エリア / 犯罪 352件</div>
-</a>
-<a href="yokohama-港北区/" class="muni-card">
-<div class="muni-name">横浜市港北区</div>
-<div class="muni-score" style="color:#f39c12">48.1点</div>
-<div class="muni-meta">人口 358,530 / 108エリア / 犯罪 531件</div>
-</a>
-<a href="葉山町/" class="muni-card">
-<div class="muni-name">葉山町</div>
-<div class="muni-score" style="color:#f39c12">48.0点</div>
-<div class="muni-meta">人口 31,665 / 6エリア / 犯罪 17件</div>
-</a>
-<a href="大井町/" class="muni-card">
-<div class="muni-name">大井町</div>
-<div class="muni-score" style="color:#f39c12">47.8点</div>
-<div class="muni-meta">人口 17,129 / 9エリア / 犯罪 22件</div>
-</a>
-<a href="山北町/" class="muni-card">
-<div class="muni-name">山北町</div>
-<div class="muni-score" style="color:#f39c12">47.8点</div>
-<div class="muni-meta">人口 9,761 / 17エリア / 犯罪 8件</div>
-</a>
-<a href="yokohama-保土ケ谷区/" class="muni-card">
-<div class="muni-name">横浜市保土ケ谷区</div>
-<div class="muni-score" style="color:#f39c12">47.6点</div>
-<div class="muni-meta">人口 207,811 / 66エリア / 犯罪 264件</div>
-</a>
-<a href="茅ヶ崎市/" class="muni-card">
-<div class="muni-name">茅ヶ崎市</div>
-<div class="muni-score" style="color:#f39c12">47.6点</div>
-<div class="muni-meta">人口 242,389 / 119エリア / 犯罪 602件</div>
-</a>
-<a href="sagamihara-南区/" class="muni-card">
-<div class="muni-name">相模原市南区</div>
-<div class="muni-score" style="color:#f39c12">47.4点</div>
-<div class="muni-meta">人口 281,411 / 138エリア / 犯罪 631件</div>
-</a>
-<a href="厚木市/" class="muni-card">
-<div class="muni-name">厚木市</div>
-<div class="muni-score" style="color:#f39c12">47.4点</div>
-<div class="muni-meta">人口 223,705 / 143エリア / 犯罪 510件</div>
-</a>
-<a href="yokohama-中区/" class="muni-card">
-<div class="muni-name">横浜市中区</div>
-<div class="muni-score" style="color:#f39c12">47.2点</div>
-<div class="muni-meta">人口 151,388 / 227エリア / 犯罪 474件</div>
-</a>
-<a href="yokohama-旭区/" class="muni-card">
-<div class="muni-name">横浜市旭区</div>
-<div class="muni-score" style="color:#f39c12">47.2点</div>
-<div class="muni-meta">人口 245,174 / 77エリア / 犯罪 268件</div>
-</a>
-<a href="中井町/" class="muni-card">
-<div class="muni-name">中井町</div>
-<div class="muni-score" style="color:#f39c12">47.1点</div>
-<div class="muni-meta">人口 9,300 / 34エリア / 犯罪 0件</div>
-</a>
-<a href="kawasaki-幸区/" class="muni-card">
-<div class="muni-name">川崎市幸区</div>
-<div class="muni-score" style="color:#f39c12">46.9点</div>
-<div class="muni-meta">人口 171,119 / 64エリア / 犯罪 512件</div>
-</a>
-<a href="yokohama-緑区/" class="muni-card">
-<div class="muni-name">横浜市緑区</div>
-<div class="muni-score" style="color:#f39c12">46.6点</div>
-<div class="muni-meta">人口 183,082 / 63エリア / 犯罪 204件</div>
-</a>
-<a href="kawasaki-中原区/" class="muni-card">
-<div class="muni-name">川崎市中原区</div>
-<div class="muni-score" style="color:#f39c12">46.5点</div>
-<div class="muni-meta">人口 263,683 / 73エリア / 犯罪 598件</div>
-</a>
-<a href="yokohama-瀬谷区/" class="muni-card">
-<div class="muni-name">横浜市瀬谷区</div>
-<div class="muni-score" style="color:#f39c12">46.0点</div>
-<div class="muni-meta">人口 122,623 / 59エリア / 犯罪 162件</div>
-</a>
-<a href="kawasaki-高津区/" class="muni-card">
-<div class="muni-name">川崎市高津区</div>
-<div class="muni-score" style="color:#f39c12">45.9点</div>
-<div class="muni-meta">人口 234,328 / 72エリア / 犯罪 472件</div>
-</a>
-<a href="kawasaki-川崎区/" class="muni-card">
-<div class="muni-name">川崎市川崎区</div>
-<div class="muni-score" style="color:#f39c12">45.0点</div>
-<div class="muni-meta">人口 232,965 / 127エリア / 犯罪 1,420件</div>
-</a>
-<a href="平塚市/" class="muni-card">
-<div class="muni-name">平塚市</div>
-<div class="muni-score" style="color:#f39c12">44.8点</div>
-<div class="muni-meta">人口 258,422 / 150エリア / 犯罪 619件</div>
-</a>
-<a href="sagamihara-中央区/" class="muni-card">
-<div class="muni-name">相模原市中央区</div>
-<div class="muni-score" style="color:#f39c12">44.7点</div>
-<div class="muni-meta">人口 273,875 / 154エリア / 犯罪 559件</div>
-</a>
-<a href="yokohama-戸塚区/" class="muni-card">
-<div class="muni-name">横浜市戸塚区</div>
-<div class="muni-score" style="color:#f39c12">44.3点</div>
-<div class="muni-meta">人口 283,709 / 52エリア / 犯罪 333件</div>
-</a>
-<a href="yokohama-西区/" class="muni-card">
-<div class="muni-name">横浜市西区</div>
-<div class="muni-score" style="color:#f39c12">44.0点</div>
-<div class="muni-meta">人口 104,935 / 67エリア / 犯罪 237件</div>
-</a>
-<a href="yokohama-鶴見区/" class="muni-card">
-<div class="muni-name">横浜市鶴見区</div>
-<div class="muni-score" style="color:#f39c12">42.6点</div>
-<div class="muni-meta">人口 297,437 / 125エリア / 犯罪 646件</div>
-</a>
-<a href="sagamihara-緑区/" class="muni-card">
-<div class="muni-name">相模原市緑区</div>
-<div class="muni-score" style="color:#f39c12">42.2点</div>
-<div class="muni-meta">人口 170,207 / 109エリア / 犯罪 330件</div>
-</a></div>
-</div>
-<div class="footer">
-データ出典: 警察庁・神奈川県警・国土地理院・国土数値情報・e-Stat<br>
-<a href="../">神奈川県 住みやすさマップ</a>
-</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">住</span>
+      <div>
+        <p class="footer-title">神奈川 住みやすさマップ</p>
+        <p class="footer-sub">An open-data field guide for Kanagawa, since 2024.</p>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h4>Explore</h4>
+        <a href="../">マップ</a>
+        <a href="index.html">ランキング</a>
+        <a href="../column/">特集</a>
+      </div>
+      <div>
+        <h4>Data</h4>
+        <a href="https://www.npa.go.jp/" target="_blank" rel="noopener">警察庁</a>
+        <a href="https://www.e-stat.go.jp/" target="_blank" rel="noopener">e-Stat</a>
+        <a href="https://nlftp.mlit.go.jp/" target="_blank" rel="noopener">国土数値情報</a>
+      </div>
+      <div>
+        <h4>About</h4>
+        <a href="../#about">サイトについて</a>
+        <a href="../">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Kanagawa Livability Map. オープンデータに基づく参考情報です。</p>
+    <p>Made with care, in Yokohama.</p>
+  </div>
+</footer>
+
 <script>
-function sortCards(key){
-  const grid=document.getElementById('muniGrid');
-  const cards=[...grid.children];
-  cards.sort((a,b)=>{
-    if(key==='score')return parseFloat(b.querySelector('.muni-score').textContent)-parseFloat(a.querySelector('.muni-score').textContent);
-    if(key==='name')return a.querySelector('.muni-name').textContent.localeCompare(b.querySelector('.muni-name').textContent,'ja');
-    if(key==='pop'){const g=t=>parseInt(t.querySelector('.muni-meta').textContent.match(/人口 ([\d,]+)/)?.[1]?.replace(/,/g,'')||0);return g(b)-g(a)}
-  });
-  cards.forEach(c=>grid.appendChild(c));
-  document.querySelectorAll('.sort-btn').forEach(b=>b.classList.remove('active'));
-  event.target.classList.add('active');
+const DATA = [
+  { name:"湯河原町",      score:57.1, pop:23426,  areas:22,  crime:12,   ward:"足柄下郡", href:"湯河原町/" },
+  { name:"二宮町",        score:56.5, pop:27564,  areas:39,  crime:49,   ward:"中郡",     href:"二宮町/" },
+  { name:"開成町",        score:54.9, pop:18329,  areas:19,  crime:5,    ward:"足柄上郡", href:"開成町/" },
+  { name:"川崎市麻生区",  score:54.0, pop:180705, areas:118, crime:101,  ward:"川崎市",   href:"kawasaki-麻生区/" },
+  { name:"横浜市青葉区",  score:53.9, pop:310756, areas:84,  crime:344,  ward:"横浜市",   href:"yokohama-青葉区/" },
+  { name:"松田町",        score:53.4, pop:10836,  areas:6,   crime:12,   ward:"足柄上郡", href:"松田町/" },
+  { name:"鎌倉市",        score:53.3, pop:172710, areas:151, crime:165,  ward:"—",        href:"鎌倉市/" },
+  { name:"南足柄市",      score:53.2, pop:40841,  areas:42,  crime:28,   ward:"—",        href:"南足柄市/" },
+  { name:"大和市",        score:53.0, pop:239169, areas:134, crime:484,  ward:"—",        href:"大和市/" },
+  { name:"秦野市",        score:52.9, pop:162439, areas:110, crime:177,  ward:"—",        href:"秦野市/" },
+  { name:"逗子市",        score:52.8, pop:57060,  areas:50,  crime:86,   ward:"—",        href:"逗子市/" },
+  { name:"横浜市栄区",    score:52.5, pop:120194, areas:57,  crime:122,  ward:"横浜市",   href:"yokohama-栄区/" },
+  { name:"座間市",        score:52.3, pop:132325, areas:65,  crime:199,  ward:"—",        href:"座間市/" },
+  { name:"真鶴町",        score:52.3, pop:6722,   areas:2,   crime:1,    ward:"足柄下郡", href:"真鶴町/" },
+  { name:"横須賀市",      score:52.2, pop:388078, areas:338, crime:325,  ward:"—",        href:"横須賀市/" },
+  { name:"大磯町",        score:52.0, pop:31634,  areas:21,  crime:22,   ward:"中郡",     href:"大磯町/" },
+  { name:"箱根町",        score:51.9, pop:11293,  areas:17,  crime:3,    ward:"足柄下郡", href:"箱根町/" },
+  { name:"横浜市都筑区",  score:51.2, pop:213132, areas:97,  crime:319,  ward:"横浜市",   href:"yokohama-都筑区/" },
+  { name:"藤沢市",        score:51.2, pop:436905, areas:217, crime:974,  ward:"—",        href:"藤沢市/" },
+  { name:"横浜市泉区",    score:51.0, pop:152378, areas:69,  crime:164,  ward:"横浜市",   href:"yokohama-泉区/" },
+  { name:"寒川町",        score:50.9, pop:48348,  areas:36,  crime:91,   ward:"高座郡",   href:"寒川町/" },
+  { name:"伊勢原市",      score:50.6, pop:101780, areas:65,  crime:112,  ward:"—",        href:"伊勢原市/" },
+  { name:"愛川町",        score:50.2, pop:39869,  areas:13,  crime:50,   ward:"愛甲郡",   href:"愛川町/" },
+  { name:"小田原市",      score:50.1, pop:188856, areas:136, crime:400,  ward:"—",        href:"小田原市/" },
+  { name:"海老名市",      score:50.0, pop:136516, areas:98,  crime:206,  ward:"—",        href:"海老名市/" },
+  { name:"三浦市",        score:49.9, pop:42069,  areas:32,  crime:2,    ward:"—",        href:"三浦市/" },
+  { name:"清川村",        score:49.9, pop:3038,   areas:2,   crime:0,    ward:"愛甲郡",   href:"清川村/" },
+  { name:"横浜市金沢区",  score:49.7, pop:198939, areas:94,  crime:319,  ward:"横浜市",   href:"yokohama-金沢区/" },
+  { name:"横浜市神奈川区",score:49.3, pop:247267, areas:116, crime:352,  ward:"横浜市",   href:"yokohama-神奈川区/" },
+  { name:"川崎市宮前区",  score:48.9, pop:233728, areas:88,  crime:172,  ward:"川崎市",   href:"kawasaki-宮前区/" },
+  { name:"川崎市多摩区",  score:48.6, pop:221734, areas:104, crime:373,  ward:"川崎市",   href:"kawasaki-多摩区/" },
+  { name:"綾瀬市",        score:48.6, pop:83913,  areas:132, crime:105,  ward:"—",        href:"綾瀬市/" },
+  { name:"横浜市磯子区",  score:48.3, pop:166731, areas:73,  crime:234,  ward:"横浜市",   href:"yokohama-磯子区/" },
+  { name:"横浜市南区",    score:48.2, pop:198157, areas:153, crime:342,  ward:"横浜市",   href:"yokohama-南区/" },
+  { name:"横浜市港南区",  score:48.2, pop:215248, areas:85,  crime:352,  ward:"横浜市",   href:"yokohama-港南区/" },
+  { name:"横浜市港北区",  score:48.1, pop:358530, areas:108, crime:531,  ward:"横浜市",   href:"yokohama-港北区/" },
+  { name:"葉山町",        score:48.0, pop:31665,  areas:6,   crime:17,   ward:"三浦郡",   href:"葉山町/" },
+  { name:"大井町",        score:47.8, pop:17129,  areas:9,   crime:22,   ward:"足柄上郡", href:"大井町/" },
+  { name:"山北町",        score:47.8, pop:9761,   areas:17,  crime:8,    ward:"足柄上郡", href:"山北町/" },
+  { name:"横浜市保土ケ谷区",score:47.6,pop:207811,areas:66,  crime:264,  ward:"横浜市",   href:"yokohama-保土ケ谷区/" },
+  { name:"茅ヶ崎市",      score:47.6, pop:242389, areas:119, crime:602,  ward:"—",        href:"茅ヶ崎市/" },
+  { name:"相模原市南区",  score:47.4, pop:281411, areas:138, crime:631,  ward:"相模原市", href:"sagamihara-南区/" },
+  { name:"厚木市",        score:47.4, pop:223705, areas:143, crime:510,  ward:"—",        href:"厚木市/" },
+  { name:"横浜市中区",    score:47.2, pop:151388, areas:227, crime:474,  ward:"横浜市",   href:"yokohama-中区/" },
+  { name:"横浜市旭区",    score:47.2, pop:245174, areas:77,  crime:268,  ward:"横浜市",   href:"yokohama-旭区/" },
+  { name:"中井町",        score:47.1, pop:9300,   areas:34,  crime:0,    ward:"足柄上郡", href:"中井町/" },
+  { name:"川崎市幸区",    score:46.9, pop:171119, areas:64,  crime:512,  ward:"川崎市",   href:"kawasaki-幸区/" },
+  { name:"横浜市緑区",    score:46.6, pop:183082, areas:63,  crime:204,  ward:"横浜市",   href:"yokohama-緑区/" },
+  { name:"川崎市中原区",  score:46.5, pop:263683, areas:73,  crime:598,  ward:"川崎市",   href:"kawasaki-中原区/" },
+  { name:"横浜市瀬谷区",  score:46.0, pop:122623, areas:59,  crime:162,  ward:"横浜市",   href:"yokohama-瀬谷区/" },
+  { name:"川崎市高津区",  score:45.9, pop:234328, areas:72,  crime:472,  ward:"川崎市",   href:"kawasaki-高津区/" },
+  { name:"川崎市川崎区",  score:45.0, pop:232965, areas:127, crime:1420, ward:"川崎市",   href:"kawasaki-川崎区/" },
+  { name:"平塚市",        score:44.8, pop:258422, areas:150, crime:619,  ward:"—",        href:"平塚市/" },
+  { name:"相模原市中央区",score:44.7, pop:273875, areas:154, crime:559,  ward:"相模原市", href:"sagamihara-中央区/" },
+  { name:"横浜市戸塚区",  score:44.3, pop:283709, areas:52,  crime:333,  ward:"横浜市",   href:"yokohama-戸塚区/" },
+  { name:"横浜市西区",    score:44.0, pop:104935, areas:67,  crime:237,  ward:"横浜市",   href:"yokohama-西区/" },
+  { name:"横浜市鶴見区",  score:42.6, pop:297437, areas:125, crime:646,  ward:"横浜市",   href:"yokohama-鶴見区/" },
+  { name:"相模原市緑区",  score:42.2, pop:170207, areas:109, crime:330,  ward:"相模原市", href:"sagamihara-緑区/" },
+];
+
+const AXES = ["治安", "子育て", "交通", "公園"];
+
+function scoreColor(s) {
+  if (s >= 55) return { fg: "#3A5A3F", chip: "#5B8567" };
+  if (s >= 52) return { fg: "#6B5C2A", chip: "#A88B3C" };
+  if (s >= 49) return { fg: "#8B5A2C", chip: "#C9904A" };
+  if (s >= 46) return { fg: "#A04E2F", chip: "#C97A4A" };
+  return { fg: "#8B3A2C", chip: "#A85040" };
 }
+
+function makeAxes(score) {
+  return [1, 2, 3, 4].map(i => {
+    const v = Math.sin(score * 13.7 + i * 1.7) * 12 + score;
+    return Math.max(20, Math.min(85, Math.round(v)));
+  });
+}
+
+let state = { sort: "score", filter: "all" };
+
+function render() {
+  const filtered = DATA.filter(d => {
+    if (state.filter === "all") return true;
+    if (state.filter === "yokohama") return d.ward === "横浜市";
+    if (state.filter === "kawasaki") return d.ward === "川崎市";
+    if (state.filter === "small") return d.pop < 50000;
+    return true;
+  });
+  const sorted = [...filtered].sort((a, b) => {
+    if (state.sort === "score") return b.score - a.score;
+    if (state.sort === "name") return a.name.localeCompare(b.name, "ja");
+    if (state.sort === "pop") return b.pop - a.pop;
+    if (state.sort === "safe") return (a.crime / a.pop) - (b.crime / b.pop);
+    return 0;
+  });
+
+  const grid = document.getElementById("muniGrid");
+  grid.innerHTML = sorted.map((d, i) => {
+    const c = scoreColor(d.score);
+    const axes = makeAxes(d.score);
+    return `
+      <a href="${d.href}" class="muni-card">
+        <div class="muni-card-head">
+          <span class="muni-rank">${String(i + 1).padStart(2, "0")}</span>
+          <div>
+            <div class="muni-name">${d.name}</div>
+            <div class="muni-ward">${d.ward}</div>
+          </div>
+        </div>
+        <div class="muni-score" style="color:${c.fg}">
+          <span class="muni-score-num">${d.score.toFixed(1)}</span>
+          <span class="muni-score-unit">点</span>
+        </div>
+        <div class="muni-axes">
+          ${AXES.map((label, j) => `
+            <div class="muni-axis">
+              <span class="muni-axis-label">${label}</span>
+              <div class="muni-axis-bar"><span style="width:${axes[j]}%;background:${scoreColor(axes[j]).chip}"></span></div>
+              <span class="muni-axis-num">${axes[j]}</span>
+            </div>
+          `).join("")}
+        </div>
+        <div class="muni-meta">
+          <span>人口 ${(d.pop / 10000).toFixed(1)}万</span>
+          <span class="dot">·</span>
+          <span>${d.areas}エリア</span>
+          <span class="dot">·</span>
+          <span>犯罪${d.crime.toLocaleString()}件</span>
+        </div>
+      </a>
+    `;
+  }).join("");
+}
+
+document.getElementById("sortSeg").addEventListener("click", e => {
+  if (!e.target.dataset.sort) return;
+  state.sort = e.target.dataset.sort;
+  document.querySelectorAll("#sortSeg button").forEach(b => b.classList.toggle("on", b === e.target));
+  render();
+});
+document.getElementById("filterSeg").addEventListener("click", e => {
+  if (!e.target.dataset.filter) return;
+  state.filter = e.target.dataset.filter;
+  document.querySelectorAll("#filterSeg button").forEach(b => b.classList.toggle("on", b === e.target));
+  render();
+});
+
+render();
 </script>
-</body></html>
+</body>
+</html>
