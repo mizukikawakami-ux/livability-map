@@ -179,7 +179,7 @@
       </span>
     </a>
     <nav class="header-nav">
-      <a href="#map">マップ</a>
+      <a href="#map-section">マップ</a>
       <a href="area/">ランキング</a>
       <a href="column/">特集</a>
       <a href="#about">このサイトについて</a>
@@ -295,7 +295,7 @@
 </section>
 
 <!-- ── Map section ── -->
-<section class="map-section" id="map">
+<section class="map-section" id="map-section">
   <div class="section-head">
     <div>
       <span class="section-eyebrow">02 — Map</span>
@@ -489,7 +489,7 @@
     <div class="footer-cols">
       <div>
         <h4>Explore</h4>
-        <a href="#map">マップ</a>
+        <a href="#map-section">マップ</a>
         <a href="area/">ランキング</a>
         <a href="column/">特集</a>
       </div>
@@ -534,7 +534,7 @@ function doChipSearch(term) {
     input.value = term;
     btn.click();
     setTimeout(() => {
-      document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      document.getElementById('map-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 300);
   }
 }
