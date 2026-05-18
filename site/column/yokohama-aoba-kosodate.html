@@ -3,241 +3,293 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【データで見る】横浜市青葉区の子育て環境｜治安・保育・医療を徹底分析</title>
-<meta name="description" content="横浜市青葉区78町丁目の子育て環境をデータで分析。子育てスコア満点のエリア、犯罪ゼロの町丁目、医療施設が充実したエリアをランキング形式で紹介。">
-<meta property="og:title" content="【データで見る】横浜市青葉区の子育て環境｜治安・保育・医療を徹底分析">
+<title>横浜市青葉区の子育て環境 — 治安・保育・医療を徹底分析 — 神奈川 住みやすさマップ</title>
+<meta name="description" content="横浜市青葉区78町丁目の子育て環境を、治安・医療・保育の3軸データで読み解きます。子育てスコア満点エリア、犯罪ゼロの町丁目、医療充実エリアをランキングで。">
+<meta property="og:title" content="横浜市青葉区の子育て環境 — 治安・保育・医療を徹底分析">
 <meta property="og:description" content="青葉区78町丁目を7軸スコアで分析。子育てスコア満点エリアやデータで見る隠れ優良地域をご紹介。">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "【データで見る】横浜市青葉区の子育て環境｜治安・保育・医療を徹底分析",
+  "headline": "横浜市青葉区の子育て環境 — 治安・保育・医療を徹底分析",
   "author": {"@type": "Organization", "name": "神奈川住みやすさ研究所"},
   "datePublished": "2025-05-10",
   "description": "横浜市青葉区78町丁目の子育て環境を7軸データで徹底分析"
 }</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333;line-height:1.8}
-.header{background:#1a1a2e;color:#fff;padding:16px 24px}
-.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
-.container{max-width:800px;margin:0 auto;padding:24px 16px}
-.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
-article h2{font-size:1.6rem;margin-bottom:12px;color:#1a1a2e;line-height:1.4}
-article h3{font-size:1.15rem;margin:28px 0 12px;color:#1a1a2e;padding-left:12px;border-left:4px solid #f39c12}
-.lead{font-size:.95rem;color:#555;margin-bottom:24px;padding:16px 20px;background:#fff8e1;border-radius:8px}
-.stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px;margin:16px 0}
-.stat-box{background:#fff;border-radius:8px;padding:16px;text-align:center;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.stat-box .val{font-size:1.5rem;font-weight:700;color:#1a1a2e}.stat-box .lbl{font-size:.75rem;color:#888;margin-top:4px}
-.card{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.rank-list{list-style:none;padding:0}
-.rank-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f0f0f0}
-.rank-item:last-child{border-bottom:none}
-.rank-badge{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:#fff;flex-shrink:0}
-.rank-badge.gold{background:#f39c12}.rank-badge.silver{background:#95a5a6}.rank-badge.bronze{background:#cd6133}.rank-badge.other{background:#3498db}
-.rank-info{flex:1}
-.rank-name{font-weight:600;font-size:.95rem}
-.rank-name a{color:#1a73e8;text-decoration:none}
-.rank-name a:hover{text-decoration:underline}
-.rank-detail{font-size:.8rem;color:#888;margin-top:2px}
-.rank-score{flex-shrink:0;text-align:right}
-.rank-score .big{font-size:1.2rem;font-weight:700;color:#1a1a2e}
-.rank-score .sub{font-size:.7rem;color:#888;display:block}
-.score-bar{display:flex;align-items:center;gap:8px;margin:4px 0}
-.score-bar .label{width:80px;font-size:.78rem;color:#555;font-weight:600}
-.score-bar .bar-bg{flex:1;height:14px;background:#eee;border-radius:7px;overflow:hidden}
-.score-bar .bar-fill{height:100%;border-radius:7px}
-.score-bar .val{width:45px;text-align:right;font-size:.75rem;font-weight:600;color:#555}
-.safe-tag{display:inline-block;background:#e8f5e9;color:#2e7d32;padding:2px 10px;border-radius:12px;font-size:.75rem;font-weight:600;margin-left:8px}
-.note{font-size:.8rem;color:#888;margin-top:8px;padding:8px 12px;background:#fafafa;border-radius:4px}
-.cta{background:#1a1a2e;color:#fff;border-radius:8px;padding:24px;margin:32px 0;text-align:center}
-.cta h3{color:#fff;border:none;padding:0;margin:0 0 8px;font-size:1.1rem}
-.cta p{font-size:.9rem;color:#ccc;margin-bottom:16px}
-.cta-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-.cta a{display:inline-block;background:#3498db;color:#fff;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.9rem}
-.cta a:hover{background:#2980b9}
-.cta a.secondary{background:transparent;border:1px solid #8ab4f8;color:#8ab4f8}
-.ad-section{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin:28px 0;position:relative}
-.ad-section .ad-label{position:absolute;top:8px;right:12px;font-size:.65rem;color:#aaa;background:#f5f5f5;padding:1px 8px;border-radius:3px}
-.ad-section .ad-title{font-size:.95rem;font-weight:600;color:#1a1a2e;margin-bottom:6px}
-.ad-section .ad-desc{font-size:.83rem;color:#666;margin-bottom:12px;line-height:1.6}
-.ad-section .ad-body{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.ad-section .ad-body img{max-width:300px;height:auto;border-radius:4px}
-.ad-section .ad-text{flex:1;min-width:200px}
-.ad-section .ad-link{display:inline-block;background:#f39c12;color:#fff;padding:8px 20px;border-radius:5px;text-decoration:none;font-size:.85rem;font-weight:600;margin-top:8px}
-.ad-section .ad-link:hover{background:#e67e22}
-.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}
-.footer a{color:#8ab4f8;text-decoration:none}
-@media(max-width:600px){
-  .container{padding:16px 12px}
-  article h2{font-size:1.3rem}
-  .stats-row{grid-template-columns:repeat(3,1fr)}
-}
-</style>
-    <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
-    <script defer src="/_vercel/insights/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/shared.css">
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-<div class="header"><h1><a href="../">神奈川県 住みやすさマップ</a></h1></div>
-<div class="container">
-<div class="breadcrumb">
-<a href="../">トップ</a> &gt; <a href="./">特集記事</a> &gt; 青葉区 子育て環境
-</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../" class="brand">
+      <span class="brand-mark">住</span>
+      <div class="brand-text">
+        <span class="brand-jp">神奈川 住みやすさマップ</span>
+        <span class="brand-en">Kanagawa Livability Map</span>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="../">マップ</a>
+      <a href="../area/">ランキング</a>
+      <a href="./" class="on">特集</a>
+      <a href="../#about">このサイトについて</a>
+    </nav>
+  </div>
+</header>
 
-<article>
-<h2>【データで見る】横浜市青葉区の子育て環境<br>治安・保育・医療を徹底分析</h2>
+<article class="article-wrap">
+  <nav class="breadcrumb">
+    <a href="../">トップ</a><span class="sep">/</span><a href="./">特集</a><span class="sep">/</span><span class="current">青葉区の子育て環境</span>
+  </nav>
 
-<p class="lead">横浜市青葉区は78の町丁目からなり、人口約27.6万人。東急田園都市線沿線の閑静な住宅地として子育て世帯に人気のエリアです。当サイトでは7つの指標（治安・交通安全・医療・子育て・コスト・交通利便性・公園）でスコアリングしています。青葉区全体の平均スコアは54.3点/98点です。</p>
-
-<div class="stats-row">
-<div class="stat-box"><div class="val">78</div><div class="lbl">町丁目</div></div>
-<div class="stat-box"><div class="val">27.6万</div><div class="lbl">人口</div></div>
-<div class="stat-box"><div class="val">54.3</div><div class="lbl">平均スコア/98</div></div>
-</div>
-
-<section>
-<h3>子育て総合スコア TOP5</h3>
-<p style="font-size:.9rem;color:#555;margin-bottom:12px">7軸の総合スコアが高く、特に子育て環境スコアが優秀なエリアです。</p>
-<div class="card">
-<ul class="rank-list">
-  <li class="rank-item">
-    <span class="rank-badge gold">1</span>
-    <div class="rank-info">
-      <div class="rank-name"><a href="../area/yokohama-青葉区/あざみ野南2/">あざみ野南2丁目</a><span class="safe-tag">犯罪1件</span></div>
-      <div class="rank-detail">人口1,663人｜子育て環境 14.0/14（満点）</div>
-      <div class="score-bar"><span class="label">子育て</span><div class="bar-bg"><div class="bar-fill" style="width:100%;background:#f39c12"></div></div><span class="val">14/14</span></div>
-      <div class="score-bar"><span class="label">医療</span><div class="bar-bg"><div class="bar-fill" style="width:88.6%;background:#2ecc71"></div></div><span class="val">12.4/14</span></div>
+  <header class="article-header">
+    <span class="article-tag">子育て</span>
+    <h1 class="article-title">横浜市青葉区の<br><em>子育て環境</em>を、データで歩く。</h1>
+    <p class="article-deck">78の町丁目、27.6万人。<br>東急田園都市線沿いの「子育てしやすい街」という評判の裏側を、治安・医療・保育の数字でたしかめます。</p>
+    <div class="article-meta-row">
+      <span>編集部</span><span class="dot">·</span><span>2025年5月</span><span class="dot">·</span><span>12 min read</span>
     </div>
-    <div class="rank-score"><span class="big">72.8</span><span class="sub">/98点</span></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge silver">2</span>
-    <div class="rank-info">
-      <div class="rank-name"><a href="../area/yokohama-青葉区/荏田北1/">荏田北1丁目</a><span class="safe-tag">犯罪1件</span></div>
-      <div class="rank-detail">人口2,081人｜子育て環境 14.0/14（満点）</div>
-      <div class="score-bar"><span class="label">子育て</span><div class="bar-bg"><div class="bar-fill" style="width:100%;background:#f39c12"></div></div><span class="val">14/14</span></div>
-      <div class="score-bar"><span class="label">交通安全</span><div class="bar-bg"><div class="bar-fill" style="width:65.7%;background:#f39c12"></div></div><span class="val">9.2/14</span></div>
+  </header>
+
+  <figure class="article-figure">
+    <svg viewBox="0 0 1200 540" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="hero" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8DFC9"/><stop offset="100%" stop-color="#C9B894"/></linearGradient>
+        <linearGradient id="hill1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8FA37A"/><stop offset="100%" stop-color="#5C6E52"/></linearGradient>
+        <linearGradient id="hill2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3F4F3B"/><stop offset="100%" stop-color="#2A382A"/></linearGradient>
+      </defs>
+      <rect width="1200" height="540" fill="url(#hero)"/>
+      <circle cx="920" cy="160" r="48" fill="#F2EDE0" opacity="0.7"/>
+      <path d="M0,360 Q260,300 540,330 T1200,310 L1200,540 L0,540 Z" fill="url(#hill1)"/>
+      <path d="M0,420 Q300,380 620,400 T1200,390 L1200,540 L0,540 Z" fill="url(#hill2)"/>
+      <g fill="#1F2A24" opacity="0.7">
+        <rect x="180" y="380" width="28" height="34"/><polygon points="180,380 208,380 194,366"/>
+        <rect x="340" y="395" width="22" height="28"/><polygon points="340,395 362,395 351,383"/>
+        <rect x="720" y="385" width="32" height="36"/><polygon points="720,385 752,385 736,369"/>
+        <rect x="900" y="400" width="24" height="30"/><polygon points="900,400 924,400 912,388"/>
+      </g>
+    </svg>
+    <figcaption>イメージ：青葉区の丘陵地に並ぶ住宅地</figcaption>
+  </figure>
+
+  <div class="article-body">
+    <p class="article-lead-para">青葉区は、田園都市線・市営地下鉄ブルーラインの両方が走り、横浜と渋谷の両方に通えるという珍しい立地に恵まれた区です。78の町丁目それぞれに、7軸（治安・交通安全・医療・子育て・コスト・交通利便性・公園）でスコアを算出すると、区全体の平均は54.3点/98点。これは神奈川県内でも上位の数字です。</p>
+
+    <div class="mini-stats">
+      <div class="mini-stat"><div class="mini-stat-val">78</div><span class="mini-stat-lbl">町丁目</span></div>
+      <div class="mini-stat"><div class="mini-stat-val">27.6<small>万</small></div><span class="mini-stat-lbl">人口</span></div>
+      <div class="mini-stat"><div class="mini-stat-val">54.3</div><span class="mini-stat-lbl">平均スコア / 98</span></div>
+      <div class="mini-stat"><div class="mini-stat-val">344</div><span class="mini-stat-lbl">犯罪件数 / 年</span></div>
     </div>
-    <div class="rank-score"><span class="big">71.5</span><span class="sub">/98点</span></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge bronze">3</span>
-    <div class="rank-info">
-      <div class="rank-name"><a href="../area/yokohama-青葉区/荏田北3/">荏田北3丁目</a></div>
-      <div class="rank-detail">人口1,682人｜子育て環境 14.0/14（満点）｜医療10件</div>
-      <div class="score-bar"><span class="label">子育て</span><div class="bar-bg"><div class="bar-fill" style="width:100%;background:#f39c12"></div></div><span class="val">14/14</span></div>
-      <div class="score-bar"><span class="label">医療</span><div class="bar-bg"><div class="bar-fill" style="width:93.6%;background:#2ecc71"></div></div><span class="val">13.1/14</span></div>
+
+    <div class="article-section-head">
+      <h2 class="article-h2">子育て総合スコア TOP5</h2>
+      <p class="article-section-lead">7軸の総合スコアが高く、特に子育て環境スコアが満点に近いエリアを抜き出しました。共通するのは「駅から少し離れた閑静な住宅地」という構図です。</p>
     </div>
-    <div class="rank-score"><span class="big">70.4</span><span class="sub">/98点</span></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge other">4</span>
-    <div class="rank-info">
-      <div class="rank-name"><a href="../area/yokohama-青葉区/荏田西3/">荏田西3丁目</a><span class="safe-tag">犯罪0件</span></div>
-      <div class="rank-detail">人口2,740人｜治安 12.8/14</div>
+
+    <div class="ranked-list">
+      <div class="ranked-item">
+        <span class="ranked-badge b1">01</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/あざみ野南2/">あざみ野南2丁目</a><span class="ranked-tag">犯罪1件</span></div>
+          <div class="ranked-detail">人口 1,663人 / 子育て環境 14.0 満点</div>
+          <div class="ranked-bars">
+            <div class="ranked-bar"><span class="ranked-bar-label">子育て</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:100%;background:#5C8A7F"></span></div><span class="ranked-bar-val">14.0/14</span></div>
+            <div class="ranked-bar"><span class="ranked-bar-label">医療</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:88.6%;background:#5C8A7F"></span></div><span class="ranked-bar-val">12.4/14</span></div>
+          </div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">72.8</span><span class="ranked-score-unit">/ 98 点</span></div>
+      </div>
+
+      <div class="ranked-item">
+        <span class="ranked-badge b2">02</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/荏田北1/">荏田北1丁目</a><span class="ranked-tag">犯罪1件</span></div>
+          <div class="ranked-detail">人口 2,081人 / 子育て環境 14.0 満点</div>
+          <div class="ranked-bars">
+            <div class="ranked-bar"><span class="ranked-bar-label">子育て</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:100%;background:#5C8A7F"></span></div><span class="ranked-bar-val">14.0/14</span></div>
+            <div class="ranked-bar"><span class="ranked-bar-label">交通安全</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:65.7%;background:#C9904A"></span></div><span class="ranked-bar-val">9.2/14</span></div>
+          </div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">71.5</span><span class="ranked-score-unit">/ 98 点</span></div>
+      </div>
+
+      <div class="ranked-item">
+        <span class="ranked-badge b3">03</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/荏田北3/">荏田北3丁目</a></div>
+          <div class="ranked-detail">人口 1,682人 / 子育て14満点 / 医療施設10件</div>
+          <div class="ranked-bars">
+            <div class="ranked-bar"><span class="ranked-bar-label">子育て</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:100%;background:#5C8A7F"></span></div><span class="ranked-bar-val">14.0/14</span></div>
+            <div class="ranked-bar"><span class="ranked-bar-label">医療</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:93.6%;background:#5C8A7F"></span></div><span class="ranked-bar-val">13.1/14</span></div>
+          </div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">70.4</span><span class="ranked-score-unit">/ 98 点</span></div>
+      </div>
+
+      <div class="ranked-item">
+        <span class="ranked-badge b4">04</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/荏田西3/">荏田西3丁目</a><span class="ranked-tag">犯罪0件</span></div>
+          <div class="ranked-detail">人口 2,740人 / 治安 12.8/14</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">69.1</span><span class="ranked-score-unit">/ 98 点</span></div>
+      </div>
+
+      <div class="ranked-item">
+        <span class="ranked-badge b5">05</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/あざみ野1/">あざみ野1丁目</a></div>
+          <div class="ranked-detail">人口 4,392人 / 医療施設22件 / たまプラーザ駅周辺</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">68.9</span><span class="ranked-score-unit">/ 98 点</span></div>
+      </div>
     </div>
-    <div class="rank-score"><span class="big">69.1</span><span class="sub">/98点</span></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge other">5</span>
-    <div class="rank-info">
-      <div class="rank-name"><a href="../area/yokohama-青葉区/あざみ野1/">あざみ野1丁目</a></div>
-      <div class="rank-detail">人口4,392人｜医療施設22件｜たまプラーザ駅周辺</div>
+
+    <div class="callout">
+      <span class="callout-eyebrow">Editor's Note</span>
+      <p>上位エリアに共通するのは、駅徒歩10〜15分の「静かに暮らせる住宅地」であること。商業エリアと住宅エリアが明確に分かれた青葉区ならではの設計思想が、子育てスコアに表れています。</p>
     </div>
-    <div class="rank-score"><span class="big">68.9</span><span class="sub">/98点</span></div>
-  </li>
-</ul>
-</div>
-</section>
 
-<div class="ad-section">
-<span class="ad-label">PR</span>
-<div class="ad-title">子育て中のママ・パパ、保険の見直しはお済みですか？</div>
-<div class="ad-desc">出産や子どもの成長に合わせて、保障内容の見直しが大切です。ベビープラネットでは、妊娠中〜子育て中のご家庭に特化した保険の無料相談ができます。</div>
-<div class="ad-body">
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZR8N+1KK78Y+503M+601S1" rel="nofollow">
-<img border="0" width="234" height="60" alt="ベビープラネット" src="https://www23.a8.net/svt/bgt?aid=260329127095&wid=001&eno=01&mid=s00000023341001008000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4AZR8N+1KK78Y+503M+601S1" alt="">
-</div>
-</div>
+    <div class="sponsored">
+      <div class="sponsored-title">子育て中のママ・パパ、保険の見直しはお済みですか？</div>
+      <p class="sponsored-desc">出産や子どもの成長に合わせて、保障内容の見直しが大切です。ベビープラネットでは、妊娠中〜子育て中のご家庭に特化した保険の無料相談ができます。</p>
+      <div class="sponsored-body">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4AZR8N+1KK78Y+503M+601S1" rel="nofollow noopener">
+          <img border="0" width="234" height="60" alt="ベビープラネット" src="https://www23.a8.net/svt/bgt?aid=260329127095&wid=001&eno=01&mid=s00000023341001008000&mc=1">
+        </a>
+        <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4AZR8N+1KK78Y+503M+601S1" alt="">
+      </div>
+    </div>
 
-<section>
-<h3>犯罪件数ゼロの町丁目</h3>
-<p style="font-size:.9rem;color:#555;margin-bottom:12px">2024年の対象7罪種で犯罪が1件も発生していない、人口500人以上の町丁目です。</p>
-<div class="card">
-<ul class="rank-list">
-  <li class="rank-item">
-    <span class="rank-badge" style="background:#2e7d32">0</span>
-    <div class="rank-info"><div class="rank-name"><a href="../area/yokohama-青葉区/荏田西3/">荏田西3丁目</a></div><div class="rank-detail">人口2,740人｜総合69.1点</div></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge" style="background:#2e7d32">0</span>
-    <div class="rank-info"><div class="rank-name"><a href="../area/yokohama-青葉区/荏田町/">荏田町</a></div><div class="rank-detail">人口3,999人｜総合67.0点</div></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge" style="background:#2e7d32">0</span>
-    <div class="rank-info"><div class="rank-name"><a href="../area/yokohama-青葉区/若草台/">若草台</a></div><div class="rank-detail">人口3,082人｜総合63.3点</div></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge" style="background:#2e7d32">0</span>
-    <div class="rank-info"><div class="rank-name"><a href="../area/yokohama-青葉区/市ケ尾町/">市ケ尾町</a></div><div class="rank-detail">人口5,418人｜総合58.8点</div></div>
-  </li>
-</ul>
-</div>
-<p class="note">※ 対象罪種: 自転車盗・自動車盗・オートバイ盗・ひったくり・車上ねらい・部品ねらい・自動販売機ねらい</p>
-</section>
+    <div class="article-section-head">
+      <h2 class="article-h2">犯罪件数ゼロの町丁目</h2>
+      <p class="article-section-lead">2024年の対象7罪種で犯罪が1件も発生していない、人口500人以上の町丁目です。「ゼロ」という記録は、街全体の見守りの強さを示しています。</p>
+    </div>
 
-<section>
-<h3>医療施設が充実しているエリア</h3>
-<p style="font-size:.9rem;color:#555;margin-bottom:12px">子育てにおいて小児科や病院へのアクセスは重要です。</p>
-<div class="card">
-<ul class="rank-list">
-  <li class="rank-item">
-    <span class="rank-badge gold">1</span>
-    <div class="rank-info"><div class="rank-name"><a href="../area/yokohama-青葉区/あざみ野2/">あざみ野2丁目</a></div><div class="rank-detail">たまプラーザ駅周辺</div></div>
-    <div class="rank-score"><span class="big">26</span><span class="sub">施設</span></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge silver">2</span>
-    <div class="rank-info"><div class="rank-name"><a href="../area/yokohama-青葉区/あざみ野1/">あざみ野1丁目</a></div><div class="rank-detail">あざみ野駅周辺</div></div>
-    <div class="rank-score"><span class="big">22</span><span class="sub">施設</span></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge bronze">3</span>
-    <div class="rank-info"><div class="rank-name"><a href="../area/yokohama-青葉区/美しが丘1/">美しが丘1丁目</a></div><div class="rank-detail">たまプラーザ駅前</div></div>
-    <div class="rank-score"><span class="big">23</span><span class="sub">施設</span></div>
-  </li>
-</ul>
-</div>
-</section>
+    <div class="ranked-list">
+      <div class="ranked-item">
+        <span class="ranked-badge zero">0</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/荏田西3/">荏田西3丁目</a></div>
+          <div class="ranked-detail">人口 2,740人 / 総合 69.1点</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">0</span><span class="ranked-score-unit">件 / 年</span></div>
+      </div>
+      <div class="ranked-item">
+        <span class="ranked-badge zero">0</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/荏田町/">荏田町</a></div>
+          <div class="ranked-detail">人口 3,999人 / 総合 67.0点</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">0</span><span class="ranked-score-unit">件 / 年</span></div>
+      </div>
+      <div class="ranked-item">
+        <span class="ranked-badge zero">0</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/若草台/">若草台</a></div>
+          <div class="ranked-detail">人口 3,082人 / 総合 63.3点</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">0</span><span class="ranked-score-unit">件 / 年</span></div>
+      </div>
+      <div class="ranked-item">
+        <span class="ranked-badge zero">0</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/市ケ尾町/">市ケ尾町</a></div>
+          <div class="ranked-detail">人口 5,418人 / 総合 58.8点</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">0</span><span class="ranked-score-unit">件 / 年</span></div>
+      </div>
+    </div>
+    <p class="article-note">※ 対象罪種: 自転車盗・自動車盗・オートバイ盗・ひったくり・車上ねらい・部品ねらい・自動販売機ねらい</p>
 
-<div class="ad-section">
-<span class="ad-label">PR</span>
-<div class="ad-title">忙しい子育て中の食事づくりをサポート</div>
-<div class="ad-desc">累計300万食突破の幼児向け冷凍宅食「mogumo（モグモ）」。管理栄養士監修のメニューで、栄養バランスの取れた食事を手軽に。共働き世帯にもおすすめです。</div>
-<div class="ad-body">
-<a href="https://px.a8.net/svt/ejp?a8mat=4AZR8N+Q73EA+5CLW+5ZEMP" rel="nofollow">
-<img border="0" width="120" height="60" alt="mogumo" src="https://www25.a8.net/svt/bgt?aid=260329127044&wid=001&eno=01&mid=s00000024962001005000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AZR8N+Q73EA+5CLW+5ZEMP" alt="">
-</div>
-</div>
+    <div class="article-section-head">
+      <h2 class="article-h2">医療施設が充実しているエリア</h2>
+      <p class="article-section-lead">小さな子どもがいると、徒歩圏に小児科やかかりつけ医があるかは想像以上に大事。施設数で見たトップ3です。</p>
+    </div>
 
-<div class="cta">
-<h3>青葉区の全78エリアを詳しく見る</h3>
-<p>各町丁目の7軸スコア、施設一覧、周辺情報を確認できます。</p>
-<div class="cta-links">
-<a href="../area/yokohama-青葉区/">青葉区エリア一覧</a>
-<a href="../" class="secondary">マップで確認</a>
-</div>
-</div>
+    <div class="ranked-list">
+      <div class="ranked-item">
+        <span class="ranked-badge b1">01</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/あざみ野2/">あざみ野2丁目</a></div>
+          <div class="ranked-detail">たまプラーザ駅周辺</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">26</span><span class="ranked-score-unit">施設</span></div>
+      </div>
+      <div class="ranked-item">
+        <span class="ranked-badge b2">02</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/あざみ野1/">あざみ野1丁目</a></div>
+          <div class="ranked-detail">あざみ野駅周辺</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">22</span><span class="ranked-score-unit">施設</span></div>
+      </div>
+      <div class="ranked-item">
+        <span class="ranked-badge b3">03</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/美しが丘1/">美しが丘1丁目</a></div>
+          <div class="ranked-detail">たまプラーザ駅前</div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">23</span><span class="ranked-score-unit">施設</span></div>
+      </div>
+    </div>
 
+    <div class="sponsored">
+      <div class="sponsored-title">忙しい子育て中の食事づくりをサポート</div>
+      <p class="sponsored-desc">累計300万食突破の幼児向け冷凍宅食「mogumo」。管理栄養士監修のメニューで、栄養バランスのとれた食事を手軽に。共働き世帯にもおすすめです。</p>
+      <div class="sponsored-body">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4AZR8N+Q73EA+5CLW+5ZEMP" rel="nofollow noopener">
+          <img border="0" width="120" height="60" alt="mogumo" src="https://www25.a8.net/svt/bgt?aid=260329127044&wid=001&eno=01&mid=s00000024962001005000&mc=1">
+        </a>
+        <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4AZR8N+Q73EA+5CLW+5ZEMP" alt="">
+      </div>
+    </div>
+
+    <div class="article-cta">
+      <h3>青葉区の全78エリアを詳しく見る</h3>
+      <p>各町丁目の7軸スコア、施設一覧、周辺情報を確認できます。</p>
+      <div class="article-cta-links">
+        <a href="../area/yokohama-青葉区/">青葉区エリア一覧 →</a>
+        <a href="../" class="secondary">マップで確認</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="article-footer">
+    <div class="article-footer-author">
+      <div class="article-footer-avatar">編</div>
+      <div>
+        <p class="article-footer-name">神奈川 住みやすさマップ 編集部</p>
+        <p class="article-footer-bio">オープンデータと現地取材で、神奈川の住む街を読み解いています。</p>
+      </div>
+    </div>
+    <a href="./" class="cta-link">他の特集を読む<span class="arrow">→</span></a>
+  </footer>
 </article>
-</div>
 
-<div class="footer">
-<p>データ出典: <a href="https://www.police.pref.kanagawa.jp/mes/mesd0010.htm">神奈川県警犯罪統計(2024)</a> / <a href="https://www.e-stat.go.jp/">e-Stat国勢調査(2020)</a> / <a href="https://nlftp.mlit.go.jp/ksj/">国土数値情報</a></p>
-<p style="margin-top:4px">本サイトはオープンデータに基づく参考情報です。最新情報は各公式サイトをご確認ください。</p>
-</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">住</span>
+      <div>
+        <p class="footer-title">神奈川 住みやすさマップ</p>
+        <p class="footer-sub">An open-data field guide for Kanagawa, since 2024.</p>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div><h4>Explore</h4><a href="../">マップ</a><a href="../area/">ランキング</a><a href="./">特集</a></div>
+      <div><h4>Data</h4><a href="https://www.npa.go.jp/" target="_blank" rel="noopener">警察庁</a><a href="https://www.e-stat.go.jp/" target="_blank" rel="noopener">e-Stat</a><a href="https://nlftp.mlit.go.jp/" target="_blank" rel="noopener">国土数値情報</a></div>
+      <div><h4>About</h4><a href="../#about">サイトについて</a><a href="#">お問い合わせ</a><a href="#">プライバシー</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Kanagawa Livability Map.</p><p>Made with care, in Yokohama.</p></div>
+</footer>
 </body>
 </html>
