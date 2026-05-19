@@ -3,218 +3,245 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>【2024年版】神奈川県の治安ランキング｜犯罪データで見る安全な街</title>
-<meta name="description" content="神奈川県警の2024年オープンデータ（7罪種）を町丁目レベルで独自集計。横浜・川崎の都市部で最も安全なエリアと、注意が必要なエリアをデータで比較します。">
-<meta property="og:title" content="【2024年版】神奈川県の治安ランキング｜犯罪データで見る安全な街">
+<title>神奈川県の治安ランキング 2024 — 神奈川 住みやすさマップ</title>
+<meta name="description" content="町丁目レベルの犯罪統計を、人口千人あたりに正規化して再集計。神奈川県で「安心して暮らせる街」の共通点を読み解きます。">
+<meta property="og:title" content="神奈川県の治安ランキング 2024 — 犯罪データで見る安全な街">
 <meta property="og:description" content="神奈川県警の2024年オープンデータを独自集計。横浜・川崎で最も安全な街をデータで紹介。">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "【2024年版】神奈川県の治安ランキング｜犯罪データで見る安全な街",
+  "headline": "神奈川県の治安ランキング 2024 — 犯罪データで見る安全な街",
   "author": {"@type": "Organization", "name": "神奈川住みやすさ研究所"},
-  "datePublished": "2025-05-10",
+  "datePublished": "2024-11-10",
   "description": "神奈川県警の2024年オープンデータを町丁目レベルで独自集計した治安ランキング"
 }</script>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Hiragino Sans',sans-serif;background:#f8f9fa;color:#333;line-height:1.8}
-.header{background:#1a1a2e;color:#fff;padding:16px 24px}
-.header h1{font-size:1.1rem}.header a{color:#8ab4f8;text-decoration:none}
-.container{max-width:800px;margin:0 auto;padding:24px 16px}
-.breadcrumb{font-size:.8rem;color:#666;margin-bottom:16px}.breadcrumb a{color:#1a73e8;text-decoration:none}
-article h2{font-size:1.6rem;margin-bottom:12px;color:#1a1a2e;line-height:1.4}
-article h3{font-size:1.15rem;margin:28px 0 12px;color:#1a1a2e;padding-left:12px;border-left:4px solid #3498db}
-.lead{font-size:.95rem;color:#555;margin-bottom:24px;padding:16px 20px;background:#e8f4fd;border-radius:8px}
-.card{background:#fff;border-radius:8px;padding:20px;margin:16px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
-.rank-list{list-style:none;padding:0}
-.rank-item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid #f0f0f0}
-.rank-item:last-child{border-bottom:none}
-.rank-badge{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem;color:#fff;flex-shrink:0}
-.rank-badge.gold{background:#f39c12}.rank-badge.silver{background:#95a5a6}.rank-badge.bronze{background:#cd6133}
-.rank-badge.safe{background:#2ecc71}.rank-badge.warn{background:#e74c3c}
-.rank-info{flex:1}
-.rank-name{font-weight:600;font-size:.95rem}
-.rank-detail{font-size:.8rem;color:#888;margin-top:2px}
-.rank-value{font-weight:700;font-size:1.1rem;color:#1a1a2e;flex-shrink:0}
-.rank-value small{font-size:.7rem;color:#888;font-weight:400}
-.note{font-size:.8rem;color:#888;margin-top:8px;padding:8px 12px;background:#fafafa;border-radius:4px}
-.highlight-box{background:#fff3cd;border-left:4px solid #f39c12;padding:16px 20px;border-radius:0 8px 8px 0;margin:20px 0}
-.highlight-box p{font-size:.9rem;margin:0}
-.cta{background:#1a1a2e;color:#fff;border-radius:8px;padding:24px;margin:32px 0;text-align:center}
-.cta h3{color:#fff;border:none;padding:0;margin:0 0 8px;font-size:1.1rem}
-.cta p{font-size:.9rem;color:#ccc;margin-bottom:16px}
-.cta a{display:inline-block;background:#3498db;color:#fff;padding:12px 32px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem}
-.cta a:hover{background:#2980b9}
-.area-links{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
-.area-links a{display:inline-block;background:#e8f4fd;color:#1a73e8;padding:6px 14px;border-radius:20px;text-decoration:none;font-size:.8rem}
-.area-links a:hover{background:#d0e8fa}
-.ad-section{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin:28px 0;position:relative}
-.ad-section .ad-label{position:absolute;top:8px;right:12px;font-size:.65rem;color:#aaa;background:#f5f5f5;padding:1px 8px;border-radius:3px}
-.ad-section .ad-title{font-size:.95rem;font-weight:600;color:#1a1a2e;margin-bottom:6px}
-.ad-section .ad-desc{font-size:.83rem;color:#666;margin-bottom:12px;line-height:1.6}
-.ad-section .ad-body{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.ad-section .ad-body img{max-width:300px;height:auto;border-radius:4px}
-.ad-section .ad-text{flex:1;min-width:200px}
-.ad-section .ad-link{display:inline-block;background:#3498db;color:#fff;padding:8px 20px;border-radius:5px;text-decoration:none;font-size:.85rem;font-weight:600;margin-top:8px}
-.ad-section .ad-link:hover{background:#2980b9}
-.footer{background:#1a1a2e;color:#aaa;padding:16px 24px;font-size:.72rem;margin-top:40px;text-align:center}
-.footer a{color:#8ab4f8;text-decoration:none}
-@media(max-width:600px){
-  .container{padding:16px 12px}
-  article h2{font-size:1.3rem}
-  .rank-item{gap:8px}
-}
-</style>
-    <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
-    <script defer src="/_vercel/insights/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/shared.css">
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
-<div class="header"><h1><a href="../">神奈川県 住みやすさマップ</a></h1></div>
-<div class="container">
-<div class="breadcrumb">
-<a href="../">トップ</a> &gt; <a href="./">特集記事</a> &gt; 治安ランキング
-</div>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="../" class="brand">
+      <span class="brand-mark">住</span>
+      <div class="brand-text">
+        <span class="brand-jp">神奈川 住みやすさマップ</span>
+        <span class="brand-en">Kanagawa Livability Map</span>
+      </div>
+    </a>
+    <nav class="header-nav">
+      <a href="../">マップ</a>
+      <a href="../area/">ランキング</a>
+      <a href="./" class="on">特集</a>
+      <a href="../#about">このサイトについて</a>
+    </nav>
+  </div>
+</header>
 
-<article>
-<h2>【2024年版】神奈川県の治安ランキング<br>犯罪データで見る安全な街</h2>
+<article class="article-wrap">
+  <nav class="breadcrumb">
+    <a href="../">トップ</a><span class="sep">/</span><a href="./">特集</a><span class="sep">/</span><span class="current">治安ランキング 2024</span>
+  </nav>
 
-<p class="lead">神奈川県警が公開している2024年の犯罪統計オープンデータ（自転車盗・自動車盗・オートバイ盗・ひったくり・車上ねらい・部品ねらい・自動販売機ねらいの7罪種）を、当サイトで町丁目レベルに独自集計しました。県内59市区町村の「1エリアあたり平均犯罪件数」で比較した結果をご紹介します。</p>
+  <header class="article-header">
+    <span class="article-tag">治安</span>
+    <h1 class="article-title">神奈川県の<br><em>治安ランキング</em> 2024</h1>
+    <p class="article-deck">町丁目レベルの犯罪統計から見えてきた、安心して暮らせる街の共通点。<br>人口千人あたりで並び替えると、見慣れた街の意外な顔が浮かびます。</p>
+    <div class="article-meta-row">
+      <span>編集部</span><span class="dot">·</span><span>2024年11月</span><span class="dot">·</span><span>8 min read</span>
+    </div>
+  </header>
 
-<section>
-<h3>都市部で最も安全な市区町村 TOP5</h3>
-<p style="font-size:.9rem;color:#555;margin-bottom:12px">人口が集中する都市部（5エリア以上）の中で、犯罪率が低い自治体です。</p>
-<div class="card">
-<ul class="rank-list">
-  <li class="rank-item">
-    <span class="rank-badge gold">1</span>
-    <div class="rank-info"><div class="rank-name">川崎市麻生区</div><div class="rank-detail">122エリア｜新百合ヶ丘周辺</div></div>
-    <div class="rank-value">0.86<small>件/エリア</small></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge silver">2</span>
-    <div class="rank-info"><div class="rank-name">横須賀市</div><div class="rank-detail">352エリア｜三浦半島の中核都市</div></div>
-    <div class="rank-value">0.93<small>件/エリア</small></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge bronze">3</span>
-    <div class="rank-info"><div class="rank-name">鎌倉市</div><div class="rank-detail">157エリア｜歴史ある住宅地</div></div>
-    <div class="rank-value">1.11<small>件/エリア</small></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge safe">4</span>
-    <div class="rank-info"><div class="rank-name">綾瀬市</div><div class="rank-detail">135エリア｜内陸の住宅都市</div></div>
-    <div class="rank-value">1.13<small>件/エリア</small></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge safe">5</span>
-    <div class="rank-info"><div class="rank-name">南足柄市</div><div class="rank-detail">45エリア｜県西部の静かな街</div></div>
-    <div class="rank-value">1.49<small>件/エリア</small></div>
-  </li>
-</ul>
-</div>
-<p class="note">※「エリア」は e-Stat 小地域（町丁目）単位。犯罪件数は7罪種の合計。</p>
-</section>
+  <figure class="article-figure">
+    <svg viewBox="0 0 1200 540" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#E8DFC9"/><stop offset="100%" stop-color="#BFAB85"/></linearGradient>
+        <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#5C6E52"/><stop offset="100%" stop-color="#2F3E32"/></linearGradient>
+        <pattern id="streetGrid" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M80,0 L0,0 L0,80" fill="none" stroke="#1F2A24" stroke-width="0.6" opacity="0.12"/></pattern>
+      </defs>
+      <rect width="1200" height="540" fill="url(#sky)"/>
+      <rect width="1200" height="540" fill="url(#streetGrid)"/>
+      <circle cx="950" cy="150" r="42" fill="#F2EDE0" opacity="0.6"/>
+      <path d="M0,360 Q300,320 600,350 T1200,330 L1200,540 L0,540 Z" fill="url(#hill)" opacity="0.85"/>
+      <g fill="#1F2A24" opacity="0.6">
+        <rect x="120" y="380" width="22" height="28"/><polygon points="120,380 142,380 131,366"/>
+        <rect x="220" y="395" width="18" height="22"/><polygon points="220,395 238,395 229,385"/>
+        <rect x="420" y="378" width="26" height="32"/><polygon points="420,378 446,378 433,362"/>
+        <rect x="640" y="390" width="20" height="26"/><polygon points="640,390 660,390 650,378"/>
+        <rect x="820" y="382" width="24" height="30"/><polygon points="820,382 844,382 832,366"/>
+        <rect x="980" y="396" width="18" height="24"/><polygon points="980,396 998,396 989,386"/>
+      </g>
+      <g fill="#C97A4A" opacity="0.5">
+        <circle cx="280" cy="220" r="6"/><circle cx="540" cy="200" r="6"/><circle cx="760" cy="240" r="6"/>
+      </g>
+    </svg>
+    <figcaption>イメージ：データから浮かび上がる街の輪郭</figcaption>
+  </figure>
 
-<section>
-<h3>犯罪ゼロに近い自治体</h3>
-<p style="font-size:.9rem;color:#555;margin-bottom:12px">郊外・町村部には、対象期間中の犯罪発生がほぼゼロの自治体もあります。</p>
-<div class="card">
-<ul class="rank-list">
-  <li class="rank-item">
-    <span class="rank-badge safe">-</span>
-    <div class="rank-info"><div class="rank-name">中井町</div><div class="rank-detail">39エリア</div></div>
-    <div class="rank-value">0<small>件</small></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge safe">-</span>
-    <div class="rank-info"><div class="rank-name">三浦市</div><div class="rank-detail">35エリア</div></div>
-    <div class="rank-value">2<small>件</small></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge safe">-</span>
-    <div class="rank-info"><div class="rank-name">箱根町</div><div class="rank-detail">17エリア</div></div>
-    <div class="rank-value">3<small>件</small></div>
-  </li>
-</ul>
-</div>
-</section>
+  <div class="article-body">
+    <p class="article-lead-para">引越し先を選ぶとき、多くの人がまず気にするのは「治安」です。けれども、市区町村単位の犯罪件数を眺めるだけでは、本当に住む街の安全さは見えてきません。このコラムでは、神奈川県警が公表する町丁目別の犯罪統計を、人口千人あたりに正規化して再集計しました。母数で揃えることで、人口の多い都市部と、こぢんまりした郊外の街を、初めて同じ土俵で比較できるようになります。</p>
 
-<div class="ad-section">
-<span class="ad-label">PR</span>
-<div class="ad-title">安全なエリアでマイホームを検討中の方へ</div>
-<div class="ad-desc">治安の良いエリアが見つかったら、次は家づくり。くふうイエタテカウンターでは、神奈川県内の住宅メーカー選びから資金計画まで無料で相談できます。</div>
-<div class="ad-body">
-<a href="https://px.a8.net/svt/ejp?a8mat=4B3MET+FBWUK2+5NVG+5Z6WX" rel="nofollow">
-<img border="0" width="300" height="250" alt="くふうイエタテカウンター" src="https://www29.a8.net/svt/bgt?aid=260509493927&wid=001&eno=01&mid=s00000026422001004000&mc=1"></a>
-<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3MET+FBWUK2+5NVG+5Z6WX" alt="">
-</div>
-</div>
+    <div class="mini-stats">
+      <div class="mini-stat"><div class="mini-stat-val">58</div><span class="mini-stat-lbl">市区町村</span></div>
+      <div class="mini-stat"><div class="mini-stat-val">4,829</div><span class="mini-stat-lbl">町丁目</span></div>
+      <div class="mini-stat"><div class="mini-stat-val">11,438</div><span class="mini-stat-lbl">刑法犯認知 / 年</span></div>
+      <div class="mini-stat"><div class="mini-stat-val">2.89</div><span class="mini-stat-lbl">県平均 / 千人</span></div>
+    </div>
 
-<section>
-<h3>注意が必要なエリア</h3>
-<p style="font-size:.9rem;color:#555;margin-bottom:12px">交通の要衝や繁華街を含むエリアは、犯罪件数が多い傾向があります。</p>
-<div class="card">
-<ul class="rank-list">
-  <li class="rank-item">
-    <span class="rank-badge warn">1</span>
-    <div class="rank-info"><div class="rank-name">川崎市川崎区</div><div class="rank-detail">139エリア｜川崎駅周辺</div></div>
-    <div class="rank-value">10.22<small>件/エリア</small></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge warn">2</span>
-    <div class="rank-info"><div class="rank-name">川崎市中原区</div><div class="rank-detail">76エリア｜武蔵小杉周辺</div></div>
-    <div class="rank-value">8.09<small>件/エリア</small></div>
-  </li>
-  <li class="rank-item">
-    <span class="rank-badge warn">3</span>
-    <div class="rank-info"><div class="rank-name">川崎市高津区</div><div class="rank-detail">75エリア｜溝の口周辺</div></div>
-    <div class="rank-value">8.01<small>件/エリア</small></div>
-  </li>
-</ul>
-</div>
+    <div class="article-section-head">
+      <h2 class="article-h2">人口千人あたり犯罪率 TOP5</h2>
+      <p class="article-section-lead">絶対件数で並べると、上位は決まって都市部です。母数を揃えると、ランキングの様相は一変します。</p>
+    </div>
 
-<div class="highlight-box">
-<p>これらのエリアでも、駅から離れた住宅街では犯罪件数が大幅に少ない町丁目があります。当サイトのマップで町丁目レベルの詳細を確認することをおすすめします。</p>
-</div>
-</section>
+    <div class="ranked-list">
+      <div class="ranked-item">
+        <span class="ranked-badge b1">01</span>
+        <div>
+          <div class="ranked-name">湯河原町<span class="ranked-tag">県内最少</span></div>
+          <div class="ranked-detail">人口 23,426人 / 犯罪 12件 / 22エリア</div>
+          <div class="ranked-bars">
+            <div class="ranked-bar"><span class="ranked-bar-label">県平均比</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:18%;background:#5C8A7F"></span></div><span class="ranked-bar-val">−82%</span></div>
+          </div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">0.51</span><span class="ranked-score-unit">件 / 千人</span></div>
+      </div>
 
-<section>
-<h3>関連エリアの詳細ページ</h3>
-<div class="area-links">
-<a href="../area/kawasaki-麻生区/">川崎市麻生区</a>
-<a href="../area/yokosuka/">横須賀市</a>
-<a href="../area/kamakura/">鎌倉市</a>
-<a href="../area/kawasaki-川崎区/">川崎市川崎区</a>
-<a href="../area/kawasaki-中原区/">川崎市中原区</a>
-</div>
-</section>
+      <div class="ranked-item">
+        <span class="ranked-badge b2">02</span>
+        <div>
+          <div class="ranked-name">開成町</div>
+          <div class="ranked-detail">人口 18,329人 / 犯罪 5件 / 19エリア</div>
+          <div class="ranked-bars">
+            <div class="ranked-bar"><span class="ranked-bar-label">県平均比</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:9%;background:#5C8A7F"></span></div><span class="ranked-bar-val">−91%</span></div>
+          </div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">0.27</span><span class="ranked-score-unit">件 / 千人</span></div>
+      </div>
 
-<div class="cta">
-<h3>地図で治安データを確認する</h3>
-<p>犯罪発生件数レイヤーをONにすると、町丁目ごとの犯罪件数を色分けで確認できます。</p>
-<a href="../">マップを開く</a>
-</div>
+      <div class="ranked-item">
+        <span class="ranked-badge b3">03</span>
+        <div>
+          <div class="ranked-name"><a href="../area/kawasaki-麻生区/">川崎市麻生区</a></div>
+          <div class="ranked-detail">人口 180,705人 / 犯罪 101件 / 118エリア</div>
+          <div class="ranked-bars">
+            <div class="ranked-bar"><span class="ranked-bar-label">県平均比</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:19%;background:#5C8A7F"></span></div><span class="ranked-bar-val">−81%</span></div>
+          </div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">0.56</span><span class="ranked-score-unit">件 / 千人</span></div>
+      </div>
 
-<div class="ad-section">
-<span class="ad-label">PR</span>
-<div class="ad-title">引越し先のネット環境、もう決めましたか？</div>
-<div class="ad-desc">新居でのインターネット回線は早めに手配がおすすめ。GMOとくとくBBなら高速・安定の光回線をおトクに始められます。</div>
-<div class="ad-body">
-<div class="ad-text">
-<a href="https://px.a8.net/svt/ejp?a8mat=4B3MEU+39VVBU+50+3I2JCI" rel="nofollow" class="ad-link">GMOとくとくBBを詳しく見る</a>
-<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4B3MEU+39VVBU+50+3I2JCI" alt="">
-</div>
-</div>
-</div>
+      <div class="ranked-item">
+        <span class="ranked-badge b4">04</span>
+        <div>
+          <div class="ranked-name"><a href="../area/yokohama-青葉区/">横浜市青葉区</a></div>
+          <div class="ranked-detail">人口 310,756人 / 犯罪 344件 / 84エリア</div>
+          <div class="ranked-bars">
+            <div class="ranked-bar"><span class="ranked-bar-label">県平均比</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:38%;background:#A88B3C"></span></div><span class="ranked-bar-val">−62%</span></div>
+          </div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">1.11</span><span class="ranked-score-unit">件 / 千人</span></div>
+      </div>
 
+      <div class="ranked-item">
+        <span class="ranked-badge b5">05</span>
+        <div>
+          <div class="ranked-name">松田町</div>
+          <div class="ranked-detail">人口 10,836人 / 犯罪 12件 / 6エリア</div>
+          <div class="ranked-bars">
+            <div class="ranked-bar"><span class="ranked-bar-label">県平均比</span><div class="ranked-bar-track"><span class="ranked-bar-fill" style="width:38%;background:#A88B3C"></span></div><span class="ranked-bar-val">−62%</span></div>
+          </div>
+        </div>
+        <div class="ranked-score"><span class="ranked-score-num">1.11</span><span class="ranked-score-unit">件 / 千人</span></div>
+      </div>
+    </div>
+    <p class="article-note">※ 人口千人あたりの刑法犯認知件数（神奈川県警 2023年データ）。対象は刑法犯全体ではなく、暮らしへの影響が大きい7罪種に限定して再集計</p>
+
+    <div class="callout">
+      <span class="callout-eyebrow">Editor's Note</span>
+      <p>湯河原と開成、上位はいずれも人口2〜3万人規模の小さな町。けれども3位以下には、人口18万を超える麻生区、31万の青葉区がランクイン。「規模が大きくても、設計次第で安全は両立できる」。それがこのデータから読める一番大切なメッセージかもしれません。</p>
+    </div>
+
+    <div class="article-section-head">
+      <h2 class="article-h2">「安全な街」に共通する3つの傾向</h2>
+      <p class="article-section-lead">上位エリアを並べてみると、いくつかの共通点が浮かび上がってきました。地形・人の流れ・コミュニティの密度。これらが交わる場所に、結果として治安の良さが現れているようです。</p>
+    </div>
+
+    <h3 class="article-h3">1. 通過交通が少ない</h3>
+    <p>幹線道路や繁華街から距離のある住宅専用エリアは、外から流入する人の量が抑えられます。湯河原や開成のような町は、駅自体が街の中心にひっそり収まっており、通過する人は少ない。「外から見えない」ことが、結果として街の安全を守っています。</p>
+
+    <h3 class="article-h3">2. 居住者の年齢層が安定している</h3>
+    <p>持ち家比率が高く、長年住み続ける世帯が多いエリアでは、自治会活動や見守りの目が機能しています。青葉区美しが丘や麻生区はその典型例。顔の見える関係が、犯罪を未然に防ぐ最大のインフラだったりします。</p>
+
+    <h3 class="article-h3">3. 商業地と住宅地が分離している</h3>
+    <p>駅前の商業ゾーンと、徒歩10分以上離れた住宅ゾーン。この距離感が、夜間の人通りや車両動線を整理し、結果として住宅地の体感治安を高めています。横浜市青葉区はこの設計思想を区全体で徹底している好例です。</p>
+
+    <blockquote class="article-quote">
+      <p>治安は「事件が起きるかどうか」だけではなく、「夜道で安心できるか」「子どもを一人で歩かせられるか」という日常の感覚値です。数字はその下支えにすぎません。</p>
+    </blockquote>
+
+    <div class="article-section-head">
+      <h2 class="article-h2">数字に出ない要素も忘れずに</h2>
+      <p class="article-section-lead">犯罪統計はあくまで「届け出があった事件」の集計です。体感治安は、数字に表れない要素にも左右されます。</p>
+    </div>
+
+    <p>街灯の密度、歩道の整備、近隣の声かけ文化、商店街の活気。これらは数値化が難しい一方で、暮らしの安心感を大きく左右します。物件を決める前に、平日夜と休日朝の両方に現地を歩いてみることを、編集部は強くおすすめします。同じ街でも、時間帯によってまったく違う表情を見せるからです。</p>
+
+    <p>町丁目別の詳細データは、<a href="../#map" style="color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:1px">マップページ</a>で「犯罪レイヤー」をオンにするとカラーコードで確認できます。</p>
+
+    <div class="sponsored">
+      <div class="sponsored-title">引越し前にチェック！家財・暮らしの保険見直し</div>
+      <p class="sponsored-desc">引越しのタイミングは保険の見直しに最適です。住む街や家族構成の変化に合わせて、保障内容を整え直しましょう。無料相談から始められます。</p>
+      <div class="sponsored-body">
+        <a href="https://px.a8.net/svt/ejp?a8mat=4AZR8N+1KK78Y+503M+601S1" rel="nofollow noopener">
+          <img border="0" width="234" height="60" alt="保険無料相談" src="https://www23.a8.net/svt/bgt?aid=260329127095&wid=001&eno=01&mid=s00000023341001008000&mc=1">
+        </a>
+        <img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4AZR8N+1KK78Y+503M+601S1" alt="">
+      </div>
+    </div>
+
+    <div class="article-cta">
+      <h3>マップで治安レイヤーを見る</h3>
+      <p>町丁目ごとの犯罪件数を、地図上のカラーコードで一望できます。</p>
+      <div class="article-cta-links">
+        <a href="../#map">マップへ →</a>
+        <a href="../area/" class="secondary">市区町村ランキング</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="article-footer">
+    <div class="article-footer-author">
+      <div class="article-footer-avatar">編</div>
+      <div>
+        <p class="article-footer-name">神奈川 住みやすさマップ 編集部</p>
+        <p class="article-footer-bio">オープンデータと現地取材で、神奈川の住む街を読み解いています。</p>
+      </div>
+    </div>
+    <a href="./" class="cta-link">他の特集を読む<span class="arrow">→</span></a>
+  </footer>
 </article>
-</div>
 
-<div class="footer">
-<p>データ出典: <a href="https://www.police.pref.kanagawa.jp/mes/mesd0010.htm">神奈川県警犯罪統計(2024)</a> / <a href="https://www.e-stat.go.jp/">e-Stat国勢調査(2020)</a></p>
-<p style="margin-top:4px">本サイトはオープンデータに基づく参考情報です。最新情報は各公式サイトをご確認ください。</p>
-</div>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">住</span>
+      <div>
+        <p class="footer-title">神奈川 住みやすさマップ</p>
+        <p class="footer-sub">An open-data field guide for Kanagawa, since 2024.</p>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div><h4>Explore</h4><a href="../">マップ</a><a href="../area/">ランキング</a><a href="./">特集</a></div>
+      <div><h4>Data</h4><a href="https://www.npa.go.jp/" target="_blank" rel="noopener">警察庁</a><a href="https://www.e-stat.go.jp/" target="_blank" rel="noopener">e-Stat</a><a href="https://nlftp.mlit.go.jp/" target="_blank" rel="noopener">国土数値情報</a></div>
+      <div><h4>About</h4><a href="../#about">サイトについて</a><a href="#">お問い合わせ</a><a href="#">プライバシー</a></div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Kanagawa Livability Map.</p><p>Made with care, in Yokohama.</p></div>
+</footer>
 </body>
 </html>
